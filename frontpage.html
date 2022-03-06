@@ -25,6 +25,9 @@
         .logo {
 
             width: 100%;
+            height:max-content;
+            display: block;
+            object-fit: cover;
 
 
 
@@ -72,6 +75,17 @@
 
         }
 
+        .haven {
+
+            font-size: small;
+            color: chartreuse;
+        }
+
+        .logodes {
+            color: red;
+            padding: 8px;
+        }
+
 
 
 
@@ -82,7 +96,7 @@
 <body>
     <div class="nav">
     <h1 class="headline">
-        Willkommen bei <br>Haven Point! 
+        Willkommen bei <br><span class="haven">Haven Point!</span> 
         </h1>
         <div>
             <a href="https://ipsx.jimdofree.com">iPsX</a>
@@ -101,6 +115,9 @@
 
     <div class="logocontainer">
         <img class="logo" src="Hintergrung.png">
+        <div class="logodes">
+            Unser Logo
+        </div>
     </div>
 
 </body>
