@@ -24,9 +24,9 @@
         
         .logo {
 
-            width: 30%;
+            width: 50%;
             
-            height: 30%;
+            height: 50%;
             display: block;
             object-fit: cover;
             object-position: 50%;
@@ -43,16 +43,31 @@
            
         }
 
+        .fontlogo {
 
+            color: aqua;
+        }
 
+        .logocontainer {
 
+            background-color: aliceblue;
+            width: 60%;
+            height: 60%;
+            padding: 15px 15px;
+            padding-top: 50%;
+          
+
+            
+            
+            
+          
+        }
 
         .nav {
 
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
-            margin-left: 15%;
         }
 
         a {
@@ -69,26 +84,20 @@
 
         }
 
+        
 
+ 
+
+        .logodes {
+            color: red;
+            padding: 8px;
+        }
 
         .impressum {
 
             padding: 8px;
             color: antiquewhite;
         }
-
-        .symbol {
-
-            width: 50%;
-            height: 50%;
-        }
-
-        .Buttons {
-
-            padding: -200px;
-        }
-
-
 
 
 
@@ -98,29 +107,31 @@
 </head>
 
 <body>
-    <!--div class="nav"-->
-
-        <img class="logo" src="Hintergrund.png">
-
-        <div class="Buttons"></div>
+    <div class="nav">
+    <h1 class="headline">
+        Willkommen bei <br><span class="haven">Haven Point!</span> 
+        </h1>
+        <div>
             <a href="#">Startseite</a>
             <a href="#">Für Dich</a>
             <a href="#">Meine Bestellungen</a>
             <!--a href="https://google.com">Google</a-->
-        
+        </div> 
     
     </div>
    
-    <!--a href="https://projectnightcity.jimdofree.com">Project NightCity</a><br>-->
-    <h1 class="headline">
-        Willkommen bei <br><span class="haven">Haven Point!</span> 
-        </h1>
+    <a href="https://projectnightcity.jimdofree.com">Project NightCity</a><br>
 
-        <img class="symbol" src="Slice3.png">
+    <p class="fontlogo">Unser Logo:</p>
 
-   
+    <img class="logo" src="Hintergrund.png"> <!--duplicate check-->
 
-
+    <div class="logocontainer">
+        <img class="logo" src="Hintergrung.png">
+        <div class="logodes">
+            Unser Logo
+        </div>
+    </div>
     <div class="impressum">
         (c) 2022 - Haven Point Inc. | <a href="#">Impressum</a> | <a href="#">Datenschutz</a>
     </div>
