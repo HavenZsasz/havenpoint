@@ -70,9 +70,23 @@ function ifElse(test) {
         } else if(test===17){
 
         }else {
-            
+
         }
     }
+
+
+}
+
+//--for-Schleife--
+
+let forS = [0, 1, 2];
+
+for(let i = 0; i<3; i++ ){ //klassische Syntax mit Schleifenvariable
+
+    console.log(forS[i]);
+
+
+
 }
 
 
