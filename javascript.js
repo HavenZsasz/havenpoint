@@ -1,9 +1,9 @@
-//JavaScript Syntax Glossar
+//---JavaScript Syntax Glossar---
 
 console.log("Das ist Haven Point");
 console.clear();
 
-//Primitive Datentypen:
+//--Primitive Datentypen--
 let haven = "Haven"; //(klassisch) Variable deklarieren und initialisieren; im Beispiel ein String
 let point = "Point";
 let zahl = 1;
@@ -14,7 +14,7 @@ console.log(haven + point);
 console.log("Haven Point");
 
 
-//Komplexe Datentypen:
+//--Komplexe Datentypen--
 let kontakt = {  //JavaScript Objekt; Datenstrukturen zB für Kundendaten; Vorteilhaft für Serverkommunikation
     vorname: "Juergen",
     nachname: "Schwarz",
@@ -26,10 +26,58 @@ let kontakt = {  //JavaScript Objekt; Datenstrukturen zB für Kundendaten; Vorte
 
 console.log(kontakt.vorname + " " + kontakt.nachname); //Zugriff auf Strukturelemente mit der Syntax structure.element
 
-//Arrays
+//--Arrays--
 
 let check = ["Check1", "Check2", "Check3"]; //Ablegen im Arbeitsspeicher: liest sich von Stelle 0(^=1) bis Nulloperator(\0)
-console.log("In diesem Test wurde " + check[0] + " ausgegeben");
+console.log("In diesem Test wurde " + check[0] + " ausgegeben"); //Zugriff durch den Index, welcher die Stelle markiert: Array[Index]
+let newcheck = "Check4";
+check.push(newcheck); //Array erweitern und an neuem Block Inhalt einer Variable einsetzen
+//Alternativ:
+newcheck = prompt(); //Eingabe durch stdin
+
+//--Funktionen--
+let ergebnis = celsiusInFahrenheit(15);
+console.log("15 Grad Celsius = " + ergebnis);
+function celsiusInFahrenheit(celsius){ //Parameter  wird innerhalb des Rückgabeprozesses direkt verrechnet
+
+    return x * (9/5)+32;
+
+}
+
+//--Texteingabe--
+
+let input = prompt("Bitte Grad Celsius eingeben"); //prompt ist die Scanfunktion
+ergebnis = celsiusInFahrenheit(input);
+function celsiusInFahrenheit(celsius){ //Parameter  wird innerhalb des Rückgabeprozesses direkt verrechnet
+
+    return x * (9/5)+32;
+
+}
+
+//--Verzweigungen--
+
+function ifElse(test) {
+    if(test===15){
+
+        console.log("Du bist nicht alt genug");
+
+
+    } else{
+
+
+        if(test>17){
+
+        } else if(test===17){
+
+        }else {
+            
+        }
+    }
+}
+
+
+
+
 
 
 
