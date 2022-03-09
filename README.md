@@ -1,6 +1,4 @@
 # havenpoint
-test
-test
-123
-123
-Wir testen das mal
+
+javascriptglossar.js enthält sämtliche Basic Syntax zu JavaScript
+
