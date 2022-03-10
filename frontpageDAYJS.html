@@ -20,106 +20,93 @@
 
     </script>
 
-    <style>
+    <link rel="stylesheet" href="css/frontpageDAYJScss.css">
 
-        body {
-            background-color: white;
-            padding-left: 50px;
-            padding-right: 50px;
-        }
-        
-        
-        
-        
-        .logo {
-
-            width: 18%;
-            
-            height: 18%;
-            display: block;
-            object-fit: cover;
-            object-position: 0%;
-           
-
-
-
-        }
-
-        .headline {
-
-            color:black;
-            font-family: 'Roboto', sans-serif;
-            padding-top: 20px;
-            text-align: center;
-            
-           
-        }
-
-
-
-
-
-        .nav {
-
-            display: flex;
-            justify-content: left;
-            align-items: center;
-            padding: 3px;
-        }
-
-        a {
-            color: black;
-            font-size: large;
-            margin-left: 100px;
-            font-weight: bold;
-            text-decoration: none;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-
-        a:hover {
-            text-decoration: solid;
-            color: rgb(0, 220, 253);
-
-        }
-
-
-
-        .impressum {
-
-            padding: 8px;
-            color: black;
-        }
-
-        .symbol {
-
-            width: 10%;
-            height: 10%;
-        }
-
-        .data {
-
-            color: black;
-            font-size: medium;
-        }
-
-        .legals {
-
-            color: black;
-            font-size: medium;
-        }
-
-
-
-
-
-
-
-
-
-    </style>
+  
 </head>
 
 <body>
+    header.main-header
+	ul.menu
+		li.menu__item(data-sub="product"): a(href="#") Product
+		li.menu__item(data-sub="developer"): a(href="#") Developer
+		li.menu__item(data-sub="company"): a(href="#") Company
+	.dropdown-holder
+	
+		.dropdown__arrow
+		
+		.dropdown__bg
+			.dropdown__bg-bottom
+			
+		.dropdown__wrap
+			.dropdown-menu#product(data-sub="product")
+				.dropdown-menu__content
+					.top-section
+						.col-2
+							ul
+								li
+									a(href="")
+										h3 Payment
+										p  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								li
+									a(href="")
+										h3 Connect
+										p  consectetur adipisicing elit nesciunt! Assumenda, adipisci.
+								li
+									a(href="")
+										h3 Atlas
+										p  ipsum dolor sit amet, consectetur adipisicing elit. .
+							ul
+								li
+									a(href="")
+										h3 Subscription
+										p  Lorem ipsum dolor sit amet, consectetur 
+								li
+									a(href="")
+										h3 Relay
+										p   amet, consectetur adipisicing elit. Nisi, sequi!
+
+					.bottom-section
+						ul
+							li: a(href="") Payment
+							li: a(href="") Connect
+							li: a(href="") Atlas
+							li: a(href="") Connect
+							li: a(href="") Atlas
+			.dropdown-menu#developer(data-sub="developer")
+				.dropdown-menu__content
+					.top-section
+						.col-2
+							div
+								h2.menu-title Front End
+								ul
+									li: a(href="") Payment
+									li: a(href="") Connect
+									li: a(href="") Atlas
+							div
+								h2.menu-title Back End
+								ul
+									li: a(href="") Payment
+									li: a(href="") Connect
+									li: a(href="") Atlas
+					.bottom-section.info
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit totam officia molestias
+			.dropdown-menu(data-sub="company")
+				.dropdown-menu__content
+					.top-section
+						ul
+							li: a(href="") Payment
+							li: a(href="") Connect
+							li: a(href="") Atlas
+					.bottom-section
+						ul
+							li: a(href="") Payment
+							li: a(href="") Connect
+							li: a(href="") Atlas
+    <div>
+    <!--label for="suche" id="la" >Suchbegriff eingeben </label--> 
+    <input type="search" id="suche" placeholder="Nach Artikeln suchen...">
+    </div>
     <div class="nav">
 
         <img class="logo" src="images/Slice1.png">
@@ -133,10 +120,10 @@
     
     </div>
 
-    <form action="frontpageNIGHT.html" method="post">
+    <form action="frontpageWHITE.html" method="post">
 
         <button class="darkmode" type="submit" >Darkmode</button>
-        <script src="runJS.js"></script>
+        <script src="js/runJS.js"></script>
         </form>
 
 
@@ -145,6 +132,10 @@
     <h1 class="headline">
          Willkommen bei <br>Haven Point! 
         </h1>
+
+        <input type="number" id="eingabe" value="0" size="3">
+        <button type="button" id="calculate">Quadrat errechnen</button>
+        <script src="js/frontpageDAYJSjs.js"></script>
 
         <img class="symbol" src="images/Slice3.png">
 
