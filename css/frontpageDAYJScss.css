@@ -85,6 +85,7 @@ a:hover {
 }
 
 #suche {
+    
     border: 2px solid #999;
     border-radius: 0.5em;;
     font-size: 1.2em;
@@ -96,6 +97,7 @@ a:hover {
 #suche:focus {
     font-size: 1.5em;
     width: 50%;
+    
   }
 
   #la {
