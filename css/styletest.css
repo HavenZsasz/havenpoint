@@ -78,6 +78,7 @@ img{
 
 .flex {
     display: flex;
+    flex: 1 1 auto;
     align-items: center;
     justify-content: space-between;
     height: 100%;
@@ -104,6 +105,16 @@ img{
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+}
+
+
+.logo {
+
+    height: 10%;
+    width: 10%;
+    align-items: left;
+
 
 }
 
