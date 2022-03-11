@@ -1,1 +1,1 @@
-window.alert("Darkmode");
+//window.alert("Darkmode");
