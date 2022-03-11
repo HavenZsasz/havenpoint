@@ -1,7 +1,7 @@
 body {
     background-color: white;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 
@@ -25,7 +25,7 @@ body {
 
     color:black;
     font-family: 'Roboto', sans-serif;
-    padding-top: 20px;
+    padding-top: 10%;
     text-align: center;
     
    
@@ -55,6 +55,46 @@ a {
 a:hover {
     text-decoration: solid;
     color: rgb(0, 220, 253);
+
+
+}
+
+.reiter1:hover, .reiter1:focus {
+    text-decoration: solid;
+    color: rgb(0, 220, 253);
+    background-color: black;
+    border: 3% solid;
+    
+    transition: all 0.5s ease-out;
+    background-color: white;
+    
+    
+
+}
+
+.reiter2:hover, .reiter2:focus {
+    text-decoration: solid;
+    color: rgb(0, 220, 253);
+    background-color: black;
+    border: 10% solid;
+    
+    transition: all 0.5s ease-out;
+    background-color: white;
+    
+    
+
+}
+
+.reiter3:hover, .reiter3:focus {
+    text-decoration: solid;
+    color: rgb(0, 220, 253);
+    background-color: black;
+    border: 3% solid;
+    
+    transition: all 0.5s ease-out;
+    background-color: white;
+    
+    
 
 }
 
@@ -105,3 +145,8 @@ a:hover {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
   }
+
+  .reiter {
+      display: inline;
+  }
+
