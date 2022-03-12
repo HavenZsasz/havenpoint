@@ -4,25 +4,39 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
+
+.logo{
+    height: 18%;
+    width: 18%;
+    display: inline;
+}
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 5%;
 }
 
 .topnav {
   overflow: hidden;
   background-color: white;
+  float: left;
+  
+  
 }
 
 .topnav a {
-  float: left;
-  display: block;
+  
+  display: inline;
   color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
   border-bottom: 1cm;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 1cm;
+  width: auto;
 }
 
 .topnav a:hover {
@@ -65,6 +79,8 @@ body {
 <body>
 
 <div class="topnav" id="myTopnav">
+
+<img class="logo" src="images/Slice1.png">
   <a href="#home" class="active">Start</a>
   <a href="#news">Für Dich</a>
   <a href="#contact">Meine Bestellungen</a>
@@ -73,6 +89,9 @@ body {
     <i class="fa fa-bars"></i>
   </a>
 </div>
+<br>
+<br>
+
 
 <div style="padding-left:16px">
   <h2>Dynamische NavBar</h2>
