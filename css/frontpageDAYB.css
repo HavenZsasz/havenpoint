@@ -21,6 +21,7 @@ body {
     white-space: nowrap;
     padding-top: 5%;
     
+    
 
 }
 
@@ -56,9 +57,15 @@ a {
     border-radius: 5cm;
     width: 8cm;
     padding-left: 3%;
+    display: flex;
+    justify-content: space-around;
     
 
 }
+
+
+
+
 
 
 
