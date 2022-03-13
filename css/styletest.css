@@ -45,7 +45,7 @@ img{
 .navbar {
 
     background-color: black;
-    
+    position: fixed;
 }
 
 .container {
@@ -115,8 +115,8 @@ img{
 
 .logo {
 
-    height: 10%;
-    width: 10%;
+    height: 5%;
+    width: 5%;
     align-items: left;
 
 
