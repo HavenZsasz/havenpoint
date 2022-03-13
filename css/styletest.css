@@ -120,6 +120,18 @@ img{
 
 
 
+.test {
+    align-items:center;
+    align-content:center;
+    font-size: 100px;
+    border: 10px solid;
+    padding: 20px;
+    margin: 100px;
+
+}
+
+
+
 
 
 
