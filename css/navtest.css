@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+body {
+
+    background-color: black;
+    color: white;
+
+}
+
+.nav {
+    color: rgb(0, 204, 255);
+}
+
+.logo {
+    height: auto;   /*Sorgt dafür, dass das Image immer im gleichen Format bleibt, auch wenn man das Fenster größer/kleiner macht */
+    width: 20%;
+    position: fixed;
+    object-fit: cover;
+}
+
+.test{
+    font-size: 100px;
+}
+
+.flex{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.nav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 16px;
+    margin-right: 16px; 
+    font-size: 17px;
+  }
