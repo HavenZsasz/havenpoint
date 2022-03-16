@@ -15,8 +15,9 @@ body {
 .logo {
     height: auto;   /*Sorgt dafür, dass das Image immer im gleichen Format bleibt, auch wenn man das Fenster größer/kleiner macht */
     width: 20%;
-    position: fixed;
+    position:fixed;
     object-fit: cover;
+    background-color: blue;
 }
 
 .test{
@@ -25,16 +26,25 @@ body {
 
 .flex{
     display:flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
+    justify-content:space-between;
+    align-items:flex-start;
+    height: 250px;
+    width:auto;
+    background-color: red;
 }
 
 .nav input[type=text] {
-    float: right;
-    padding: 6px;
+    height: auto;
+    width: 20%;
+    float:left;
     border: none;
-    margin-top: 16px;
     margin-right: 16px; 
     font-size: 17px;
   }
+
+.bar {
+    position:absolute;
+    left: 40%;
+    top: 5%;
+    
+}
