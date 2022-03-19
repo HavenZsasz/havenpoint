@@ -177,6 +177,10 @@
         #formular li {
             list-style: none;
         }
+
+        ::placeholder {
+            color: rgb(0, 220, 253);
+        }
     </style>
 
 
@@ -340,8 +344,14 @@
 
         <br>
         <br>
+        <img src="segelKomprimiert2.png" alt="Segel">
+
+
+
+
         <br>
         <br>
+
 
 
         <table id="ttest">
@@ -388,13 +398,14 @@
     <br>
     <br>
 
-    <form action="dataCheck.php" method="get" accept-charset="utf-8">
+    <form action="dataCheck.php" method="post" accept-charset="utf-8">
 
         <ul id="formular">
 
-            <li>Name: <input type="text" name="name">   </li>
-            <li>Nachname: <input type="text" name="nachname"></li>
-            <li>Spitzname: <input type="text" name="spitzname"></li>
+            <li>Name: <input type="text" name="name" placeholder="Name" maxlength="15">   </li>
+            <li>Nachname: <input type="text" name="nachname" value="Mustermann" maxlength="15"></li>
+            <li>Spitzname: <input type="text" name="spitzname" placeholder="Spitzname" maxlength="15"></li>
+            <li>Passwort: <input type="password" name="passwort" placeholder="Passwort (max. 15 Zeichen)" maxlength="15"></li>
 
 
         </ul>
