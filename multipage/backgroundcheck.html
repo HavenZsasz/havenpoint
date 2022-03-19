@@ -40,6 +40,8 @@
             height: 20%;
             width: 20%;
         }
+
+   
         
         .navhead {
         
@@ -170,6 +172,10 @@
 
         ul li {
             list-style-image: url(logoDayKomprimiert1.png);
+        }
+
+        #formular li {
+            list-style: none;
         }
     </style>
 
@@ -384,10 +390,16 @@
 
     <form action="dataCheck.php" method="get" accept-charset="utf-8">
 
-        <ul>
+        <ul id="formular">
+
+            <li>Name: <input type="text" name="name">   </li>
+            <li>Nachname: <input type="text" name="nachname"></li>
+            <li>Spitzname: <input type="text" name="spitzname"></li>
 
 
         </ul>
+
+        <button>Hallo sagen</button>
 
 
         
