@@ -398,7 +398,7 @@
     <br>
     <br>
 
-    <form action="dataCheck.php" method="post" accept-charset="utf-8">
+    <form action="dataCheck.php" method="get" accept-charset="utf-8">
 
         <ul id="formular">
 
@@ -422,7 +422,7 @@
         <br>
         <br>
         <br>
-        <select multiple="multiple" size="2">
+        <select multiple="multiple" size="4">
 
             <option value="check" selected>Test</option>
             <optgroup label="Niklas">
@@ -436,11 +436,73 @@
 
             </optgroup>
 
-            <optgroup label=""
+           
 
 
 
         </select>
+
+        <br>
+        <br>
+        <input type="text" list="dtest" name="checkt">
+        <datalist id="dtest">
+            <option value="abc"></option>
+            <option value="def"></option>
+
+
+
+
+        </datalist>
+
+        <br>
+        <br>
+
+
+        <fieldset>
+            <label for="sw">Suchwort</label>
+            <datalist id="dsuche">
+                <option value="Flasche"></option>
+                <option value="Kasten"></option>
+                <option value="Cola"></option>
+            </datalist>
+        
+            <input type="text" list="dsuche" name="sw">
+            <fieldset>
+                <legend>Kategorie</legend>
+                <input type="radio" name="Kisten">
+                <label for="Kisten">Kisten</label>
+                <br>
+                <input type="radio" name="Flaschen">
+                <label for="Flaschen">Flaschen</label>
+                <br>
+                <input type="radio" name="Sonstige">
+                <label for="Sonstige">Sonstige</label>
+                <br>
+                <input type="radio" name="Alle">
+                <label for="Alle">Alle</label>
+
+
+
+            </fieldset>
+            <br>
+            <br>
+            <input type="checkbox" name="checkkk">
+            <label for="checkkk">Nicht vorrätige Produkte anziegen?</label>
+            <fieldset>
+                <legend>Format</legend>
+                <input type="radio" name="tabelle">
+                <label for="tabelle">Tabelle</label>
+            </fieldset>
+            <br>
+            <br>
+            <button>Suchen</button>
+
+
+
+
+
+
+        </fieldset>
 
 
         
