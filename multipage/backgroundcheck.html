@@ -181,6 +181,27 @@
         ::placeholder {
             color: rgb(0, 220, 253);
         }
+
+        input:required {
+
+            background-color: blueviolet;
+
+        }
+        input:optional {
+
+            background-color: aliceblue;
+        }
+
+        input {
+            border: 1px solid black;
+            font-style: italic;
+        }
+        input:invalid {
+            background-color: blue;
+        }
+        fieldset {
+            width: 5cm;
+        }
     </style>
 
 
@@ -402,9 +423,9 @@
 
         <ul id="formular">
 
-            <li>Name: <input type="text" name="name" placeholder="Name" maxlength="15">   </li>
+            <li>Name: <input type="text" name="name" placeholder="Name" maxlength="15" required>   </li>
             <li>Nachname: <input type="text" name="nachname" value="Mustermann" maxlength="15"></li>
-            <li>Spitzname: <input type="text" name="spitzname" placeholder="Spitzname" maxlength="15"></li>
+            <li>E-Mail: <input type="email" name="spitzname" placeholder="E-Mail" maxlength="15"></li>
             <li>Passwort: <input type="password" name="passwort" placeholder="Passwort (max. 15 Zeichen)" maxlength="15"></li>
 
 
@@ -442,17 +463,6 @@
 
         </select>
 
-        <br>
-        <br>
-        <input type="text" list="dtest" name="checkt">
-        <datalist id="dtest">
-            <option value="abc"></option>
-            <option value="def"></option>
-
-
-
-
-        </datalist>
 
         <br>
         <br>
@@ -490,12 +500,12 @@
             <label for="checkkk">Nicht vorrätige Produkte anziegen?</label>
             <fieldset>
                 <legend>Format</legend>
-                <input type="radio" name="tabelle">
+                <input type="hidden" name="tabelle">
                 <label for="tabelle">Tabelle</label>
             </fieldset>
             <br>
             <br>
-            <button>Suchen</button>
+            <button type="reset">Suchen</button>
 
 
 
@@ -507,6 +517,9 @@
 
         
     </form>
+    <br>
+    <br>
+    <textarea name="kommentar" cols="50" rows="5" style="width: 100%; height: 5em;">Kommentar schreiben...</textarea>
 
     <br>
     <br>
