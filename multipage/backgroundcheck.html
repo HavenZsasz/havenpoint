@@ -197,12 +197,18 @@
             background-color: aliceblue;
         }
 
+ 
+
         input {
             border: 1px solid black;
             font-style: italic;
         }
         input:focus {
             border: 2px solid, #BBBBFF;
+        }
+
+        input[type='email'] {
+            background-color: green;
         }
         input:invalid {
             background-color: blue;
@@ -229,6 +235,22 @@
 
         #sww {
             background-color: gainsboro;
+        }
+
+        .datei {
+            position: relative;
+        }
+
+        .huebsch {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+        }
+        .haesslich {
+            position: relative;
+            opacity: 0;
+            z-index: 2;
         }
     </style>
 
@@ -444,6 +466,22 @@
 
     <br>
     <br>
+  
+    <form action="dataCheck.php" method="post" accept-charset="utf-8" enctype="multipart/form-data" >
+        Upload: <input type="file" name="upload"> <!--Kann nur per method post versendet werden!-->
+    </form>
+    
+    <br>
+    <br>
+    <div class="datei">
+        <input type="file" class="haesslich">
+        <div class="huebsch">
+            <input>
+            <img src="waehlen.png" alt="">
+        </div>
+
+
+    </div>
     <br>
     <br>
 
@@ -451,10 +489,12 @@
 
         <ul id="formular">
 
-            <li>Name: <input type="text" name="name" placeholder="Name" maxlength="15" required>   </li>
+            <li>Name: <input type="text" name="name" placeholder="Name" maxlength="15" required pattern="[a-Za-z]{15}">   </li>
             <li>Nachname: <input type="text" name="nachname" value="Mustermann" maxlength="15"></li>
             <li>E-Mail: <input type="email" name="spitzname" placeholder="E-Mail" maxlength="15"></li>
             <li>Passwort: <input type="password" name="passwort" placeholder="Passwort (max. 15 Zeichen)" maxlength="15"></li>
+            <br>
+            
 
 
         </ul>
