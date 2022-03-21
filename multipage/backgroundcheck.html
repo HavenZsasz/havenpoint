@@ -201,8 +201,23 @@
             border: 1px solid black;
             font-style: italic;
         }
+        input:focus {
+            border: 2px solid, #BBBBFF;
+        }
         input:invalid {
             background-color: blue;
+        }
+        input:in-range {
+            background-color: green;
+        }
+        input:out-of-range {
+            background-color: red;
+        }
+        input:enabled {
+            background-color: yellow;
+        }
+        input:disabled {
+            background-color: black;
         }
         fieldset {
             width: 5cm;
