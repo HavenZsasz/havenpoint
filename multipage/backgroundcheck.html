@@ -9,14 +9,15 @@
     <title>Haven Point</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="favicon.ico">
-   
-    <style>
 
+    <style>
         * {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'Arial', sans-serif;
-        } 
+        }
 
         body {
             background-color: white;
@@ -24,19 +25,20 @@
             padding-right: 5%;
             padding-top: 5%;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-            
+
         }
 
         th {
             border: 1px solid #AAAAAA;
 
         }
+
         #ttest th:nth-child(1n+2) {
             background-color: red;
         }
 
 
-        
+
         .logo {
             display: block;
             justify-content: left;
@@ -46,22 +48,23 @@
             width: 20%;
         }
 
-   
-        
+
+
         .navhead {
-        
+
             display: flex;
             align-items: center;
             white-space: nowrap;
             padding-top: 5%;
-            
-            
-            
-            
-            
-            
-        
+
+
+
+
+
+
+
         }
+
         em {
             font-style: italic;
             background-color: brown;
@@ -70,64 +73,65 @@
         a:active {
             color: rgb(0, 220, 253);
         }
-        
+
         .powerAn {
-        
+
             padding-left: 10%;
             padding-top: 5%;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             font-weight: bold;
             font-size: large;
             text-decoration: solid;
-        
+
         }
-        
+
         a:hover {
             color: rgb(0, 220, 253);
-        
+
         }
 
         caption {
             caption-side: top;
         }
-        
-        
+
+
         a {
-        
+
             display: inline;
             text-decoration: none;
             color: black;
             padding-left: 10%;
             padding-right: 10%;
             opacity: 1;
-            
-        
+
+
         }
-        
+
         .suche {
-            
+
             border: 2px solid;
             border-radius: 5cm;
             width: 8cm;
             padding-left: 3%;
             display: flex;
             justify-content: space-around;
-            background:url('LupeBlack.PNG')
-        no-repeat right;
-            
-        
+            background: url('LupeBlack.PNG') no-repeat right;
+
+
         }
+
         td {
 
             border: 1px solid #AAAAAA;
-           
-            border-width: 0,5cm;
+
+            border-width: 0, 5cm;
             border-style: dashed;
             border-color: aqua;
-            
+
 
 
         }
+
         table {
             border-collapse: collapse;
         }
@@ -143,8 +147,9 @@
 
         #bg {
             background-image: url(Slice1.png);
-            background-blend-mode: lighten; /*Hintergrund-Transparenz*/
-            background-color: rgba(255,255,255,0.6);
+            background-blend-mode: lighten;
+            /*Hintergrund-Transparenz*/
+            background-color: rgba(255, 255, 255, 0.6);
             background-position-x: center;
             background-position-y: center;
             background-attachment: fixed;
@@ -158,17 +163,18 @@
         #sbg {
             background-color: brown;
         }
+
         h1 {
             font-variant: small-caps;
             opacity: 0.2;
         }
 
-        #bg > span {
+        #bg>span {
             background-color: aqua;
         }
 
         #liste {
-            display:flex;
+            display: flex;
         }
 
         ol li {
@@ -194,17 +200,19 @@
             background-color: blueviolet;
 
         }
+
         input:optional {
 
             background-color: aliceblue;
         }
 
- 
+
 
         input {
             border: 1px solid black;
             font-style: italic;
         }
+
         input:focus {
             border: 2px solid, #BBBBFF;
         }
@@ -212,21 +220,27 @@
         input[type='email'] {
             background-color: green;
         }
+
         input:invalid {
             background-color: blue;
         }
+
         input:in-range {
             background-color: green;
         }
+
         input:out-of-range {
             background-color: red;
         }
+
         input:enabled {
             background-color: yellow;
         }
+
         input:disabled {
             background-color: black;
         }
+
         fieldset {
             width: 5cm;
         }
@@ -249,6 +263,7 @@
             left: 0px;
             z-index: 1;
         }
+
         .haesslich {
             position: relative;
             opacity: 0;
@@ -262,30 +277,30 @@
 
 <body>
 
-    
+
 
 
     <div class="Suche">
-    <input type="search" class="suche" placeholder="Alle Kategorien durchsuchen...">
+        <input type="search" class="suche" placeholder="Alle Kategorien durchsuchen...">
     </div>
     </form>
     <a href="#unten" id="oben">Nach unten springen</a>
 
-    
+
 
     <div class="navhead">
 
-       
+
 
         <img class="logo" src="logoDayKomprimiert1.png" alt="Logo der Seite" height="50" width="200">
-        
+
         <div class="powerAn">
 
             <a href="#">Startseite</a>
             <a href="multipage2.html">Für Dich</a>
             <a href="multipage2.html#unten">CHECK</a>
             <a href="multipage2.html" target="_blank">Window</a>
-            
+
 
 
 
@@ -294,53 +309,84 @@
 
     </div>
 
-    
+
     <div bg>
-    <h1 >Lorem Ipsum</h1>
-    <h2>Start</h2>
-    
+        <h1>Lorem Ipsum</h1>
+        <h2>Start</h2>
 
-    <p id="bg"><em>Lorem</em> <span id=sbg>ipsum dolor sit amet, consectetur adipiscing elit. <br>Sed condimentum mollis risus sed tincidunt. Sed cursus augue quis metus tristique, in eleifend justo bibendum. Maecenas mollis purus urna, at mattis felis semper vitae. Ut vehicula dolor ac consectetur congue. Ut vestibulum, lorem pulvinar pellentesque tempor, mauris erat tincidunt elit, nec ullamcorper leo nibh non nibh. Curabitur at pharetra elit. Sed porta porttitor suscipit.
 
-        In rhoncus ante velit, auctor hendrerit metus placerat quis. Fusce et felis mi. Vivamus eleifend sapien ac auctor faucibus. Curabitur quis arcu ante. Suspendisse lacinia tortor volutpat justo venenatis, nec tincidunt diam convallis. Quisque vitae mauris in est lobortis porttitor. Proin posuere porta augue, tempus posuere orci euismod vel. <br>Curabitur viverra, libero nec pellentesque pharetra, libero odio facilisis eros, eget gravida lectus lacus vel risus.
-        
-        Cras pellentesque dapibus enim placerat feugiat.<br> </span>Curabitur magna velit, ullamcorper quis ipsum non, luctus bibendum dui. In ac nisi interdum, posuere sem feugiat, aliquet metus. Etiam vestibulum varius facilisis. Mauris malesuada, sem quis congue scelerisque, nunc tortor gravida augue, et aliquam nibh sapien ut nisl. <br>Vestibulum arcu risus, euismod vitae neque non, rutrum pellentesque ante. Donec et orci lobortis orci scelerisque maximus. <br>Vestibulum et augue nibh. Integer vehicula tempor turpis, non laoreet dolor volutpat non. Nunc et sem bibendum, ultrices lacus quis, tincidunt odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam mattis magna et nibh ullamcorper, sit amet venenatis diam gravida.
-        
-        Vivamus arcu turpis, convallis vel gravida a, faucibus non dolor. In sed purus at purus tempus aliquam eu vel dui. Ut iaculis venenatis justo, ac dignissim tellus malesuada ut. Sed at iaculis diam, eu vestibulum neque. Donec lorem augue, gravida non congue et, hendrerit ut erat. <br>Curabitur at augue id libero ultricies cursus. In iaculis, libero ultricies blandit euismod, lacus risus laoreet tellus, at sagittis nisl dolor faucibus leo. <br>Curabitur convallis purus arcu, ac hendrerit libero interdum nec. Pellentesque vel sapien nisl. Vestibulum sit amet hendrerit velit, quis pretium mauris. Suspendisse facilisis dui elit, vitae cursus lectus pulvinar et. Sed feugiat congue luctus. Phasellus a consectetur leo. Vivamus aliquet leo elit, vitae rhoncus quam elementum a.
-        
-        Vivamus ac euismod mauris, quis dapibus dui. Suspendisse tincidunt orci eget feugiat finibus. <br>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut iaculis ligula lobortis ligula dapibus imperdiet. Praesent eu velit justo. <br>Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse tristique ipsum et tellus cursus, ultrices molestie diam pretium. Pellentesque metus urna, tristique id ante posuere, ultricies mattis lectus. Cras molestie pulvinar tellus, sed venenatis magna pharetra quis. Praesent pretium blandit sapien, nec accumsan risus commodo sit amet. Nunc tempor mauris ac interdum scelerisque. Aliquam consequat, sem a ultricies ornare, lorem nulla condimentum tortor, sed molestie tortor neque a felis. Cras hendrerit ligula metus, dapibus bibendum ipsum vulputate vel.
-        
+        <p id="bg"><em>Lorem</em> <span id=sbg>ipsum dolor sit amet, consectetur adipiscing elit. <br>Sed condimentum
+                mollis risus sed tincidunt. Sed cursus augue quis metus tristique, in eleifend justo bibendum. Maecenas
+                mollis purus urna, at mattis felis semper vitae. Ut vehicula dolor ac consectetur congue. Ut vestibulum,
+                lorem pulvinar pellentesque tempor, mauris erat tincidunt elit, nec ullamcorper leo nibh non nibh.
+                Curabitur at pharetra elit. Sed porta porttitor suscipit.
+
+                In rhoncus ante velit, auctor hendrerit metus placerat quis. Fusce et felis mi. Vivamus eleifend sapien
+                ac auctor faucibus. Curabitur quis arcu ante. Suspendisse lacinia tortor volutpat justo venenatis, nec
+                tincidunt diam convallis. Quisque vitae mauris in est lobortis porttitor. Proin posuere porta augue,
+                tempus posuere orci euismod vel. <br>Curabitur viverra, libero nec pellentesque pharetra, libero odio
+                facilisis eros, eget gravida lectus lacus vel risus.
+
+                Cras pellentesque dapibus enim placerat feugiat.<br> </span>Curabitur magna velit, ullamcorper quis
+            ipsum non, luctus bibendum dui. In ac nisi interdum, posuere sem feugiat, aliquet metus. Etiam vestibulum
+            varius facilisis. Mauris malesuada, sem quis congue scelerisque, nunc tortor gravida augue, et aliquam nibh
+            sapien ut nisl. <br>Vestibulum arcu risus, euismod vitae neque non, rutrum pellentesque ante. Donec et orci
+            lobortis orci scelerisque maximus. <br>Vestibulum et augue nibh. Integer vehicula tempor turpis, non laoreet
+            dolor volutpat non. Nunc et sem bibendum, ultrices lacus quis, tincidunt odio. Orci varius natoque penatibus
+            et magnis dis parturient montes, nascetur ridiculus mus. Nullam mattis magna et nibh ullamcorper, sit amet
+            venenatis diam gravida.
+
+            Vivamus arcu turpis, convallis vel gravida a, faucibus non dolor. In sed purus at purus tempus aliquam eu
+            vel dui. Ut iaculis venenatis justo, ac dignissim tellus malesuada ut. Sed at iaculis diam, eu vestibulum
+            neque. Donec lorem augue, gravida non congue et, hendrerit ut erat. <br>Curabitur at augue id libero
+            ultricies cursus. In iaculis, libero ultricies blandit euismod, lacus risus laoreet tellus, at sagittis nisl
+            dolor faucibus leo. <br>Curabitur convallis purus arcu, ac hendrerit libero interdum nec. Pellentesque vel
+            sapien nisl. Vestibulum sit amet hendrerit velit, quis pretium mauris. Suspendisse facilisis dui elit, vitae
+            cursus lectus pulvinar et. Sed feugiat congue luctus. Phasellus a consectetur leo. Vivamus aliquet leo elit,
+            vitae rhoncus quam elementum a.
+
+            Vivamus ac euismod mauris, quis dapibus dui. Suspendisse tincidunt orci eget feugiat finibus. <br>Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut iaculis ligula
+            lobortis ligula dapibus imperdiet. Praesent eu velit justo. <br>Interdum et malesuada fames ac ante ipsum
+            primis in faucibus. Suspendisse tristique ipsum et tellus cursus, ultrices molestie diam pretium.
+            Pellentesque metus urna, tristique id ante posuere, ultricies mattis lectus. Cras molestie pulvinar tellus,
+            sed venenatis magna pharetra quis. Praesent pretium blandit sapien, nec accumsan risus commodo sit amet.
+            Nunc tempor mauris ac interdum scelerisque. Aliquam consequat, sem a ultricies ornare, lorem nulla
+            condimentum tortor, sed molestie tortor neque a felis. Cras hendrerit ligula metus, dapibus bibendum ipsum
+            vulputate vel.
+
         </p>
 
         <div id="liste">
 
-    
-        <ol id="ol" type="upper-alpha" start="9" reversed>
-            <li>H</li>
-            <li>A</li>
-            <li>
-                <ol type="upper-alpha" start="7">
-                    <li>V</li>
-                    <li>V
-                        <ol>
-                            <li>HA</li>
-                            <li>VEN</li>
-                        </ol>
-                    </li>
-                    <li>V</li>
+
+            <ol id="ol" type="upper-alpha" start="9" reversed>
+                <li>H</li>
+                <li>A</li>
+                <li>
+                    <ol type="upper-alpha" start="7">
+                        <li>V</li>
+                        <li>V
+                            <ol>
+                                <li>HA</li>
+                                <li>VEN</li>
+                            </ol>
+                        </li>
+                        <li>V</li>
 
 
-            </ol> </li>
-            <li>E</li>
-            <li>N</li>
-        </ol>
-        <ul id="ul">
-            <li>P</li>
-            <li>O</li>
-            <li>I</li>
-            <li>N</li>
-            <li>T</li>
-        </ul>
+                    </ol>
+                </li>
+                <li>E</li>
+                <li>N</li>
+            </ol>
+            <ul id="ul">
+                <li>P</li>
+                <li>O</li>
+                <li>I</li>
+                <li>N</li>
+                <li>T</li>
+            </ul>
 
         </div>
 
@@ -372,7 +418,7 @@
 
                 <col class="erste-spalte">
                 <col class="zweite-spalte">
-            
+
             </colgroup>
 
             <thead>
@@ -402,16 +448,37 @@
         <br>
 
         <table>
- 
+
             <thead>Table CHeck</thead>
             <tfoot>Das wars</tfoot>
 
             <tbody>
 
-                <tr><th scope="col">TEST</th><td></td><td>1</td><td>2</td><td>3</td></tr>
-                <tr><td colspan="2">1</td><td rowspan="2">Test</td><td>Test</td><td>Test</td></tr>
-                <tr><td>2</td><td>Test</td><td>Test</td><td>Test</td></tr>
-                <tr><td>3</td><td style="text-align: right">0</td><td style="text-align: right">0</td><td style="text-align: right">0</td></tr>
+                <tr>
+                    <th scope="col">TEST</th>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td colspan="2">1</td>
+                    <td rowspan="2">Test</td>
+                    <td>Test</td>
+                    <td>Test</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Test</td>
+                    <td>Test</td>
+                    <td>Test</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td style="text-align: right">0</td>
+                    <td style="text-align: right">0</td>
+                    <td style="text-align: right">0</td>
+                </tr>
             </tbody>
         </table>
 
@@ -442,9 +509,9 @@
 
                 <tr>
 
-                <th scope="row">Reihe1</th>
-                <td>R1C1</td>
-                <td>R1C2</td>
+                    <th scope="row">Reihe1</th>
+                    <td>R1C1</td>
+                    <td>R1C2</td>
                 </tr>
 
                 <tr>
@@ -460,19 +527,20 @@
 
             </tbody>
         </table>
-        
 
-    
-    
+
+
+
     </div>
 
     <br>
     <br>
-  
-    <form action="dataCheck.php" method="post" accept-charset="utf-8" enctype="multipart/form-data" >
-        Upload: <input type="file" name="upload"> <!--Kann nur per method post versendet werden!-->
+
+    <form action="dataCheck.php" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+        Upload: <input type="file" name="upload">
+        <!--Kann nur per method post versendet werden!-->
     </form>
-    
+
     <br>
     <br>
     <div class="datei">
@@ -491,12 +559,14 @@
 
         <ul id="formular">
 
-            <li>Name: <input type="text" name="name" placeholder="Name" maxlength="15" required pattern="[a-Za-z]{15}">   </li>
+            <li>Name: <input type="text" name="name" placeholder="Name" maxlength="15" required pattern="[a-Za-z]{15}">
+            </li>
             <li>Nachname: <input type="text" name="nachname" value="Mustermann" maxlength="15"></li>
             <li>E-Mail: <input type="email" name="spitzname" placeholder="E-Mail" maxlength="15"></li>
-            <li>Passwort: <input type="password" name="passwort" placeholder="Passwort (max. 15 Zeichen)" maxlength="15"></li>
+            <li>Passwort: <input type="password" name="passwort" placeholder="Passwort (max. 15 Zeichen)"
+                    maxlength="15"></li>
             <br>
-            
+
 
 
         </ul>
@@ -528,7 +598,7 @@
 
             </optgroup>
 
-           
+
 
 
 
@@ -546,7 +616,7 @@
                 <option value="Kasten"></option>
                 <option value="Cola"></option>
             </datalist>
-        
+
             <input type="text" list="dsuche" name="sw" id="sww">
             <fieldset>
                 <legend>Kategorie</legend>
@@ -590,7 +660,7 @@
         </fieldset>
 
 
-        
+
     </form>
     <br>
     <br>
@@ -600,7 +670,7 @@
     <br>
 
     <a href="#oben" id="unten">Nach oben springen</a>
-    
+
 
 
 
