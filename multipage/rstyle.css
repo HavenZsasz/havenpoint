@@ -69,3 +69,8 @@
 
 
 }
+
+#sieben {
+    background-color: black;
+    width: calc(10em + 10px * 15cm);
+}
