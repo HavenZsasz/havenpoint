@@ -43,11 +43,12 @@ a:hover {
 
 a {
 
-    display: inline;
+    
     text-decoration: none;
     color: black;
     padding-left: 10%;
     padding-right: 10%;
+    
 
 }
 
@@ -57,8 +58,8 @@ a {
     border-radius: 5cm;
     width: 8cm;
     padding-left: 3%;
-    display: flex;
-    justify-content: space-around;
+    position: absolute;
+    
     background:url('images/LupeBlack.PNG')
 no-repeat right;
     
