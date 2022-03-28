@@ -25,4 +25,12 @@ div > img {
     max-height: 66%;
 }
 
+#eins img {
+    border-image-source: url("rahmen.png");
+    border-image-slice: 116 65 116 65;
+    border-image-repeat: repeat;
+    border-width: 3em;
+    border-style: solid;
+}
+
 
