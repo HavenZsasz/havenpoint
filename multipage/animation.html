@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Testseite</title>
+    <style>
+
+        @keyframes colors {
+            from {background-color: yellow;} /*0%*/
+            33% {background-color: red;}
+            66% {background-color: blue;}
+            to {background-color: yellow;} /*100%*/
+        }
+
+        @keyframes move {
+            from {top:2px; left:5px;}
+            33% {top:2px; left:900px;}
+            66% {top:200px; left:5px;}
+            to {top:200px; left:900px;}
+        }
+
+        #move_me {
+            position: absolute;
+            animation-name:move;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            z-index: 2;
+            animation-delay: 10s;
+            
+        }
+        #segel {
+            position: absolute;
+            animation-name:move;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-play-state: running;
+        }
+        #con {
+            border: 1px black solid;
+            position: absolute;
+            animation-name: move;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-duration: alternate;
+            animation-delay: 5s;
+        }
+    </style>
+
+
+
+
+</head>
+
+
+
+<body>
+
+    <img src="pinky.png" id="move_me" alt="Pinky">
+    <img src="segelKomprimiert2.png" id="segel" width="200px">
+    <div id="con" width="100px"/>
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
