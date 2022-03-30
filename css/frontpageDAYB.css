@@ -1,3 +1,13 @@
+
+
+  
+  @media (prefers-color-scheme: light) {
+    /* Light theme styles go here */
+  
+  To use it, we can put the dark theme styles inside the media query.
+  
+  
+
 body {
     background-color: white;
     padding-left: 5%;
@@ -65,6 +75,8 @@ no-repeat right;
     
 
 }
+
+  }
 
 
 
