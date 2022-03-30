@@ -6,7 +6,8 @@
     <style>
         @keyframes play {
 
-            from{}
+            from {top:0;}
+            to {top: -233px}
             
         }
         body {
@@ -25,6 +26,8 @@
           
             border-image: url(vorhang.png) 0 151 0 151 repeat;
             overflow: hidden;
+            perspective: 100px;
+            -webkit-perspective: 100px;
             
         }
 
@@ -46,8 +49,20 @@
            
         }
         #filmab {
-            position:absolute;
+            position:relative;
+            animation-name: play;
+            animation-duration: 45s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
            
+        }
+
+        #viewport {
+            height: 480px;
+            width: 640px;
+            transform: rotateX(15deg);
+            overflow: hidden;
         }
 
     </style>
@@ -64,15 +79,17 @@
    
 
     <div id="leinwand">
+        <div id="viewport">
         <div id="filmab">
         <h1>Die große <br>Überschrift</h1>
         <p id="absatz">
             fesuhuehfhkehfahkfhefoheaifihfhiofheoifhfoaehfo<br>ahfeofhehfahfhoaehfoehohefoheofheofhofheofhoeahfoehfoheofheofheofhe<br>ofheohfoeahfohfeohfeoahfoeahfo<br>oezrwfesiofhesoifhspihhphgeshighgisehgos<br>hgohgoihgoihsogihgohsgsheioh<br>pejfpjfpejsfpjspgjspgjpsgjpjpsjpgjppejfeapifjeofoiaehfaeofhefoheoifhiofheaiofhaeoihfioeahif<br>fesuhuehfhkehfahkfhefoheaifihfhiofheoifhfoaehfo<br>ahfeofhehfahfhoaehfoehohefoheofheofhofheofhoeahfoehfoheofheofheofhe<br>ofheohfoeahfohfeohfeoahfoeahfo<br>oezrwfesiofhesoifhspihhphgeshighgisehgos<br>hgohgoihgoihsogihgohsgsheioh<br>pejfpjfpejsfpjspgjspgjpsgjpjpsjpgjppejfeapifjeofoiaehfaeofhefoheoifhiofheaiofhaeoihfioeahif<br>fesuhuehfhkehfahkfhefoheaifihfhiofheoifhfoaehfo<br>ahfeofhehfahfhoaehfoehohefoheofheofhofheofhoeahfoehfoheofheofheofhe<br>ofheohfoeahfohfeohfeoahfoeahfo<br>oezrwfesiofhesoifhspihhphgeshighgisehgos<br>hgohgoihgoihsogihgohsgsheioh<br>pejfpjfpejsfpjspgjspgjpsgjpjpsjpgjppejfeapifjeofoiaehfaeofhefoheoifhiofheaiofhaeoihfioeahif<br>fesuhuehfhkehfahkfhefoheaifihfhiofheoifhfoaehfo<br>ahfeofhehfahfhoaehfoehohefoheofheofhofheofhoeahfoehfoheofheofheofhe<br>ofheohfoeahfohfeohfeoahfoeahfo<br>oezrwfesiofhesoifhspihhphgeshighgisehgos<br>hgohgoihgoihsogihgohsgsheioh<br>pejfpjfpejsfpjspgjspgjpsgjpjpsjpgjppejfeapifjeofoiaehfaeofhefoheoifhiofheaiofhaeoihfioeahif<br>fesuhuehfhkehfahkfhefoheaifihfhiofheoifhfoaehfo<br>ahfeofhehfahfhoaehfoehohefoheofheofhofheofhoeahfoehfoheofheofheofhe<br>ofheohfoeahfohfeohfeoahfoeahfo<br>oezrwfesiofhesoifhspihhphgeshighgisehgos<br>hgohgoihgoihsogihgohsgsheioh<br>pejfpjfpejsfpjspgjspgjpsgjpjpsjpgjppejfeapifjeofoiaehfaeofhefoheoifhiofheaiofhaeoihfioeahif
         </p>
     </div>
+        </div>
 
     </div>
-    <div id="overlay"></div>
+   
 
 
 
