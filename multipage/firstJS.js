@@ -1,0 +1,1 @@
+document.write(7*10*100*1000+3 + " JavaScript kann rechnen");
