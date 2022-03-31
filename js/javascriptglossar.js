@@ -4,6 +4,7 @@ console.log("Das ist Haven Point");
 console.clear();
 
 //--Primitive Datentypen--
+var test = 1; //var ermöglicht globale bzw. funktionsbezogene Deklarationen; let hingegen nur auf den Block, Befehl oder Ausdruck beschränkt
 let haven = "Haven"; //(klassisch) Variable deklarieren und initialisieren; im Beispiel ein String
 let point = "Point";
 let zahl = 1;
