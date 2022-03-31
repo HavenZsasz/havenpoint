@@ -8,7 +8,7 @@ document.write(" "+TAGE_IM_JAHR);
 var ftest = 7/11;
 document.write(" "+ ftest.toFixed(2));*/
 
-function zaehleSchuhe() {
+/*function zaehleSchuhe() {
     const TAGE_IM_JAHR = 365;
     var regalboeden = 8;
     var paareJeBoden = 5;
@@ -16,4 +16,7 @@ function zaehleSchuhe() {
     var paare = paareNebenDemRegal + paareJeBoden * regalboeden;
     var schuhe = paare * 2;
     document.write(schuhe);
-}
+}*/
+
+"ok".charAt(0); //= o
+"ok".charAt(1); //= 1

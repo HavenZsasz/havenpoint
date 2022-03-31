@@ -26,18 +26,34 @@
             var paareNebenDemRegal = 7;
             var paare = paareNebenDemRegal + paareJeBoden * regalboeden;
             var schuhe = paare * 2;
-            document.write(schuhe);
+            document.getElementById("ausgabe").innerHTML=schuhe; //span wird anhand der ID gesucht; innerHTML fügt den Wert schuhe in den <span> ein
         }</script>
 
 
     Scrödingers Freundin hat
     <button type="button" onclick="zaehleSchuhe();">
 Schuhe zählen! </button>
+<span id="ausgabe"></span>
+
     
     Schuhe
     <noscript>
         JavaScript ist deaktiviert oder der Browser unterstützt JavaScript nicht!
     </noscript>
+    <br>
+    <br>
+    <br>
+    <script>
+        function testeFehler() {
+            document.getElementById("test").innerHTML="Hallo Welt";
+            
+        }
+    </script>
+    <button type="button" onclick="testeFehler();"></button>
+
+
+    <span id="test"></span>
+    
 
 
 
