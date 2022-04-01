@@ -64,7 +64,7 @@ Schuhe zählen! </button>
             paareJeBoden2 = parseInt(paareJeBoden2);
             paareNebenDemRegal2 = parseInt(paareNebenDemRegal2);
             if(regalboeden2==0) {
-            alert("NÖÖÖÖÖ");
+            document.getElementById("alt-ausgabe").innerHTML="niklas hat einen kleinen ";
         }
 
             var paare2 = paareNebenDemRegal2 +paareJeBoden2+regalboeden2;
@@ -78,6 +78,7 @@ Schuhe zählen! </button>
     <fieldset>
     <label for="regalboeden">Anzahl d. Regalböden: </label>
     <input type="number" id="eingabeRegalboeden" name="regalboeden"  placeholder="Anzahl...">
+    <label for="regalboeden"><- Interessanter Wert: 0</label>
     <br>
     <br>
     <label for="paare">Anzahl d. Paare je Boden: </label>
@@ -91,7 +92,9 @@ Schuhe zählen! </button>
     <button type="button" onclick="zaehleSchuhe2();">Let's fetz</button>
     <br>
     <br>
-    <span>Die Anzahl der Schuhe beträgt <span id="ausgabe2"></span></span>
+    <span>Die Anzahl der Schuhe beträgt <span id="ausgabe2"></span></span><br>
+    <br>
+    <span id="alt-ausgabe"></span>
 
     </fieldset>
 
