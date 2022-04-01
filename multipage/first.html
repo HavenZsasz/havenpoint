@@ -127,7 +127,7 @@ Schuhe zählen! </button>
             var testE = document.getElementById("test");
             var uebertrag = testE.value;
             var list = document.getElementById("test-liste");
-            list.innerHTML += "<fieldset><legend>test</legend><ul><li>" + uebertrag + "</li></ul></fieldset>";
+            list.innerHTML += "<fieldset><legend>test</legend><ul><li>" + uebertrag + "</li>"+ "<li>" + uebertrag +  "</li></ul></fieldset>";
             testE.value = "";
 
         }
@@ -140,6 +140,26 @@ Schuhe zählen! </button>
         <input type="text" id="test">
         <button type="button" onclick="Listenspaß();">TEST</button>
 
+    </fieldset>
+
+    <script>
+        function rechne() {
+            var aufgabe = document.getElementById("addition").value;
+            var ersterSummand = parseInt(aufgabe.substring(0, 1));
+            var zweiterSummand = parseInt(aufgabe.substring(2));
+            var plusPosition = aufgabe.indexOf("+");
+            document.getElementById("ergebnis").innerHTML = "= " + ersterSummand + zweiterSummand;
+
+        }
+    </script>
+
+    <fieldset>
+        <legend>
+            Additionsoperation eingeben
+        </legend>
+        <input type="text" id="addition">
+        <span id="ergebnis"></span>
+        <button type="button" onclick="rechne();">Rechne</button>
     </fieldset>
 
     
