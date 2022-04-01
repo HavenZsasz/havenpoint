@@ -95,6 +95,50 @@ Schuhe zählen! </button>
     <span>Die Anzahl der Schuhe beträgt <span id="ausgabe2"></span></span><br>
     <br>
     <span id="alt-ausgabe"></span>
+ 
+
+
+    </fieldset>
+    <script>
+        function neuerEintrag() {
+            var eingabe = document.getElementById("neu"); //Element wird in Variable abgelegt
+            var neu = eingabe.value; //Zugriff auf Wert d. Elements
+            var liste = document.getElementById("eliste"); //Liste wird in Variable agbelegt
+            var inhalt = liste.innerHTML + "<li>" + neu + "</li>"; //Liste setzt sich zusammen aus altem Inhalt + neuem Inhalt zwischen den Listentags
+            liste.innerHTML = inhalt;
+            eingabe.value = ""; //Leeres Eingabefeld zurückgeben, ohne Vorgefertigte ANtwortmöglichkeit
+        }
+    </script>
+    <br>
+    <br>
+    <br>
+    <fieldset>
+        <br>
+        <legend>Einkaufsliste</legend>
+        <ul id="eliste"></ul>
+        <br>
+        <input type="text" id="neu">
+        <button type="button" onclick="neuerEintrag();">Hinzufügen</button>
+
+    </fieldset>
+
+    <script>
+        function Listenspaß() {
+            var testE = document.getElementById("test");
+            var uebertrag = testE.value;
+            var list = document.getElementById("test-liste");
+            list.innerHTML += "<fieldset><legend>test</legend><ul><li>" + uebertrag + "</li></ul></fieldset>";
+            testE.value = "";
+
+        }
+    </script>
+
+    <fieldset>
+        <legend>TEST</legend>
+        <ul id="test-liste"></ul>
+        <br>
+        <input type="text" id="test">
+        <button type="button" onclick="Listenspaß();">TEST</button>
 
     </fieldset>
 
