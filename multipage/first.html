@@ -63,6 +63,10 @@ Schuhe zählen! </button>
             regalboeden2 = parseInt(regalboeden2); //Typecasting -> aus Strings werden int's
             paareJeBoden2 = parseInt(paareJeBoden2);
             paareNebenDemRegal2 = parseInt(paareNebenDemRegal2);
+            if(regalboeden2==0) {
+            alert("NÖÖÖÖÖ");
+        }
+
             var paare2 = paareNebenDemRegal2 +paareJeBoden2+regalboeden2;
             var schuhe2 = paare2 * 2;
             document.getElementById("ausgabe2").innerHTML=schuhe2;
