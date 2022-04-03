@@ -26,3 +26,15 @@ console.log("beispiel".lastIndexOf("e")); //=6; zählt von hinten nach vorn, zei
 console.log("beispiel".indexOf("e", 2)); //=6 zählt zum 2. e
 console.log("beispiel".lastIndexOf("e", 5)); //=1; zählt zum 2. e von hinten gesehen, aber zeigt Stelle von vorn gesehen an
 console.log("beispiel".indexOf("katze")); //=-1; wenn der Suchstring gar nicht vorkommt, ist das Ergebnis -1
+
+var test;
+test = 1;
+
+if(test == 4) {
+    console.log("4");
+} else if (test > 5 || test <= 2 ) {
+    console.log("BUZZ");
+
+} else {
+    console.log("ELSE");
+}
