@@ -6,6 +6,17 @@
     <title>Testseite</title>
     <style>
 
+        #miss {
+            font-weight: bold;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color:azure;
+            color: red;
+            width: 200px;
+        }
+        #ausgabe {
+            width: 60px;
+        }
+
 
 
     </style>
@@ -66,10 +77,25 @@ Schuhe zählen! </button>
             if(regalboeden2==0) {
             document.getElementById("alt-ausgabe").innerHTML="niklas hat einen kleinen ";
         }
+        
 
             var paare2 = paareNebenDemRegal2 +paareJeBoden2+regalboeden2;
             var schuhe2 = paare2 * 2;
             document.getElementById("ausgabe2").innerHTML=schuhe2;
+            var kommentar = document.getElementById("comment");
+            if(schuhe2 < 10) {
+
+                kommentar.innerHTML = "Das sind wenige Schuhe";
+
+            } else if(10 < schuhe2 && schuhe2 < 100) {
+                kommentar.innerHTML = "Das sind viele Schuhe";
+            } else if(100 < schuhe2 && schuhe2 < 1000) {
+                kommentar.innerHTML = "Das sind sehr viele Schuhe";
+            } else if(1000 < schuhe2 && schuhe2 < 10000) {
+                kommentar.innerHTML = "Das sind zu viele Schuhe!";
+            } else if( schuhe2 > 10000) {
+                kommentar.innerHTML = "Oh mein Gott!!!"
+            }
 
         }
     </script>
@@ -95,6 +121,8 @@ Schuhe zählen! </button>
     <span>Die Anzahl der Schuhe beträgt <span id="ausgabe2"></span></span><br>
     <br>
     <span id="alt-ausgabe"></span>
+    <br>
+    <span id="comment"></span>
  
 
 
@@ -161,6 +189,51 @@ Schuhe zählen! </button>
         <span id="ergebnis"></span>
         <button type="button" onclick="rechne();">Rechne</button>
     </fieldset>
+    <br>
+    <br>
+    <script>
+        var wort;
+        
+        function laenge(ausgabe) {
+            wort = document.getElementById("laenge").value;
+            ausgabe = document.getElementById("ausgabe-L");
+            if(wort.length == 2) {
+                ausgabe.innerHTML = "2";
+            } else if(wort.length == 10 || wort.length >= 9) {
+                ausgabe.innerHTML = "<=9";
+            } 
+            else {
+                ausgabe.innerHTML = "Du Depp";
+            }
+        }
+
+        function check() {
+
+            wort = document.getElementById("laenge").value;
+            var fehler = document.getElementById("miss");
+            
+
+            if(wort == "") {
+
+                fehler.innerHTML = "Bitte einen Wert eingeben";
+                
+
+
+
+            } else {
+
+                fehler.innerHTML = "";
+
+            laenge();
+            }
+        }
+
+
+    </script>
+    <div id="miss"></div>
+    <input type="text" id="laenge" name="laenge" placeholder="">
+    <button type="button" onclick="check();">Länge</button><br>
+    <div id="ausgabe-L"></div>
 
 
     
