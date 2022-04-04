@@ -20,3 +20,54 @@ var combine = array.concat(anderesArray);
 for(i=0; i<10;i++) {
     console.log(combine[i]);
 }
+
+function ds(zahlen) {
+
+    if(zahlen&&zahlen.length > 0) {
+        var summe=0;
+        for(var i=0; i<zahlen.length; i++) {
+            summe += zahlen[i];
+        }
+        return summe/zahlen.length;
+    }
+    else {
+        return 0;
+    }
+
+}
+
+
+
+console.log(ds([5,6,4,3]));
+
+function dsa() {
+    if (arguments && arguments.length >0) { 
+        var summe=0;
+        for(var i=0; i<arguments.length; i++) {
+            summe += arguments[i];
+        }
+        return summe/arguments.length + "\n";
+
+    } else {
+        return 0;
+    }
+}
+
+console.log(dsa(10, 10, 10, 10)); //arguments sammelt überschüssige Parameter, sprich es kann einen Array (idealerweise für die selben Datentypen) ersetzen
+
+function concat(trenner, ...strings) { //... machen den letzten Parameter zum Resteparameter; er sammelt alle verbleibenden Argumente
+
+    if(strings.length == 0) return "";
+    let result = strings[0]; //Restparameter ist ein Array
+    for(let i=1; i<strings.length; i++) {
+        result += trenner;
+        result += strings[i];
+    }
+    return result;
+
+}
+
+console.log(concat(", ", "Tick", "Trick", "Track")); //Komma als trenner und Tick,Trick und Track als ...strings
+
+//Im Gegensatz zu arguments ist der Resteparamter innerhalb der Funktion ein echtes Array und enthält wirklich nur die restlichen Parameter (arguments enthält alle!)
+
