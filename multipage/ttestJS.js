@@ -69,5 +69,24 @@ function concat(trenner, ...strings) { //... machen den letzten Parameter zum Re
 
 console.log(concat(", ", "Tick", "Trick", "Track")); //Komma als trenner und Tick,Trick und Track als ...strings
 
-//Im Gegensatz zu arguments ist der Resteparamter innerhalb der Funktion ein echtes Array und enthält wirklich nur die restlichen Parameter (arguments enthält alle!)
+//Im Gegensatz zu arguments ist der Resteparamter innerhalb der Funktion ein echtes Array und enthält wirklich nur die restlichen Parameter (arguments enthält alle!);er steht immer als letztes und es gitb nur einen
+
+//Spread-Operator:
+
+let zahlen = [1,2,3];
+let mehrZahlen = [3,4,5];
+let alleZahlen= [...zahlen, ...mehrZahlen]; //[1,2,3,4,5,6]
+let zweiArrays= [zahlen, mehrZahlen]; //[1,2,3] & [4,5,6]
+
+//-------------------------------------------------------------
+
+function concat2(trenner, ...strings) {
+    if(strings.length ==0) return 0;
+    let ergebnis = strings[0];
+    for(let s of strings.slice(1)) {
+        ergebnis += trenner;
+        ergebnis += s;
+    }
+    return ergebnis;
+}
 
