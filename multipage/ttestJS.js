@@ -83,10 +83,56 @@ let zweiArrays= [zahlen, mehrZahlen]; //[1,2,3] & [4,5,6]
 function concat2(trenner, ...strings) {
     if(strings.length ==0) return 0;
     let ergebnis = strings[0];
-    for(let s of strings.slice(1)) {
+    for(let s of strings.slice(1)) { //slice sorgt für Überspringen des ersten Wertes von strings; die Schleife weist nacheinander die Werte des Arrays rechts von 'of' der Variablen links von 'of' zu; Zählvariable muss somit nicht mehr selbst verwaltet werden
         ergebnis += trenner;
         ergebnis += s;
     }
     return ergebnis;
 }
+
+//Destrukturierende Zuweisung: 
+
+/*let [a,b,c] = [1,"zwei", {}];
+a = 1;
+b= "zwei";
+c= {};
+
+//Beispiel: 
+let arr = ["eins","zwei","drei"];
+let [a,,b] = arr; //-> a=eins, b=drei; zweite Stelle wird durch doppeltes Komma übersprungen
+/*Variablen vertauschen: [a,b] =[b,a] */
+
+//------------------------------------------------------------------------------
+
+function findeMaximum(array=[5, 10, 100, 5, 1000, 34324, 2424124, 22, 244224, 32444]) {
+    var max;
+    if(array[0] == 10) {
+        throw "Fehlercode -1"; 
+    }
+    if(array && array.length > 0) {
+        for (var i=0;i<array.length; i++){
+            if(!max || array[i]>max){
+                max=array[i];
+            }
+        }
+    }
+    return max;
+}
+
+console.log(findeMaximum());
+
+function paint() {
+
+    var eingabe = document.getElementById("eingabe").value;
+    var ausgabe = document.getElementById("canvas");
+
+    var eingabeZ = eingabe.charAT(0);
+    var eingabeZa = eingabe.charAT(2);
+
+    for(var i=0; i< eingabeZa; i++) {
+        ausgabe.innerHTML = eingabeZ;
+    }
+
+}
+
 

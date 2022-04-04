@@ -19,7 +19,7 @@ document.write(" "+ ftest.toFixed(2));*/
 }*/
 
 "ok".charAt(0); //= o
-"ok".charAt(1); //= 1
+"ok".charAt(1); //= k
 
 console.log("beispiel".indexOf("e")); //=1; zählt von vorn nach hinten
 console.log("beispiel".lastIndexOf("e")); //=6; zählt von hinten nach vorn, zeigt aber die Stelle von vorne gesehen an, sprich das hinterste e von vorn gesehen

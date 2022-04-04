@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+    <title>Testseite</title>
+    <style>
+
+
+
+    </style>
+    <script src="ttestJS.js"></script>
+
+
+
+
+</head>
+
+
+
+<body>
+
+    <script>function paint() {
+
+        var eingabe = document.getElementById("eingabe").value;
+        var ausgabe = document.getElementById("canvas");
+    
+        var eingabeZ = eingabe.charAT(0);
+        var eingabeZa = eingabe.charAT(2);
+    
+        for(var i=0; i< eingabeZa; i++) {
+            ausgabe.innerHTML = eingabeZ;
+        }
+    
+    }</script>
+
+    <fieldset>
+        <legend>Paint</legend>
+
+        <input id="eingabe" type="text" placeholder="Bitte ein Zeichen und eine Zahl mit Leerzeichen angeben">
+
+        <div id="canvas"></div>
+        <button type="button" onclick="paint();">PUSH</button>
+
+    </fieldset>
+
+   
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
