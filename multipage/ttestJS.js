@@ -123,15 +123,16 @@ console.log(findeMaximum());
 
 function paint() {
 
-    var eingabe = document.getElementById("eingabe").value;
-    var ausgabe = document.getElementById("canvas");
+    var eeingabe = document.getElementById("eingabe").value;
+    var aausgabe = document.getElementById("canvas");
 
-    var eingabeZ = eingabe.charAT(0);
-    var eingabeZa = eingabe.charAT(2);
+    var eingabeZ = eeingabe.charAT(0);
+    var eingabeZa = eeingabe.charAT(2);
 
-    for(var i=0; i< eingabeZa; i++) {
-        ausgabe.innerHTML = eingabeZ;
-    }
+    
+        aausgabe.innerHTML = eingabeZ;
+        console.log(aausgabe.innerHTML);
+    
 
 }
 

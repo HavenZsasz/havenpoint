@@ -6,10 +6,15 @@
     <title>Testseite</title>
     <style>
 
+        #canvas {
+            display: block;
+            
+        }
+
 
 
     </style>
-    <script src="ttestJS.js"></script>
+   
 
 
 
@@ -22,22 +27,24 @@
 
     <script>function paint() {
 
-        var eingabe = document.getElementById("eingabe").value;
+        var eingabeZeichen = document.getElementById("zeichen-eingabe").value;
+        var eingabeZahl = document.getElementById("zahlen-eingabe").value;
         var ausgabe = document.getElementById("canvas");
-    
-        var eingabeZ = eingabe.charAT(0);
-        var eingabeZa = eingabe.charAT(2);
-    
-        for(var i=0; i< eingabeZa; i++) {
-            ausgabe.innerHTML = eingabeZ;
+
+        for(var i=0; i<eingabeZahl; i++) {
+            ausgabe.innerHTML += eingabeZeichen; 
         }
+ 
+        
+     
     
     }</script>
 
     <fieldset>
         <legend>Paint</legend>
 
-        <input id="eingabe" type="text" placeholder="Bitte ein Zeichen und eine Zahl mit Leerzeichen angeben">
+        <input id="zeichen-eingabe" type="text" placeholder="Bitte ein Zeichen angeben">
+        <input id="zahlen-eingabe" type="text" placeholder="Bitte eine Zahl angeben">
 
         <div id="canvas"></div>
         <button type="button" onclick="paint();">PUSH</button>
