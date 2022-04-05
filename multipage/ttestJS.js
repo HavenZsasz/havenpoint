@@ -121,19 +121,5 @@ function findeMaximum(array=[5, 10, 100, 5, 1000, 34324, 2424124, 22, 244224, 32
 
 console.log(findeMaximum());
 
-function paint() {
-
-    var eeingabe = document.getElementById("eingabe").value;
-    var aausgabe = document.getElementById("canvas");
-
-    var eingabeZ = eeingabe.charAT(0);
-    var eingabeZa = eeingabe.charAT(2);
-
-    
-        aausgabe.innerHTML = eingabeZ;
-        console.log(aausgabe.innerHTML);
-    
-
-}
 
 
