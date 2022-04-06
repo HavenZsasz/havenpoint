@@ -122,4 +122,18 @@ function findeMaximum(array=[5, 10, 100, 5, 1000, 34324, 2424124, 22, 244224, 32
 console.log(findeMaximum());
 
 
+//-------------------------------------------------------------------------------------
+//Vergleichsfunktionen
+function vergleich(zahl1, zahl2) {
+    return zahl1-zahl2;
+}
+
+var array;
+
+array.sort(vergleich);
+
+//oder: 
+/*array.sort(function(zahl1, zahl2){return zahl1-zahl2;}); FUnktion wurde anonym übergeben
+
+
 
