@@ -59,7 +59,46 @@
 
 
 
-        }</script>
+
+
+        }
+        window.addEventListener("load", setup);
+        
+
+        function setup() {
+            document.getElementById("startknopf").addEventListener("click", abflug);
+        }
+
+        function abflug(event) {
+            if(event.shiftKey) {
+            alert("Konstuktion nicht abgeschlossen");
+            } else{
+                alert("Falscher Startcode!")
+            }
+        }
+        function hoverHervorheben(event){
+            event.target.parentElement.classList.add("hover");
+        }
+        function hoverBeenden(event){
+            event.target.parentElement.classList.remove("hover");
+        }
+        function setup2(){
+            var seiten = ["antrieb", "holodeck", "schilde", "transporter"];
+            for(var i=0;i<seiten.length;i++) {
+                document.getElementById("waehle-" + seiten[i]).addEventListener("mouseover", hoverHervorheben);
+                
+                document.getElementById("wahle" + seiten[i]).addEventListener("mouseout", hoverBeenden);
+            }
+        }
+        window.addEventListener("load", setup2);
+    </script>
+    <button type="button" id="startknopf">TEST</button>
+    <br>
+    <div id="antrieb" class="system">
+        <h2>Antrieb</h2>
+        <a id="waehle-antrieb">Abschalten</a>
+    </div>
+    <br>
 
     <fieldset>
         <legend>Paint</legend>
@@ -80,14 +119,10 @@
     </script>
     <br>
     <br>
+    <script>document.getElementById("klick-mich").addEventListener("click", alternativ);</script>
 
-    <div id="klick-mich">sfgjsgngnsrgsnsngsnngsnsns</div>
-    <script>
-        
-            document.getElementById("klick-mich").addEventListener("click", alternativ);
-            document.getElementById("klick-mich").classList.toggle("geklickt");
+    <div id="klick-mich">    sfgjsgngnsrgsnsngsnngsnsns</div>
 
-    </script>
 
 
 
