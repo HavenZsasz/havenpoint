@@ -27,6 +27,25 @@
             color: aqua;
             font-weight: bold;
         }
+        #USS {
+            border: 2px solid black;
+
+        }
+
+        #USS button, #USS label {
+
+            margin-top: 2px;
+
+        }
+
+        #USS button {
+            width: 200px;
+        }
+
+        #USS {
+            width: 280px;
+            height: 300px;
+        }
     </style>
 
 
@@ -122,6 +141,37 @@
     <script>document.getElementById("klick-mich").addEventListener("click", alternativ);</script>
 
     <div id="klick-mich">    sfgjsgngnsrgsnsngsnngsnsns</div>
+    <br>
+    <br>
+    <script>
+        window.addEventListener("load", setupUSS);
+        
+
+        function setupUSS() {
+            document.getElementById("antriebsystem").addEventListener("click", online);
+            document.getElementById("schild").addEventListener("click", online);
+            document.getElementById("waffen").addEventListener("click", online);
+            document.getElementById("teleporter").addEventListener("click", online);
+            document.getElementById("holodeck").addEventListener("click", online);
+        }
+
+        function online(event) {
+            var stat = document.getElementById(event.target.id + "-status");
+            if(stat.innerHTML.indexOf("OFFLINE")>-1){
+                stat.innerHTML = "ONLINE";
+            } else {
+                stat.innerHTML = "OFFLINE";
+            }
+
+        }
+
+    </script>
+
+    <div id="USS"><h1>USS Schrödinger<br><br><em>Ernergiekonsole</em></h1><br><button type="button" name="antrieb"id="antriebsystem">Antriebssystem</button><span id="antriebsystem-status"> OFFLINE</span><br>
+    <button type="button" id="schild" name="schild">Schilde</button><span id="schild-status"> OFFLINE</span><br>
+<button type="button" id="waffen" name="waffen">Waffen</button><span id="waffen-status"> OFFLINE</span><br>
+<button type="button" id="teleporter" name="teleporter">Teleporter</button><span id="teleporter-status"> OFFLINE</span><br>
+<button type="button" id="holodeck" name="holodeck">Holodeck</button><span id="holodeck-status"> OFFLINE</span></div>
 
 
 
