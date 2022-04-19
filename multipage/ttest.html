@@ -90,11 +90,25 @@
 
         function abflug(event) {
             if(event.shiftKey) {
-            alert("Konstuktion nicht abgeschlossen");
+            window.addEventListener("keyup", steuern);
             } else{
                 alert("Falscher Startcode!")
             }
         }
+
+        function steuern(event) {
+            if(event.keyCode == 37) {
+                alert("Links abbiegen");
+            } else if(event.keyCode == 38) {
+                alert("Vorwärts!");
+            } else if(event.keyCode == 39) {
+                alert("Rechts abbiegen");
+            } else{
+                alert("NÖÖ");
+            }
+        }
+
+
         function hoverHervorheben(event){
             event.target.parentElement.classList.add("hover");
         }
@@ -158,9 +172,9 @@
         function online(event) {
             var stat = document.getElementById(event.target.id + "-status");
             if(stat.innerHTML.indexOf("OFFLINE")>-1){
-                stat.innerHTML = "ONLINE";
+                stat.innerHTML = " ONLINE";
             } else {
-                stat.innerHTML = "OFFLINE";
+                stat.innerHTML = " OFFLINE";
             }
 
         }
