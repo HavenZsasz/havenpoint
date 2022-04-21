@@ -46,6 +46,12 @@
             width: 280px;
             height: 300px;
         }
+
+        span {
+            width: 300px;
+            height: 150px;
+            border: 1px solid black;
+        }
     </style>
 
 
@@ -125,6 +131,32 @@
         }
         window.addEventListener("load", setup2);
     </script>
+    <script>
+        function bewegtXX(event) {
+            document.getElementById("screenX").innerHTML = event.screenX;
+            document.getElementById("screenY").innerHTML = event.screenY;
+            document.getElementById("clientX").innerHTML = event.clientX;
+            document.getElementById("clientY").innerHTML = event.clientY;
+        }
+        function tasteXX(event) {
+            document.getElementById("taste").innerHTML = event.keyCode;
+
+        }
+
+        function setupY() {
+            window.addEventListener("mousemove", bewegtXX);
+            window.addEventListener("keyup", tasteXX);
+        }
+
+        window.addEventListener("load", setupY);
+    </script>
+    <br>
+    <span id="screenX"></span> <br>
+    <span id="screenY"></span> <br>
+    <span id="clientX"></span> <br>
+    <span id="clientY"></span> <br>
+    <span id="taste"></span>
+    <br>
     <button type="button" id="startknopf">TEST</button>
     <br>
     <div id="antrieb" class="system">
@@ -186,6 +218,7 @@
 <button type="button" id="waffen" name="waffen">Waffen</button><span id="waffen-status"> OFFLINE</span><br>
 <button type="button" id="teleporter" name="teleporter">Teleporter</button><span id="teleporter-status"> OFFLINE</span><br>
 <button type="button" id="holodeck" name="holodeck">Holodeck</button><span id="holodeck-status"> OFFLINE</span></div>
+
 
 
 
