@@ -52,6 +52,9 @@
             height: 150px;
             border: 1px solid black;
         }
+        #ko {
+            border: 3px solid red;
+        }
     </style>
 
 
@@ -145,17 +148,20 @@
 
         function setupY() {
             window.addEventListener("mousemove", bewegtXX);
-            window.addEventListener("keyup", tasteXX);
+            window.addEventListener("keydown", tasteXX);
         }
 
         window.addEventListener("load", setupY);
     </script>
-    <br>
-    <span id="screenX"></span> <br>
-    <span id="screenY"></span> <br>
+    
+
+    <br> <div id="ko"><label for="x">ScreenX</label>
+    <span id="screenX" name="x"></span> <br>
+    <label for="y">ScreenY</label> <span id="screenY" name="y"></span> <br>
     <span id="clientX"></span> <br>
     <span id="clientY"></span> <br>
     <span id="taste"></span>
+    </div>
     <br>
     <button type="button" id="startknopf">TEST</button>
     <br>
