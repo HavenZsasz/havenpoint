@@ -51,9 +51,20 @@
             width: 300px;
             height: 150px;
             border: 1px solid black;
+
         }
         #ko {
             border: 3px solid red;
+            padding: 10px;
+            border-radius: 0.5cm;
+        }
+        .erledigtL {
+            text-decoration: line-through;
+            color: red;
+        }
+        .offenL {
+            text-decoration: underline;
+            font-weight: bold;
         }
     </style>
 
@@ -224,6 +235,33 @@
 <button type="button" id="waffen" name="waffen">Waffen</button><span id="waffen-status"> OFFLINE</span><br>
 <button type="button" id="teleporter" name="teleporter">Teleporter</button><span id="teleporter-status"> OFFLINE</span><br>
 <button type="button" id="holodeck" name="holodeck">Holodeck</button><span id="holodeck-status"> OFFLINE</span></div>
+<br>
+<script>
+    function setupCL() {
+        document.getElementById("erledigenL").addEventListener("cick", erledigeErsteOffeneAufgabe);
+
+    }
+    function erledigeErsteOffeneAufgabe() {
+        var offene = document.getElementById("aufgabenLL").getElementsByClassName("offenL");
+        if(offene.length > 0) {
+            offene[0].className = "erledigtLL";
+        }
+    }
+    window.addEventListener("load", setupCL);
+</script>
+<br>
+<h1>Checklist</h1>
+<ul id="aufgabenLL">
+    <li class="offenL">Buch lesen</li>
+    <li class="offenL">Tabellen</li>
+    <li class="offenL">DMSp</li>
+    <li class="offenL">Ws</li>
+    <li class="offenL">DBw</li>
+    <li class="offenL">Kk</li>
+</ul>
+<button type="button" id="erledigenL">Erledigt!</button>
+<br>
+<br>
 
 
 
