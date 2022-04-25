@@ -13,6 +13,8 @@
         .erledigt {
             color: green;
         }
+
+ 
     </style>
 </head>
 <body>
@@ -24,10 +26,11 @@
         <li class="offen">Tabellen</li>
         <li class="offen">Tabellen</li>
         <li class="offen">Tabellen</li>
-        <li class="offen">Tabellen</li>
+        <li class="offen">FIZZ</li>
         <li class="offen">Tabellen</li>
     </ul>
     <button type="button" id="erledigen">Erledigt</button>
+    <span id="helper"></span>
 
     <script>
         function setup() {
@@ -37,11 +40,21 @@
 
         function erledigeErsteOffeneAufgabe() {
             var offene = document.getElementById("aufgaben").getElementsByClassName("offen");
-            if(offene.length > 0) {
+            if(offene.length >0) {
                 var el = offene[0];
+                document.getElementById("helper").innerHTML = "CHECK";
                 el.classList.remove("offen");
                 el.classList.add("erledigt");
-            }
+                
+            } 
+        }
+
+        function erledigeAufgabe(aufgabe) {
+
+            if(!aufgabe) throw "Parameter aufgabe wird benötigt";
+            aufgabe.classList = "erledigt";
+
+
         }
         window.addEventListener("load", setup);
     </script>
