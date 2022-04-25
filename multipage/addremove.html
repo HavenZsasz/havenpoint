@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .offen {
+            color: red;
+        }
+        .erledigt {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Aufgaben</h1>
+
+    <ul id="aufgaben">
+        <li class="offen">Bücher</li>
+        <li class="offen">Tabellen</li>
+        <li class="offen">Tabellen</li>
+        <li class="offen">Tabellen</li>
+        <li class="offen">Tabellen</li>
+        <li class="offen">Tabellen</li>
+    </ul>
+    <button type="button" id="erledigen">Erledigt</button>
+
+    <script>
+        function setup() {
+            document.getElementById("erledigen").addEventListener("click", erledigeErsteOffeneAufgabe);
+
+        }
+
+        function erledigeErsteOffeneAufgabe() {
+            var offene = document.getElementById("aufgaben").getElementsByClassName("offen");
+            if(offene.length > 0) {
+                var el = offene[0];
+                el.classList.remove("offen");
+                el.classList.add("erledigt");
+            }
+        }
+        window.addEventListener("load", setup);
+    </script>
+    
+</body>
+</html>

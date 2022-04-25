@@ -244,7 +244,9 @@
     function erledigeErsteOffeneAufgabe() {
         var offene = document.getElementById("aufgabenLL").getElementsByClassName("offenL");
         if(offene.length > 0) {
-            offene[0].className = "erledigtLL";
+            var el = offene[0];
+            el.classList.remove("offen");
+            el.classList.add("erledigt");
         }
     }
     window.addEventListener("load", setupCL);
