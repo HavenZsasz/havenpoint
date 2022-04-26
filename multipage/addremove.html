@@ -14,6 +14,15 @@
             color: green;
         }
 
+        .offen > a, .erledigt > a{
+            border: 1px black solid;
+
+        }
+
+        
+
+
+
  
     </style>
 </head>
@@ -22,12 +31,12 @@
     <h1>Aufgaben</h1>
 
     <ul id="aufgaben">
-        <li class="offen">Bücher</li>
-        <li class="offen">Tabellen</li>
-        <li class="offen">Tabellen</li>
-        <li class="offen">Tabellen</li>
-        <li class="offen">FIZZ</li>
-        <li class="offen">Tabellen</li>
+        <li class="offen">Bücher <a>Erledigt</a></li>
+        <li class="offen">Tabellen <a>Erledigt</a></li>
+        <li class="offen">Tabellen <a>Erledigt</a></li>
+        <li class="offen">Tabellen <a>Erledigt</a></li>
+        <li class="offen">FIZZ <a>Erledigt</a></li>
+        <li class="offen">Tabellen <a>Erledigt</a></li>
     </ul>
     <button type="button" id="erledigen">Erledigt</button>
     <span id="helper"></span>
@@ -35,16 +44,21 @@
     <script>
         function setup() {
             document.getElementById("erledigen").addEventListener("click", erledigeErsteOffeneAufgabe);
+            var links = document.getElementById("aufgaben").getElementsByTagName("a");
+            for(var i=0; i<links.length; i++) {
+                links[i].addEventListener("click", erledigeAufgabeDirekt);
+            }
 
         }
+
+        
 
         function erledigeErsteOffeneAufgabe() {
             var offene = document.getElementById("aufgaben").getElementsByClassName("offen");
             if(offene.length >0) {
-                var el = offene[0];
-                document.getElementById("helper").innerHTML = "CHECK";
-                el.classList.remove("offen");
-                el.classList.add("erledigt");
+
+                erledigeAufgabe(offene[0]);
+
                 
             } 
         }
@@ -57,6 +71,14 @@
 
         }
         window.addEventListener("load", setup);
+
+        function erledigeAufgabeDirekt(event) {
+            var checker = document.getElementById("helper");
+            erledigeAufgabe(event.target.parentElement); //Link triggert Event -> Listenelement als Parent wird selektiert
+            checker.innerHTML = 1+1;
+            
+            event.preventDefault(); //Default-Aktion d. Links unterbinden, obwohl er ohne href nirgends hinführt
+        }
     </script>
     
 </body>
