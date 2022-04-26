@@ -19,6 +19,12 @@
 
         }
 
+        #z {
+            height: 200px;
+            width: 200px;
+            border: 1px black solid;
+        }
+
         
 
 
@@ -38,12 +44,12 @@
         <li class="offen">FIZZ <a>Erledigt</a></li>
         <li class="offen">Tabellen <a>Erledigt</a></li>
     </ul>
-    <button type="button" id="erledigen">Erledigt</button>
+    <button type="button" id="alle-erledigen">Erledigt</button>
     <span id="helper"></span>
 
     <script>
         function setup() {
-            document.getElementById("erledigen").addEventListener("click", erledigeErsteOffeneAufgabe);
+            document.getElementById("alle-erledigen").addEventListener("click", erledigeErsteOffeneAufgabe);
             var links = document.getElementById("aufgaben").getElementsByTagName("a");
             for(var i=0; i<links.length; i++) {
                 links[i].addEventListener("click", erledigeAufgabeDirekt);
@@ -55,22 +61,18 @@
 
         function erledigeErsteOffeneAufgabe() {
             var offene = document.getElementById("aufgaben").getElementsByClassName("offen");
-            if(offene.length >0) {
+            while(offene.length >0) {
+                offene[0].classList = "erledigt";
 
-                erledigeAufgabe(offene[0]);
+                
+
 
                 
             } 
         }
 
-        function erledigeAufgabe(aufgabe) {
 
-            if(!aufgabe) throw "Parameter aufgabe wird benötigt";
-            aufgabe.classList = "erledigt";
-
-
-        }
-        window.addEventListener("load", setup);
+        
 
         function erledigeAufgabeDirekt(event) {
             var checker = document.getElementById("helper");
@@ -79,6 +81,26 @@
             
             event.preventDefault(); //Default-Aktion d. Links unterbinden, obwohl er ohne href nirgends hinführt
         }
+        window.addEventListener("load", setup);
+    </script>
+
+    <span id="z"></span><br>
+    <input type="text" id="zeichen" placeholder="zeichen"> <input type="text" id="zahl" placeholder="zahl"><br>
+    <button type="button" id="ausfuehren">Lets GO</button>
+
+    <script>
+        function setupZeichen() {
+            document.getElementById("ausfuehren").addEventListener("click", execute);
+        }
+
+        function execute() {
+            var zeichen = document.getElementById("zeichen").value;
+            var zahl = document.getElementById("zahl").value;
+
+
+        window.addEventListener("load", setupZeichen);
+
+
     </script>
     
 </body>
