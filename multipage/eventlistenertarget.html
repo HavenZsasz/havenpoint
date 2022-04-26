@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haven Point</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script>
+       
+        window.addEventListener("load", setup);
+
+        function setup() {
+            /*An jedem der fünf divs wird derselbe mouseover-Handler registriert*/
+            document.getElementById("zaehler1").addEventListener("mouseover", zaehle);
+            document.getElementById("zaehler2").addEventListener("mouseover", zaehle);
+            document.getElementById("zaehler3").addEventListener("mouseover", zaehle);
+            document.getElementById("zaehler4").addEventListener("mouseover", zaehle);
+            document.getElementById("zaehler5").addEventListener("mouseover", zaehle);
+        }
+
+        function zaehle(event) {
+            /*Diese Zeile findet das Eventobjekt auch in älteren Internet Explorern, die alles unbedingt anders machen müssen.*/
+            if (!event) event = window.event;
+            var target;
+            /*Dasselbe gilt für das Target-Element, auch das ist in alten IEs anders.*/
+            if (event.target) {
+                target = event.target;
+            } else {
+                target = event.srcElement;
+            }
+            /*Dadurch, dass du event.target verwendest, wird der Eventhandler wiederverwendbar: er funktioniert für jedes Element.*/
+            var alterWert = parseInt(target.innerHTML);
+            target.innerHTML = alterWert + 1;
+        }
+
+    
+    </script>
+    
+    <style>
+
+        div {
+            height: 100px;
+            width: 100px;
+            border: 2px black solid;
+            margin-top: 10px;
+            background-color: brown;
+            color:blue ;
+            text-align: center;
+           
+           
+            
+        }
+
+
+       
+    </style>
+
+    
+
+
+      
+</head>
+
+<body>
+
+ 
+
+    <div id="zaehler1">0</div>
+    <div id="zaehler2">0</div>
+    <div id="zaehler3">0</div>
+    <div id="zaehler4">0</div>
+    <div id="zaehler5">0</div>
+
+
+
+  
+
+
+</body>
+</html>
