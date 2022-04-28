@@ -44,6 +44,7 @@
         <li class="offen">FIZZ <a>Erledigt</a></li>
         <li class="offen">Tabellen <a>Erledigt</a></li>
     </ul>
+    <input type="text" id="insert" placeholder="Aufgabe hinzufügen..."> <button type="button" id="append">Hinzufügen</button>
     <button type="button" id="alle-erledigen">Erledigt</button>
     <button type="button" id="umdrehen">Umdrehen</button>
     <span id="helper"></span>
@@ -56,7 +57,20 @@
                 links[i].addEventListener("click", erledigeAufgabeDirekt);
             }
             document.getElementById("umdrehen").addEventListener("click", umdrehen);
+            document.getElementById("append").addEventListener("click", add);
 
+        }
+
+        function add() {
+            var eingabe = document.getElementById("insert").value;
+            if(eingabe.length > 0) {
+                var neuesLe = document.createElement("li");
+                var neueTextNode = document.createTextNode(eingabe);
+                neuesLe.appendChild(neueTextNode);
+                neuesLe.classList.add("offen");
+                document.getElementById("aufgaben").appendChild(neuesLe);
+                document.getElementById("insert").value ="";
+            }
         }
 
 
