@@ -10,8 +10,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link class="stylesheet" rel="stylesheet" href="day.css">
+    <link id="stylesheet" rel="stylesheet" href="day.css">
     <link rel="shortcut icon" href="images/favicon.ico">
+
+    <script>
+        function stylesheet() {
+
+            var theme = document.getElementById("stylesheet");
+
+            if(theme.getAttribute("href")=="day.css") {
+                theme.setAttribute("href", "night.css");
+
+            } else {
+                theme.setAttribute("href", "day.css");
+            }
+
+
+
+        }
+
+        
+    </script>
 
   
 
@@ -73,6 +92,7 @@
             counter++;
             var logo = document.getElementById("schwarz");
             var button = document.getElementById("dark");
+            stylesheet();
   
             if(counter%2!=0) {
             logo.setAttribute("src", "logoNightKomprimiert1.png");
