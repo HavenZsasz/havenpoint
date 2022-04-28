@@ -40,7 +40,7 @@
             width: 25%;
         }
 
-        .navilink {
+        #fuer-dich, #entdecken, #neuware, #inserate, #automobil, #immobilien {
             text-decoration: none;
             color: black;
             margin: 5%;
@@ -60,7 +60,7 @@
             transition-duration: 1s;
         }
 
-        .navilink:hover {
+        #fuer-dich:hover, #entdecken:hover, #neuware:hover, #inserate:hover, #automobil:hover, #immobilien:hover {
             color: rgb(0, 220, 253);
             background-color: black;
             opacity: 0.5;
@@ -129,9 +129,7 @@
             
         }
 
-        #head-container {
         
-        }
     </style>
 
 
@@ -162,12 +160,12 @@
         <div id="navbar">
 
             <a href="#" id="plus">+</a>
-            <a href="#" class="navilink">Für Dich</a>
-            <a href="#" class="navilink">Entdecken</a>
-            <a href="#" class="navilink">Neuware</a>
-            <a href="#" class="navilink">Inserate</a>
-            <a href="#" class="navilink">Immobilien</a>
-            <a href="#" class="navilink">Automobil</a>
+            <a href="#" id="fuer-dich">Für Dich</a>
+            <a href="#" id="entdecken">Entdecken</a>
+            <a href="#" id="neuware">Neuware</a>
+            <a href="#" id="inserate">Inserate</a>
+            <a href="#" id="immobilien">Immobilien</a>
+            <a href="#" id="automobil">Automobil</a>
 
 
 
@@ -185,15 +183,25 @@
 
         }
 
+        var counter = 0;
+
         function darkMode() {
+            counter++;
             var logo = document.getElementById("schwarz");
+            if(counter%2!=0) {
             logo.setAttribute("src", "logoNightKomprimiert1.png");
+            } else {
+                logo.setAttribute("src", "logoDayKomprimiert1.png");
+
+            }
             var dokument = document.body;
             dokument.classList.toggle("darkmode");
             var navbar = document.getElementsById("navbar");
             navbar.setAttribute("id", "navbardark");
             
-            document.getElementsByClassName("navilink").classList.toggle("navilinkdark");
+            document.getElementById("fuer-dich").style.color='white';
+            
+            
 
 
         }
