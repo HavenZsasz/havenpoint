@@ -34,7 +34,7 @@ h1 {
 #fuer-dich:hover, #entdecken:hover, #neuware:hover, #inserate:hover, #automobil:hover, #immobilien:hover {
     color: rgb(0, 220, 253);
     background-color: white;
-    opacity: 0.2;
+    opacity: 0.7;
     padding: 5px;
     border-radius: 5%;
     
@@ -85,5 +85,6 @@ h1 {
 #main-search {
     background-color: black;
     color: white;
+    border-color: white;
     
 }
