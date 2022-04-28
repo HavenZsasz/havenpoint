@@ -72,10 +72,18 @@
         function darkMode() {
             counter++;
             var logo = document.getElementById("schwarz");
+            var button = document.getElementById("dark");
+  
             if(counter%2!=0) {
             logo.setAttribute("src", "logoNightKomprimiert1.png");
+            button.firstChild.data="Lightmode";
+            
+            
+           
+            
             } else {
                 logo.setAttribute("src", "logoDayKomprimiert1.png");
+                button.firstChild.data="Darkmode";
 
             }
             var dokument = document.body;
@@ -83,7 +91,10 @@
             var navbar = document.getElementsById("navbar");
             navbar.setAttribute("id", "navbardark");
             var style = document.getElementsByClassName("stylesheet");
-            stylesheet.setAttribute("href", "night.css");
+            stylesheet.setAttribute("href", "night.css");    
+            
+            
+         
             
            
             

@@ -78,6 +78,8 @@ h1 {
     border-radius: 100%;
     border: 2px solid black;
     padding: 0.3px 3.5px 1.2px 4.2px;
+    text-decoration: none;
+    color: black;
     
 }
 
