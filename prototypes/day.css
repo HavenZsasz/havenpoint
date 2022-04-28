@@ -1,0 +1,112 @@
+body {
+    color: black;
+    background-color: white;
+    transition-property: background-color, color, opacity, padding, border-radius;
+    transition-duration: 1s;
+}
+
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.darkmode {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+.logo {
+    height: 25%;
+    width: 25%;
+}
+
+#fuer-dich, #entdecken, #neuware, #inserate, #automobil, #immobilien {
+    text-decoration: none;
+    color: black;
+    margin: 5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    transition-property: background-color, color, opacity, padding, border-radius;
+    transition-duration: 1s;
+}
+
+.navilinkdark {
+    text-decoration: none;
+    color: rgb(0, 220, 253);
+    margin: 5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    transition-property: background-color, color, opacity, padding, border-radius;
+    transition-duration: 1s;
+}
+
+#fuer-dich:hover, #entdecken:hover, #neuware:hover, #inserate:hover, #automobil:hover, #immobilien:hover {
+    color: rgb(0, 220, 253);
+    background-color: black;
+    opacity: 0.5;
+    padding: 5px;
+    border-radius: 5%;
+    
+}
+
+.navilinkdark {
+    color: rgb(0, 220, 253);
+    background-color: white;
+    opacity: 0.5;
+    padding: 5px;
+    border-radius: 5%;
+    
+}
+
+#navbar {
+    margin-top: 3%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding:1% 1%;
+}
+
+#navbardark {
+    margin-top: 3%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding:1% 1%;
+}
+
+#navbar > #plus {
+    border-radius: 100%;
+    border: 2px solid black;
+    padding: 0.3px 3.5px 1.2px 4.2px;
+    
+}
+
+#navbar > #plus:hover {
+    border: 2px solid rgb(0, 220, 253);
+    
+}
+#trans {
+    overflow:auto;
+    background-color: red;
+    color: blue;
+    transition-property: background-color, color;
+    transition-duration: 5s;
+    width: 200px;
+    height:200px;
+
+}
+#trans:hover {
+    background-color: blue;
+    color: red;
+}
+
+.Suche {
+    position: relative;
+    left: 450px;
+    top: 120px;
+    width: 300px;
+    
+    border: 0.5px dashed rgba(black, black, black, 0.5);
+    
+    
+}
