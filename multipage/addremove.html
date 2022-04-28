@@ -45,6 +45,7 @@
         <li class="offen">Tabellen <a>Erledigt</a></li>
     </ul>
     <button type="button" id="alle-erledigen">Erledigt</button>
+    <button type="button" id="umdrehen">Umdrehen</button>
     <span id="helper"></span>
 
     <script>
@@ -54,7 +55,21 @@
             for(var i=0; i<links.length; i++) {
                 links[i].addEventListener("click", erledigeAufgabeDirekt);
             }
+            document.getElementById("umdrehen").addEventListener("click", umdrehen);
 
+        }
+
+
+        function umdrehen() {
+            var liste = document.getElementById("aufgaben");
+            var kinder = [];
+            while(liste.firstChild) {
+                kinder.push(liste.removeChild(liste.firstChild));
+            }
+
+            while(kinder.length) {
+                liste.appendChild(kinder.pop());
+            }
         }
 
         
@@ -71,37 +86,29 @@
             } 
         }
 
+        function erledigeAufgabe(aufgabe) {
+
+            aufgabe.className = "erledigt";
+
+            
+
+    
+        }
+
 
         
 
         function erledigeAufgabeDirekt(event) {
             var checker = document.getElementById("helper");
             erledigeAufgabe(event.target.parentElement); //Link triggert Event -> Listenelement als Parent wird selektiert
-            checker.innerHTML = 1+1;
+            checker.innerHTML = "Niklas stinkt";
             
             event.preventDefault(); //Default-Aktion d. Links unterbinden, obwohl er ohne href nirgends hinführt
         }
         window.addEventListener("load", setup);
     </script>
 
-    <span id="z"></span><br>
-    <input type="text" id="zeichen" placeholder="zeichen"> <input type="text" id="zahl" placeholder="zahl"><br>
-    <button type="button" id="ausfuehren">Lets GO</button>
 
-    <script>
-        function setupZeichen() {
-            document.getElementById("ausfuehren").addEventListener("click", execute);
-        }
-
-        function execute() {
-            var zeichen = document.getElementById("zeichen").value;
-            var zahl = document.getElementById("zahl").value;
-
-
-        window.addEventListener("load", setupZeichen);
-
-
-    </script>
     
 </body>
 </html>
