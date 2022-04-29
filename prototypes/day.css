@@ -79,16 +79,24 @@ h1 {
 }
 
 #navbar > #plus {
-    border-radius: 100%;
-    border: 2px solid black;
-    padding: 0.3px 3.5px 1.2px 4.2px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    padding: 0px 4px 1px 4px;
     text-decoration: none;
     color: black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    transition-property: all;
+    transition-duration: 0.5s;
     
 }
 
 #navbar > #plus:hover {
     border: 2px solid rgb(0, 220, 253);
+    color: rgb(0, 220, 253);
+    background-color: gray;
+    
     
 }
 
