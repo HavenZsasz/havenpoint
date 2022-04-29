@@ -34,6 +34,8 @@
 </head>
 <body>
 
+    <div id="count-container">
+
     <h1>Aufgaben</h1>
 
     <ul id="aufgaben">
@@ -47,7 +49,10 @@
     <input type="text" id="insert" placeholder="Aufgabe hinzufügen..."> <button type="button" id="append">Hinzufügen</button>
     <button type="button" id="alle-erledigen">Erledigt</button>
     <button type="button" id="umdrehen">Umdrehen</button>
-    <span id="helper"></span>
+    <span id="helper"></span> <br>
+    <span id="child-counter"></span>
+    <button type="button" id="child-button">Nodes zählen</button>
+    </div>
 
     <script>
         function setup() {
@@ -58,7 +63,14 @@
             }
             document.getElementById("umdrehen").addEventListener("click", umdrehen);
             document.getElementById("append").addEventListener("click", add);
+            document.getElementById("child-button").addEventListener("click",countChilds);
 
+        }
+
+        function countChilds() {
+            const element = document.getElementById("aufgaben");
+            let numb = element.childNodes.length;
+            document.getElementById("child-counter").innerHTML = numb;
         }
 
         function add() {
@@ -121,6 +133,9 @@
         }
         window.addEventListener("load", setup);
     </script>
+   
+
+    
 
 
     
