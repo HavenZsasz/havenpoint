@@ -46,46 +46,34 @@
 
     <script>
         function setup() {
-            document.getElementById("append").addEventListener("click", addAufgabe);
+            document.getElementById("append").addEventListener("click", eintrag)
+          
         }
 
-        function addAufgabe() {
+        function eintrag() {
 
-            
-            
-            var offen = document.getElementById("offen");
             var eingabe = document.getElementById("eingabe").value;
-            if(eingabe.length > 0){
-            var le = document.createElement("li");
-            var text = document.createTextNode(eingabe);
-            var link = document.createElement("a");
-            var linktext = document.createTextNode("ERLEDIGT")
-            link.appendChild(linktext);
-            offen.appendChild(le);
-            le.appendChild(text);
-            le.appendChild(link); 
-            link.addEventListener("click", erledigeAufgabe);
+            var new_li = document.createElement("li");
+            var new_text = document.createTextNode(eingabe);
+            new_li.appendChild(new_text);
             document.getElementById("eingabe").value = "";
+            var offen = document.getElementById("offen");
+            offen.appendChild(new_li).addEventListener("click", verschiebe);
+            
+
+
+        }
+
+        function verschiebe(event) {
+            var li=event.target;
+            if(li.parentNode.id=="offen") {
+                document.getElementById("erledigt").appendChild(li);
+            } else {
+                document.getElementById("offen").appendChild(li);
             }
-
-
         }
 
-        function erledigeAufgabe(event) {
-            var erledigt = document.getElementById("erledigt");
-            var link_geklickt = event.target; //herausfinden, welches Objekt angeklickt wurde, um da Event zu aktivieren
-
-            var parentT = link_geklickt.parentElement;
-            erledigt.appendChild(parentT);
-            
-
-            
-            document.getElementById("tester").innerHTML = "WORKS FINE";
-            document.getElementById("target-helper").innerHTML = link_geklickt.parentElement.nodeName;
-            document.getElementById("parent-helper").innerHTML = parentT.firstChild;
-
-
-        }
+       
 
         window.addEventListener("load", setup);
 
