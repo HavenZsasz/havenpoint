@@ -9,9 +9,7 @@
     <title>Haven Point</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link id="stylesheet" rel="stylesheet" href="day.css">
     <link rel="shortcut icon" href="images/favicon.ico">
 
@@ -20,21 +18,21 @@
 
             var theme = document.getElementById("stylesheet");
 
-            if (theme.getAttribute("href") == "day.css") {
-                theme.setAttribute("href", "night.css");
+            if(theme.getAttribute("href")=="day copy.css") {
+                theme.setAttribute("href", "night copy.css");
 
             } else {
-                theme.setAttribute("href", "day.css");
+                theme.setAttribute("href", "day copy.css");
             }
 
 
 
         }
 
-
+        
     </script>
 
-
+  
 
 
 </head>
@@ -45,33 +43,30 @@
 
 
     <div id="head-container">
-        <img class="logo" id="schwarz" src="logoDayKomprimiert1.png">
+
+    
 
 
-
-
-
-        <input type="search" id="main-search" class="suche" placeholder="Alle Kategorien durchsuchen...">
-
-        <div id="profilbild">
-            <img id="pb" src="segelKomprimiert2.png">
-
-        </div>
-
+    <div class="Suche">
+    <input type="search" id="main-search" class="suche" placeholder="Alle Kategorien durchsuchen...">
     </div>
-
-
+    <div id="profilbild">
+        <img id="pb" src="segelKomprimiert2.png">
+        
+    </div>
+  
+    
 
     <a id="oben"></a>
 
     <div class="navhead">
 
+       
 
+        <img class="logo"  id="schwarz" src="logoDayKomprimiert1.png">
 
-
-
-
-
+     
+        
         <div id="navbar">
 
             <a href="#" id="plus">+</a>
@@ -86,11 +81,11 @@
 
         </div>
 
-
+       
 
 
     </div>
-
+    </div>
     <br>
     <h1>Willkommen zurück, $user$!</h1>
 
@@ -107,17 +102,17 @@
             var logo = document.getElementById("schwarz");
             var button = document.getElementById("dark");
             stylesheet();
-
-            if (counter % 2 != 0) {
-                logo.setAttribute("src", "logoNightKomprimiert1.png");
-                button.firstChild.data = "Lightmode";
-
-
-
-
+  
+            if(counter%2!=0) {
+            logo.setAttribute("src", "logoNightKomprimiert1.png");
+            button.firstChild.data="Lightmode";
+            
+            
+           
+            
             } else {
                 logo.setAttribute("src", "logoDayKomprimiert1.png");
-                button.firstChild.data = "Darkmode";
+                button.firstChild.data="Darkmode";
 
             }
             var dokument = document.body;
@@ -125,14 +120,14 @@
             var navbar = document.getElementsById("navbar");
             navbar.setAttribute("id", "navbardark");
             var style = document.getElementsByClassName("stylesheet");
-            stylesheet.setAttribute("href", "night.css");
-
-
-
-
-
-
-
+            stylesheet.setAttribute("href", "night.css");    
+            
+            
+         
+            
+           
+            
+            
 
 
         }
@@ -141,7 +136,7 @@
 
     </script>
 
-
+    
 
     <a href="#oben">Nach oben springen</a> <br>
     <br>
