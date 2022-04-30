@@ -55,6 +55,7 @@
 
         <div id="profilbild">
             <img id="pb" src="segelKomprimiert2.png">
+            
 
         </div>
 
@@ -97,6 +98,7 @@
     <script>
         function setup() {
             document.getElementById("dark").addEventListener("click", darkMode);
+            document.getElementById("pb").addEventListener("click", dropDown);
 
         }
 
@@ -126,6 +128,11 @@
             navbar.setAttribute("id", "navbardark");
             var style = document.getElementsByClassName("stylesheet");
             stylesheet.setAttribute("href", "night.css");
+
+
+            function dropDown() {
+
+            }
 
 
 
