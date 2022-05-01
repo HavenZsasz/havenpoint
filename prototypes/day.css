@@ -19,6 +19,8 @@ body {
 }
 
 #profilbild {
+
+    
     height: 10%;
     width: 10%;
     
@@ -35,9 +37,11 @@ body {
     transition-property: all;
 }
 
+
 #profilbild:hover {
 
     border: 1px solid rgb(0, 220, 253);
+    cursor: pointer;
 
 }
 
