@@ -23,6 +23,7 @@ h1 {
 .logo {
     height: 25%;
     width: 25%;
+    cursor: pointer;
 }
 
 #dark {
