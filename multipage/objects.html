@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form name="katze">
+        <label for="name">Name: </label>
+        <input id="name" name="name" value=""><br>
+        <label for="besitzer">Besitzer: </label>
+        <input id="besitzer" name="besitzer" value=""><br> 
+        <label for="alter">Alter: </label>
+        <input id="alter" name="alter" value=""><br> 
+        <label for="gewicht">Gewicht: </label>
+        <input id="gewicht" name="gewicht" value=""><br> 
+        <label for="rasse">Rasse: </label>
+        <input id="rasse" name="rasse" value=""><br>
+
+    </form>
+
+    <script>
+        /*var katze = {};
+        katze.name = "Maunzi";
+        katze.besitzer = "Ich";
+        katze.alter = 6;
+        katze.gewicht = 4;
+        katze.rasse = "Britisch Kurzhaar";*/
+
+        //oder:
+        var katze = {
+            name: "Maunzi",
+            besitzer: "ich",
+            alter: 6,
+            gewicht: 4,
+            rasse: "Britisch Kurzhaar",
+            aergereUser: function() {
+                alert("Miau");
+            }
+        }
+
+        function fuelleFormular() {
+            var felder = document.getElementsByTagName("input");
+            for(var i=0; i<felder.length; i++) {
+                felder[i].value = katze[felder[i].name];
+            }
+            //katze.aergereUser(); //Aufruf der Methode d. Eigenschaft
+        }
+
+        window.addEventListener("load", fuelleFormular);
+    </script>
+
+</body>
+
+</html>

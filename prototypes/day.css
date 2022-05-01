@@ -5,6 +5,12 @@ body {
     transition-duration: 1s;
 }
 
+#jump {
+    text-decoration: none;
+    color: black;
+    
+}
+
 #head-container {
     display:flex;
     justify-content: space-between;
