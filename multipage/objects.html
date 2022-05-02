@@ -50,14 +50,34 @@
                 }
 
             }
+        } 
+
+        function Katze(name, rasse, besitzer) { //Konstruktor
+            this.name = name;
+            this.rasse = rasse;
+            this.besitzer = besitzer;
         }
+
+        var katze1 = new Katze("Maunzi", "Britisch Kurzhaar", "Ich");
+        var katze2 = new Katze("M", "BKurzhaar", "I");
+        var katze3 = new Katze("Mau", "Britisaar", "Ic");
+        var katze4 = new Katze("Maunzi", "Britisch Kurzhaar", "Ich");
+        var katze5 = new Katze("Maunzi", "Britisch Kurzhaar", "Ich");
+
+        Katze.prototype = {
+            miau: function() {
+                alert("Miau sagt" +this.name);
+            }
+        }
+        
 
        
 
             //katze.aergereUser(); //Aufruf der Methode d. Eigenschaft
         
 
-        window.addEventListener("load", katze.fuelleFormular.bind(katze));
+        //window.addEventListener("load", katze.fuelleFormular.bind(katze));
+        window.addEventListener("load", katze2.miau);
     </script>
 
 </body>
