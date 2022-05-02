@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <br>
+    <input id="name" placeholder="Name">
+    <input id="bday" type="date" placeholder="Geburtstag"> <button type="button" id="add">ADD</button> <button type="button" id="los">Ausgabe</button>
+    <br> <ul id="ausgabe"> </ul>
+
+    <script>
+        function setup() {
+            document.getElementById("add").addEventListener("click", append);
+            document.getElementById("los").addEventListener("click", ausgabe);
+        }
+        var liste = {};
+        function append() {
+            var name = document.getElementById("name");
+            var date = document.getElementById("bday");
+            liste[name.value]= date.value;
+            date.value="";
+            name.value="";
+
+        }
+
+        function ausgabe() {
+            var ul = document.getElementById("ausgabe");
+            for(var name in liste) {
+                var li = document.createElement("li");
+                li.appendChild(document.createTextNode(name + " - " + liste[name]));
+                ul.appendChild(li);
+
+            }
+        }
+
+        window.addEventListener("load", setup);
+    </script>
+
+
+    
+</body>
+</html>
