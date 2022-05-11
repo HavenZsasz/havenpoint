@@ -9,6 +9,58 @@
 </head>
 <body>
 
+    <div id="cookie-wizard">
+        <br>
+        <h1>Cookie-Wizard</h1>
+        <br>
+        <br>
+        <label for="name">Name: </label><input id="name" name="name" placeholder="- Name -"><br>
+        <label for="wert">Wert: </label><input id="wert" name="wert" placeholder="- Wert -"><br>
+        <br>
+        <ul id="ausgabe"></ul><br><span id="helper"></span>
+        <button type="button" id="start">Cookie auf diesem Rechner erstellen</button>
+    </div>
+
+    <script>
+
+        function setup() {
+            document.getElementById("start").addEventListener("click", setzeCookieAusFormular);
+            
+
+        }
+
+        function setzeCookieAusFormular() {
+            var nameFeld = document.getElementById("name");
+            var wertFeld = document.getElementById("wert");
+            var name = nameFeld.value;
+            var wert = wertFeld.value;
+            setzeCookies(name, wert);
+            document.getElementById("helper").innerHTML = nameFeld.value;
+            nameFeld.value = "";
+            wertFeld.value = "";
+            zeigeCookies();
+        }
+
+        function setzeCookies(name, wert) {
+            document.cookie = name+"="+wert;
+        }
+
+        function zeigeCookies() {
+            var cookies = document.cookie.split(";");
+            var ausgabe = document.getElementById("ausgabe");
+            for(var i=0; i<cookies.length; i++) {
+                var li = document.createElement("li");
+                li.appendChild(document.createTextNode(cookies[i]));
+                ausgabe.appendChild(li);
+            }
+        }
+
+
+
+
+        window.addEventListener("load", setup);
+    </script>
+
     
     
 </body>
