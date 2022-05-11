@@ -5,8 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStorage</title>
+    <style>
+
+        #liste {
+
+            background-color:azure;
+        }
+
+
+    </style>
 </head>
 <body>
+
+    <h1>Einkaufszettel</h1>
+    <br>
+    <ul id="liste"></ul><br>
+    <input id="eingabe-name" placeholder="Name"> <br> <input id="eingabe-wert" placeholder="Wert"><button type="button" id="append">Hinzufügen</button>
+
+    <script>
+
+        function setup() {
+            document.getElementById("append").addEventListener("click", anheften);
+
+
+        }
+
+        function anheften() {
+            var eingabefeldName = document.getElementById("eingabe-name");
+            var eingabefeldWert = document.getElementById("eingabe-wert");
+            var liste = document.getElementById("liste");
+            var eingabeName = eingabefeldName.value;
+            var eingabeWert = eingabefeldWert.value;
+            localStorage[name] = wert;
+            eingabefeldName.value = "";
+            eingabefeldWert.value = "";
+            schreibeListe();
+
+
+        }
+
+        function schreibeListe(event) {
+            var ausgabe = document.getElementById("liste");
+            for(var i=0; i<localStorage.length; i++) {
+                var key = localStorage.key[i];
+                var li = document.createElement("li");
+                li.appendChild(document.createTextNode(localStorage[key] + " " + key));
+                ausgabe.appendChild(li);
+            }
+        }
+
+
+        window.addEventListener("load", setup);
+
+
+
+
+    </script>
     
 </body>
 </html>
