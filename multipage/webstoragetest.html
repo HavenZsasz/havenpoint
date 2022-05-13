@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function setup() {
+            document.getElementById("append").addEventListener("click", Liste.append);
+        }
+        function Liste(name, wert) { //Konstruktor
+            this.name = name;
+            this.wert = wert;
+        }
+
+        Liste.prototype = {
+            append: function() {
+
+                this.name = document.getElementById("name").value;
+                this.wert = document.getElementById("wert").value;
+                var liste = document.getElementById("liste");
+
+                var element = document.createElement("li");
+                element.appendChild(document.createTextNode(this.name + this.wert));
+                liste.appendChild(element);
+
+                
+
+            }
+        }
+
+        window.addEventListener("load", setup);
+    </script>
+
+    <ul id="liste"></ul><br>
+
+    <input id="name" placeholder="Artikel">
+    <input id="wert" placeholder="Menge">
+    <button type="button" id="append">Hinzufügen</button>
+    
+</body>
+</html>
