@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Einkaufen mit Local Storage und JSON</title>
+    <script>
+        window.addEventListener("load", init);
+
+        function init() {
+            /*Bevor Web Storage benutzt wird, wird geprüft, ob es das in diesem Browser überhaupt gibt. */
+            if (window.localStorage) {
+                /*Wenn Web Storage funktioniert, dann wird ein Einkaufszettel erzeugt.*/
+                var zettel = new Einkaufszettel("eintrag", "ausgabe", "einkaufszettel");
+                /*Der Speichern-Knopf soll die hinuzufuegen-Methode des Einkaufszettels rufen: bind nicht vergessen!*/
+                document.getElementById("speichern").addEventListener("click", zettel.hinzufuegen.bind(zettel));
+            } else {
+                alert("Web Storage nicht gefunden!");
+            }
+        }
+
+        /*Der Einkaufszettel ist objektorierntiert. Die IDs der Ein- und Ausgabeelemente sowie der Schlüssel, unter dem
+         gespeichert wird, werden als Parameter übergeben. So könntest du ganz leicht mehrere Einkaufszettel auf einer
+         Seite haben.*/
+        function Einkaufszettel(eingabeId, ausgabeId, key) {
+            this.eingabeFeld = document.getElementById(eingabeId);
+            this.ausgabeFeld = document.getElementById(ausgabeId);
+            this.key = key;
+            /*Wenn es schon einen Einkaufszettel unter diesem Schlüssel gibt, wird er geladen,*/
+            if (window.localStorage[this.key]) {
+                /*JSON parse macht aus dem gespeicherten JSON-String wieder ein ordentliches JavaScript-Array.*/
+                this.inhalt = JSON.parse(localStorage[this.key]);
+            } else {
+                /*Wenn es noch keine Daten gibt, dann fange mit einem leeren Array an.*/
+                this.inhalt = [];
+            }
+            /*Sofort zum Anfang wird der Inhalt des Zettels ausgegeben.*/
+            this.schreibeListe();
+        }
+        Einkaufszettel.prototype = {
+            /*Diese Methode fügt einen neuen Eintrag zum Einkaufszettel hinzu.*/
+            hinzufuegen: function () {
+                /*Der Wert des Eingabefelds wird gelesen...*/
+                var eingabe = this.eingabeFeld.value;
+                /*... und am Ende des Inhalts angefügt.*/
+                this.inhalt.push(eingabe);
+                /*Der gesamte Inhalt wird in einen JSON-String umgewandelt und im Web Storage gespeichert. So kann nichts verloren gehen.*/
+                window.localStorage[this.key] = JSON.stringify(this.inhalt);
+                this.eingabeFeld.value = '';
+                /*Der neue Eintrag wird ausgegeben.*/
+                this.schreibeEintrag(eingabe);
+            },
+            /*Diese Methode gibt den gesamten Inhalt des Einkaufszettels aus. */
+            schreibeListe: function () {
+                for (var i = 0; i < this.inhalt.length; i++) {
+                    this.schreibeEintrag(this.inhalt[i]);
+                }
+            },
+            /*Diese Methode gibt einen einzelnen Eintrag auf dem Zettel aus*/
+            schreibeEintrag: function (text) {
+                var li = document.createElement("li");
+                li.appendChild(document.createTextNode(text));
+                this.ausgabeFeld.appendChild(li);
+            }
+        };
+    </script>
+</head>
+<body>
+<p>Zum testen des Session Storage mache Einträge im EInkaufszettel, navigiere zu einer anderen Seite und dann wieder zurück. Deine Daten sind noch da. Aber wenn du den Browser neu startest sind sie weg. </p>
+<h1>Einkaufszettel</h1>
+<h2>Hinzufügen</h2>
+Eintrag: <input id="eintrag" name="eintrag"/>
+<button type="button" id="speichern">Hinzufügen</button>
+<h1>Die Liste</h1>
+<ul id="ausgabe"></ul>
+</body>
+</html>

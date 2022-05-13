@@ -21,6 +21,7 @@
     <br>
     <ul id="liste"></ul><br>
     <input id="eingabe-name" placeholder="Name"> <br> <input id="eingabe-wert" placeholder="Wert"><button type="button" id="append">Hinzufügen</button>
+    <br> <span id="helper"></span>
 
     <script>
 
@@ -36,18 +37,23 @@
             var liste = document.getElementById("liste");
             var eingabeName = eingabefeldName.value;
             var eingabeWert = eingabefeldWert.value;
-            localStorage[name] = wert;
+            
+            localStorage[eingabeName] = eingabeWert;
             eingabefeldName.value = "";
             eingabefeldWert.value = "";
+            
             schreibeListe();
 
 
         }
 
-        function schreibeListe(event) {
+        function schreibeListe() {
             var ausgabe = document.getElementById("liste");
+
             for(var i=0; i<localStorage.length; i++) {
                 var key = localStorage.key[i];
+               
+
                 var li = document.createElement("li");
                 li.appendChild(document.createTextNode(localStorage[key] + " " + key));
                 ausgabe.appendChild(li);
