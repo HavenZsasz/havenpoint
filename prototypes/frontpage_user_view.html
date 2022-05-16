@@ -77,6 +77,7 @@
         </div>
 
     </div>
+    <!-- ToDo: Darkmode % Counter in Webstorage ablegen und ggf zurücksetzen bei Default-Wert -->
 
 
 
@@ -131,6 +132,7 @@
             if (counter % 2 != 0) {
                 logo.setAttribute("src", "logoNightKomprimiert1.png");
                 button.firstChild.data = "Lightmode";
+                counter = 0; //testweise, um Speicherauslastung ggf. klein zu halten (bei Spam könnte die Zahl theoretisch zu ressourcenintensiv werden für solch eine kleine Funktion) 
 
 
 

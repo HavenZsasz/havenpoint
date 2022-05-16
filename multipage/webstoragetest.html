@@ -9,38 +9,39 @@
 <body>
 
     <script>
-        function setup() {
-            document.getElementById("append").addEventListener("click", Liste.append);
+
+        function init() {
+            document.getElementById("speichern").addEventListener("click", save);
+
+
         }
-        function Liste(name, wert) { //Konstruktor
-            this.name = name;
-            this.wert = wert;
-        }
 
-        Liste.prototype = {
-            append: function() {
+        function save() {
+            var name = document.getElementById("eintrag").value;
+            var menge = document.getElementById("menge").value;
 
-                this.name = document.getElementById("name").value;
-                this.wert = document.getElementById("wert").value;
-                var liste = document.getElementById("liste");
+            localStorage.setItem(name, menge);
 
-                var element = document.createElement("li");
-                element.appendChild(document.createTextNode(this.name + this.wert));
-                liste.appendChild(element);
-
-                
-
+            var eintrag = document.createElement("li");
+            var liste = document.getElementById("ausgabe");
+            for(var i=0; i<localStorage.length; i++) {
+                var key = localStorage.key(i);
+                var li = document.createElement("li");
+                li.appendChild(document.createTextNode(localStorage[key] + " " + key));
+                liste.appendChild(li);
             }
+            
+            
         }
 
-        window.addEventListener("load", setup);
+        window.addEventListener("load", init);
+       
     </script>
 
-    <ul id="liste"></ul><br>
-
-    <input id="name" placeholder="Artikel">
-    <input id="wert" placeholder="Menge">
-    <button type="button" id="append">Hinzufügen</button>
+    <input id="eintrag" name="eintrag"/> <input id="menge" name="menge">
+    <button type="button" id="speichern">Hinzufügen</button>
+    <h1>Die Liste</h1>
+    <ul id="ausgabe"></ul>
     
 </body>
 </html>

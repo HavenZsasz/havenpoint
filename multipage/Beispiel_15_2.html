@@ -21,8 +21,9 @@
         /*Der Einkaufszettel ist objektorierntiert. Die IDs der Ein- und Ausgabeelemente sowie der Schlüssel, unter dem
          gespeichert wird, werden als Parameter übergeben. So könntest du ganz leicht mehrere Einkaufszettel auf einer
          Seite haben.*/
-        function Einkaufszettel(eingabeId, ausgabeId, key) {
+        function Einkaufszettel(eingabeId, mengeId, ausgabeId, key) {
             this.eingabeFeld = document.getElementById(eingabeId);
+            this.wertFeld = document.getElementById("menge");
             this.ausgabeFeld = document.getElementById(ausgabeId);
             this.key = key;
             /*Wenn es schon einen Einkaufszettel unter diesem Schlüssel gibt, wird er geladen,*/
@@ -40,9 +41,11 @@
             /*Diese Methode fügt einen neuen Eintrag zum Einkaufszettel hinzu.*/
             hinzufuegen: function () {
                 /*Der Wert des Eingabefelds wird gelesen...*/
-                var eingabe = this.eingabeFeld.value;
+                var eingabe1 = this.eingabeFeld.value;
+                var eingabe2 = this.wertFeld.value;
                 /*... und am Ende des Inhalts angefügt.*/
-                this.inhalt.push(eingabe);
+                this.inhalt.push(eingabe1 + " " + eingabe2);
+                
                 /*Der gesamte Inhalt wird in einen JSON-String umgewandelt und im Web Storage gespeichert. So kann nichts verloren gehen.*/
                 window.localStorage[this.key] = JSON.stringify(this.inhalt);
                 this.eingabeFeld.value = '';
