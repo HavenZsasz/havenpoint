@@ -116,12 +116,31 @@
     <script>
         function setup() {
             
+                var logo = document.getElementById("schwarz");
+                var button = document.getElementById("dark");
+
+            if(localStorage.getItem("counter") != 1) {
+                stylesheet();
+                localStorage["counter"] = JSON.stringify(counter);
+                logo.setAttribute("src", "logoNightKomprimiert1.png");
+                button.firstChild.data = "Lightmode";
+                
+
+            } else {
+                logo.setAttribute("src", "logoDayKomprimiert1.png");
+                button.firstChild.data = "Darkmode";
+                counter = 0; //testweise, um Speicherauslastung ggf. klein zu halten (bei Spam könnte die Zahl theoretisch zu ressourcenintensiv werden für solch eine kleine Funktion)
+                localStorage["counter"] = JSON.stringify(counter);
+
+            }
+            
 
         
 
             
           
             document.getElementById("dark").addEventListener("click", darkMode);
+            
             
             
 
@@ -137,7 +156,7 @@
 
         function darkMode() {
 
-            if(JSON.parse(localStorage["counter"]) == null) {
+            if(localStorage.getItem("counter") = 1) {
 
                 var counter = 0;
                 counter = JSON.parse(localStorage["counter"]);
