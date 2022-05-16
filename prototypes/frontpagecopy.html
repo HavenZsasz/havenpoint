@@ -137,7 +137,7 @@
 
         function darkMode() {
 
-            if(localStorage.getItem("counter") == null) {
+            if(JSON.parse(localStorage["counter"]) == null) {
 
                 var counter = 0;
                 counter = JSON.parse(localStorage["counter"]);
