@@ -115,6 +115,11 @@
 
     <script>
         function setup() {
+            
+
+        
+
+            
           
             document.getElementById("dark").addEventListener("click", darkMode);
             
@@ -122,33 +127,77 @@
 
         }
 
-        var counter=0;
+        
+
+  
+
+        
 
         
 
         function darkMode() {
-            counter++;
-            var helper = document.getElementById("helper");
-            helper.innerHTML = counter;
-            var logo = document.getElementById("schwarz");
-            var button = document.getElementById("dark");
-            stylesheet();
-            
 
-            if (counter % 2 != 0) {
-                logo.setAttribute("src", "logoNightKomprimiert1.png");
-                button.firstChild.data = "Lightmode";
-                  
+            if(localStorage.getItem("counter") == null) {
 
+                var counter = 0;
+                counter = JSON.parse(localStorage["counter"]);
 
-
-
+                counter++;
+                
+                var helper = document.getElementById("helper");
+                helper.innerHTML = counter;
+                var logo = document.getElementById("schwarz");
+                var button = document.getElementById("dark");
+                stylesheet();
+                
+    
+                if (counter % 2 != 0) {
+                    localStorage["counter"] = JSON.stringify(counter);
+                    logo.setAttribute("src", "logoNightKomprimiert1.png");
+                    button.firstChild.data = "Lightmode";
+                      
+    
+    
+    
+    
+                } else {
+                    logo.setAttribute("src", "logoDayKomprimiert1.png");
+                    button.firstChild.data = "Darkmode";
+                    counter = 0; //testweise, um Speicherauslastung ggf. klein zu halten (bei Spam könnte die Zahl theoretisch zu ressourcenintensiv werden für solch eine kleine Funktion)
+                    localStorage["counter"] = JSON.stringify(counter);
+    
+                }
             } else {
-                logo.setAttribute("src", "logoDayKomprimiert1.png");
-                button.firstChild.data = "Darkmode";
-                counter = 0; //testweise, um Speicherauslastung ggf. klein zu halten (bei Spam könnte die Zahl theoretisch zu ressourcenintensiv werden für solch eine kleine Funktion)
+                counter = JSON.parse(localStorage["counter"]);
 
+                counter++;
+                
+                var helper = document.getElementById("helper");
+                helper.innerHTML = counter;
+                var logo = document.getElementById("schwarz");
+                var button = document.getElementById("dark");
+                stylesheet();
+                
+    
+                if (counter % 2 != 0) {
+                    localStorage["counter"] = JSON.stringify(counter);
+                    logo.setAttribute("src", "logoNightKomprimiert1.png");
+                    button.firstChild.data = "Lightmode";
+                      
+    
+    
+    
+    
+                } else {
+                    logo.setAttribute("src", "logoDayKomprimiert1.png");
+                    button.firstChild.data = "Darkmode";
+                    counter = 0; //testweise, um Speicherauslastung ggf. klein zu halten (bei Spam könnte die Zahl theoretisch zu ressourcenintensiv werden für solch eine kleine Funktion)
+                    localStorage["counter"] = JSON.stringify(counter);
+    
+                }
             }
+
+           
 
         }
 
