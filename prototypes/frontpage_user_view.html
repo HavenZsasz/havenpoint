@@ -124,6 +124,8 @@
 
         function darkMode() {
             counter++;
+            var helper = document.getElementById("helper");
+            helper.innerHTML = counter;
             var logo = document.getElementById("schwarz");
             var button = document.getElementById("dark");
             stylesheet();
@@ -132,7 +134,7 @@
             if (counter % 2 != 0) {
                 logo.setAttribute("src", "logoNightKomprimiert1.png");
                 button.firstChild.data = "Lightmode";
-                counter = 0; //testweise, um Speicherauslastung ggf. klein zu halten (bei Spam könnte die Zahl theoretisch zu ressourcenintensiv werden für solch eine kleine Funktion) 
+                  
 
 
 
@@ -140,6 +142,7 @@
             } else {
                 logo.setAttribute("src", "logoDayKomprimiert1.png");
                 button.firstChild.data = "Darkmode";
+                counter = 0; //testweise, um Speicherauslastung ggf. klein zu halten (bei Spam könnte die Zahl theoretisch zu ressourcenintensiv werden für solch eine kleine Funktion)
 
             }
 
@@ -162,7 +165,7 @@
 
     <a id="jump" href="#oben">Nach oben springen</a> <br>
     <br>
-    <a href="#" id="dark">Darkmode</a>
+    <a href="#" id="dark">Darkmode</a> <span id="helper"></span>
     
 
 
