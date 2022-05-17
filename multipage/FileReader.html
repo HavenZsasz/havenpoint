@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input name="datei" id="datei" type="file" accept="image/*"><br>
+    <br>
+    <div id="ausgabe"></div>
+
+    
+
+    <script>
+        function init() {
+            document.getElementById("datei").addEventListener("change", waehleDatei);
+        } 
+
+        function waehleDatei(event) {
+            if(event.target.files[0]) {
+                var leser = new FileReader();
+                leser.addEventListener("load", bildGeladen);
+                leser.readAsDataURL(event.target.files[0]);
+            }
+        }
+
+        function bildGeladen(event) {
+            var img = document.createElement("img");
+            img.setAttribute("src", event.target.result);
+            document.getElementById("ausgabe").appendChild(img);
+        }
+
+        window.addEventListener("load", init);
+    </script>
+    
+</body>
+</html>
