@@ -120,10 +120,11 @@
                 var button = document.getElementById("dark");
 
             if(localStorage.getItem("counter") == 1) {
-                stylesheet();
-                localStorage["counter"] = JSON.stringify(counter);
                 logo.setAttribute("src", "logoNightKomprimiert1.png");
                 button.firstChild.data = "Lightmode";
+                stylesheet();
+                
+     
                 
 
             } else {
