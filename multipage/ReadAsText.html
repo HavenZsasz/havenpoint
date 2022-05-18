@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="datei" type="file">
+
+    <script>
+        function waehleDatei(event) {
+            if(event.target.files[0]) {
+                var leser = new FileReader();
+                leser.addEventListener("load", dateiGeladen);
+                leder.addEventListener("error", zeigeLadefehler);
+                leser.readAsText(event.target.files[0], "UTF-8");
+            }
+        }
+
+        function zeigeLadefehler(event) {
+            alert("Konnte nicht geladen werden");
+        }
+
+        function dateiGeladen(event) {
+            var body = document.getElementsByTagName("body")[0];
+            var zeilen = event.target.result.split("\n");
+            var title = document.createElement("h1");
+            title.appendChild(document.createTextNode(zeilen[0]));
+            body.appendChild(title);
+            var ausgabe = document.createElement("ul");
+            body.appendChild(ausgabe);
+            for(var i=0;i<zeilen.length;i++) {
+                var li = document.createElement("li");
+                li.appendChild(document.createTextNode(zeilen[i]));
+                ausgabe.appendChild(li);
+            }
+
+        }
+
+        function init() {
+            document.getElementById("datei").addEventListener("change", waehleDatei);
+        }
+
+        window.addEventListener("load", init);
+    </script>
+    
+</body>
+</html>
