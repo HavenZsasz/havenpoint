@@ -23,8 +23,23 @@
             if(event.target.files[0]) {
                 var leser = new FileReader();
                 leser.addEventListener("load", bildGeladen);
+                leser.addEventListener("error", zeigeLadefehler);
                 leser.readAsDataURL(event.target.files[0]);
+                
             }
+        }
+
+        function zeigeLadefehler(event) {
+            var meldung;
+            switch(event.target.error.name)  {
+                case "NotFoundError": meldung = "Datei nicht gefunden."; break;
+                case "EncodingError": meldung = "Datei ist zu lang, um sie als Data-URL zu lesen."; break;
+                case "SecurityError": meldung = "Datei ist verdächtig."; break;
+                case "NotReadableError": meldung = "Darf Datei nichzt lesen."; break;
+                default: meldung = "Irgendetwas ist schief gelaufen. Bitte Datei nochmal überprüfen.";
+
+            }
+            alert("Datei konnte nicht geladen werden. Grund:" + meldung);
         }
 
         function bildGeladen(event) {
