@@ -11,6 +11,8 @@
     <input name="datei" id="datei" type="file" accept="image/*"><br>
     <br>
     <div id="ausgabe"></div>
+    <br>
+    <div id="fortschritt"></div>
 
     
 
@@ -24,8 +26,32 @@
                 var leser = new FileReader();
                 leser.addEventListener("load", bildGeladen);
                 leser.addEventListener("error", zeigeLadefehler);
+                leser.addEventListener("progress", fortschrittAnzeigen);
+                leser.addEventListener("loadend", ladenBeendet);
+                leser.addEventListener("loadstart", ladenGestartet);
                 leser.readAsDataURL(event.target.files[0]);
                 
+            }
+        }
+
+        function fortschrittAnzeigen(event) {
+            var anzeige = document.getElementById("fortschritt");
+            anzeige.appendChild(document.createTextNode(((event.loaded * 100) / event.total).toFixed(0) + "% geladen."));
+            anzeige.appendChild(document.createElement("br"));
+        }
+
+        function ladenGestartet() {
+            var anzeige = document.getElementById("fortschritt");
+            anzeige.appendChild(document.createTextNode("Laden gestartet"));
+            anzeige.appendChild(document.createElement("br"));
+        }
+
+        function ladenBeendet() {
+            if(event.target.error) {
+                anzeige.appendChild(document.createTextNode(" Laden mit Fehler abgeschlossen"));
+
+            } else {
+                anzeige.appendChild(document.createTextNode(" Laden abgeschlossen"));
             }
         }
 
