@@ -30,9 +30,10 @@ body {
     
     max-width: 120px;
     max-height: 120px;
-    overflow: hidden;
     border-radius: 50%;
+    overflow: hidden;
     border-end-end-radius: 50%;
+    
     border: 1px solid black;
     display: flex;
     justify-content: center;
