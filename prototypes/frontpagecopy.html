@@ -19,6 +19,8 @@
         function stylesheet() {
 
             var theme = document.getElementById("stylesheet");
+            var helper = document.getElementById("stylecheck");
+            helper.innerHTML = "Darkmode nicht vollständig";
 
             if (theme.getAttribute("href") == "day.css") {
                 theme.setAttribute("href", "night.css");
@@ -240,7 +242,7 @@
 
     <a id="jump" href="#oben">Nach oben springen</a> <br>
     <br>
-    <a href="#" id="dark">Darkmode</a> <span id="helper"></span>
+    <a href="#" id="dark">Darkmode</a> <span id="helper"></span><span id="stylecheck"></span>
     
 
 
