@@ -1,0 +1,23 @@
+span {
+    color:blueviolet;
+    background-color: aqua;
+}
+
+body {
+    background-color: wheat;
+}
+
+#Jumper {
+    background-color: green;
+    color: red;
+}
+
+.link {
+
+    background-color: black;
+
+}
+.unten, .oben {
+    background-color: white; /* wenn ein Tag mehrere Klassen hat, gewinnt immer das style, welches weiter unten steht*/
+}
+
