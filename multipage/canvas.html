@@ -19,12 +19,17 @@
         function zeichne() {
             var canvas = document.getElementById("grafik");
             var context = canvas.getContext("2d");
-            context.lineStyle = "#000000";
-            context.lineWidth = 1;
-            context.fillStyle = "#FFD700";
-            context.fillRect(0, 0, 30, 60);
-            context.strokeRect(0, 0, 30, 60);
+            zeichneBalken(context, 0, 3, "#FFD700");
+            zeichneBalken(context, 30, 1, "#C0C0C0");
+            zeichneBalken(context, 60, 2, "#AF773B");
+
             
+        }
+
+        function zeichneBalken(context, startX, medaillen, farbe) {
+            context.fillStyle = farbe;
+            context.fillRect(startX, 0, 30, medaillen * 20);
+            context.strokeRect(startX, 0, 30, medaillen * 20);
         }
 
         window.addEventListener("load", setup);
