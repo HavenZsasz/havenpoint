@@ -162,6 +162,7 @@ h1 {
     
     height: 90px;
     width: 90px;
+    min-width: 90px;
 
     
     max-width: 120px;
