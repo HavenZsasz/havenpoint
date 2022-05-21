@@ -7,3 +7,6 @@ if eingabe == "Tim":
     ergebnis = erstes_wort + ", " + zweites_wort
     print(ergebnis)
     print(erstes_wort, zweites_wort, sep='*') #sep legt fest, wie die Worte getrennt werden -> default = LEERZEICHEN
+    print(erstes_wort, end=" ")
+    print(zweiets_wort)
+    
