@@ -16,15 +16,40 @@
         function setup() {
             document.getElementById("zeichne").addEventListener("click", zeichne);
         }
+
+        function liesTabelle() {
+            var tabelle = document.getElementById("medaillenspiegel");
+            var abteilungen = tabelle.getElementsByTagName("thead")[0].getElementsByTagName("th");
+            var zeilen = tabelle.getElementsByTagName("tbody")[0].getElementsByTagName("tr");
+            var gold = zeilen[0].getElementsByTagName("td");
+            var silber = zeilen[1].getElementsByTagName("td");
+            var bronze = zeilen[2].getElementsByTagName("td");
+            var ergebnis = [];
+            for(var i=0; i<abteilungen.length; i++) {
+                ergebnis[i] = {
+                    abteilungen: abteilungen[i].innerHTML,
+                    gold: parseInt(gold[i].innerHTML),
+                    silber: parseInt(silber[i].innerHTML),
+                    bronze: parseInt(bronze[i].innerHTML)
+
+                }
+            }
+            return ergebnis;
+        }
         function zeichne() {
             var canvas = document.getElementById("grafik");
             var context = canvas.getContext("2d");
+            var daten = liesTabelle();
             context.save();
             context.scale(1, -1);
             context.translate(0, -200);
-            zeichneBalken(context, 0, 3, "#FFD700");
-            zeichneBalken(context, 30, 1, "#C0C0C0");
-            zeichneBalken(context, 60, 2, "#AF773B");
+            for(var i=0; i<daten.length; i++) {
+                zeichneBalken(context, i*100, daten[i].gold, "#FFD700", "CFA700");
+                zeichneBalken(context, i*100, daten[i].silber, "#C0C0C0", "909090");
+                zeichneBalken(context, i*100, daten[i].bronze, "#AF773B", "#7F470B");
+
+            }
+          
             context.restore();
 
             
@@ -38,6 +63,42 @@
 
         window.addEventListener("load", setup);
     </script>
+    <br>
+    <br>
+    <table id="medaillenspiegel">
+        <thead>
+        <tr>
+            <td></td>
+            <th>Lager</th>
+            <th>Produktion</th>
+            <th>Büro</th>
+            <th>Geschäftsführung</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>Gold</th>
+            <td>3</td>
+            <td>2</td>
+            <td>4</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th>Silber</th>
+            <td>1</td>
+            <td>5</td>
+            <td>2</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th>Bronze</th>
+            <td>2</td>
+            <td>5</td>
+            <td>4</td>
+            <td>0</td>
+        </tr>
+        </tbody>
+    </table>
     
 </body>
 </html>
