@@ -9,4 +9,6 @@ if eingabe == "Tim":
     print(erstes_wort, zweites_wort, sep='*') #sep legt fest, wie die Worte getrennt werden -> default = LEERZEICHEN
     print(erstes_wort, end=" ")
     print(zweites_wort)
+    import sys
+    print(sys.version_info)
     
