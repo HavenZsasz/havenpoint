@@ -11,7 +11,7 @@ body {
     background-attachment: fixed;
     background-color: wheat; */
     background: wheat url(/images/HintergrundCHECK.png) no-repeat fixed center top; /*Alternative zu alles einzeln in Zeilen schreiben, die Reihenfolge ist allerdings wichtig! */
-    
+    font-size: 62.5%; /*sinnvoll, da standardmäßig 16 px, 62.5% davon sind 10px. So sind Umrechnungen leicht (Ich will 20px, dann einfach 2em*/
 }
 
 #Jumper {
@@ -54,4 +54,18 @@ body {
 :visited { /*
     color: red;  Pseudo Klasse, sorgt dafür, dass bereits besuchte Links nicht lila werden 
     */
+}
+
+p {
+    background-color: aliceblue;
+}
+#erster {
+    background-color: aqua;
+}
+#zweiter {
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#dritter {
+    font-weight: bolder;
 }
