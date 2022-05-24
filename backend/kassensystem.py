@@ -7,4 +7,4 @@ preis = eingabePreis * rabattGgs
 print("Der Preis beträgt: ", preis)
  
 rueckgeld = eingabeBezahlt - preis
-print("Das Rückgeld beträgt:", rueckgeld)
+print("Das Rückgeld beträgt: ", rueckgeld)
