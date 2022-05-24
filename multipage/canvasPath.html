@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <canvas id="grafik" height="200" width="500">
+    </canvas><br>
+    <button id="zeichne" type="button">Zeichne</button>
+
+    <script>
+        function setup() {
+            document.getElementById("zeichne").addEventListener("click", zeichne);
+
+        }
+
+        function zeichne() {
+            var canvas = document.getElementById("grafik");
+            var context = canvas.getContext("2d");
+            context.beginPath();
+            context.moveTo(75, 25);
+            context.lineTo(125, 100);
+            context.lineTo(25, 100);
+            context.closePath();
+            context.fill();
+            context.stroke();
+        }
+
+        window.addEventListener("load", setup);
+    </script>
+    
+</body>
+</html>
