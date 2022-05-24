@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <span id="nachricht"></span><br>
+    <button id="empfangen" type="button">Nachrichten empfangen</button>
+
+    <script>
+        function setup() {
+            var ajaxRequest = new XMLHttpRequest();
+            ajaxRequest.addEventListener("load", ajaxGeladen);
+            ajaxRequest.addEventListener("error", ajaxFehler);
+            ajaxRequest.open("get", "/ajax/derkoenig.php");
+            ajaxRequest.send();
+           
+
+            
+        }
+
+        function ajaxGeladen(event) {
+
+            var absatz = document.createElement("p");
+            absatz.appendChild(document.createTextNode("Der Server sagt:" + event.target.responseText));
+            document.getElementById("nachricht").appendChild(absatz);
+            
+        }
+
+        function ajaxFehler(event) {
+
+            aler(event.target.statusText);
+
+        }
+
+        function init() {
+            document.getElementById("empfangen").addEventListener("click", setup);
+        }
+        window.addEventListener("load", init);
+    </script>
+    
+</body>
+</html>
