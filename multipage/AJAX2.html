@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Die Steuern sind fällig, Bursche</title>
+</head>
+<body>
+<p>Wir verlangen Steuern, Bube! Zahl nicht zu wenig und beleidige uns. Aber zahl auch nicht zu viel, das ruiniert die
+    Kolonie</p>
+
+<div id="der-koenig-spricht"></div>
+<!--In diesem Eingabefeld gibst du ein, wie viel Steuern du zahlen wirst. Wenn du den Knopf drückst sagt dir der König, was er davon hält. -->
+<input type="number" min="1" max="100" id="dukaten"> Dukaten
+<button id="zahle" type="submit">Euer Majestät, wir zahlen</button>
+<script>
+    window.addEventListener("load", init);
+
+    function init() {
+        document.getElementById("zahle").addEventListener("click", ajax);
+    }
+
+    /*Hier wird der AJAX-Request losgeschickt.*/
+    function ajax() {
+        var tipp = parseInt(document.getElementById("dukaten").value);
+        /*Schon vor dem abschicken wird geprüft, ob die Eingabe überhaupt gültig ist. Der Server muss das zwar zur Sicherheit
+        noch mal prüfen, aber wenn du vorher schon weißt, dass die Eingabe fehlerhaft ist, kannst du den Umweg auch sparen.*/
+        if (tipp && tipp > 0 && tipp <= 100) {
+            /*Dann wieder einen XMLHTTPRequest erzeugen.*/
+            var ajaxRequest = new XMLHttpRequest();
+            /*Handler registrieren.*/
+            ajaxRequest.addEventListener("load", ajaxGeladen);
+            ajaxRequest.addEventListener("error", ajaxFehler);
+            /*Dieses mal soll es aber ein POST-Request sein, denn er ist nicht beliebig wiederholbar.*/
+            ajaxRequest.open("post", "/ajax/steuern.php");
+            /*Die Daten werden in einem FormData-Objekt übermittelt.*/
+            var daten = new FormData();
+            daten.append("tipp", tipp);
+            /*Das du an den Server schickst.*/
+            ajaxRequest.send(daten);
+        } else {
+            sprich("Das ist keine gültige Zahl, Bursche");
+        }
+    }
+
+    function ajaxGeladen(event) {
+        /*Die Antwort des Servers kommt dieses Mal im JSON-Format: schnell ein Objekt daraus erzeugt, und dann die Ausgabe
+        daraus erzeugen.*/
+
+
+
+        antwort = JSON.parse(event.target.responseText);
+        var text = "";
+        text += antwort.tipp;
+        text += ": ";
+        text += antwort.nachricht;
+        text += " Du hast noch ";
+        text += versuche;
+        text += " Versuch(e)";
+        sprich(text);
+        /*Wenn der König keinen weiteren Tipp zulässt, dann teile ihm mit, dass du es nochmal versuchen möchtest.*/
+        if (!antwort.nochEinTipp){
+            alert(antwort.nachricht + "\nVersuch es nochmal");
+            var ajaxRequest = new XMLHttpRequest();
+            ajaxRequest.open("post", "/ajax/steuern.php");
+            var daten = new FormData();
+            daten.append("neuerVersuch", "true");
+            ajaxRequest.send(daten);
+            document.getElementById("der-koenig-spricht").innerHTML = "";
+        }
+    }
+
+    function sprich(text) {
+        var p = document.createElement("p");
+        p.appendChild(document.createTextNode(text));
+        document.getElementById("der-koenig-spricht").appendChild(p);
+    }
+
+    function ajaxFehler(event) {
+        alert(event.target.statusText);
+    }
+
+
+</script>
+</body>
+</html>
