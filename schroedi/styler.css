@@ -1,3 +1,10 @@
+
+/* Selektoren finden sich auf S. 148/149*/
+
+
+
+
+
 span:hover {
     color:blueviolet;
     background-color: aqua;
@@ -68,4 +75,17 @@ p {
 }
 #dritter {
     font-weight: bolder;
+    font-style: italic;
+}
+
+h1 .tester {    /*Nachfahren Selektor, sorgt dafür, dass lediglich die Klasse "tester" umgeben von h1 angesprochen wird, nicht andere "tester" Klassen*/
+    font-style: italic;
+    font-size: 1.5em;
+}
+.tester {
+    color: blueviolet;
+}
+
+p.tryer {   /*Hiermit werden alle p angesprochen, die als Klassennamen "tryer" heißen. Alle anderen Klassen "tryer" werden nicht angesprochen*/
+    color: red;
 }
