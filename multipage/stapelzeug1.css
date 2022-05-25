@@ -47,6 +47,21 @@ h1, h2, h3, h4, h5, h6{
 	font-variant: small-caps;
 }
 
+@media screen and (max-width: 688px) {
+
+	#navigation {
+		height: auto;
+	}
+
+
+	#navigation li {
+		float: none;
+		width: 100%;
+		border-width: 0;
+	}
+	
+}
+
 @media  screen and (max-width: 850px) {
 	#inhalt {
 		float: none;
