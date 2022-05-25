@@ -68,14 +68,23 @@ p {
 }
 #erster {
     background-color: aqua;
+    font-family: monospace;
+    text-align: justify; /*Blocksatz*/
 }
 #zweiter {
     font-size: 1.5em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "this_mine", sans-serif;
+    font-variant: small-caps; /*Alles in Großbuchstaben, nur etwas anders*/
+    text-decoration: underline;
+    text-align: center;
+    font-style: inherit; /*Passt den Style an das umgebende Element an. Wenn Bsp umgebend kursiv ist, wird damit diese Klasse auch kursiv*/
 }
 #dritter {
-    font-weight: bolder;
+    font-weight: bold;
     font-style: italic;
+    text-transform: uppercase; /*Alles in Großbuchstaben*/
+    text-decoration: line-through;
+    text-indent: 2em;   /*Einrücken der ersten Zeile vom Absatz*/
 }
 
 h1 .tester {    /*Nachfahren Selektor, sorgt dafür, dass lediglich die Klasse "tester" umgeben von h1 angesprochen wird, nicht andere "tester" Klassen*/
@@ -88,4 +97,9 @@ h1 .tester {    /*Nachfahren Selektor, sorgt dafür, dass lediglich die Klasse "
 
 p.tryer {   /*Hiermit werden alle p angesprochen, die als Klassennamen "tryer" heißen. Alle anderen Klassen "tryer" werden nicht angesprochen*/
     color: red;
+}
+
+@font-face {
+    font-family: "this_mine";
+    src: url('examplefont.eot');
 }
