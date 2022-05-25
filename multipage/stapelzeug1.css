@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6{
 	font-variant: small-caps;
 }
 
-@media screen and (max-width: 688px) {
+@media screen and (max-width: 1000px) {
 
 	#navigation {
 		height: auto;
