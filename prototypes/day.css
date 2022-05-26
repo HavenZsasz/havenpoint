@@ -199,6 +199,36 @@ h1 {
   
 }
 
+@media screen and (orientation: portrait) {
+
+    a#inserate {
+        display: none;
+    }
+    a#immobilien {
+        display: none;
+    }
+
+    a#automobil {
+        display: none;
+    }
+
+    a#neuware {
+        display: none;
+    }
+
+    #clickbox {
+        
+    }
+
+
+
+
+    
+
+
+  
+}
+
 @media screen and (min-width: 601px) {
 
     #clickbox {
