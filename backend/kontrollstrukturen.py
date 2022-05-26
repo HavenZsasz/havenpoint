@@ -1,7 +1,9 @@
 spam = 1
-egg = 10
+egg = 1000
 
 while egg > spam:
-    spam = spam + 1
+    spam += 1
     print("In der Schleife", spam)
+    ergebnis = False
+    print(not ergebnis)
 
