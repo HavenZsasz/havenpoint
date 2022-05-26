@@ -103,3 +103,12 @@ p.tryer {   /*Hiermit werden alle p angesprochen, die als Klassennamen "tryer" h
     font-family: "this_mine";
     src: url('examplefont.eot');
 }
+
+#Liste {
+    background-color: white;
+    list-style-type: lower-alpha;
+}
+ul {
+    list-style-type: armenian;
+    /*list-style-image nutzen um ein Bild als AUfzählungszeichen reinzuladen*/
+}
