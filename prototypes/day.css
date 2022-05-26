@@ -173,11 +173,53 @@ h1 {
     
 }
 
+@media screen and (max-width: 400px) {
+
+    a#inserate {
+        display: none;
+    }
+    a#immobilien {
+        display: none;
+    }
+
+    a#automobil {
+        display: none;
+    }
+
+    a#neuware {
+        display: none;
+    }
+
+    #clickbox {
+        border: 1px solid black;
+    }
+
+
+
+    
+
+
+  
+}
+
+@media screen and (min-width: 401px) {
+
+    #clickbox {
+        display: none;
+    }
+    
+}
+
 #navbar {
     margin-top: 3%;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     padding:1% 1%;
+}
+#clickbox {
+
+    display: none;
+    
 }
 
 #navbardark {
