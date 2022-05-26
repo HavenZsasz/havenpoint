@@ -1,5 +1,5 @@
 spam = 1
-egg = 1000
+egg = int(input("Eingabe"))
 
 while egg > spam:
     spam += 1
