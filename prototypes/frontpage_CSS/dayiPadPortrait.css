@@ -74,30 +74,13 @@
         border-bottom: 1px solid black;
     }
 
-    #immobilien {
-        display:none;
-
-    }
-
-    #automobil {
-        display: none;
-    }
 
     #mehr {
-        border: 1px rgba(0, 0, 0, 0.5) solid;
-        margin-top: 3px;
-        margin-bottom: 3px;
-        height: 20px;
-        width: 25px;
-        display: block;
-        border-radius: 10%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: none;
         
     }
 
-    #plus, #entdecken, #neuware, #inserate {
+    #plus, #entdecken, #neuware, #inserate, #automobil, #immobilien {
         text-decoration: none;
         color: black;
         margin-top: 3px;
@@ -126,32 +109,7 @@
 
     #mehr > div {
         
-        border: 1px rgba(0, 0, 0, 0.5) solid;
-        block-size: 3px;
-        width: 0.1px;
-        background-color: white;
-        height: 4px;
-        border-radius: 50%;
-        
-        
-        
 
-
-        
-    }
-
-    #mehr:hover {
-        
-        color: rgb(0, 220, 253);
-        background-color: black;
-        opacity: 0.5;
-        padding: 1px;
-        border-radius: 14%;
-        border: 1px rgb(0, 220, 253) solid;
-        box-shadow: 0px 0px 10px  rgb(0, 220, 253),
-        
-        0px 0px 20px  rgb(0, 220, 203);
-    }
 
 
 
