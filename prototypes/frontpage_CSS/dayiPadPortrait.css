@@ -90,7 +90,7 @@
         
     }
 
-    #entdecken:hover, #neuware:hover, #inserate:hover {
+    #entdecken:hover, #neuware:hover, #inserate:hover, #automobil:hover, #immobilien:hover {
         color: rgb(0, 220, 253);
         background-color: black;
         opacity: 0.5;
