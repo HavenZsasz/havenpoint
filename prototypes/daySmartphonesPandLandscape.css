@@ -14,8 +14,8 @@
     }
 
     #logo {
-        width: 30%;
-        height: 15%;
+        width: 100px;
+        height: auto;
         cursor: pointer;
     }
 
