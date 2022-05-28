@@ -99,6 +99,21 @@
         color: black;
         margin-top: 3px;
         margin-bottom: 3px;
+        transition-property: all;
+        transition: 0.2s;
+        
+    }
+
+    #plus:hover, #entdecken:hover, #neuware:hover, #inserate:hover {
+        color: rgb(0, 220, 253);
+        background-color: black;
+        opacity: 0.5;
+        padding: 1px;
+        border-radius: 14%;
+        border: 1px rgb(0, 220, 253) solid;
+        box-shadow: 0px 0px 10px  rgb(0, 220, 253),
+        
+        0px 0px 20px  rgb(0, 220, 203);
         
     }
 
@@ -116,6 +131,19 @@
 
 
         
+    }
+
+    #mehr:hover {
+        
+        color: rgb(0, 220, 253);
+        background-color: black;
+        opacity: 0.5;
+        padding: 1px;
+        border-radius: 14%;
+        border: 1px rgb(0, 220, 253) solid;
+        box-shadow: 0px 0px 10px  rgb(0, 220, 253),
+        
+        0px 0px 20px  rgb(0, 220, 203);
     }
 
 
