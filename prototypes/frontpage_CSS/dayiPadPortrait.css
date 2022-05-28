@@ -14,9 +14,10 @@
     }
 
     #logo {
-        width: 100px;
+        width: 150px;
         height: auto;
         cursor: pointer;
+        margin-left: 5%;
     }
 
     #search-container {
@@ -25,6 +26,7 @@
         width: 40%;
         height: 16%;
         margin-top: 20px;
+        
 
     }
 
@@ -43,11 +45,12 @@
         justify-content: center;
         margin-top: 8px;
         border: 1px solid black;
-        height: 60px;
-        width: 55px;
+        height: 80px;
+        width: 80px;
         border-radius: 50%;
         overflow: hidden;
         min-width: 55px;
+        margin-right: 5%;
 
     }
 
