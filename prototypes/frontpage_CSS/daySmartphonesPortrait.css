@@ -29,6 +29,14 @@
         
     }
 
+    .dark-theme #suche {
+        background-color: #bbb;
+    }
+
+    .dark-theme #suche::placeholder {
+        color: black;
+    }
+
     #sitehead {
         display: block;
         
@@ -60,6 +68,7 @@
         width: 100%;
         border-radius: inherit;
         border: 1px solid black;
+        background: transparent;
         
         
 
