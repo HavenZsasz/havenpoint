@@ -50,11 +50,54 @@
         <li>Blade Runner</li>
     </ul>
     <ol  id = "Liste" start="9" reversed> <!--Reversed ist ein Boolsches Attribut, True oder False, deshalb reicht es hier einfach nur reversed zu schreiben, man muss nicht reversed = "reversed" schreiben-->
-        <li>Sin City</li>
-        <li>Sin City 2</li>
+        <li>Sin City
+            <ul>Sin City 2</ul>
+        </li>
         <li>Dune</li>
         <li>Blade Runner</li>
     </ol>
+    <br>
+    <dl> <!--Definition List; Hier kann man mehrere Definitionen liefern, eine Art Auflistung.-->
+        <dt><dfn>Bible Black, The</dfn></dt>
+        <dd>The Bible Black is the unholiest book of all.</dd>
+        <dt>Normal Bible, The</dt>
+        <dd>Pretty boring Book, if you ask me.</dd>
+        <dd id = "truethat">Yeah, I kinda dislike that book.</dd>
+    </dl>
+    <ol>
+        <li> Sin City
+            <ol>
+                <li> Sin City 1</li>
+                <li> Sin City 2</li>
+            </ol>
+        </li>
+    </ol>
+    <br>
+    <br>
+    <table>
+        <caption>Fucking good movies</caption>
+        <thead>Good Movies</thead>
+        <tfoot>Must Watch</tfoot>
+        <th scope = "col">Number</th>
+        <th scope = "col">Movie Name</th>
+        <th scope = "col">Actress</th>
+        <tbody>
+            <tr> 
+                <th scope = "row">First</th>
+                <td>Sin City</td> <td> Jessica Alba</td>
+            </tr>
+            <tr>
+                <th scope = "row">Second</th>
+                <td>Blade Runner 2049</td> <td>Ana de Armas</td>
+            </tr>
+            <tr> 
+                <th scope = "row">Third</th>
+                <td>Baby Driver</td> <td>Lily James</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    
     <a class = "link unten" href="#meinLink"  id="unten">Link hoch </a>
     <br>
     <br>
