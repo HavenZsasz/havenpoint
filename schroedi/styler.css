@@ -112,3 +112,20 @@ ul {
     list-style-type: armenian;
     /*list-style-image nutzen um ein Bild als AUfzählungszeichen reinzuladen*/
 }
+dl {
+    background-color: aliceblue;
+}
+
+#truethat {
+    color: lightgrey;
+}
+td {
+    text-align: center;
+}
+thead { /*Wieso macht das nichts? Die Tabelle bleibt identisch?*/
+    font-weight: bold;
+    font-size: 2em;
+}
+thead tr {
+    border-bottom: 2px solid black;
+}
