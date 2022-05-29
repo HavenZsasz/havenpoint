@@ -37,6 +37,12 @@
         color: black;
     }
 
+    .dark-theme #suche:focus {
+        background-color: black;
+        border: 1px solid white;
+        color: #bbb;
+    }
+
     #sitehead {
         display: block;
         
