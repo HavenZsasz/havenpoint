@@ -49,6 +49,26 @@
         <a id="mehr" href="#">&#9776</a>
     </div>
 
+    <br>
+    <span id="helper"></span>
+
+    <script>
+        function setup() {
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+            var helper = document.getElementById("helper");
+
+            if (prefersDarkScheme.matches) {
+                document.body.classList.add("dark-theme");
+                helper.innerHTML = "Darkmode erkannt";
+
+            } else {
+                document.body.classList.remove("dark-theme");
+            }
+        }
+
+
+        window.addEventListener("load", setup);
+    </script>
 
     
 </body>
