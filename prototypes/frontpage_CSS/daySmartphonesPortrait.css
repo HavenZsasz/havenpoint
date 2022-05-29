@@ -111,6 +111,24 @@
         padding: 1px;
     }
 
+    #plus-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(0, 0,0,0.5);
+        border-radius: 50%;
+        min-width: 15px;
+        height: 18px;
+        
+        
+    }
+
+    #plus-container:hover {
+
+        background-color: gray;
+
+    }
+
     
     #mehr:hover {
         
