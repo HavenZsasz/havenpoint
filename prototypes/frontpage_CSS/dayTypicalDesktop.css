@@ -6,6 +6,13 @@
 
     }
 
+    .dark-theme {
+        background-color: black;
+        color: white;
+
+        
+    }
+
     #sitehead {
         display: flex;
         justify-content: space-between;

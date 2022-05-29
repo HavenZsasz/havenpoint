@@ -1,9 +1,50 @@
-@media only screen and (min-device-width : 768px) and (max-device-width : 1480px)  {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1480px) {
     * {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         padding-left: 2px;
         padding-right: 2px;
 
+    }
+
+    .dark-theme {
+        background-color: black;
+        color:white;
+    }
+
+    .dark-theme #navigation {
+
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+
+    }
+
+    .dark-theme #round-container {
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8px;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        min-width: 55px;
+        margin-right: 5%;
+    }
+
+    .dark-theme #round-container:hover {
+        cursor: pointer;
+        border-color: rgb(0, 220, 253);
+    }
+
+   .dark-theme #plus, .dark-theme #entdecken, .dark-theme #neuware, .dark-theme #inserate, .dark-theme #automobil, .dark-theme #immobilien {
+        text-decoration: none;
+        color: white;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        transition-property: all;
+        transition: 0.2s;
+        
     }
 
     #sitehead {
