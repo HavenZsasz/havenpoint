@@ -96,7 +96,7 @@
         color: rgb(0, 220, 253);
         background-color: black;
         opacity: 0.5;
-        padding: 0.5px;
+        margin: 0.5px;
         border-radius: 14%;
         border: 1px rgb(0, 220, 253) solid;
         box-shadow: 0px 0px 10px  rgb(0, 220, 253),
@@ -106,7 +106,8 @@
     }
 
     #plus:hover {
-        color: rgb(0, 220, 253)
+        color: rgb(0, 220, 253);
+        margin: 0.5px;
     }
 
 }

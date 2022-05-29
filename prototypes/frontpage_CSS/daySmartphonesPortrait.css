@@ -106,7 +106,8 @@
     }
 
     #plus:hover {
-        color: rgb(0, 220, 253)
+        color: rgb(0, 220, 253);
+        padding: 1px;
     }
 
     
