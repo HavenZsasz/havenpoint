@@ -21,9 +21,12 @@
 
    .dark-theme #plus, .dark-theme #entdecken, .dark-theme #neuware, .dark-theme #inserate, .dark-theme #mehr {
         text-decoration: none;
+        box-sizing: border-box;
         color: rgb(228, 221, 221);
         margin-top: 3px;
+        
         margin-bottom: 3px;
+        padding: 7px;
         transition-property: all;
         transition: 0.2s;
         
@@ -156,7 +159,7 @@
         color: rgb(0, 220, 253);
         background-color: black;
         opacity: 0.5;
-        padding: 1px;
+        padding: 10px;
         border-radius: 14%;
         border: 1px rgb(0, 220, 253) solid;
         box-shadow: 0px 0px 10px  rgb(0, 220, 253),
