@@ -6,6 +6,10 @@
 
     }
 
+    #all {
+        z-index: 1;
+    }
+
     .dark-theme {
         background-color: rgb(31, 31, 31);
         color: rgb(228, 221, 221);
@@ -13,8 +17,8 @@
 
     .dark-theme #navigation {
 
-        border-top: 1px solid white;
-        border-bottom: 1px solid white;
+        border-top: 1px solid #bbb;
+        border-bottom: 1px solid #bbb;
 
     }
 
@@ -204,6 +208,24 @@
         
         0px 0px 20px  rgb(0, 220, 203);
     }
+
+    #dropdown-mehr {
+        display: none;
+        background-color:rgba(228, 221, 221, 0.9);
+        position: fixed;
+        transition-property: all;
+        transition-duration: 0.5s;
+        top: 1%;
+        right: 1%;
+        height: 40%;
+        width: 70%;
+        border: 1px solid white;
+        z-index: 2;
+    }
+
+    
+
+
 
 
 

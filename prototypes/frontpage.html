@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,47 +16,64 @@
     <link id="stylesheet" rel="stylesheet" href="frontpage_CSS/dayMiniDevices.css">
     <link id="stylesheet" rel="stylesheet" href="frontpage_CSS/dayTypicalDesktop.css">
     <link id="stylesheet" rel="stylesheet" href="frontpage_CSS/daySmallTablets.css">
-    
-    
 
-    
+
+
+
     <title>Havenpoint - Startseite</title>
 </head>
+
 <body>
 
-    <div id="sitehead"> 
-        
-        <img id="logo" src="logoDayKomprimiert1.png">
 
-        <form id="search-container">
-            <input id="suche" type="search" placeholder="Alle Kategorien durchsuchen...">
+
+    <div id="all">
+        <div id="sitehead">
+
+            <img id="logo" src="logoDayKomprimiert1.png">
+
+            <form id="search-container">
+                <input id="suche" type="search" placeholder="Alle Kategorien durchsuchen...">
+
+            </form>
+
+            <div id="round-container">
+                <img id="profilbild" src="segelKomprimiert2.png">
+            </div>
+        </div>
+
+        <div id="navigation">
+            <div id="plus-container">
+                <a id="plus" href="#">+</a>
+
+            </div>
+
+            <a id="entdecken" href="#">Entdecken</a>
+            <a id="neuware" href="#">Neuware</a>
+            <a id="inserate" href="#">Inserate</a>
+            <a id="automobil" href="#">Automobil</a>
+            <a id="immobilien" href="#">Immobilien</a>
+            <a id="mehr" href="#">&#9776</a>
+
+        </div>
+
+        <br>
+        <span id="helper"></span>
+    </div>
+    
+    <div id="dropdown-mehr">
+        <div id="round-container-mobile">
             
-        </form>
-        
-        <div id="round-container">
-            <img id="profilbild" src="segelKomprimiert2.png">
         </div>
+        <a id="inserate-mobile" href="#">Inserate</a>
     </div>
 
-    <div id="navigation">
-        <div id="plus-container">
-            <a id="plus" href="#">+</a>
 
-        </div>
-        
-        <a id="entdecken" href="#">Entdecken</a>
-        <a id="neuware" href="#">Neuware</a>
-        <a id="inserate" href="#">Inserate</a>
-        <a id="automobil" href="#">Automobil</a>
-        <a id="immobilien" href="#">Immobilien</a>
-        <a id="mehr" href="#">&#9776</a>
-    </div>
-
-    <br>
-    <span id="helper"></span>
 
     <script src="frontpage_JS/darkmode.js"></script>
+    <script src="frontpage_JS/dropdown.js"></script>
 
-    
+
 </body>
+
 </html>
