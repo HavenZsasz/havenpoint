@@ -8,7 +8,7 @@
 
     .dark-theme {
         background-color: rgb(31, 31, 31);
-        color:white;
+        color: rgb(228, 221, 221);
     }
 
     .dark-theme #navigation {
@@ -21,7 +21,7 @@
 
    .dark-theme #plus, .dark-theme #entdecken, .dark-theme #neuware, .dark-theme #inserate, .dark-theme #mehr {
         text-decoration: none;
-        color: white;
+        color: rgb(228, 221, 221);
         margin-top: 3px;
         margin-bottom: 3px;
         transition-property: all;
