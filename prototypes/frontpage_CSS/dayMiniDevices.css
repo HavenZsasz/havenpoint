@@ -132,6 +132,10 @@
             0px 0px 20px rgb(0, 220, 203);
     }
 
+    #profilbild-mobile {
+        display: none;
+    }
+
 
 
 }
