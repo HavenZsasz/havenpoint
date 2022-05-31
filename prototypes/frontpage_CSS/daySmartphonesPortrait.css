@@ -5,6 +5,12 @@
 
     }
 
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding:0;
+    }
+
     
 
     .dark-theme {
@@ -72,6 +78,7 @@
         height: auto;
         cursor: pointer;
         margin-left: 2%;
+        margin-top: 3%;
     }
 
     #search-container {
@@ -249,6 +256,7 @@
         height: 100%;
         z-index: 0;
         text-align: center;
+        overflow: scroll;
     }
 
     #dropdown-mehr a {
