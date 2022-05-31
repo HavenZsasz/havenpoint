@@ -49,6 +49,20 @@
         color: black;
     }
 
+    .dark-theme #dropdown-mehr {
+        background-color: black;
+        color: rgb(228, 221, 221)
+    }
+
+    .dark-theme #dropdown-mehr a {
+        color: rgb(228, 221, 221);
+        border-top: 1px #bbb solid;
+    }
+
+    .dark-theme #round-container-mobile {
+        border: 1px solid #bbb;
+    }
+
     #sitehead {
         display: block;
         
@@ -214,7 +228,8 @@
     #dropdown-mehr {
         display: none;
         overflow: hidden;
-        background-color:black;
+        background-color: #bbb;
+        color: black;
         position: fixed;
         transition-property: all;
         transition-duration: 0.5s;
@@ -228,11 +243,11 @@
 
     #dropdown-mehr a {
         position: relative;
-        border-top: 1px solid #bbb;
+        border-top: 1px solid black;
         top: 15%;
         text-decoration: none;
         
-        color: rgb(228, 221, 221);
+        color: black;
     }
 
     #dropdown-mehr #close-mobile-dropdown {
@@ -257,7 +272,7 @@
         height:50px;
         width:50px;
         border-radius: 50%;
-        border: 1px solid rgb(228, 221, 221);
+        border: 1px solid black;
     }
 
     #profilbild-mobile {
@@ -266,6 +281,8 @@
         height: 100%;
         width:100%
     }
+
+    
 
     
 

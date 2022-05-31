@@ -17,6 +17,7 @@ function dropdown_mehr() {
     helper1.innerHTML = "HIDDEN";
     dropdownDiv.style.display = "block";
     wholeSite.style.marginRight = "55%";
+    
 
 
 
