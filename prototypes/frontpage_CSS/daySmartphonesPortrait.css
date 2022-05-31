@@ -6,9 +6,7 @@
 
     }
 
-    #all {
-        z-index: 1;
-    }
+    
 
     .dark-theme {
         background-color: rgb(31, 31, 31);
@@ -149,6 +147,7 @@
         display: none;
     }
 
+
     #plus, #entdecken, #neuware, #inserate, #mehr {
         text-decoration: none;
         color: black;
@@ -208,19 +207,64 @@
         
         0px 0px 20px  rgb(0, 220, 203);
     }
+    #all {
+        z-index: 2;
+    }
 
     #dropdown-mehr {
         display: none;
-        background-color:rgba(228, 221, 221, 0.9);
+        overflow: hidden;
+        background-color:black;
         position: fixed;
         transition-property: all;
         transition-duration: 0.5s;
         top: 1%;
         right: 1%;
-        height: 40%;
-        width: 70%;
-        border: 1px solid white;
-        z-index: 2;
+        height: 100%;
+        width: 50%;
+        z-index: 0;
+        text-align: center;
+    }
+
+    #dropdown-mehr a {
+        position: relative;
+        border-top: 1px solid #bbb;
+        top: 15%;
+        text-decoration: none;
+        
+        color: rgb(228, 221, 221);
+    }
+
+    #dropdown-mehr #close-mobile-dropdown {
+        border: none;
+    }
+
+    #close-mobile-dropdown {
+
+        margin-right: 80%;
+
+    }
+
+    #div-for-round-container-mobile {
+        display:flex;
+        justify-content: center;
+
+    }
+
+    #round-container-mobile {
+        overflow:hidden;
+        display: flex;
+        height:50px;
+        width:50px;
+        border-radius: 50%;
+        border: 1px solid rgb(228, 221, 221);
+    }
+
+    #profilbild-mobile {
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width:100%
     }
 
     
