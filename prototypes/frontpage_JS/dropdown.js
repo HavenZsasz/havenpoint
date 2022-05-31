@@ -15,8 +15,6 @@ function dropdown_mehr() {
     neuware.style.display = "none";
     var dropdownDiv = document.getElementById("dropdown-mehr");
     var wholeSite = document.getElementById("all");
-    var helper1 = document.getElementById("helper");
-    helper1.innerHTML = "HIDDEN";
     dropdownDiv.style.display = "block";
     wholeSite.style.marginRight = "55%";
 
