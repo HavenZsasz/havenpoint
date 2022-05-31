@@ -289,7 +289,14 @@
         display:flex;
         justify-content: center;
         margin-top: 10%;
+        padding-right: 20%;
     }
+
+    #dropdown-mobile-liste a {
+        font-size: larger;
+    }
+
+
 
     #profilbild-mobile {
         justify-content:center;    
