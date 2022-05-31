@@ -10,8 +10,8 @@ function dropdown_mehr() {
     var inserate = document.getElementById("inserate");
     var mehr = document.getElementById("mehr");
     var neuware = document.getElementById("neuware");
-    document.getElementById('all').style.animation="allSwipeLeft 0.1s forwards";
-    document.getElementById("dropdown-mehr").style.animation= "dropDownOpen 0.1s forwards";
+    document.getElementById('all').style.animation="allSwipeLeft 0.6s forwards";
+    document.getElementById("dropdown-mehr").style.animation= "dropDownOpen 1s forwards";
     mehr.style.display = "none";
     inserate.style.display = "none";
     neuware.style.display = "none";
