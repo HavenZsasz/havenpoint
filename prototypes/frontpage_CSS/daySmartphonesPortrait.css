@@ -304,6 +304,37 @@
         padding-right: 20%;
     }
 
+    #toggle-switch {
+        width:0;
+        height:0;
+        visibility: hidden;
+    }
+
+    li label {
+        display:block;
+        width:60px;
+        height:20px;
+        background-color: #551759;
+        border-radius: 10px;
+        position: relative;
+        cursor: pointer;
+        transition: 0.5s;
+        box-shadow: 0 0 50px #477a85;
+    }
+
+    li label::after {
+        content: "";
+        width:15px;
+        height:15px;
+        background-color: #cca5cf;
+        position: absolute;
+        border-radius:7px;
+        top:2.5px;
+        left:2.5px;
+        transition: 0.5s;
+    }
+
+
     #dropdown-mobile-liste a {
         font-size: larger;
     }
