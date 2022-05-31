@@ -56,7 +56,6 @@
 
     .dark-theme #dropdown-mehr a {
         color: rgb(228, 221, 221);
-        border-top: 1px #bbb solid;
     }
 
     .dark-theme #round-container-mobile {
@@ -242,11 +241,9 @@
     }
 
     #dropdown-mehr a {
-        position: relative;
-        border-top: 1px solid black;
+        position: relative;;
         top: 15%;
         text-decoration: none;
-        
         color: black;
     }
 
@@ -273,6 +270,12 @@
         width:50px;
         border-radius: 50%;
         border: 1px solid black;
+    }
+
+    ul li {
+        display:flex;
+        justify-content: center;
+        margin-top: 10%;
     }
 
     #profilbild-mobile {

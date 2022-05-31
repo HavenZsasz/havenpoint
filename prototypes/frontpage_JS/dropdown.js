@@ -9,15 +9,17 @@ function dropdown_mehr() {
 
     var inserate = document.getElementById("inserate");
     var mehr = document.getElementById("mehr");
+    var neuware = document.getElementById("neuware");
     mehr.style.display = "none";
     inserate.style.display = "none";
+    neuware.style.display = "none";
     var dropdownDiv = document.getElementById("dropdown-mehr");
     var wholeSite = document.getElementById("all");
     var helper1 = document.getElementById("helper");
     helper1.innerHTML = "HIDDEN";
     dropdownDiv.style.display = "block";
     wholeSite.style.marginRight = "55%";
-    
+
 
 
 
@@ -26,8 +28,10 @@ function dropdown_mehr() {
 function dropdown_close() {
     var inserate = document.getElementById("inserate");
     var mehr = document.getElementById("mehr");
+    var neuware = document.getElementById("neuware");
     mehr.style.display = "block";
     inserate.style.display = "block";
+    neuware.style.display = "block";
     var dropdownDiv = document.getElementById("dropdown-mehr");
     var wholeSite = document.getElementById("all");
     var helper1 = document.getElementById("helper");
