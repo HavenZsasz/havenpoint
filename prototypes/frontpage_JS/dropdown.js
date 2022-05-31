@@ -32,8 +32,6 @@ function dropdown_close() {
     neuware.style.display = "block";
     var dropdownDiv = document.getElementById("dropdown-mehr");
     var wholeSite = document.getElementById("all");
-    var helper1 = document.getElementById("helper");
-    helper1.innerHTML = "HIDDEN";
     dropdownDiv.style.display = "none";
     wholeSite.style.marginRight = "0%";
 }
