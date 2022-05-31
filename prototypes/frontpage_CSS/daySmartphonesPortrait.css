@@ -103,6 +103,7 @@
 
     #suche::placeholder {
         color: #bbb;
+        text-overflow: ellipsis;
     }
 
     #suche:focus {
@@ -209,7 +210,7 @@
     }
 
     #mehr {
-        font-size: x-large;
+        font-size: xx-large;
     }
 
     
@@ -229,7 +230,7 @@
         z-index: 2;
     }
 
-    @keyframes allSwipeLeft {100%{margin-right: 54%;}}
+    @keyframes allSwipeLeft {100%{margin-right: 51%;}}
     @keyframes allSwipeRight {100% {margin-right: 0%;}}
     @keyframes dropDownOpen {100%{display:block; width:50%;}}
 
@@ -239,10 +240,8 @@
         background-color: #bbb;
         color: black;
         position: fixed;
-        transition-property: all;
-        transition-duration: 0.5s;
-        top: 1%;
-        right: 1%;
+        right: 0;
+        top: 0;
         height: 100%;
         z-index: 0;
         text-align: center;
@@ -262,13 +261,14 @@
     #close-mobile-dropdown {
 
         margin-right: 80%;
-        font-size: x-large;
+        font-size:xx-large;
 
     }
 
     #div-for-round-container-mobile {
         display:flex;
         justify-content: center;
+        align-items: center;
 
     }
 
