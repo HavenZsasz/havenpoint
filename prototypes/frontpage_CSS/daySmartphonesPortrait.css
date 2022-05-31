@@ -172,6 +172,7 @@
         
     }
 
+
     #entdecken:hover, #neuware:hover, #inserate:hover {
         color: rgb(0, 220, 253);
         background-color: black;
@@ -258,6 +259,7 @@
     #close-mobile-dropdown {
 
         margin-right: 80%;
+        font-size: x-large;
 
     }
 
