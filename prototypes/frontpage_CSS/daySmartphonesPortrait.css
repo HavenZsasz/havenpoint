@@ -232,7 +232,7 @@
 
     @keyframes allSwipeLeft {100%{margin-right: 51%;}}
     @keyframes allSwipeRight {100% {margin-right: 0%;}}
-    @keyframes dropDownOpen {from{display:block;width:10%;}
+    @keyframes dropDownOpen {from{display:block;width:0.1%;}
 
     66%{display:block; width:49%;}
     
