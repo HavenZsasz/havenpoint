@@ -27,10 +27,16 @@
 
 
 
-    <div id="all"> <!--Container für alles, das nicht zum Dropdown der Mobile Version gehört, um die Seite aufzuteilen-->
+    <div id="all">
+        <!--#all = Container für alles, das nicht zum Dropdown der Mobile Version gehört, um die Seite aufzuteilen-->
         <div id="sitehead">
 
-            <img id="logo" src="logoDayKomprimiert1.png">
+            <div id="logo-mehr-mobile"> <!--Ausrichtung des Hamburger Buttons am Logo; für die Desktop-Version: #mehr {display:none;} im CSS setzen-->
+
+                <img id="logo" src="logoDayKomprimiert1.png">
+
+                <a id="mehr" href="#">&#9776</a>
+            </div>
 
             <form id="search-container">
                 <input id="suche" type="search" placeholder="Alle Kategorien durchsuchen...">
@@ -53,13 +59,13 @@
             <a id="inserate" href="#">Inserate</a>
             <a id="automobil" href="#">Automobil</a>
             <a id="immobilien" href="#">Immobilien</a>
-            <a id="mehr" href="#">&#9776</a>
+
 
         </div>
 
         <br>
     </div>
-<!--Dropdown Menü der Mobile Version-->
+    <!--Dropdown Menü der Mobile Version-->
     <div id="dropdown-mehr">
         <a id="close-mobile-dropdown" href="#">&#9776</a>
         <div id="div-for-round-container-mobile">
@@ -72,7 +78,8 @@
         <br>
         <br>
         <ul id="dropdown-mobile-liste">
-            <li id="toggle-switch-li"><input id="toggle-switch" name="toggle-switch" type="checkbox"><label for="toggle-switch"></label></li>
+            <li id="toggle-switch-li"><input id="toggle-switch" name="toggle-switch" type="checkbox"><label
+                    for="toggle-switch"></label></li>
             <li id="startseite-mobile-li"><a id="startseite-mobile" href="#">Startseite</a></li>
             <li id="neuware-mobile-li"><a id="neuware-mobile" href="#">Neuware</a></li>
             <li id="inserate-mobile-li"><a id="inserate-mobile" href="#">Inserate</a></li>

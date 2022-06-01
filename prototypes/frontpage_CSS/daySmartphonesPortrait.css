@@ -81,6 +81,11 @@
         margin-top: 3%;
     }
 
+    #logo-mehr-mobile {
+        display: flex;
+        justify-content: space-between;
+    }
+
     #search-container {
         display: flex;
         align-items: center;
@@ -219,6 +224,7 @@
 
     #mehr {
         font-size: xx-large;
+        
     }
 
     
