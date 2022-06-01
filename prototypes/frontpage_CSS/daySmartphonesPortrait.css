@@ -84,7 +84,8 @@
     #search-container {
         display: flex;
         align-items: center;
-        width: 100%;
+        width: 98%;
+        margin-left: 1%;
         height: 40px;
         margin-top: 20px;
         border-radius: 5px;
