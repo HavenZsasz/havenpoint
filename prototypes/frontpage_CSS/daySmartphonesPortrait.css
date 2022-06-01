@@ -82,6 +82,7 @@
     }
 
     #search-container {
+        margin: 0 1% 0 1%;
         display: flex;
         align-items: center;
         width: 100%;
