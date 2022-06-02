@@ -94,7 +94,7 @@
         height: 40px;
         margin-top: 20px;
         border-radius: 5px;
-        
+        overflow:hidden;
         
 
     }
@@ -106,6 +106,7 @@
         border-radius: inherit;
         border: 1px solid black;
         background: transparent;
+        text-overflow: ellipsis;
         
         
 
@@ -114,9 +115,13 @@
 
     }
 
+   
+
     #suche::placeholder {
         color: #bbb;
-        text-overflow: ellipsis;
+        font-size: large;
+        padding-left: 10px;
+        
     }
 
     #suche:focus {

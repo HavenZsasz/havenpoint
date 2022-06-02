@@ -10,7 +10,7 @@
     }
 
     #sitehead {
-        display: block;
+        display: flex;
         justify-content: space-between;
         align-items: center;
 
@@ -117,6 +117,8 @@
     #plus:hover {
         color: rgb(0, 220, 253)
     }
+
+
 
 
     #mehr:hover {
