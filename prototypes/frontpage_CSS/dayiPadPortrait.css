@@ -7,8 +7,8 @@
     }
 
     .dark-theme {
-        background-color: black;
-        color:white;
+        background-color: #121212;
+        color:rgb(228,221,221);
     }
 
     .dark-theme #navigation {
@@ -45,6 +45,12 @@
         transition-property: all;
         transition: 0.2s;
         
+
+
+    }
+
+    .dark-theme #suche {
+        background-color: black;
     }
 
     #sitehead {
