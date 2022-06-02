@@ -178,6 +178,7 @@
     #plus, #entdecken, #neuware, #inserate, #automobil, #immobilien {
         text-decoration: none;
         font-weight: bold;
+        font-size: large;
         color: black;
         margin-top: 3px;
         margin-bottom: 3px;
