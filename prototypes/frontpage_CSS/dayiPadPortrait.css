@@ -175,5 +175,13 @@
         margin: 0.5px;
     }
 
+    #mehr {
+        display: none;
+    }
+
+    #dropdown-mehr {
+        display:none;
+    }
+
 }
 
