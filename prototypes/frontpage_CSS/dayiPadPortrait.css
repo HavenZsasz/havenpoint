@@ -99,7 +99,7 @@
     #suche::placeholder {
         color: #bbb;
         font-size: large;
-        
+
     }
 
     #suche:focus {
@@ -177,6 +177,7 @@
 
     #plus, #entdecken, #neuware, #inserate, #automobil, #immobilien {
         text-decoration: none;
+        font-weight: bold;
         color: black;
         margin-top: 3px;
         margin-bottom: 3px;
