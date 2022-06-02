@@ -53,6 +53,16 @@
         background-color: black;
     }
 
+    .dark-theme #suche:focus {
+        background-color: #bbb;
+        border: 1px solid white;
+        color: black;
+    }
+
+    .dark-theme #suche::placeholder {
+        color: #bbb;
+    }
+
     #sitehead {
         display: flex;
         justify-content: space-between;
@@ -84,6 +94,18 @@
 
 
 
+    }
+
+    #suche::placeholder {
+        color: #bbb;
+        font-size: large;
+        
+    }
+
+    #suche:focus {
+        box-shadow: 0 0 3px 0 #1183d6;
+        border-color: #1183d6;
+        outline: none;
     }
 
     #round-container {
