@@ -313,6 +313,9 @@
     #auto-dark-light {
         border-top-right-radius: 100px;
         border-bottom-right-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: smaller;
     }
 
