@@ -340,6 +340,20 @@
         
     }
 
+    #toggle-switch {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    #toggle-switch div {
+        border: 1px white solid;
+        width: 100%;
+        
+    }
+
+    
+
 
     
 
