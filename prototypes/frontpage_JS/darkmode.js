@@ -9,10 +9,23 @@ function setup() {
         if (prefersDarkScheme.matches) {
             document.body.classList.add("dark-theme");
             logo.setAttribute("src", "logoNightKomprimiert1.png");
+            document.getElementById("auto-dark-light").style.backgroundColor = "rgb(0, 220, 253)";
+            document.getElementById("auto-dark-light").style.color = "#121212";
+            document.getElementById("darkmode").style.backgroundColor = "#121212";
+            document.getElementById("darkmode").style.color = "rgb(228, 221, 221)";
+            document.getElementById("lightmode").style.backgroundColor = "#121212";
+            document.getElementById("lightmode").style.color = "rgb(228, 221, 221)";
+
 
         } else {
             document.body.classList.remove("dark-theme");
             logo.setAttribute("src", "logoDayKomprimiert1.png");
+            document.getElementById("auto-dark-light").style.backgroundColor = "black";
+            document.getElementById("auto-dark-light").style.color = "rgb(0, 220, 253)";
+            document.getElementById("lightmode").style.backgroundColor = "#bbb";
+            document.getElementById("lightmode").style.color = "black";
+            document.getElementById("darkmode").style.backgroundColor = "#bbb";
+            document.getElementById("darkmode").style.color = "black";
             
         }
     } else {
@@ -88,7 +101,7 @@ function toggleDarkmode(event) {
             logo.setAttribute("src", "logoNightKomprimiert1.png");
             document.getElementById("auto-dark-light").style.backgroundColor = "rgb(0, 220, 253)";
             document.getElementById("auto-dark-light").style.color = "black";
-            document.getElementById("darkmode").style.backgroundColor = "rgb(0, 220, 253)";
+            document.getElementById("darkmode").style.backgroundColor = "rgb(228, 221, 221)";
             document.getElementById("darkmode").style.color = "black";
             document.getElementById("lightmode").style.backgroundColor = "black";
             document.getElementById("lightmode").style.color = "rgb(228, 221, 221)";
