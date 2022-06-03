@@ -303,10 +303,12 @@
         
     }
 
+    
+
     .dark-theme #toggle-switch div {
         transition-duration: 1ms;
     }
-    
+
 
     #dropdown-mehr #close-mobile-dropdown {
         border: none;
