@@ -33,7 +33,7 @@
     }
 
 
-   .dark-theme #plus, .dark-theme #entdecken, .dark-theme #neuware, .dark-theme #inserate, .dark-theme #mehr {
+   .dark-theme #plus-container, .dark-theme #entdecken, .dark-theme #neuware, .dark-theme #inserate, .dark-theme #mehr {
         text-decoration: none;
         box-sizing: border-box;
         color: rgb(228, 221, 221);
@@ -216,10 +216,7 @@
         
     }
 
-    #plus:hover {
-        color: rgb(0, 220, 253);
-        padding: 1px;
-    }
+
 
     #plus-container {
         display: flex;
@@ -227,7 +224,8 @@
         align-items: center;
         border: 1px solid rgba(0, 0,0,0.5);
         border-radius: 50%;
-        min-width: 15px;
+        min-width: 18px;
+        padding-bottom: 2px;
         height: 18px;
         
         
@@ -236,6 +234,7 @@
     #plus-container:hover {
 
         background-color: gray;
+        color: rgb(0, 220, 253);
 
     }
 
