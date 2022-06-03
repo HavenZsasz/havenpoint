@@ -119,8 +119,16 @@ dl {
 #truethat {
     color: lightgrey;
 }
+table {
+    border-collapse: collapse; /*Sorgt dafür, dass keine Zwischenräume zwischen den Zellen entstehen*/
+}
 td {
     text-align: center;
+   /* border-left: 1px solid blue;  ->solid, dashed, dotted möglich <-
+    border-top: 1px solid blue;
+    border-right: 1px solid blue;
+    border-bottom: 1px solid blue; */
+    border: 1px solid blue; /*Macht das selbe, wie die oberen vier Befehle*/
 }
 thead { /*Wieso macht das nichts? Die Tabelle bleibt identisch?*/
     font-weight: bold;
@@ -135,4 +143,14 @@ thead { /*Wieso macht das nichts? Die Tabelle bleibt identisch?*/
 
 thead tr {
     border-bottom: 2px solid black;
+}
+
+tr:nth-child(odd) { /*Funktion, kann jede Funktion der Art an+b aufnehmen*/
+    background-color: grey;
+}
+tr:nth-child(even) {
+    background-color: white;
+}
+tr:nth-child(2n) {
+    border-bottom: 3px solid black;
 }
