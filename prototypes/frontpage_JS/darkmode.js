@@ -34,8 +34,8 @@ function setup() {
         if (counterDarkmodeHavn == 0) {
             document.body.classList.remove("dark-theme");
             logo.setAttribute("src", "logoDayKomprimiert1.png");
-            document.getElementById("lightmode").style.backgroundColor = "black";
-            document.getElementById("lightmode").style.color = "white";
+            document.getElementById("lightmode").style.backgroundColor = "white";
+            document.getElementById("lightmode").style.color = "black";
         } else if (counterDarkmodeHavn == 1) {
             document.body.classList.add("dark-theme");
             logo.setAttribute("src", "logoNightKomprimiert1.png");
@@ -75,8 +75,8 @@ function toggleDarkmode(event) {
     if (event.target == document.getElementById("lightmode")) {
         localStorage.setItem('counterDarkmodeHavn', '0');
         document.body.classList.remove("dark-theme");
-        document.getElementById("lightmode").style.backgroundColor = "black";
-        document.getElementById("lightmode").style.color = "white";
+        document.getElementById("lightmode").style.backgroundColor = "white";
+        document.getElementById("lightmode").style.color = "black";
         document.getElementById("darkmode").style.backgroundColor = "#bbb";
         document.getElementById("darkmode").style.color = "black";
         document.getElementById("auto-dark-light").style.backgroundColor = "#bbb";

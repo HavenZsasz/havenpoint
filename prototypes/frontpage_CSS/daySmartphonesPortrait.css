@@ -293,6 +293,7 @@
     #toggle-switch {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 100%;
     }
 
@@ -312,6 +313,7 @@
     #auto-dark-light {
         border-top-right-radius: 100px;
         border-bottom-right-radius: 100px;
+        font-size: smaller;
     }
 
 
