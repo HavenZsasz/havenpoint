@@ -125,7 +125,14 @@ td {
 thead { /*Wieso macht das nichts? Die Tabelle bleibt identisch?*/
     font-weight: bold;
     font-size: 2em;
+    color: aqua;
 }
+#koko {
+    font-weight: bold;
+    font-size: 2em;
+    color: aqua;
+}
+
 thead tr {
     border-bottom: 2px solid black;
 }
