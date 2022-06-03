@@ -88,7 +88,7 @@ function toggleDarkmode(event) {
         logo.setAttribute("src", "logoNightKomprimiert1.png");
         document.getElementById("darkmode").style.backgroundColor = "rgb(0, 220, 253)";
         document.getElementById("darkmode").style.color = "black";
-        document.getElementById("lightmode").style.backgroundColor = "black";
+        document.getElementById("lightmode").style.backgroundColor = "#121212";
         document.getElementById("lightmode").style.color = "rgb(228, 221, 221)";
         document.getElementById("auto-dark-light").style.backgroundColor = "#121212";
         document.getElementById("auto-dark-light").style.color = "rgb(228, 221, 221)";
@@ -101,9 +101,9 @@ function toggleDarkmode(event) {
             logo.setAttribute("src", "logoNightKomprimiert1.png");
             document.getElementById("auto-dark-light").style.backgroundColor = "rgb(0, 220, 253)";
             document.getElementById("auto-dark-light").style.color = "black";
-            document.getElementById("darkmode").style.backgroundColor = "rgb(228, 221, 221)";
-            document.getElementById("darkmode").style.color = "black";
-            document.getElementById("lightmode").style.backgroundColor = "black";
+            document.getElementById("darkmode").style.backgroundColor = "#121212";
+            document.getElementById("darkmode").style.color = "rgb(228, 221, 221)";
+            document.getElementById("lightmode").style.backgroundColor = "#121212";
             document.getElementById("lightmode").style.color = "rgb(228, 221, 221)";
 
         } else {
