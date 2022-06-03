@@ -23,6 +23,10 @@
         transition-duration: 0.3s;
     }
 
+    .geklickt {
+        color: rgb(0, 220, 253);
+    }
+
 
 
     .dark-theme #navigation {
