@@ -28,12 +28,19 @@
 
 
     <div id="all">
+        <!--#all = Container für alles, das nicht zum Dropdown der Mobile Version gehört, um die Seite aufzuteilen-->
         <div id="sitehead">
 
-            <img id="logo" src="logoDayKomprimiert1.png">
+            <div id="logo-mehr-mobile"> <!--Ausrichtung des Hamburger Buttons am Logo; für die Desktop-Version: #mehr {display:none;} im CSS setzen-->
+
+                <img id="logo" src="logoDayKomprimiert1.png">
+
+                <a id="mehr" href="#">&#9776</a>
+            </div>
 
             <form id="search-container">
                 <input id="suche" type="search" placeholder="Alle Kategorien durchsuchen...">
+                
 
             </form>
 
@@ -53,20 +60,37 @@
             <a id="inserate" href="#">Inserate</a>
             <a id="automobil" href="#">Automobil</a>
             <a id="immobilien" href="#">Immobilien</a>
-            <a id="mehr" href="#">&#9776</a>
+
 
         </div>
 
-        <br>
-        <span id="helper"></span>
+        
+        <h1>Willkommen zurück, $Admin!</h1>
     </div>
-    
+    <!--Dropdown Menü der Mobile Version-->
     <div id="dropdown-mehr">
-        <div id="round-container-mobile">
-            
+        <a id="close-mobile-dropdown" href="#">&#9776</a>
+        <div id="div-for-round-container-mobile">
+            <div id="round-container-mobile">
+
+                <img id="profilbild-mobile" src="segelKomprimiert2.png">
+
+            </div>
         </div>
-        <a id="inserate-mobile" href="#">Inserate</a>
+        <br>
+        <br>
+        <ul id="dropdown-mobile-liste">
+            <li id="toggle-switch-li"><div id="toggle-switch"><div id="lightmode">L</div><div id="darkmode">D</div><div id="auto-dark-light">auto</div></div></li>
+            <li id="startseite-mobile-li"><a id="startseite-mobile" href="#">Startseite</a></li>
+            <li id="neuware-mobile-li"><a id="neuware-mobile" href="#">Neuware</a></li>
+            <li id="inserate-mobile-li"><a id="inserate-mobile" href="#">Inserate</a></li>
+            <li id="automobil-mobile-li"><a id="automobil-mobile" href="#">Automobil</a></li>
+            <li id="immobilien-mobile-li"><a id="immobilien-mobile" href="#">Immobilien</a></li>
+
+        </ul>
+
     </div>
+    <!--Ende des Dropdown Contents-->
 
 
 
