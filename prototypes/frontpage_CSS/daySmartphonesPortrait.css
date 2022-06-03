@@ -185,6 +185,7 @@
         font-size: larger;
         margin-top: 3px;
         margin-bottom: 3px;
+        padding: 7px;
         transition-property: all;
         transition: 0.2s;
         
