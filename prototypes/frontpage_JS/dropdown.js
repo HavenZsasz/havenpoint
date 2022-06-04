@@ -11,7 +11,9 @@ function dropdown_mehr() {
     var mehr = document.getElementById("mehr");
     var neuware = document.getElementById("neuware");
     document.getElementById('all').style.animation="allSwipeLeft 0.5s forwards";
+    
     document.getElementById("dropdown-mehr").style.animation= "dropDownOpen 1s forwards";
+    
     mehr.style.display = "none";
     inserate.style.display = "none";
     var dropdownDiv = document.getElementById("dropdown-mehr");

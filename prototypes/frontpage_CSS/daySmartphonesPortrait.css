@@ -286,7 +286,9 @@
         z-index: 1;
     }
 
-    @keyframes allSwipeLeft {100%{filter: blur(10px);}}
+    @keyframes allSwipeLeft {from{filter: blur(0);}
+    66%{filter:blur(9.9px);}
+    to{filter: blur(10px);}}
     @keyframes allSwipeRight {from {filter: blur(10px);}
     66%{filter:blur(0.1px);}
     to{filter: blur(0);}}
