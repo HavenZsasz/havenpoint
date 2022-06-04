@@ -491,7 +491,7 @@
     }
 
     #vorschlag-container {
-        background-color: rgba(187, 187, 187, 0.3);
+        
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -500,13 +500,26 @@
 
     #vorschlag-bild-container,
     #vorschlag-bild-container-2 {
-        border: 1px rgb(143, 141, 141) solid;
-        padding: 5px;
+        background-color: rgba(221, 216, 216, 0.558);
+        display: block;
+        border-radius: 10px;
+        padding: 2px;
+        width:44%;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    em {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        font-style: normal;
     }
 
     #vorschlag-bild,
     #vorschlag-bild-2 {
-        width: 70px;
+        width: 97%;
+        
+
     }
 
     .artikel-bezeichner {
@@ -514,7 +527,7 @@
 
     }
 
-    .zustand-bezeichner {
+    .info-bezeichner {
         font-size: small;
     }
 
