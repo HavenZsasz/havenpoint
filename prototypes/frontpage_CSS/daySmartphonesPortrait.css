@@ -84,6 +84,14 @@
 
     }
 
+    h1 {
+        font-size: x-large;
+    }
+
+    h2 {
+        color: #bbb;
+    }
+
     #click-logo {
         width: 80px;
         height: auto;
