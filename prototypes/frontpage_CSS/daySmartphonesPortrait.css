@@ -79,6 +79,10 @@
         border: 1px solid #bbb;
     }
 
+    .dark-theme #vorschlag-container, .dark-theme #vorschlag-bild-container, .dark-theme #vorschlag-bild-container-2 {
+        background-color: rgb(51, 51, 51);
+    }
+
     #sitehead {
         display: block;
         
@@ -419,6 +423,22 @@
         height: 100%;
         
     }
+
+    #vorschlag-container {
+        background-color: rgba(187, 187, 187, 0.3);
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #vorschlag-bild-container, #vorschlag-bild-container-2 {
+        border:1px rgb(143, 141, 141) solid;
+        padding: 5px;
+    }
+
+    #vorschlag-bild, #vorschlag-bild-2 {
+        width: 70px;
+    }
+
 
     
 
