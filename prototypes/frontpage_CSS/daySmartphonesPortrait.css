@@ -3,18 +3,19 @@
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         transition-property: all;
         transition-duration: 0.3s;
-        
+
 
     }
 
-    html, body {
+    html,
+    body {
         height: 100%;
         margin: 0;
-        padding:0;
+        padding: 0;
 
     }
 
-    
+
 
     .dark-theme {
         background-color: #121212;
@@ -38,17 +39,21 @@
     }
 
 
-   .dark-theme #plus-container, .dark-theme #entdecken, .dark-theme #neuware, .dark-theme #inserate, .dark-theme #mehr {
+    .dark-theme #plus-container,
+    .dark-theme #entdecken,
+    .dark-theme #neuware,
+    .dark-theme #inserate,
+    .dark-theme #mehr {
         text-decoration: none;
         box-sizing: border-box;
         color: rgb(228, 221, 221);
         margin-top: 3px;
-        
+
         margin-bottom: 3px;
         padding: 7px;
         transition-property: all;
         transition: 0.2s;
-        
+
     }
 
     .dark-theme #suche {
@@ -80,13 +85,15 @@
         border: 1px solid #bbb;
     }
 
-    .dark-theme #vorschlag-container, .dark-theme #vorschlag-bild-container, .dark-theme #vorschlag-bild-container-2 {
+    .dark-theme #vorschlag-container,
+    .dark-theme #vorschlag-bild-container,
+    .dark-theme #vorschlag-bild-container-2 {
         background-color: rgb(51, 51, 51);
     }
 
     #sitehead {
         display: block;
-        
+
 
     }
 
@@ -108,8 +115,8 @@
     }
 
     #logo {
-        width:100%;
-        height:auto;
+        width: 100%;
+        height: auto;
     }
 
     #logo-mehr-mobile {
@@ -125,34 +132,34 @@
         height: 40px;
         margin-top: 20px;
         border-radius: 5px;
-        overflow:hidden;
-        
+        overflow: hidden;
+
 
     }
 
     #suche {
-        
+
         height: 100%;
         width: 100%;
         border-radius: inherit;
         border: 1px solid black;
         background: transparent;
         text-overflow: ellipsis;
-        
-        
+
+
 
 
 
 
     }
 
-   
+
 
     #suche::placeholder {
         color: #bbb;
         font-size: large;
         padding-left: 10px;
-        
+
     }
 
     #suche:focus {
@@ -172,7 +179,7 @@
         border-radius: 50%;
         overflow: hidden;
         min-width: 55px;
-        display:none;
+        display: none;
 
     }
 
@@ -206,7 +213,7 @@
     }
 
     #immobilien {
-        display:none;
+        display: none;
 
     }
 
@@ -215,7 +222,11 @@
     }
 
 
-    #plus, #entdecken, #neuware, #inserate, #mehr {
+    #plus,
+    #entdecken,
+    #neuware,
+    #inserate,
+    #mehr {
         text-decoration: none;
         color: black;
         font-size: larger;
@@ -225,25 +236,30 @@
         padding: 7px;
         transition-property: all;
         transition: 0.2s;
-        
+
     }
 
-    #plus, #entdecken, #neuware, #inserate {
+    #plus,
+    #entdecken,
+    #neuware,
+    #inserate {
         margin: 3px 7px 3px 7px;
     }
 
 
-    #entdecken:hover, #neuware:hover, #inserate:hover {
+    #entdecken:hover,
+    #neuware:hover,
+    #inserate:hover {
         color: rgb(0, 220, 253);
         background-color: black;
         opacity: 0.5;
         padding: 10px;
         border-radius: 14%;
         border: 1px rgb(0, 220, 253) solid;
-        box-shadow: 0px 0px 10px  rgb(0, 220, 253),
-        
-        0px 0px 20px  rgb(0, 220, 203);
-        
+        box-shadow: 0px 0px 10px rgb(0, 220, 253),
+
+            0px 0px 20px rgb(0, 220, 203);
+
     }
 
 
@@ -252,13 +268,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid rgba(0, 0,0,0.5);
+        border: 1px solid rgba(0, 0, 0, 0.5);
         border-radius: 50%;
         min-width: 18px;
         padding-bottom: 2px;
         height: 18px;
-        
-        
+
+
     }
 
     #plus-container:hover {
@@ -271,40 +287,86 @@
     #mehr {
         font-size: xx-large;
         margin-right: 10px;
-        
+
     }
 
-    
+
     #mehr:hover {
-        
+
         color: rgb(0, 220, 253);
         background-color: black;
         opacity: 0.5;
         padding: 1px;
         border-radius: 14%;
         border: 1px rgb(0, 220, 253) solid;
-        box-shadow: 0px 0px 10px  rgb(0, 220, 253),
-        
-        0px 0px 20px  rgb(0, 220, 203);
+        box-shadow: 0px 0px 10px rgb(0, 220, 253),
+
+            0px 0px 20px rgb(0, 220, 203);
     }
+
     #all {
         z-index: 1;
     }
 
-    @keyframes allSwipeLeft {from{filter: blur(0);}
-    66%{filter:blur(9.9px);}
-    to{filter: blur(10px);}}
-    @keyframes allSwipeRight {from {filter: blur(10px);}
-    66%{filter:blur(0.1px);}
-    to{filter: blur(0);}}
-    @keyframes dropDownOpen {from{display:block; width:0.1%;}
+    @keyframes allSwipeLeft {
+        from {
+            filter: blur(0);
+        }
 
-    66%{display:block; width:49.99%;}
-    
-    to{display:block; width:50%;}}
-    @keyframes dropDownClose {from{width:49.99%;}
-    66%{width:0.01%;}
-    to{display:none;width:0;}}
+        66% {
+            filter: blur(9.9px);
+        }
+
+        to {
+            filter: blur(10px);
+        }
+    }
+
+    @keyframes allSwipeRight {
+        from {
+            filter: blur(10px);
+        }
+
+        66% {
+            filter: blur(0.1px);
+        }
+
+        to {
+            filter: blur(0);
+        }
+    }
+
+    @keyframes dropDownOpen {
+        from {
+            display: block;
+            width: 0.1%;
+        }
+
+        66% {
+            display: block;
+            width: 49.99%;
+        }
+
+        to {
+            display: block;
+            width: 50%;
+        }
+    }
+
+    @keyframes dropDownClose {
+        from {
+            width: 49.99%;
+        }
+
+        66% {
+            width: 0.01%;
+        }
+
+        to {
+            display: none;
+            width: 0;
+        }
+    }
 
     #dropdown-mehr {
         display: none;
@@ -322,12 +384,14 @@
     }
 
     #dropdown-mehr a {
-        position: relative;;
+        position: relative;
+        ;
         top: 15%;
         text-decoration: none;
         color: black;
-        
+
     }
+
     #toggle-switch {
         display: flex;
         justify-content: space-between;
@@ -338,9 +402,9 @@
     #toggle-switch div {
         border: 1px white solid;
         width: 100%;
-        height:100%;
+        height: 100%;
         transition-duration: 1ms;
-        
+
     }
 
     #lightmode {
@@ -371,22 +435,22 @@
     #close-mobile-dropdown {
 
         margin-right: 80%;
-        font-size:xx-large;
+        font-size: xx-large;
 
     }
 
     #div-for-round-container-mobile {
-        display:flex;
+        display: flex;
         justify-content: center;
         align-items: center;
 
     }
 
     #round-container-mobile {
-        overflow:hidden;
+        overflow: hidden;
         display: flex;
-        height:80px;
-        width:80px;
+        height: 80px;
+        width: 80px;
         border-radius: 50%;
         border: 1px solid black;
     }
@@ -396,13 +460,13 @@
     }
 
     ul li {
-        display:flex;
+        display: flex;
         justify-content: center;
         margin-top: 10%;
         padding-right: 20%;
     }
 
-    
+
 
 
 
@@ -413,18 +477,17 @@
 
 
     #profilbild-mobile {
-        justify-content:center;    
+        justify-content: center;
         align-items: center;
-        height:100%;
-        width:auto
-        
+        height: 100%;
+        width: auto
     }
 
     #seiteninhalt {
         margin: 0 18px 0 18px;
         display: block;
         height: 100%;
-        
+
     }
 
     #vorschlag-container {
@@ -435,17 +498,19 @@
         height: 90%;
     }
 
-    #vorschlag-bild-container, #vorschlag-bild-container-2 {
-        border:1px rgb(143, 141, 141) solid;
+    #vorschlag-bild-container,
+    #vorschlag-bild-container-2 {
+        border: 1px rgb(143, 141, 141) solid;
         padding: 5px;
     }
 
-    #vorschlag-bild, #vorschlag-bild-2 {
+    #vorschlag-bild,
+    #vorschlag-bild-2 {
         width: 70px;
     }
 
     .artikel-bezeichner {
-        font-size:smaller;
+        font-size: smaller;
 
     }
 
@@ -454,28 +519,6 @@
     }
 
 
-    
-
- 
-    
-
-
-
-
-
- 
-
-
-
-
-    
-
-    
-
-
-    
-
-    
 
 
 
@@ -483,7 +526,29 @@
 
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
