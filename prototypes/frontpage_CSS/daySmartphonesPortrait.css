@@ -428,6 +428,8 @@
         background-color: rgba(187, 187, 187, 0.3);
         display: flex;
         justify-content: space-around;
+        align-items: center;
+        height: 90%;
     }
 
     #vorschlag-bild-container, #vorschlag-bild-container-2 {
@@ -437,6 +439,15 @@
 
     #vorschlag-bild, #vorschlag-bild-2 {
         width: 70px;
+    }
+
+    .artikel-bezeichner {
+        font-size:smaller;
+
+    }
+
+    .zustand-bezeichner {
+        font-size: small;
     }
 
 
