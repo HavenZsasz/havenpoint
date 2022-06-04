@@ -31,8 +31,8 @@ function dropdown_close() {
     mehr.style.display = "block";
     var dropdownDiv = document.getElementById("dropdown-mehr");
     var wholeSite = document.getElementById("all");
-    document.getElementById("dropdown-mehr").style.animation= "dropDownClose 1s forwards";
-    wholeSite.style.animation = "allSwipeRight 1.5s forwards";
+    document.getElementById("dropdown-mehr").style.animation= "dropDownClose 0.5s forwards";
+    wholeSite.style.animation = "allSwipeRight 1s forwards";
 }
 
 window.addEventListener("load", setup_dropdown_mehr);
