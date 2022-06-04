@@ -24,11 +24,10 @@ function dropdown_mehr() {
 }
 
 function dropdown_close() {
-    var inserate = document.getElementById("inserate");
+    
     var mehr = document.getElementById("mehr");
     var neuware = document.getElementById("neuware");
     mehr.style.display = "block";
-    inserate.style.display = "block";
     neuware.style.display = "block";
     var dropdownDiv = document.getElementById("dropdown-mehr");
     var wholeSite = document.getElementById("all");

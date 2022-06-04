@@ -114,8 +114,8 @@
     #search-container {
         display: flex;
         align-items: center;
-        width: 98%;
-        margin-left: 1%;
+        width: 96%;
+        margin-left: 2%;
         height: 40px;
         margin-top: 20px;
         border-radius: 5px;
@@ -183,7 +183,7 @@
 
     #navigation {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         margin-top: 15px;
         margin-bottom: 15px;
@@ -192,6 +192,11 @@
         padding-left: 2px;
         padding-right: 2px;
         height: 50px;
+        width: 100%;
+    }
+
+    #inserate {
+        display: none;
     }
 
     #immobilien {
@@ -398,6 +403,32 @@
         width:auto
         
     }
+
+    #seiteninhalt {
+        margin: 0 18px 0 18px;
+        
+    }
+
+    #artikel-slide {
+        background-color: black;
+        border:1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width:100%;
+        height: 20%;
+    }
+
+    #vorschlag-bild {
+        overflow:hidden;
+        width: 60%;
+        margin-left: 20%;
+        
+    }
+
+ 
+    
 
 
 
