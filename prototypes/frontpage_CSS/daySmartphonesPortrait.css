@@ -25,6 +25,7 @@
 
     .geklickt {
         color: rgb(0, 220, 253);
+        font-weight: bold;
     }
 
 
@@ -213,6 +214,7 @@
         text-decoration: none;
         color: black;
         font-size: larger;
+        font-weight: bolder;
         margin-top: 3px;
         margin-bottom: 3px;
         padding: 7px;
@@ -281,11 +283,11 @@
         0px 0px 20px  rgb(0, 220, 203);
     }
     #all {
-        z-index: 2;
+        z-index: 1;
     }
 
-    @keyframes allSwipeLeft {100%{margin-right: 51%;}}
-    @keyframes allSwipeRight {100% {margin-right: 0%;}}
+    @keyframes allSwipeLeft {100%{filter: blur(10px);}}
+    @keyframes allSwipeRight {100% {filter: blur(0);}}
     @keyframes dropDownOpen {from{display:block;width:0.1%;}
 
     66%{display:block; width:49%;}
@@ -301,7 +303,7 @@
         right: 0;
         top: 0;
         height: 100%;
-        z-index: 0;
+        z-index: 3;
         text-align: center;
         overflow: scroll;
     }
