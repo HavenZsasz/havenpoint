@@ -287,12 +287,17 @@
     }
 
     @keyframes allSwipeLeft {100%{filter: blur(10px);}}
-    @keyframes allSwipeRight {100% {filter: blur(0);}}
-    @keyframes dropDownOpen {from{display:block;width:0.1%;}
+    @keyframes allSwipeRight {from {filter: blur(10px);}
+    66%{filter:blur(0.1px);}
+    to{filter: blur(0);}}
+    @keyframes dropDownOpen {from{display:block; width:0.1%;}
 
-    66%{display:block; width:49%;}
+    66%{display:block; width:49.99%;}
     
     to{display:block; width:50%;}}
+    @keyframes dropDownClose {from{width:49.99%;}
+    66%{width:0.01%;}
+    to{display:none;width:0;}}
 
     #dropdown-mehr {
         display: none;
