@@ -31,16 +31,17 @@
         <!--#all = Container für alles, das nicht zum Dropdown der Mobile Version gehört, um die Seite aufzuteilen-->
         <div id="sitehead">
 
-            <div id="logo-mehr-mobile"> <!--Ausrichtung des Hamburger Buttons am Logo; für die Desktop-Version: #mehr {display:none;} im CSS setzen-->
+            <div id="logo-mehr-mobile">
+                <!--Ausrichtung des Hamburger Buttons am Logo; für die Desktop-Version: #mehr {display:none;} im CSS setzen-->
 
-                <img id="logo" src="logoDayKomprimiert1.png">
+                <a id="click-logo" href="frontpage.html"><img id="logo" src="logoDayKomprimiert1.png"></a>
 
                 <a id="mehr" href="#">&#9776</a>
             </div>
 
             <form id="search-container">
                 <input id="suche" type="search" placeholder="Alle Kategorien durchsuchen...">
-                
+
 
             </form>
 
@@ -62,7 +63,7 @@
 
         </div>
 
-        
+
         <h1>Aktuelle Topseller</h1>
     </div>
     <!--Dropdown Menü der Mobile Version-->
@@ -78,7 +79,13 @@
         <br>
         <br>
         <ul id="dropdown-mobile-liste">
-            <li id="toggle-switch-li"><div id="toggle-switch"><div id="lightmode">L</div><div id="darkmode">D</div><div id="auto-dark-light">auto</div></div></li>
+            <li id="toggle-switch-li">
+                <div id="toggle-switch">
+                    <div id="lightmode">L</div>
+                    <div id="darkmode">D</div>
+                    <div id="auto-dark-light">auto</div>
+                </div>
+            </li>
             <li id="startseite-mobile-li"><a id="startseite-mobile" href="frontpage.html">Startseite</a></li>
             <li id="neuware-mobile-li"><a id="neuware-mobile" href="#">Neuware</a></li>
             <li id="inserate-mobile-li"><a id="inserate-mobile" href="#">Inserate</a></li>
@@ -94,7 +101,8 @@
 
     <script src="frontpage_JS/darkmode.js"></script>
     <script src="frontpage_JS/dropdown.js"></script>
-    <noscript>Dein Browser unterstützt leider kein JavaScript (oder JavaScript ist nicht aktiviert), dementsprechend können Inhalte und Funktionen fehlen. ;(</noscript>
+    <noscript>Dein Browser unterstützt leider kein JavaScript (oder JavaScript ist nicht aktiviert), dementsprechend
+        können Inhalte und Funktionen fehlen. ;(</noscript>
 
 
 </body>
