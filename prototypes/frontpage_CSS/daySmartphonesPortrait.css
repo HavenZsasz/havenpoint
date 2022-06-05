@@ -85,8 +85,7 @@
         border: 1px solid #bbb;
     }
 
-    .dark-theme #vorschlag-bild-container,
-    .dark-theme #vorschlag-bild-container-2 {
+    .dark-theme .vorschlag-container {
         background-color: rgb(51, 51, 51);
         
     }
@@ -492,7 +491,7 @@
 
     }
 
-    #vorschlag-container {
+    #alle-vorschlaege-container {
         
         display: flex;
         justify-content: space-around;
@@ -500,8 +499,7 @@
         height: 90%;
     }
 
-    #vorschlag-bild-container,
-    #vorschlag-bild-container-2 {
+    .vorschlag-container {
         background-color: rgba(221, 216, 216, 0.558);
         display: block;
         border-radius: 10px;
@@ -534,6 +532,11 @@
 
     .info-bezeichner {
         font-size: small;
+    }
+
+    .shop-bezeichner {
+        color: rgb(0, 220, 253);
+        font-weight: bolder;
     }
 
 
