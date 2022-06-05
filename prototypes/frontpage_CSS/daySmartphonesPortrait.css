@@ -507,8 +507,8 @@
         padding: 5px;
         width:44%;
         height: 100%;
-        max-height: 230px;
-        min-height: 230px;
+        max-height: 260px;
+        min-height: 260px;
         overflow: hidden;
         line-height: 120.5%;
         
@@ -517,7 +517,7 @@
     .artikel-bild-container {
         display: flex;
         justify-content: center;
-        height: 100px;
+        height: 120px;
         margin-top: 5px;
         width:98%;
     }
