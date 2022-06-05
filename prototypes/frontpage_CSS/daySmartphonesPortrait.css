@@ -502,10 +502,12 @@
 
     .vorschlag-container {
         background-color: rgba(221, 216, 216, 0.558);
+        position: relative;
         display: block;
         border-radius: 10px;
         padding: 5px;
         width:44%;
+        z-index: 1000;
         height: 100%;
         max-height: 260px;
         min-height: 260px;
@@ -527,6 +529,8 @@
         font-weight: bold;
         font-style: normal;
         font-size: large;
+        text-overflow: ellipsis;
+        width: 975;
     }
 
     #vorschlag-bild,
