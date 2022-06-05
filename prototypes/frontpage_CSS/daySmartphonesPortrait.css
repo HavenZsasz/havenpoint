@@ -507,15 +507,26 @@
         padding: 5px;
         width:44%;
         height: 100%;
-        max-height: 200px;
+        max-height: 220px;
+        min-height: 220px;
         overflow: hidden;
+        line-height: 120.5%;
         
+    }
+
+    .artikel-bild-container {
+        display: flex;
+        justify-content: center;
+        height: 100px;
+        margin-top: 5px;
+        width:98%;
     }
 
     em {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: bold;
         font-style: normal;
+        font-size: large;
     }
 
     #vorschlag-bild,
@@ -531,13 +542,25 @@
 
     }
 
-    .info-bezeichner {
+    .zustand-bezeichner {
+        font-weight: bolder;
+    }
+
+    .bezeichner {
         font-size: small;
     }
 
     .shop-bezeichner {
         color: rgb(0, 220, 253);
         font-weight: bolder;
+        font-style: italic;
+    }
+
+    .preis-bezeichner  {
+
+        font-weight: bolder;
+        font-size:80%;
+
     }
 
 
