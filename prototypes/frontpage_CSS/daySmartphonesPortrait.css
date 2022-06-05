@@ -165,7 +165,8 @@
     #suche:focus {
         box-shadow: 0 0 3px 0 #1183d6;
         border-color: #1183d6;
-        background-color: white;
+        background-color: rgb(241, 239, 239);
+        border: 1px solid;
         outline: none;
     }
 
