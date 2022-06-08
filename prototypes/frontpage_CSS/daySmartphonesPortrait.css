@@ -207,13 +207,10 @@
         align-items: center;
         margin-top: 15px;
         margin-bottom: 15px;
-        /*border: 2px solid rgb(51, 51, 51);*/
-       /* border-top: 2.5px solid rgb(51, 51, 51);
-        border-bottom: 2.5px solid rgb(51, 51, 51);*/
-        border-radius: 15px;
+        border-radius: 10px;
         padding-left: 2px;
         padding-right: 2px;
-        margin-left: 1.7%;
+        margin-left: 1.8%;
         height: 50px;
         width: 96%;
     }
