@@ -211,9 +211,6 @@
         width: 100%;
     }
 
-    #inserate {
-        display: none;
-    }
 
     #immobilien {
         display: none;
@@ -467,6 +464,10 @@
         justify-content: center;
         margin-top: 10%;
         padding-right: 20%;
+    }
+
+    #neuware-mobile-li,#inserate-mobile-li {
+        display: none;
     }
 
 
