@@ -68,6 +68,10 @@
         color: black;
     }
 
+    .dark-theme #navigation {
+        background-color: rgb(51, 51, 51);
+    }
+
     .dark-theme #dropdown-mehr {
         background-color: black;
         color: rgb(228, 221, 221);
