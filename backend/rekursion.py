@@ -7,4 +7,4 @@ def zahlenVerdreher(zahl):
     return zahl
 
 zahl = int(input())
-print(zahlenVerdreher(zahl))    
+print(zahlenVerdreher(zahl))
