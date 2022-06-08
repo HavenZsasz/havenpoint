@@ -90,6 +90,10 @@
         
     }
 
+    .dark-theme #mehr-anzeigen {
+        background-color: rgb(51, 51, 51);
+    }
+
     #sitehead {
         display: block;
 
@@ -565,6 +569,21 @@
         font-weight: bolder;
         font-size:80%;
 
+    }
+
+    #flex-for-mehr-anzeigen {
+        display: flex;
+        justify-content: center;
+    }
+
+    #mehr-anzeigen {
+        background-color: rgba(221, 216, 216, 0.558);
+        border-radius: 100px;
+        text-align: center;
+        font-weight: bolder;
+        width: 150px;
+        padding: 13px 0 13px 0;
+        margin-top: 15px;
     }
 
 
