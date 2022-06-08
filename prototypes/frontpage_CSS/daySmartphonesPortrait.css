@@ -214,6 +214,9 @@
     #inserate {
         display: none;
     }
+    #dienstleistungen {
+        display:none;
+    }
 
     #immobilien {
         display: none;
@@ -228,6 +231,7 @@
     #plus,
     #entdecken,
     #neuware,
+    #dienstleistungen,
     #inserate,
     #mehr {
         text-decoration: none;
@@ -245,6 +249,7 @@
     #plus,
     #entdecken,
     #neuware,
+    #dienstleistungen,
     #inserate {
         margin: 3px 7px 3px 7px;
     }
@@ -466,7 +471,7 @@
         display: flex;
         justify-content: center;
         margin-top: 10%;
-        padding-right: 20%;
+        padding-right: 28%;
     }
 
 
