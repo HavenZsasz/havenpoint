@@ -14,6 +14,9 @@ $(document).ready(function(){ //sicherstellen, dass alle nötigen Ressourcen ber
         test.appendChild(document.createElement("button"));
     })*/
 
+    $("#show-n-hide").css("overflow", "hidden");
+
+
     $("#show-n-hide").click(function() {
         $("#show-n-hide").toggle("slow");
     }
