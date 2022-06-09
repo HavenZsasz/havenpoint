@@ -1,0 +1,7 @@
+1:
+    Wieso zum Fick downloaded es mein php File anstatt es auszuführen?
+
+2:
+    Wieso nimmt er mein Bild im LiveServer an, aber nicht in der von
+    Github gehosteten Variante?
+
