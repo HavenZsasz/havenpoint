@@ -100,12 +100,13 @@
     <br>
     <br>
     <br>
-    <form action ="forms/hallowelt.php" method = "get" accept-charset="utf-8">
+    <form action ="/forms/hallowelt.php" method = "get" accept-charset="utf-8">
+        <label for = "name">Whats your name?<label>
         <ul>
-            <li> <input type = "text" name = "name"> </li>
-            <li> <input type = "text" name = "Vorname"> </li>
-            <li> <input type = "text" name = "Spitzname"> </li>
-            <button>Say Hello, dear Friend</button>
+            <li> <input placeholder = "Name" type = "text" name = "name" id = "name"> </li>
+            <li> <input placeholder = "Vorname" type = "text" name = "Vorname"> </li>
+            <li> <input placeholder = "Nachname" type = "text" name = "Spitzname"> </li>
+            <button style = "background: none; border: none;">Say Hello, dear Friend</button> <!--Den Style eingesetzt, damit man den Button selbst formatieren kann-->
         </ul>
         
     </form>   
