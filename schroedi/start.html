@@ -12,6 +12,40 @@
 
 <style>
 
+    /*TIPP FÜR PSEUDOKLASSEN: Können auch ohne etwas vor dem Doppelpunkt verwendet werden, dann für alle Objekte*/
+
+
+    input {
+        border: 1px solid black;
+        font-style: italic;
+    }
+    ::placeholder{
+        color:darkgray
+    }
+    input:invalid:focus { /* Da dies spezifischer ist als das untere, greift diese style Regel eher. Wäre das :focus nicht noch dabei, wären diese Regel so wichtig wie die unteren und würden nicht greifen*/
+        background-color: blueviolet;
+    }
+    input:valid:focus {
+        background-color: greenyellow;
+    }
+    input:required {
+        background-color: red;
+    }
+    input:optional {
+        background-color: green;
+        color: black;
+    }
+    input:focus { /*PseudoKlasse, die dem Nutzer zeigt, in welchem Objekt er gerade arbeitet*/
+        border: 2px solid darkblue;
+    }
+    input[type = email] { /*Attribut Selektor, schaut in input nach bestimmter Eigenschaft, z.B. alle inputs wo der type = email ist*/
+        border: 5px solid orange;
+    }
+    *[name] { /*Schaut nach allen Objekten im Dokument und dann explizit nach denen, die ein "name" Tag besitzen*/
+        border: 2px solid yellow;
+    }
+
+
 
 </style>
 <body>
@@ -113,6 +147,125 @@
     <br>
     <a class = "link unten" href="#meinLink"  id="unten">Link hoch </a>
     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--PHP------------------------------------------------------->
+
+    <form action ="/hallowelt.php" method = "get" accept-charset="utf-8"> <!--method = "post" um Eingaben zum Server zu schicken wie bspw ein Foto oder das Anlegen eines Nutzerprofils-->
+        <label for = "name">Whats your name?<label>
+        <ul>
+            <li> <input placeholder = "Name" type = "text" name = "name" id = "name"> </li>
+            <li> <input placeholder = "Vorname" type = "text" name = "Vorname"> </li>
+            <li> <input placeholder = "Nachname" type = "text" name = "Spitzname"> </li>
+            <li> <input placeholder = "Password" type = "password" name = "Passwort"> </li> <!--WICHTIG! DAS NICHT FÜR PASSWÖRTER NEHMEN, DA UNVERSCHLÜSSELT! HTTPS NUTZEN!-->
+            <li>
+               <li> <input type = "radio" name = "sex" value = "male" id ="buttonmale" checked = "checked"> <label for = "buttonmale">Female</label> </li>
+               <li> <label for = "buttonfemale">Male</label> <input type = "radio" name = "sex" value = "female" id ="buttonfemale">  </li> <!--Über den Name-Tag wird festgelegt, welche Buttons zusammen gehören-->
+            </li>
+            <li> <input value = "Tester" type = "text" maxlength="5"> </li> <!--Gibt ein vorbefülltes Feld vor, dass so auch zum Server geschickt wird-->
+            <li> <input value = "READONLY" type = "text" readonly> </li> <!--Value wird dennoch übermittel-->
+            <li> <input value = "Tester" type = "text" disabled> </li> <!--Disabled, Wert wird damit auch nicht mehr übermittelt-->
+            <li id = "checkIII"> <label for = "checkI" id = "checkII">Idiot?</label> <input type = "checkbox" value = "an" id = "checkI" name = "extraschleim"> </li>
+            <li> <button style = "background: none; border: none; background-color: lightblue;">Say Hello, dear Friend</button> </li><!--Den Style eingesetzt, damit man den Button selbst formatieren kann-->
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <select name = "dropdown">
+                <option value = "first" selected>first </option>
+                <option value ="second">second</option>
+                <option value = "third">third</option>
+            </select>
+            
+            <br>
+            <br>
+
+            <select name = "zusatz[]" multiple size = "5"> <!--Multiple um mehrere Boxen auswählen zu können und size zeigt wie viele zeilen ohne scrollen angezeigt werden -->
+                <optgroup label = "The Good">
+                    <option value = "intelligent" selected >intelligent</option>
+                    <option value = "gutaussehend">gutaussehend</option>
+                </optgroup>
+                <optgroup label = "The Bad">
+                    <option value = "nach Käse riechend">nach Käse riechend</option>
+                </optgroup>
+                <optgroup label = "The creepy">
+                    <option value = "wohlgeformt">wohlgeformt</option>
+                    <option value = "schmackhaft">schmackhaft</option>
+                </optgroup>
+            </select>
+
+            <br>
+            <br>
+            <br>
+
+
+            <input type = "text" list = "adjektiv" name = "zusatz[]">
+            <datalist id = "adjektiv">
+                <option value = "intelligent"></option>
+                <option value = "gutaussehend"></option>
+
+            </datalist>
+
+
+        </ul>
+        <br>
+        <br>
+        
+        <input type = "email" name ="mailer" required>
+
+        <br>
+        <br>
+
+        
+    </form>   
+    <br>
+    <br>
+    <form action = "/schroedi/forms/stapelsuche.php" method = "get" accept-charset="utf-8" novalidate> <!--novalidate sorgt dafür, dass auch falsch ausgefüllte Felder dennoch an den Browser gesendet werden-->
+
+       <!--Siehe Lösungen in den Downloads zum Buch-->
+
+             <label for = "Stichwort">Stichwort </label><input id = "Stichwort" type = "search" name = "suchwort" placeholder = "Stichwort"> </li>
+
+        <fieldset>
+            <legend>Kategorie</legend>
+            <li> <label name = "Kisten">Kisten</label><input type = "radio" value = "kisten" id = "Kisten" name = "kategorie" checked> </li>
+            <li> <label name = "Flaschen">Flaschen</label><input type = "radio" value = "flaschen" id = "Flaschen" name = "kategorie"> </li>
+        </fieldset>
+        <br>
+        <label name = "Vorrat">Nicht vorrätige Produkte anzeigen? </label> <input type = "checkbox" value = "outofstock" id = "Vorrat" name = "outofstock">
+        <br>
+        <fieldset>
+            <legend>Format</legend>
+            <li> <label name = "Tabelle">Tabelle</label> <input value = "tabelle" type = "hidden" id = "Tabelle" checked name = "format"></li>
+        </fieldset>
+        <br>
+        <br>
+        <button>Suchen</button>
+
+    </form>
+    <br>
+    <br>
+
+    <form action = "/schroedi/forms/stapelsuche.php" method = "get" accept-charset="utf-8">
+
+        <textarea style = "width: 100%; height: 5em;" id = "kommentar" name = "kommentar" maxlength="200" placeholder = "Mehrzeiliger Text, bitte hier eingeben"></textarea>
+
+    </form>
+
+    <!--AKTUELL-->
+
+
+    <!--PHP------------------------------------------------------------------->
+
     <br>
     <br>
     <br>

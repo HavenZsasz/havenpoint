@@ -109,7 +109,7 @@ p.tryer {   /*Hiermit werden alle p angesprochen, die als Klassennamen "tryer" h
     list-style-type: lower-alpha;
 }
 ul {
-    list-style-type: armenian;
+    list-style-type: circle;
     /*list-style-image nutzen um ein Bild als AUfzählungszeichen reinzuladen*/
 }
 dl {
