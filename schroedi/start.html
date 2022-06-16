@@ -46,6 +46,24 @@
     }
 
 
+    .datei {
+        position: relative;
+    }
+
+    .nice {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+    }
+
+    .haesslich {
+        position: relative;
+        opacity: 0;
+        z-index: 2;
+    }
+
+
 
 </style>
 <body>
@@ -262,6 +280,33 @@
     </form>
 
     <!--AKTUELL-->
+
+    <br>
+
+    <form action = "/schroedi/forms/hallowelt.php" method = "post" accept-charset="utf-8" enctype = "multipart/form-data"> <!--Um Dateien hochzuladen muss die Form so gesetzt werden-->
+
+        <input type = "file" name = "upload">
+
+
+    </form>
+
+    <br>
+    <br>
+    <br>
+
+    <form action = "/schroedi/forms/hallowelt.php" method = "post" accept-charset="utf-8" enctype="multipart/form-data"> <!--Siehe hierzu auch den Part in style, so überdeckt man das hässliche Datei auswählen mit hübschen Buttons-->
+
+        <div class = "datei">
+
+            <input type = "file" class = "haesslich">
+            <div class = "nice">
+                <input value = "CHOOSE THE SHIT">
+            </div>
+
+        </div>
+
+
+    </form>
 
 
     <!--PHP------------------------------------------------------------------->
