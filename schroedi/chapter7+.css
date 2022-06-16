@@ -1,0 +1,256 @@
+
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#relundabs {
+
+    /*Wir wollen Box, die in der Breite 50% ist aber trotzdem 40px Padding und Margin hat, hierfür calc*/
+
+    background-color: black;
+    width: calc(50% - 160px); /*160px da auf beiden Seiten 40px padding + 40px Margin*/
+    height: calc(100% - 160px); /*Leerzeichen zwischen Zahlen und Rechenzeichen wichtig!!!*/
+
+    padding: 40px;
+    margin: 40px;
+
+
+}
+
+
+#firster {
+
+    opacity: 0.4;
+    background-color: lightgreen;
+
+}
+
+
+#tester {
+
+    background-color: aqua;
+
+    width: 124px;
+    height: 187px;
+
+    opacity: 0;
+
+
+}
+
+
+
+#one {
+
+    background-color: red;
+    width: 200px;
+    padding: 20px 5px 15px;
+    margin: 20px auto;
+    /*Wenn keine height gesetzt ist, wird automatisch so viel genommen wie für den Text benötigt ist*/
+
+}
+
+#two {
+
+    background-color: blue;
+    height: 50px;
+    padding: 10px;
+    border : 10px;
+    margin : 10px auto; /*Sorgt dafür, dass die Margin nach oben 10px sind, der Rest wird zentriert*/
+
+}
+
+#three {
+
+    background-color: green;
+    height: 200px;
+    width: 100px;
+    padding : 10px 10px;
+    border: 10px 10px;
+    margin: 10px 10px;
+
+}
+
+#four {
+
+    background-color: yellow;
+    height: 20%;
+    width: 10%;
+    padding: 20% 20% 20%;
+    border: 10% 10% 10%;
+    margin: 10% 10% 10%;
+
+
+}
+
+#five {
+
+    background-color: orange;
+    height: 20em;
+    width: 10em;
+    margin: auto; /*WICHTIG: ZENTRIERT DIE BOX!*/
+
+}
+
+#six {
+    background-color: blanchedalmond;
+}
+
+div {
+
+    overflow: auto; /*Wichtige Eigenschaft: Sorgt dafür, dass wenn nötig ein Scrollbalken verwendet wird und man Scrollen kann.*/
+    margin-bottom: 5px;
+    /*Auch möglich: overflow:hidden, sorgt dafür dass überflüssiger Text nicht angezeigt wird*/
+
+}
+
+#seconder {
+
+   position: relative;
+   height: 1000px;
+   width: 100%;
+   background-color: lightblue;
+
+}
+
+.stapel {
+
+    position: absolute;
+}
+
+#cree {
+
+    background-color: aquamarine;
+    height: 187px;
+    width: 124px;
+    top: 0;
+
+}
+
+
+
+#one1 {
+
+    background-color: red;
+    width: 124px;
+    height: 55px;
+    top: 187px;
+}
+
+#two1 {
+
+    background-color: blue;
+    width: 166px;
+    height: 55px;
+    top: calc(187px + 55px); /*calc kann man nutzen um Größen zu addieren, auch absolute und relative Angaben lassen sich addieren*/
+  
+}
+
+#three1 {
+
+    background-color: green;
+    width: 121px;
+    height: 42px;
+    left: 124px;
+
+}
+
+#four1 {
+
+    background-color: yellow;
+    width: 121px;
+    height: 100px;
+    top: 42px;
+    left: 124px;
+
+
+}
+
+#five1 {
+
+    background-color: orange;
+    width: 121px;
+    height: 100px;
+    top: 142px;
+    left: 124px;
+
+}
+
+#six1 {
+    background-color: blanchedalmond;
+    width: 79px;
+    height: 55;
+    top: 242px;
+    left: 166px;
+}
+
+
+
+
+#dreck {
+
+    background-color: aquamarine;
+    height: 50px;
+    width: 50px;
+    position: relative;
+
+}
+
+#riesendreck {
+
+    background-color: blueviolet;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 20px;
+
+}
+
+#bild {
+
+    height: 10%;
+    width: 20%;
+    float: right; /*Alles was nicht floaten kann floatet um das Bild links herum*/
+    clear: left;
+}
+blockquote{
+
+    float: left;
+    border: 10px solid black;
+    padding: 10px;
+    text-align: center;
+    width: 240px;
+    margin: 10;
+
+}
+
+#clearer {
+
+    clear:left; /*Absatz, der Anfangs gefloatet ist, kann so unter das entsprechende Objekt wandern.*/
+                /*Left bezieht sich auf Elemente links. Both würde beide Seiten betrachten.*/
+
+}
+
+#firstcol {
+
+    margin-left: 10px;
+    background-color: blueviolet;
+    height: 100%;
+    position: absolute;
+    width: calc(100% / 3 - 10px);
+    right: calc(100% / 3 * 2)
+
+}
+
+#secondcol {
+
+    margin-right: 10px;
+    background-color: aqua;
+    height: 100%;
+    position: absolute;
+    width: calc((100% / 3) * 2);
+    left: calc(100% - ((100% / 3) * 2) - 10px);
+
+}
