@@ -239,8 +239,7 @@ blockquote{
     background-color: blueviolet;
     height: 100%;
     position: absolute;
-    width: calc(100% / 3 - 10px);
-    right: calc(100% / 3 * 2)
+    right: 66%;
 
 }
 
@@ -250,7 +249,73 @@ blockquote{
     background-color: aqua;
     height: 100%;
     position: absolute;
-    width: calc((100% / 3) * 2);
-    left: calc(100% - ((100% / 3) * 2) - 10px);
+    left: 33%;
+
+}
+
+a.kiste {   /*Durch Display:block breitet sich der Link der Klasse kiste auf das ganze Rechteck aus, das ganze Rechteck wird klickbar.*/
+    display: block; /*<a> Tags sind eigentlich inline, hier wird er zum Block gemacht*/
+    width: 100%;
+    height: 100%;
+}
+
+
+#navigation{
+    height: 10%;
+    width: 100%;
+    background-color: lightblue;
+    margin: 0;
+    padding: 10% 0 0 0;
+
+}
+
+#navigation a, #navigation a:visited{
+
+    float: left;
+    display: block;
+    width: 33%;
+    height: 30px;
+    background-color: lightgreen;
+    border-bottom: 1px solid darkgray;
+    color: black;
+    font-family: monospace;
+    text-align: center;
+    border: 1px solid black;
+
+}
+
+#navigation a:hover {
+    background-color: white;
+}
+
+article {
+    display:none; /*Damit verschwindet der div und wird von allen Objekten ignoriert. Er wird allerdings weiter
+                    im Quellcode behalten. Vorteilhaft um coole Sachen mit JS zu bauen. */
+}
+
+
+#z-index {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+#stackfirst {
+
+    background-color: aqua;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    z-index: 2;
+
+}
+
+#stacksecond {
+
+    background-color: red;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    z-index: 1;
 
 }

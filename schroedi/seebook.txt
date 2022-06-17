@@ -9,4 +9,12 @@ BLOCKELEMENTE:
 
     Collapsing Margins: Seite 270
 
+    Erklärung z-index: Seite 304
+
+WAS WIRD VON WELCHEM BROWSER UNTERSTÜTZT?:
+    http://caniuse.com
+
+
+EIGENE SEITE ERSTELLEN:
+    Sectioning-Tags kompatibel mit IE8 machen: Seite 313
 
