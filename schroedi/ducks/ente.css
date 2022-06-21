@@ -23,7 +23,6 @@ header {
     left: 210px;
     right: 10px;
     top: 110px;
-    bottom: 30px;
     background-color: aquamarine;
 }
 
@@ -34,6 +33,7 @@ nav {
     top: 110px;
     right: calc(100% - 210px);
     left: 10px;
+    height: calc(100%);
 
 }
 
@@ -50,9 +50,8 @@ nav a, nav a:visited, nav a:hover, nav a:focus {
     font-variant: small-caps;
 }
 
-nav .ausgewaehlt a{
-    background-color:black;
-    color: white;
+nav .ausgewaehlt {
+    background-color: red;
 }
 
 
@@ -86,4 +85,17 @@ nav ul {
 }
 nav ul li ul{
     text-align: right;
+}
+
+#content div {
+    border: 1px solid black;
+    width: 19%;
+    min-width: 200px;
+    height: 30em;
+    margin: 1em 0 0 0.5%;
+    float: left;
+    text-align: center;
+    padding: 0;
+    color: white;
+
 }
