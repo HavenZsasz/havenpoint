@@ -1,0 +1,125 @@
+@import url(http://fonts.googleapis.com/css?family=Merienda);
+
+header, footer, nav {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+body {
+	background: #a3bdd7; /* Old browsers */
+
+	font-size: 62.5%;
+}
+
+
+#header {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	right: 10px;
+	height: 100px;
+	background: transparent url("kopf_hintergrund.png") no-repeat;
+	text-align: right;
+}
+
+#header h1 {
+	font-family: 'Merienda', cursive;
+	font-weight: bold;
+	font-size: 4em;
+	margin: 20px;
+}
+
+#nav {
+	position: absolute;
+	left: 10px;
+	top: 110px;
+	width: 200px;
+	bottom: 30px;
+	background-color: #30804B;	
+}
+
+#nav ul {
+	margin: 30px 0 0 0;
+	padding: 0;
+}
+#nav li {
+	list-style-type: none;
+	margin: 0;
+	border-bottom: 1px solid #30804B;	
+	background-color: #AF824E;
+}
+
+#nav li ul {
+	margin: 0;
+}
+
+#nav li li {
+	background-color: #CFA26E;
+	border: none;
+}
+
+#nav .ausgewaehlt{
+	background-color: white;
+}
+#nav a, #nav a:visited, #nav a:hover, #nav  a:focus {
+	display: block;
+	height: 2em;
+	text-decoration: none;
+	color: black;
+	text-align: right;
+	font-size: 1.6em;
+	padding: 2px 10px 0 0;
+	font-variant: small-caps;
+	font-weight: bold;
+	
+}
+
+#footer {
+	position: absolute;
+	left: 10px;
+	bottom: 10px;
+	height: 20px;
+	right: 10px;
+}
+
+#inhalt {
+	position: absolute;
+	left: 210px;
+	right: 10px;
+	top: 110px;
+	bottom: 30px;
+	padding: 10px;
+	overflow: auto;
+}
+
+#inhalt.galerie  div{
+	border: 1px solid white;
+	width: 19%;
+	min-width: 200px;
+	height: 30em;
+	margin: 1em 0 0 0.5%;
+	float: left;
+	text-align: center;
+	padding: 0;
+	color: white;
+}
+
+#inhalt.galerie div span,#inhalt.galerie div small {
+	display: block;
+}
+
+#inhalt.galerie .title {
+	font-size: 2em;
+}
+
+	
+#inhalt.galerie img {
+	max-width: 100%;
+	max-height: 66%;
+	border: none;
+}
+
+#inhalt a[rel=license]{
+	font-size: 0.8em;
+}
