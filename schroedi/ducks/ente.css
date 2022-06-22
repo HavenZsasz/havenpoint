@@ -24,6 +24,9 @@ header {
     right: 10px;
     top: 110px;
     background-color: aquamarine;
+    bottom: 30px;
+    padding: 10px;
+    overflow: auto;
 }
 
 nav {
@@ -31,9 +34,9 @@ nav {
     position: absolute;
     background-color: beige;
     top: 110px;
-    right: calc(100% - 210px);
+    width: 210px;
     left: 10px;
-    height: calc(100%);
+    bottom: 30px;
 
 }
 
