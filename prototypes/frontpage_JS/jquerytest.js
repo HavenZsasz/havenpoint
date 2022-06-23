@@ -17,7 +17,7 @@ $(document).ready(function(){ //sicherstellen, dass alle nötigen Ressourcen ber
     $("#show-n-hide").css("overflow", "hidden");
 
 
-    $("#show-n-hide").click(function() {
+    $("#show-n-hide").on("tap",function() {
         $("#show-n-hide").toggle("slow");
     }
     );
