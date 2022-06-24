@@ -317,5 +317,140 @@ article {
     width: 50%;
     position: absolute;
     z-index: 1;
+}
 
+
+#round {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    margin: auto;
+    border-radius: 20px;
+}
+
+#round2 {
+    height: 200px;
+    width: 200px;
+    background-color: purple;
+    margin: auto;
+    border-radius: 20px 10px 0px 60px;
+    border-left: 2px solid black;
+    border-top: 5px firebrick dashed;
+    border-right: 3px green solid;
+}
+
+.spanny {
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    height: 100px;
+    display: block;
+}
+
+#sent {
+    line-height: 30px; /*Bestimmt den Abstand zwischen Zeilen*/
+    text-shadow: -0.2em 0.2em 5px lightblue;  /*Gibt der Schrift einen Schatten, 5px hier gibt an wie groß die Schattenfläche ist, umso unschärfer wird er*/
+    box-shadow: 0 0 20px 10px red inset; /*Macht einen Schatten um eine Box, inset sorgt dafür dass der Schatten innerhalb der Box ist, die letzten 10px geben den Spread: Der Schatten wird in alle Richtungen um 10px erweitert*/
+}
+
+
+
+#glowy {
+    text-shadow: 0 0 20px yellow, 0px 0px 10px orange, 0px 0px 5px red; /*Mit Komma getrennt können mehrere Schatten eingegeben werden*/
+    margin: 10% auto;
+}
+
+#keyframe {
+    width: 100%;
+    height: 500px;
+    background-color: lightcyan;
+    position: relative;
+}
+
+@keyframes colors {
+    from {background-color: yellow;}
+    33% {background-color: red;}
+    66% {background-color: blue;}
+    to {background-color: yellow;}
+}
+
+#mover {
+    animation-name: colors;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+
+
+
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 25%;
+    top: calc(500px * 0.25);
+}
+
+#pacman {
+    width: 100%;
+    height: 400px;
+    background-color: lightgoldenrodyellow;
+    position: relative;
+}
+
+@keyframes pinky {
+    from {left: 0px}
+    to {left: 500px}
+}
+
+#pinkghost {
+    position: absolute;
+    animation-name: pinky;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; /*Lässt die Animation vorwärts und rückwärts laufen*/
+    animation-delay: 5s; /*Startet die Animation verspätet*/
+    animation-timing-function: linear; /*Sorgt dafür, dass die Animation immer in der gleichen Geschwindigkeit läuft und nicht erst beschleunigt und wieder verlangsamt*/
+     
+}
+
+#pinkghost:hover {
+    animation-play-state: paused; /*Pausiert die Animation, kann später mit JS verändert werden*/
+}
+
+#trans {
+    position: relative;
+    top: 50%;
+    text-align: center;
+
+    background-color: red;
+    color: blue;
+    transition-property: background-color, color; /*Welche Werte beeinflusst werden sollen durch die transition: Auch "all" möglich*/
+    transition-duration: 5s;
+    /*Alle weiteren Eingaben wie bei keyframes auch möglich:
+    transition-delay, transition-timing-function*/
+
+}
+
+#trans:hover {
+    background-color: blue;
+    color: red;
+}
+
+#coffee {
+    width: 100%;
+    height: 200px;
+
+    
+    animation-name: coffee;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    animation-fill-mode: forwards; /*Sorgt dafür, dass der Endstate beibehalten wird, sobald die Animation durchgelaufen ist*/
+}
+
+#coffee:hover {
+    animation-play-state: running;
+}
+
+@keyframes coffee {
+    from {background-color: #423027;}
+    to {background-color: #A77F6B;}
 }
