@@ -21,3 +21,7 @@ EIGENE SEITE ERSTELLEN:
 UNTERSCHIED EM UND %:
     em orientiert sich an der Textgröße, % am umgebenden Element
 
+TRANSFORM OPERATIONEN:
+    Die verschiedenen Operationen von Transform: S. 366
+    Wieso Reihenfolge wichtig ist: S. 368
+

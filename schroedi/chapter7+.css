@@ -454,3 +454,31 @@ article {
     from {background-color: #423027;}
     to {background-color: #A77F6B;}
 }
+
+#absatz {
+    transform-origin: center 100px; /*Setzt den Transformations Ursprung woanders*/
+    transform: rotate(-2deg) translate(300px, 10px) scale(1.5); /*DEG steht für Degree*/
+    /*Transform ist in alle 3 Dimensionen möglich (z.B. rotateX, rotateY, rotateZ)*/
+}
+
+#threed {
+    transform: rotateY(120deg);
+    perspective: 200px; /*Je kleiner der Wert, desto stärker die Verzerrung*/
+}
+
+
+#Newspaper{
+    width: 100%;
+    column-width: 12em;
+    column-count: 4;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-gap: 3em; /*Spaltenabstand*/
+    column-rule: 1px solid black; /*Sorgt für die Spaltenbegrenzungen*/
+    hyphens: auto;
+    text-align: justify;
+}
+
+#Newspaper h1 {
+    column-span: all; /*Überschrift über alle Spalten*/
+}
