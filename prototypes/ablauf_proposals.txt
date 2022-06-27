@@ -6,4 +6,4 @@ Vorläufiges Ablaufkonzept (Vorschläge):
 (- Skript übergibt Informationsblöcke an ng)
 - DIV's erzeugen (nach Template) und per *ngFor iterieren
 - evtl. Ausklappanimation
-- DIV's klickbar machen (TypeScript/JQuery)
+- DIV's klickbar machen per Standard CLick Event (JS) oder advanced Event (TypeScript/JQuery)
