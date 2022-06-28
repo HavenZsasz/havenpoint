@@ -4,15 +4,12 @@
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         transition-property: all;
         transition-duration: 0.3s;
-
-
     }
 
     html,
     body {
         height: 100%;
         margin: 0;
-        padding: 0;
 
     }
 
@@ -32,18 +29,14 @@
 
 
 
-    .dark-theme #navigation {
 
-        border-top: 2px solid #bbb;
-        border-bottom: 2px solid #bbb;
-
-    }
 
 
     .dark-theme #plus-container,
     .dark-theme #entdecken,
     .dark-theme #neuware,
     .dark-theme #inserate,
+    .dark-theme #dienstleistungen
     .dark-theme #mehr {
         text-decoration: none;
         box-sizing: border-box;
@@ -59,7 +52,7 @@
 
     .dark-theme #suche {
         background-color: rgb(51, 51, 51);
-
+        
     }
 
     .dark-theme #suche::placeholder {
@@ -70,6 +63,11 @@
         background-color: #bbb;
         border: 1px solid white;
         color: black;
+    }
+
+    .dark-theme #navigation {
+        background-color: rgb(51, 51, 51);
+        border: 1px solid rgb(51, 51, 51);
     }
 
     .dark-theme #dropdown-mehr {
@@ -88,7 +86,11 @@
 
     .dark-theme .vorschlag-container {
         background-color: rgb(51, 51, 51);
+        
+    }
 
+    .dark-theme #mehr-anzeigen {
+        background-color: rgb(51, 51, 51);
     }
 
     #sitehead {
@@ -97,13 +99,10 @@
 
     }
 
-    h1 {
+    h1, h2 {
         font-size: x-large;
     }
 
-    h2 {
-        color: #bbb;
-    }
 
     #click-logo {
         width: 80px;
@@ -128,11 +127,12 @@
         display: flex;
         align-items: center;
         width: 96%;
-        margin-left: 2%;
         height: 40px;
         margin-top: 20px;
+        margin-bottom: 20px;
         border-radius: 5px;
         overflow: hidden;
+        margin-left: 1.6%;
         border: 0;
 
 
@@ -146,11 +146,6 @@
         border: 0;
         background-color: rgba(221, 216, 216, 0.558);
         text-overflow: ellipsis;
-
-
-
-
-
 
     }
 
@@ -197,20 +192,19 @@
 
     }
 
+
     #navigation {
         display: flex;
         justify-content: space-around;
+        background-color: rgba(221, 216, 216, 0.558);
         align-items: center;
         margin-top: 15px;
         margin-bottom: 15px;
-        border-top: 2px solid black;
-        border-bottom: 2px solid black;
         padding-left: 2px;
         padding-right: 2px;
-        height: 50px;
+        height: 52px;
         width: 100%;
     }
-
 
     #immobilien {
         display: none;
@@ -225,6 +219,7 @@
     #plus,
     #entdecken,
     #neuware,
+    #dienstleistungen,
     #inserate,
     #mehr {
         text-decoration: none;
@@ -242,6 +237,7 @@
     #plus,
     #entdecken,
     #neuware,
+    #dienstleistungen,
     #inserate {
         margin: 3px 7px 3px 7px;
     }
@@ -463,11 +459,7 @@
         display: flex;
         justify-content: center;
         margin-top: 10%;
-        padding-right: 20%;
-    }
-
-    #neuware-mobile-li,#inserate-mobile-li {
-        display: none;
+        padding-right: 28%;
     }
 
 
@@ -495,7 +487,7 @@
     }
 
     #alle-vorschlaege-container {
-
+        
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -508,14 +500,14 @@
         display: block;
         border-radius: 10px;
         padding: 5px;
-        width: 44%;
+        width:44%;
         z-index: 1000;
         height: 100%;
         max-height: 270px;
         min-height: 270px;
         overflow: hidden;
         line-height: 120.5%;
-
+        
     }
 
     .artikel-bild-container {
@@ -523,7 +515,7 @@
         justify-content: center;
         height: 120px;
         margin-top: 5px;
-        width: 98%;
+        width:98%;
     }
 
     em {
@@ -538,8 +530,8 @@
     #vorschlag-bild,
     #vorschlag-bild-2 {
         max-width: 97%;
-
-
+        
+        
 
     }
 
@@ -562,11 +554,26 @@
         font-style: italic;
     }
 
-    .preis-bezeichner {
+    .preis-bezeichner  {
 
         font-weight: bolder;
-        font-size: 80%;
+        font-size:80%;
 
+    }
+
+    #flex-for-mehr-anzeigen {
+        display: flex;
+        justify-content: center;
+    }
+
+    #mehr-anzeigen {
+        background-color: rgba(221, 216, 216, 0.558);
+        border-radius: 100px;
+        text-align: center;
+        font-weight: bolder;
+        width: 150px;
+        padding: 13px 0 13px 0;
+        margin-top: 15px;
     }
 
 
