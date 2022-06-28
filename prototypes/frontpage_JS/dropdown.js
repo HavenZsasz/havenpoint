@@ -15,7 +15,6 @@ function dropdown_mehr() {
     document.getElementById("dropdown-mehr").style.animation= "dropDownOpen 1s forwards";
     
     mehr.style.display = "none";
-    inserate.style.display = "none";
     var dropdownDiv = document.getElementById("dropdown-mehr");
     dropdownDiv.style.display = "block";
 
