@@ -12,9 +12,12 @@ const DAYS_PER_YEAR = 365 //Legt im neuesten JS eine Variable fest, die nicht ve
 function schuheZaehler() {
 
     var TAGE = 365;
-    var regale = document.getElementById("regale").value;
-    var paare = document.getElementById("paare").value;
-    var paaredaneben = document.getElementById("paaredaneben").value;
+    var regale = document.getElementById("rega").value;
+    regale = parseInt(regale); //Sorgt dafür, dass der String in Int umgerechnet wird
+    var paare = document.getElementById("paa").value;
+    paare = parseInt(paare);
+    var paaredaneben = document.getElementById("paaredaneb").value;
+    paaredaneben = parseInt(paaredaneben);
     var paaregesamt = paaredaneben + paare * regale;
     var schuhe = paaregesamt * 2;
     var meineID = "schuhe"
@@ -27,6 +30,20 @@ function alarm() {
 }
 
 var tester = "HALLO";
+
+function kaufen() {
+
+    var textfeld = document.getElementById("kaufa");
+    var liste = document.getElementById("ketten");
+    var artikel = textfeld.value;
+    liste.innerHTML = liste.innerHTML + " " + artikel;
+    textfeld.value = "";
+
+
+}
+
+
+
 
 
 
