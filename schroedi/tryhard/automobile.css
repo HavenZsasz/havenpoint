@@ -100,4 +100,86 @@ body {
     background-color: rgba(221, 216, 216, 0.558);
 }
 
+.inserate {
+    margin: 5px 5px 0 5px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+
+.inserate div img{
+
+   max-width: 100%;
+   max-height: 50%;
+   
+   margin: 0;
+    
+    
+}
+
+.inserate div {
+
+    width: 40%;
+    max-width: 500px;
+    min-width: 300px;
+    height: 200px;
+    margin: 5px;
+    
+    flex-wrap: wrap;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    position: relative;
+    background-color: rgba(221, 216, 216, 0.558);
+    border-radius: 10px;
+    
+
+}
+
+.inserate div h1 {
+    display: block;
+    overflow: auto;
+    position: absolute;
+    max-height: 18%;
+    top: 55%;
+    left: 5px;
+    
+    width: 100%;
+    margin: 0;
+}
+
+
+
+.inserate div small {
+    display: block;
+    overflow: auto;
+    position: absolute;
+    top: 75%;
+    left: 5px;
+    
+    width: 73%;
+    margin: 0;
+    height: 23%;
+    background-color: rgba(221, 216, 216);
+    border-radius: 5px;
+}
+
+.inserate div h2 {
+
+    display: block;
+    overflow: auto;
+    position: absolute;
+    
+    top: 75%;
+    
+    width: 20%;
+    margin: 0;
+    height: 23%;
+    left: 76%;
+    text-align: center;
+
+}
 
