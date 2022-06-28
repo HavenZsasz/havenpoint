@@ -28,12 +28,7 @@
 
 
 
-    .dark-theme #navigation {
 
-        border-top: 2.5px solid rgba(221, 216, 216, 0.558);
-        border-bottom: 2.5px solid rgba(221, 216, 216, 0.558);
-
-    }
 
 
     .dark-theme #plus-container,
@@ -203,12 +198,10 @@
         align-items: center;
         margin-top: 15px;
         margin-bottom: 15px;
-        border-radius: 10px;
         padding-left: 2px;
         padding-right: 2px;
         height: 52px;
-        width: 96%;
-        margin-left: 1.6%;
+        width: 100%;
     }
 
     #inserate {
