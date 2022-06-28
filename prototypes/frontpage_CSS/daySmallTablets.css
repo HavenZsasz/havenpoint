@@ -35,8 +35,8 @@
 
     .dark-theme #navigation {
 
-        border-top: 2px solid #bbb;
-        border-bottom: 2px solid #bbb;
+            background-color: rgb(51, 51, 51);
+            border: 1px solid rgb(51, 51, 51);
 
     }
 
