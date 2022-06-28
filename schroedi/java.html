@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    
+    <title>JavaScript</title>
+   
+    <link rel='stylesheet' href='java.css'>
+    <script type = "text/javascript" src='java.js'></script>
+</head>
+<body>
+
+
+    <!--Es empfiehlt sich JS immer an das Ende des Bodys zu packen, so laden Grafiken etc. zuerst, der Nutzer kriegt also direkt etwas zu sehen-->
+    <!--JS beherrscht die Grundrechenarten-->
+    <br>
+    13 + 3 = <script>document.write(13+3);</script> <!--Schreibt direkt ins Dokument-->
+
+    <br>
+
+    Schrödingers Freundin hat <script>document.write(2*(8*5 + 7));</script> Schuhe
+
+    <br>
+
+    <script>
+        var teiler = 7 / 11;
+    </script>
+    Ergebnis: <script>document.write(teiler);</script>
+    <br>
+    Ergebnis gerundet: <script>document.write(teiler.toFixed(2));</script> <!--2 gibt an auf wie viele Nachkommastellen gerundet werden soll-->
+    <br>
+    <br>
+    <input type = "text" id = "regale" placeholder="regale">
+    <input type = "text" id = "paare" placeholder = "paare">
+    <input type = "text" id ="paaredaneben" placeholder="paaredaneben">
+    <br>
+    <br>
+    Schuhe: <span id = "schuhe"></span>
+    <br>
+    <br>
+    <button type = "button" onclick = "schuheZaehler();">Klick mich!</button>
+    <br>
+    <br>
+    <button type = "button" onclick = "alarm();">ALARM!</button>
+    <br>
+    <br>
+    <script>document.write(tester.length);</script>   
+    <br>
+    <br>
+    <script>document.write(tester.charAt(3));</script>
+    <br>
+    <script>document.write(tester.indexOf("H", 0));</script> <!--Sucht von vorne, 0 gibt an an der wie vielten Stelle begonnen werden soll zu suchen-->
+    <script>document.write(tester.indexOf("H", 2));</script> <!--Sucht von vorne, 2 gibt an an der wie vielten Stelle begonnen werden soll zu suchen-->
+    <script>document.write(tester.lastIndexOf("A"));</script> <!--Sucht von hinten-->
+    <script>document.write(tester.lastIndexOf("Y"));</script> <!--- -1 wenn nichts gefunden-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <noscript>
+        JavaScript ist nicht aktiviert!
+    </noscript>
+    
+</body>
+</html>
