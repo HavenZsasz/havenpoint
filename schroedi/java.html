@@ -61,15 +61,60 @@
     <input type = "text" id = "kaufa" placeholder = "Was willst du kaufen?">
     <button type = "button" onclick = "kaufen();">KAUFEN</button>
     <br>
-   
+    <br>
+    <script>
+        var uiui = "HalloTest"
+        document.write(uiui.substring(0,3))
+    </script>
+    <br>
+    <br>
+    <input type = "text" id = "erst">
+    <br>
+    <button type = "button" onclick="stringAdder();">Klick ME!</button>
+    <br>
+    <span id = "addition"></span>
+    <br>
+    <br>
+    <script>
+        if(2 == "2") {
+            document.write("TRUE");
+        }
+        if (2 === "2"){
+            document.write("TRUE");
+        }else 
+            document.write("False");
+    </script>
+    <br>
+    <br>
+    <script>
+        var katze1 = "Wildkatze";
+        var katze2 = "Katzentiger";
+        var keineKatze = "Elefant";
+        document.write(katze1.toLowerCase());
+        document.write("<br>");
+        document.write(katze2.toLowerCase());
+        document.write("<br>");
+        document.write(keineKatze.toLowerCase());
 
+        //Man kann mehrere Funktionen auch verketten.
+        //Folgendes sucht danach, ob der katze im Namen vorkommt. Damit es keine Probleme wegen Groß und Kleinschreibung gibt, wird zuerst der Name in Kleinbuchstaben umgewandelt
+        //Wenn -1 herauskommt, ist katze nicht enthalten, ansonsten schon
 
+        if (katze1.toLowerCase().indexOf("katze") == -1) {
+            document.write("<br" + katze1 + " keine katze enthalten");
+        }else {
+            document.write("<br>" + katze1 + " katze ist im Namen enthalten");
+        }
 
+        if (keineKatze.toLowerCase().indexOf("katze") == -1) {
+            document.write("<br>" + keineKatze + " keine katze enthalten");
+        }else
+            document.write("Arsch");
 
+    </script>
 
-
-
-
+    <br>
+    <br>
 
 
 

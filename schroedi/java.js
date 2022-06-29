@@ -42,9 +42,21 @@ function kaufen() {
 
 }
 
+function stringAdder () {
+    var getter = document.getElementById("erst").value;
 
+    var plus = getter.indexOf("+");
 
+    var erst = getter.substring(0,plus);
+    var zweit = getter.substring(plus,getter.length);
 
+    erst = parseInt(erst);
+    zweit = parseInt(zweit);
+
+    document.getElementById("addition").innerHTML = erst + zweit;
+    document.getElementById("erst").value = "";
+
+}
 
 
 
