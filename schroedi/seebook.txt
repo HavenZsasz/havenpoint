@@ -25,3 +25,12 @@ TRANSFORM OPERATIONEN:
     Die verschiedenen Operationen von Transform: S. 366
     Wieso Reihenfolge wichtig ist: S. 368
 
+Falsy Werte in JavaScript:
+    Siehe S. 436
+
+
+
+
+
+
+

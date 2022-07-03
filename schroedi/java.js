@@ -59,7 +59,36 @@ function stringAdder () {
 }
 
 
+function schreibeFehler (meldung) {
+    var text = document.getElementById("fehler");
+    text.innerHTML = text.innerHTML + meldung + "<br>";
+}
 
+function vorname () {
+    var vor = document.getElementById("vorname").value;
+    if(vor == "" || vor == "Klausie") {
+        schreibeFehler("Geben Sie einen Namen ein, der nicht Klausie heißt!");
+    }
+}
+function nachname () {
+    var nach = document.getElementById("nachname").value;
+    if(nach == "") {
+        schreibeFehler("Geben Sie einen Nachnamen ein!");
+    }
+}
+function email() {
+    var mail = document.getElementById("email").value;
+    if(mail.indexOf("@") == -1) {
+        schreibeFehler("Geben sie eine richtige Mail-Adresse ein");
+    }
+}
+
+function pruefeFormular() {
+    document.getElementById("fehler").innerHTML = "";
+    vorname();
+    nachname();
+    email();
+}
 
 
 
