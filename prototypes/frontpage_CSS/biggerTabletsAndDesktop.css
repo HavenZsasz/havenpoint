@@ -371,32 +371,25 @@
     }
 
     @keyframes dropDownOpen {
-        from {
+        0% {
             display: block;
-            width: 0.1%;
+            width: 0%;
         }
 
-        66% {
-            display: block;
-            width: 49.99%;
-        }
 
-        to {
+
+        100% {
             display: block;
             width: 50%;
         }
     }
 
     @keyframes dropDownClose {
-        from {
+        0% {
             width: 49.99%;
         }
 
-        66% {
-            width: 0.01%;
-        }
-
-        to {
+        100% {
             display: none;
             width: 0;
         }
