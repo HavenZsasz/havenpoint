@@ -337,6 +337,11 @@
 
     }
 
+    #plus-dropdown {
+        display:none;
+        transform: rotate(-45deg);
+    }
+
     #mehr {
         font-size: xx-large;
         margin-right: 10px;
