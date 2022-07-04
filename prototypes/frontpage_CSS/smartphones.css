@@ -337,13 +337,6 @@
 
     }
 
-    #plus-container:hover {
-
-        background-color: gray;
-        color: rgb(0, 220, 253);
-
-    }
-
     #mehr {
         font-size: xx-large;
         margin-right: 10px;
