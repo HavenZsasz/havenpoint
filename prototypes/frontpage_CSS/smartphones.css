@@ -222,7 +222,7 @@
     }
 
 
-    #plus,
+    #plus-container,
     #entdecken,
     #neuware,
     #dienstleistungen,
@@ -240,7 +240,7 @@
 
     }
 
-    #plus,
+    #plus-container,
     #entdecken,
     #neuware,
     #dienstleistungen,
@@ -268,15 +268,23 @@
 
     #plus-container {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         border: 1px solid rgba(0, 0, 0, 0.5);
-        border-radius: 50%;
-        min-width: 18px;
-        padding-bottom: 2px;
-        height: 18px;
+        border-radius: 40px;
+        min-width: 27px;
+        min-height: 27px;
+        padding: 50% 50% 50% 50%;
+        background-color: red;
+        height: 27px;
+        width:27px;
+        overflow: hidden;
 
 
+    }
+
+    #plus-container > p {
+        
     }
 
     #plus-container:hover {
