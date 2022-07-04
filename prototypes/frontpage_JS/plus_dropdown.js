@@ -1,7 +1,15 @@
-$(document).ready(function(){
+function setupPlus() {
+    document.getElementById("plus-container").addEventListener("click", plusOpen);
+}
 
-    $("plus-container").click(function(){
-        $("plus-container").animate({transform:"rotate(30deg)"});
-    });
+function plusOpen() {    
+    document.getElementById("plus-container").removeEventListener("click", plusOpen);
+    document.getElementById("plus-container").addEventListener("click", plusClose);
+}
 
-});
+function plusClose() {
+    document.getElementById("plus-container").removeEventListener("click", plusClose);
+    document.getElementById("plus-container").addEventListener("click", plusOpen);
+}
+
+window.addEventListener("load", setupPlus);
