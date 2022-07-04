@@ -318,6 +318,10 @@
 
     }
 
+    #plus-dropdown {
+        display:none;
+    }
+
     #mehr {
         font-size: xx-large;
         margin-right: 10px;
