@@ -31,7 +31,6 @@
 
 
 
-    .dark-theme #plus-container,
     .dark-theme #entdecken,
     .dark-theme #neuware,
     .dark-theme #inserate,
@@ -47,6 +46,22 @@
         transition: 0.2s;
 
     }
+
+    .dark-theme #plus-container {
+
+        border-color: rgba(221, 216, 216, 0.558);
+        background-color: rgb(65, 64, 64);
+
+    }
+
+    .dark-theme #plus-container::before,
+    .dark-theme #plus-container::after {
+        background: rgb(228, 221, 221);
+
+
+    }
+
+
 
     .dark-theme #suche {
         background-color: rgb(51, 51, 51);
@@ -223,7 +238,6 @@
     }
 
 
-    #plus-container,
     #entdecken,
     #neuware,
     #dienstleistungen,
@@ -241,7 +255,6 @@
 
     }
 
-    #plus-container,
     #entdecken,
     #neuware,
     #dienstleistungen,
@@ -269,7 +282,7 @@
 
     #plus-container {
 
-        border: 1px solid #aaa;
+        border: 1px solid rgb(51, 51, 51);
         width: 22px;
         height: 22px;
         border-radius: 100%;
@@ -293,7 +306,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: white;
+        background: black;
 
 
     }
