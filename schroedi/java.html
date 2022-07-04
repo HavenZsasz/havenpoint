@@ -121,7 +121,75 @@
     <label for = "nachname">Nachname: </label><input id = "nachname" name = "nachname"><br>
     <label for = "email">Email: </label><input id = "email" name = "email"><br>
     <button type = "button" onclick = "pruefeFormular();">Klick mich!</button>
+    <script>
+        document.write(quersumme(13));
+    </script>
+    <br>
+    <script>
+        document.write(mean(3) + "<br>");
+        document.write(mean(0,1));
+    </script>
+    <br>
 
+    <!--Arrays-->
+
+    <script>
+        var arr = [];
+        arr[1] = 1;
+        arr[0] = 10;
+        document.write(arr +"<br>"); 
+        document.write(arr.length +"<br>");
+        arr[10] = 11;
+        document.write(arr +"<br>"); 
+        document.write(arr.length +"<br>");
+        arr.push(666);
+        document.write(arr +"<br>"); 
+        document.write(arr.length +"<br>");
+        arr.pop();
+        arr.unshift(666);
+        document.write(arr +"<br>"); 
+        document.write(arr.length +"<br>");
+        var abcut = arr.shift(); //Schneidet erstes Element ab; Dieses kann auch in eigene Variable gespeichert werden
+        document.write(arr +"<br>"); 
+        document.write(arr.length +"<br>");
+        document.write(abcut + "<br>")
+        document.write(arr.reverse() + "<br>") //Dreht Reihenfolge des Arrays um
+        var arr2 = [1,2,3,4];
+        document.write("<br" + "<br>");
+        document.write(arr.concat(arr2).concat(arr2)); //Added Array zu einem zweiten; Unendlich erweiterbar
+        
+    </script>
+
+    <br>
+    <br>
+    <script>
+        document.write(meanfor([1,,2,3,4,5,,6]) + "<br>");
+        document.write(meanfor([,,,]));
+    </script>
+
+    <br>
+    <br>
+
+    <script>
+        noparameter(1,2,4,8,9);
+        document.write("<br>");
+        var array = ["HallO", "Das ist ein Test", "Tomate", "Burger", "Pizza"];
+        document.write(array.join(" PENIS ",)); //join ändert den Array in einen String, Trennzeichen muss übergeben werden
+    </script>
+
+    <br>
+    <br>
+
+    <script>
+        var var1 = [1,2,4,5];
+        var var2 = var1;
+        document.write(var1 + " " + var2 + "<br>");
+        var2[0] = 666; //Beide Variablen zeigen auf dasselbe Objekt, deshalb wird hiermit auch die erste Variable verändert
+        document.write(var1 + " " + var2);
+        
+
+    </script>
+    
 
 
 

@@ -90,7 +90,87 @@ function pruefeFormular() {
     email();
 }
 
+function quersumme (zahl) {
+    if(!zahl) return NaN;
+    zahlstring = zahl.toString();
+    var ergebnis = parseInt(zahlstring.charAt(0)) + parseInt(zahlstring.charAt(1));
+    return ergebnis;
+}
 
+function mean (zahl1, zahl2) {
+
+    if(!zahl1 && !zahl2) {
+        return NaN;
+    }
+    if(!zahl1) {
+        zahl1 = 0;
+        return zahl2;
+    }
+    if(!zahl2) {
+        zahl2 = 0;
+        return zahl1;
+    }
+
+    return (zahl1+zahl2)/2;
+
+
+}
+
+function durchschnitt (zahl1, zahl2) {
+
+    if(!zahl1 && zahl1 !== 0) return NaN; //Da 0 auch falsy ist, die und Bedingung
+    var summe = zahl1;
+    var zaehler = 1;
+    if(zahl2 || zahl2 === 0) {
+        summe += zahl2;
+        zaehler++;
+    }
+    return summe/zaehler;
+
+
+}
+
+function meanfor (zahlen) {
+    var length = 0;
+    var sum = 0;
+    if(zahlen.length == 0 && !zahlen) {
+        return 0;
+    }
+    for(var i = 0; i<zahlen.length; i++){
+
+        if(zahlen[i] != undefined) {
+            sum = sum + zahlen[i];
+        }else {
+            sum = sum + 0;
+        }
+        
+
+        if(zahlen[i] != undefined) {
+            length = length + 1;
+        }
+
+    }
+
+    if(length == 0) {
+        return 0;
+    }
+
+    return sum/length;
+
+}
+
+function noparameter () { //Wenn der Funktion keine Parameter übergeben werden oder zuviele, werden diese alle im Objekt arguments gespeichert
+
+    for(var i = 0; i<arguments.length; i++) {
+        document.write(arguments[i]);
+    }
+
+}
+
+
+function quersumme (zahl) {
+    
+}
 
 
 
