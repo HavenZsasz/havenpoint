@@ -1,16 +1,24 @@
 function setupPlus() {
     document.getElementById("plus-container").addEventListener("click", plusOpen);
-    document.getElementById("plus-container").addEventListener("touchstart", plusOpen);
 
 }
-
+ var plusCounter = 0;
 function plusOpen() {    
-    document.getElementById("plus-container").style.animation = "rotate 1s forwards";
-    document.getElementById("plus-container").removeEventListener("click", plusOpen);
-    document.getElementById("plus-container").addEventListener("click", plusClose);
+
+    if(plusCounter == 0) {
+        document.getElementById("plus-container").style.animation = "rotate 1s forwards";
+        document.getElementById("plus-container").removeEventListener("click", plusOpen);
+        document.getElementById("plus-container").addEventListener("click", plusClose);
+
+    } else {
+
+    }
+
 }
 
 function plusClose() {
+
+    document.getElementById("plus-container").style.animation = "rotateBack 1s forwards";
 
     document.getElementById("plus-container").removeEventListener("click", plusClose);
     document.getElementById("plus-container").addEventListener("click", plusOpen);
