@@ -169,8 +169,25 @@ function noparameter () { //Wenn der Funktion keine Parameter übergeben werden 
 
 
 function quersumme (zahl) {
-    
+
+    zahl = zahl.toString();
+    if(zahl.length != 2) throw "Nur zweistellige Zahlen erlaubt"; //Wirft Fehler in die Konsole
+    var ergebnis = parseInt(zahl.charAt(0)) + parseInt(zahl.charAt(1));
+    return ergebnis;
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
