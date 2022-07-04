@@ -285,8 +285,8 @@
 
     }
 
-    #plus-container:before,
-    #plus-container:after {
+    #plus-container::before,
+    #plus-container::after {
         content: '';
         position: absolute;
         top: 0;
@@ -298,12 +298,12 @@
 
     }
 
-    #plus-container:before {
+    #plus-container::before {
         width: 2px;
         margin: 3px auto;
     }
 
-    #plus-container:after {
+    #plus-container::after {
         margin: auto 3px;
         height: 2px;
         box-shadow: none;
