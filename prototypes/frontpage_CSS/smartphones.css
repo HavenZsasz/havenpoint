@@ -298,6 +298,20 @@
 
     }
 
+    @keyframes rotate {
+
+        0% {transform:rotate(0deg);}
+        100% {transform: rotate(45deg);}
+        
+    }
+
+    @keyframes rotateBack {
+
+        0% {transform:rotate(45deg);}
+        100% {transform: rotate(0deg);}
+
+    }
+
     #plus-container::before,
     #plus-container::after {
         content: '';
