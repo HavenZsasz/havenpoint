@@ -324,6 +324,7 @@
 
     #plus-dropdown {
         display:none;
+        transform: rotate(-45deg);
     }
 
     #mehr {
