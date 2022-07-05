@@ -338,9 +338,20 @@
     }
 
     #plus-dropdown {
+        position: relative;
+        top: -220%;
+        left: 70%;
+        min-width: 180px;
+        max-width: 180px;
         display:none;
         transform: rotate(-45deg);
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: rgba(221, 216, 216, 0.558);
+        
+
     }
+
 
     #mehr {
         font-size: xx-large;
