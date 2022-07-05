@@ -16,6 +16,7 @@ function dropdown_mehr() {
     document.getElementById("neuware").setAttribute("href", "");
     document.getElementById("entdecken").style.pointerEvents = "none";
     document.getElementById("neuware").style.pointerEvents = "none";
+    document.getElementById("click-logo").style.pointerEvents = "none";
     document.getElementById("plus-container").removeEventListener("click", plusOpen);
     
     mehr.style.display = "none";
@@ -37,6 +38,7 @@ function dropdown_close() {
     document.getElementById("dropdown-mehr").style.animation= "dropDownClose 0.5s forwards";
     wholeSite.style.animation = "allSwipeRight 1s forwards";
     document.getElementById("entdecken").style.pointerEvents = "all";
+    document.getElementById("click-logo").style.pointerEvents = "all";
     document.getElementById("plus-container").addEventListener("click", plusOpen);
 }
 
