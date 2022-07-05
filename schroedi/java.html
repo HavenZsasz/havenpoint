@@ -197,7 +197,54 @@
 
     <br>
 
+    <input type = "text" id = "texter1">
+    <button id = "clicker1" onclick = "berechne();">CLICK ME!</button>
+    <br>
+    <span id = "ergebnis"></span>
 
+    <br>
+    <br>
+    <script>
+        var functest = quersumme; //Mann kann in JS Funktionen in Variablen packen, dafür allerdings die Klammern der Funktion weglassen
+        document.write(functest(14)); //So können Funktionen auch als Parameter für neue Funktionen übergeben werden
+    </script>
+    <br>
+    <br>
+    <script>
+        var tt = ["Ha","Hallo",  "Hall", "Hal" ];
+        var zz = [12,3,55,2,14];
+        document.write(tt.sort(vergleichLange));
+        document.write("<br>");
+        document.write(tt.sort(function(s1, s2) {return s2.length - s1.length})); //Man kann Funktionen auch anonym und direkt deklarieren und erstellen, wenn sie beispielsweise nur einmal vorkommen sollen
+        document.write("<br>");
+        document.write(zz.sort(vergleichGroß));
+    </script>
+
+    <br>
+
+    <script>
+
+        var tet = ["Das", "ist", "ein", "Array", "aus", "Strings"];
+
+        document.write(adding(tet));
+
+    </script>
+
+    <br>
+    <br>
+
+    <script>
+
+        var e1 = [1,2,3,4,5,6,7,8,9];
+        var e2 = ["AAL", "aal", "reh", "Wal", "Delfin", "Ameise"];
+
+        document.write(filter(e1) + "<br>");
+        document.write(filter(e2) + "<br>");
+        document.write("<br>");
+        document.write(filter2(e1,numberer,letterer) + "<br>");
+        document.write(filter2(e2,numberer, letterer) + "<br>");
+
+    </script>
 
 
 

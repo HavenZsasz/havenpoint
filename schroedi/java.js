@@ -177,10 +177,98 @@ function quersumme (zahl) {
 
 }
 
+function berechne() {
+    var zahl = document.getElementById("texter1").value;
+    try {
+        document.getElementById("ergebnis").innerHTML = quersumme(zahl); //Wenn in try ein Fehler auftritt, wird catch ausgeführt
+    } catch(error) {
+        document.getElementById("ergebnis").innerHTML = "Fehler: " + error;
+    }
+
+}
+
+function vergleichLange(s1, s2) {
+    return s2.length - s1.length;
+}
+
+function vergleichGroß(z1, z2) {
+    return z1 - z2;
+}
+
+function adding (arr) {
+
+    var erg = arr.join(", ",);
+    return erg;
+
+}
 
 
+function filter (arr, func) {
+
+    var erg = [];
+    var counter = 0;
+    var aria = [];
+
+    if(typeof arr[0] == "number") {
+        for(var i = 0; i < arr.length; i++) {
+            if(arr[i] % 2 == 0) {
+                erg[counter] = arr[i];
+                counter++;
+            }
+        }
+    }else {
+        for(var i = 0; i < arr.length; i++) {
+            aria[i] = arr[i].toLowerCase();
+            if(aria[i].charAt(0) == "a" || aria[i].charAt(0) == "e" || aria[i].charAt(0) == "i" || aria[i].charAt(0) == "o" || aria[i].charAt(0) == "u") {
+                erg[counter] = arr[i];
+                counter++;
+            }
+        }
+    }
 
 
+    return erg;
+
+}
+
+function filter2 (arr, func1, func2) {
+
+    var erg = [];
+    if(typeof arr[0] == "number") {
+        erg = func1(arr);
+    }else {
+        erg = func2(arr);
+    }
+    return erg;
+
+}
+
+function numberer (arr) {
+    var erg = [];
+    var counter = 0;
+    for(var i = 0; i < arr.length; i++) {
+        if(arr[i] % 2 == 0) {
+            erg[counter] = arr[i];
+            counter++;
+        }
+    }
+    return erg;
+
+}
+
+function letterer (arr) {
+    var erg = [];
+    var counter = 0;
+    var aria = [];
+    for(var i = 0; i < arr.length; i++) {
+        aria[i] = arr[i].toLowerCase();
+        if(aria[i].charAt(0) == "a" || aria[i].charAt(0) == "e" || aria[i].charAt(0) == "i" || aria[i].charAt(0) == "o" || aria[i].charAt(0) == "u") {
+            erg[counter] = arr[i];
+            counter++;
+        }
+    }
+    return erg;
+}
 
 
 
