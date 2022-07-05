@@ -6,28 +6,46 @@
     <title>Eventhandler</title>
    
     <link rel='stylesheet' href='java.css'>
-    <script type = "text/javascript" src='eventhandler.js'></script>
+    <script type = "text/javascript"  src='eventhandler.js'></script>
 </head>
 
 <style>
-     #klick {
+
+    .tester { 
         color:red;
         font-size: 3em;
         background-color:antiquewhite;
         text-align: center;
     }
 
+
     .geklickt{
         color:black;
         background-color: green;
     }
+
    
 
 </style>
 
 <body>
 
-    <div id = "klick" onclick = "wechsler();">HALLO</div> 
+    <div id = "klick" class = "tester" onclick = "wechsler();">HALLO</div> 
+    <br>
+    <div id = "klick" onclick = "wechs();">HALLO</div> 
+    <br>
+    <span id = "test"></span>
+
+    <br>
+    <br>
+    <br>
+    <div id = "new">Look at this cool stuff</div>
+    <br>
+    <br>
+    <button id = "starter">Start-Knopf</button>
+    <br>
+    <br>
+    <button id = "starterdouble">Start-Knopf</button>
 
 
 
@@ -37,3 +55,5 @@
 
 
 </body>
+
+</html>
