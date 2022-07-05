@@ -292,6 +292,11 @@
 
     }
 
+    @keyframes dropDOWN {
+        0% {display:block;
+        }
+    }
+
     #plus-container::before,
     #plus-container::after {
         content: '';
