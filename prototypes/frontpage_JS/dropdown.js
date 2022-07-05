@@ -16,6 +16,7 @@ function dropdown_mehr() {
     document.getElementById("entdecken").setAttribute("href", "");
     document.getElementById("neuware").setAttribute("href", "");
     document.getElementById("entdecken").style.pointerEvents = "none";
+    document.getElementById("neuware").style.pointerEvents = "none";
     document.getElementById("plus-container").removeEventListener("click", plusOpen);
     
     mehr.style.display = "none";
