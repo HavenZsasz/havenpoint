@@ -5,14 +5,21 @@ function setupPlus() {
 
 function plusOpen() {
 
+    setTimeout(fTimeout, 800);
+
 
     document.getElementById("plus-container").style.animation = "rotate 1s forwards";
-    document.getElementById("plus-dropdown").style.display = "block";
 
     document.getElementById("plus-container").removeEventListener("click", plusOpen);
     document.getElementById("plus-container").addEventListener("click", plusClose);
 
 
+
+}
+
+function fTimeout() {
+
+    document.getElementById("plus-dropdown").style.display = "block";
 
 }
 
