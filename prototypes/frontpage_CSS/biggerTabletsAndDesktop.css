@@ -262,23 +262,65 @@
 
 
     #plus-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid rgba(0, 0, 0, 0.5);
-        border-radius: 50%;
-        min-width: 18px;
-        padding-bottom: 2px;
-        height: 18px;
+
+        border: 1px solid rgb(51, 51, 51);
+        width: 22px;
+        height: 22px;
+        border-radius: 100%;
+        position: relative;
+        margin: 4px;
+        display: inline-block;
+        vertical-align: middle;
+        background: #aaaaaa4f;
+
+
+
 
 
     }
 
-    #plus-container:hover {
+    @keyframes rotate {
 
-        background-color: gray;
-        color: rgb(0, 220, 253);
+        0% {transform:rotate(0deg);}
+        100% {transform: rotate(45deg);}
+        
+    }
 
+    @keyframes rotateBack {
+
+        0% {transform:rotate(45deg);}
+        100% {transform: rotate(0deg);}
+
+    }
+
+    #plus-container::before,
+    #plus-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: black;
+
+
+    }
+
+    #plus-container::before {
+        width: 2px;
+        margin: 3px auto;
+    }
+
+    #plus-container::after {
+        margin: auto 3px;
+        height: 2px;
+        box-shadow: none;
+
+    }
+
+    #plus-dropdown {
+        display:none;
+        transform: rotate(-45deg);
     }
 
     #mehr {
@@ -334,32 +376,25 @@
     }
 
     @keyframes dropDownOpen {
-        from {
+        0% {
             display: block;
-            width: 0.1%;
+            width: 0%;
         }
 
-        66% {
-            display: block;
-            width: 49.99%;
-        }
 
-        to {
+
+        100% {
             display: block;
             width: 50%;
         }
     }
 
     @keyframes dropDownClose {
-        from {
+        0% {
             width: 49.99%;
         }
 
-        66% {
-            width: 0.01%;
-        }
-
-        to {
+        100% {
             display: none;
             width: 0;
         }

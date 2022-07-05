@@ -1,4 +1,4 @@
-@media only screen and (min-device-width: 316px) and  (max-device-width: 550px) {
+@media only screen and (min-device-width: 316px) and (max-device-width: 550px) {
     * {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         transition-property: all;
@@ -31,7 +31,6 @@
 
 
 
-    .dark-theme #plus-container,
     .dark-theme #entdecken,
     .dark-theme #neuware,
     .dark-theme #inserate,
@@ -48,9 +47,25 @@
 
     }
 
+    .dark-theme #plus-container {
+
+        border-color: rgba(221, 216, 216, 0.558);
+        background-color: rgb(65, 64, 64);
+
+    }
+
+    .dark-theme #plus-container::before,
+    .dark-theme #plus-container::after {
+        background: rgb(228, 221, 221);
+
+
+    }
+
+
+
     .dark-theme #suche {
         background-color: rgb(51, 51, 51);
-        
+
     }
 
     .dark-theme #suche::placeholder {
@@ -84,7 +99,7 @@
 
     .dark-theme .vorschlag-container {
         background-color: rgb(51, 51, 51);
-        
+
     }
 
     .dark-theme #mehr-anzeigen {
@@ -97,7 +112,8 @@
 
     }
 
-    h1, h2 {
+    h1,
+    h2 {
         font-size: x-large;
     }
 
@@ -205,11 +221,11 @@
     }
 
     #inserate {
-        display:none;
+        display: none;
     }
 
     #dienstleistungen {
-        display:none;
+        display: none;
     }
 
     #immobilien {
@@ -222,7 +238,6 @@
     }
 
 
-    #plus,
     #entdecken,
     #neuware,
     #dienstleistungen,
@@ -240,7 +255,6 @@
 
     }
 
-    #plus,
     #entdecken,
     #neuware,
     #dienstleistungen,
@@ -267,23 +281,65 @@
 
 
     #plus-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid rgba(0, 0, 0, 0.5);
-        border-radius: 50%;
-        min-width: 18px;
-        padding-bottom: 2px;
-        height: 18px;
+
+        border: 1px solid rgb(51, 51, 51);
+        width: 22px;
+        height: 22px;
+        border-radius: 100%;
+        position: relative;
+        margin: 4px;
+        display: inline-block;
+        vertical-align: middle;
+        background: #aaaaaa4f;
+
+
+
 
 
     }
 
-    #plus-container:hover {
+    @keyframes rotate {
 
-        background-color: gray;
-        color: rgb(0, 220, 253);
+        0% {transform:rotate(0deg);}
+        100% {transform: rotate(45deg);}
+        
+    }
 
+    @keyframes rotateBack {
+
+        0% {transform:rotate(45deg);}
+        100% {transform: rotate(0deg);}
+
+    }
+
+    #plus-container::before,
+    #plus-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: black;
+
+
+    }
+
+    #plus-container::before {
+        width: 2px;
+        margin: 3px auto;
+    }
+
+    #plus-container::after {
+        margin: auto 3px;
+        height: 2px;
+        box-shadow: none;
+
+    }
+
+    #plus-dropdown {
+        display:none;
+        transform: rotate(-45deg);
     }
 
     #mehr {
@@ -339,32 +395,25 @@
     }
 
     @keyframes dropDownOpen {
-        from {
+        0% {
             display: block;
-            width: 0.1%;
+            width: 0%;
         }
 
-        66% {
-            display: block;
-            width: 49.99%;
-        }
 
-        to {
+
+        100% {
             display: block;
             width: 50%;
         }
     }
 
     @keyframes dropDownClose {
-        from {
+        0% {
             width: 49.99%;
         }
 
-        66% {
-            width: 0.01%;
-        }
-
-        to {
+        100% {
             display: none;
             width: 0;
         }
@@ -493,7 +542,7 @@
     }
 
     #alle-vorschlaege-container {
-        
+
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -506,14 +555,14 @@
         display: block;
         border-radius: 10px;
         padding: 5px;
-        width:44%;
+        width: 44%;
         z-index: 1000;
         height: 100%;
         max-height: 270px;
         min-height: 270px;
         overflow: hidden;
         line-height: 120.5%;
-        
+
     }
 
     .artikel-bild-container {
@@ -521,7 +570,7 @@
         justify-content: center;
         height: 120px;
         margin-top: 5px;
-        width:98%;
+        width: 98%;
     }
 
     em {
@@ -536,8 +585,8 @@
     #vorschlag-bild,
     #vorschlag-bild-2 {
         max-width: 97%;
-        
-        
+
+
 
     }
 
@@ -560,10 +609,10 @@
         font-style: italic;
     }
 
-    .preis-bezeichner  {
+    .preis-bezeichner {
 
         font-weight: bolder;
-        font-size:80%;
+        font-size: 80%;
 
     }
 
