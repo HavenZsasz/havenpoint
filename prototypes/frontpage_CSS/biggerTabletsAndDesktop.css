@@ -283,7 +283,6 @@
 
         0% {transform:rotate(0deg);}
         100% {transform: rotate(45deg);}
-        
     }
 
     @keyframes rotateBack {
@@ -291,6 +290,11 @@
         0% {transform:rotate(45deg);}
         100% {transform: rotate(0deg);}
 
+    }
+
+    @keyframes dropDOWN {
+        0% {display:block;
+        }
     }
 
     #plus-container::before,
