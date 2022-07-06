@@ -77,6 +77,8 @@
         display: flex;
         align-items: center;
         line-height: 400px;
+        justify-content: center;
+        
     }
 
     .erri {
@@ -104,6 +106,18 @@
        
     }
 
+    #buttons {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        
+    }
+
+    #ausgabe {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
 
    
    
@@ -186,22 +200,35 @@
 
     <div id = "countererer">
 
-        <button id = "klicker1">Antriebssystem</button>
-        <span>OFFLINE</span>
-        
-        <button id = "klicker1">Antriebssystem</button>
-        <span>OFFLINE</span>
-        
-        <button id = "klicker1">Antriebssystem</button>
-        <span>OFFLINE</span>
-        
-        <button id = "klicker1">Antriebssystem</button>
-        <span>OFFLINE</span>
-        
-        <button id = "klicker1">Antriebssystem</button>
-        <span>OFFLINE</span>
-        
+        <div id = "buttons">
 
+        <button id = "klicker1">Antriebssystem</button>
+        
+        
+        <button id = "klicker2">Schilde</button>
+        
+        
+        <button id = "klicker3">Waffen</button>
+        
+        
+        <button id = "klicker4">Teleporter</button>
+        
+        
+        <button id = "klicker4">Holodeck</button>
+        
+        
+        </div>
+
+        <div id = "ausgabe">
+
+            <span id = "anz1">OFFLINE</span>
+            <span id = "anz2">OFFLINE</span>
+            <span id = "anz3">OFFLINE</span>
+            <span id = "anz4">OFFLINE</span>
+            <span id = "anz5">OFFLINE</span>
+
+
+        </div>
 
 
 

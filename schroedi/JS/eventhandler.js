@@ -38,6 +38,14 @@ function setup () {
     for(var i = 0; i < boxen.length; i++) {
         document.getElementById(boxen[i]).addEventListener("mouseover", adder);
     }
+
+    var buttons = ["1","2","3","4","5"];
+    for(var i = 0; i < buttons.length; i++){
+        document.getElementById("klicker" + buttons[i]).addEventListener("click",activate);
+    }
+
+
+
 }
 
 window.addEventListener("load", setup);
@@ -71,6 +79,13 @@ function adder(event) {
     var counter = event.target.innerHTML;
     counter++;
     event.target.innerHTML = counter;
+}
+
+
+function activate (event) {
+    if(event.target.innerHTML == "Antriebssystem") {
+        document.getElementById("anz1").innerHTML = "ONLINE";
+    }
 }
 
 
