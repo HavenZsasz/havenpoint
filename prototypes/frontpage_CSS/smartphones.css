@@ -61,6 +61,12 @@
 
     }
 
+    .dark-theme #plus-dropdown {
+        background-color: rgb(51, 51, 51);
+        opacity: 0.9;
+        border: 1px solid rgba(221, 216, 216, 0.558);
+    }
+
 
 
     .dark-theme #suche {
@@ -339,18 +345,22 @@
 
     #plus-dropdown {
         position: relative;
-        top: -220%;
-        left: 70%;
-        min-width: 180px;
-        max-width: 180px;
+        top: -250%;
+        left: 60%;
+        min-width: 200px;
+        max-width: 200px;
         display:none;
         transform: rotate(-45deg);
-        border: 1px solid black;
+        font-weight: bold;
+        border: 0.1px solid rgb(51, 51, 51);
         border-radius: 10px;
-        background-color: rgba(221, 216, 216, 0.558);
+        background-color: rgb(226, 223, 223);
+        opacity: 0.9;
         
 
     }
+
+
 
 
     #mehr {
