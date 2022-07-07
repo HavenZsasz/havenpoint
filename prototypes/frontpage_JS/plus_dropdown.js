@@ -5,10 +5,10 @@ function setupPlus() {
 
 function plusOpen() {
 
-    setTimeout(fTimeout, 800);
+    setTimeout(fTimeout, 400);
 
 
-    document.getElementById("plus-container").style.animation = "rotate 1s forwards";
+    document.getElementById("plus-container").style.animation = "rotate 0.5s forwards";
 
     document.getElementById("plus-container").removeEventListener("click", plusOpen);
     document.getElementById("plus-container").addEventListener("click", plusClose);
