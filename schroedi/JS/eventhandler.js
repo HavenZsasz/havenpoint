@@ -39,10 +39,11 @@ function setup () {
         document.getElementById(boxen[i]).addEventListener("mouseover", adder);
     }
 
-    var buttons = ["1","2","3","4","5"];
-    for(var i = 0; i < buttons.length; i++){
-        document.getElementById("klicker" + buttons[i]).addEventListener("click",activate);
-    }
+    var buttons = ["antrieb", "schild", "waffe", "teleport", "holo"];
+    for(var p = 0; p < buttons.length; p++){
+        
+        document.getElementById(buttons[p]).addEventListener("click",activate);
+    } 
 
 
 
@@ -83,10 +84,20 @@ function adder(event) {
 
 
 function activate (event) {
-    if(event.target.innerHTML == "Antriebssystem") {
-        document.getElementById("anz1").innerHTML = "ONLINE";
+    var anzeigen = document.getElementById(event.target.id + "-anz");
+    var helper = document.getElementById("helper");
+
+    if(anzeigen.innerHTML == "OFFLINE") {
+        anzeigen.innerHTML = "ONLINE";
+        helper.innerHTML = "FUNKIONIERT";
+    }else {
+        anzeigen.innerHTML = "OFFLINE";
+        helper.innerHTML = "FUNKTIONIERT AUCH";
     }
+
 }
+
+
 
 
 
