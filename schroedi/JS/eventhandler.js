@@ -39,17 +39,27 @@ function setup () {
         document.getElementById(boxen[i]).addEventListener("mouseover", adder);
     }
 
-    var buttons = ["antrieb", "schild", "waffe", "teleport", "holo"];
+    var buttons = ["antrieb2", "schild2", "waffe2", "teleport2", "holo2"];
     for(var p = 0; p < buttons.length; p++){
         
         document.getElementById(buttons[p]).addEventListener("click",activate);
-    } 
+    }  
 
+    var tims = ["tim","tim1","tim2"];
+    for(var i = 0; i < tims.length; i++) {
+        document.getElementById(tims[i]).addEventListener("click", titim);
+    }
 
+    document.getElementById("launch").addEventListener("click", lelele);
+    
+    window.addEventListener("mousemove", zeiger);
+    window.addEventListener("keyup", tastendruck);
+   
 
 }
 
 window.addEventListener("load", setup);
+
 
 function caller(event) {
     if(event.shiftKey) {
@@ -96,6 +106,54 @@ function activate (event) {
     }
 
 }
+
+
+function titim(event) {
+
+    alert("Hallo");
+    event.stopPropagation(); //Stoppt die Funktion nach der ersten Ausführung, sonst wird die Funktion für alle umgebenden elemente nochmals getriggered
+    event.preventDefault(); //Stoppt alles war der Browser machen könnte, z.B. Links öffnen obwohl man es nicht will
+
+}
+
+function lelele(event) {
+
+    if(event.shiftKey) {
+        alert("Klappt alles");
+        window.addEventListener("keyup", fly);
+    }else {
+        alert("Dat war nix");
+    }
+
+}
+
+
+function fly (event) {
+
+    if(event.keyCode == 37) {
+        alert("Links");
+    }else if(event.keyCode == 38) {
+        alert("Vorwärts");
+    }else if (event.keyCode == 39) {
+        alert("Rechts");
+    }else if (event.keyCode == 40) {
+        alert("So, jetzt is schluss!");
+        window.removeEventListener("keyup", fly);
+    }
+
+}
+
+function zeiger (event) {
+    document.getElementById("maus").innerHTML = event.clientX + " " + event.clientY;
+}
+
+function tastendruck(event) {
+
+    document.getElementById("taste").innerHTML = "    " + event.keyCode;
+
+}
+
+
 
 
 
