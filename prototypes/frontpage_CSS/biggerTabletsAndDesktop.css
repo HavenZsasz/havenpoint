@@ -73,7 +73,7 @@
     .dark-theme #dropdown-mehr {
         background-color: black;
         color: rgb(228, 221, 221);
-        opacity: 0.6;
+        opacity: 0.8;
     }
 
     .dark-theme #dropdown-mehr a {
@@ -408,7 +408,7 @@
         display: none;
         overflow: hidden;
         background-color: #bbb;
-        opacity: 0.7;
+        opacity: 0.9;
         color: black;
         position: fixed;
         right: 0;
