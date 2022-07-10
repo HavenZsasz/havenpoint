@@ -40,6 +40,9 @@ Maus und Keyboard Klick-Events
 DOM - OPERATIONEN:
     S. 526
 
+NodeTypes:
+    S. 539
+
 
 
 

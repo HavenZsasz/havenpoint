@@ -19,7 +19,9 @@ function setup () {
         links[i].addEventListener("click", checken3);
     }
 
-    document.getElementById("all").addEventListener("click", checkenall);
+    document.getElementById("all").addEventListener("click", checkenallwhile);
+    document.getElementById("testing").addEventListener("click", testerer);
+    document.getElementById("vanisher").addEventListener("click", vanish);
 
 }
 
@@ -81,6 +83,29 @@ function checkenall() {
         streicher(b);
     }
 
+}
+
+function checkenallwhile () {
+    var items = document.getElementById("second").getElementsByClassName("offen");
+
+    while(items.length > 0) {
+        items[0].classList.add("erledigt");
+        items[0].classList.remove("offen");
+    }
+}
+
+function testerer () {
+    var items = document.getElementById("second").getElementsByClassName("offen");
+    alert(items.nodeName);
+}
+
+function vanish() {
+    var target =  document.getElementById("third").firstElementChild;
+    while(target.firstChild) {
+        
+        target.removeChild(target.firstChild);
+        
+    }
 }
 
 
