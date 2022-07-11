@@ -15,10 +15,11 @@
     width: 100%;
     height: 400px;
     background-color: aliceblue;
+    
 
 }
 
-#second, #third{
+#second, #third, #fourth{
     width: 100%;
     height: 400px;
     background-color: aliceblue;
@@ -27,16 +28,32 @@
 
 .offen {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .erledigt {
     text-decoration: line-through;
+    cursor: pointer;
 }
 
 #second a {
     background-color:blueviolet;
     margin-left: 15px;
     cursor: pointer;
+}
+
+#fourth {
+    display: flex;
+}
+
+#aufgabenNotDone{
+    width: 50%;
+    background-color: aqua;
+    
+}
+#aufgabenDone{
+    width: 50%;
+    background-color: aquamarine;
 }
 
 
@@ -92,7 +109,37 @@
         </ul>
 
         <button type = "button" id = "vanisher">Vanish it!</button>
+        <button type = "button" id = "turner">Turn shit upside down!</button>
+        <input type = "text" id = "newone">
+        <button type = "button" id = "inserter">Insert this new task</button>
        
+
+    </div>
+
+
+    <div id = "fourth">
+
+        <ul id = "aufgabenNotDone">
+            <h1>Nicht Erledigt</h1>
+            <li class = "offen">Lesen</li>
+            <li class = "offen">Zaubern</li>
+            <li class = "offen">Putzen</li>
+            <li class = "offen">Schleppen</li>
+            <li class = "offen">Wischen</li>
+
+        </ul>
+
+        <ul id = "aufgabenDone">
+            <h1>Erledigt</h1>
+
+
+
+
+        </ul>
+
+
+
+
 
     </div>
 

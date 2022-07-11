@@ -22,11 +22,19 @@ function setup () {
     document.getElementById("all").addEventListener("click", checkenallwhile);
     document.getElementById("testing").addEventListener("click", testerer);
     document.getElementById("vanisher").addEventListener("click", vanish);
+    document.getElementById("turner").addEventListener("click", turning);
+    document.getElementById("inserter").addEventListener("click", inserting);
+
+    var klicks = document.getElementById("fourth").getElementsByTagName("li");
+    for(var j = 0; j < klicks.length; j++) {
+        klicks[j].addEventListener("click", schieber);
+    }
 
 }
 
 
 window.addEventListener("load", setup);
+window.addEventListener("load", sorter);
 
 function checken () {
 
@@ -106,6 +114,92 @@ function vanish() {
         target.removeChild(target.firstChild);
         
     }
+}
+
+
+function turning () {
+    var target = document.getElementById("aufgaben2");
+    var erg = [];
+    var counter = 0;
+
+    while (target.firstChild) {
+        erg[counter] = target.removeChild(target.firstChild); //alternativ: erg.push(target.removeChild(target.firstChild));
+        console.log(erg);
+        counter++;
+    }
+    var index = erg.length - 1;
+    for(var i = 0; i < erg.length; i++) {
+        target.appendChild(erg[index]); //alternativ: target.appendChild(erg.pop());
+        index--;
+    }
+
+    /*target.insertBefore(target.firstChild, target.lastChild);*/ //Setzt einen bestimmten Node vor einem bestimmten Node ein
+
+}
+
+
+function inserting ()  {
+
+    var erg = document.getElementById("newone").value;
+    var node = document.createElement("li"); //Erstellen des ElementNodes
+    var text = document.createTextNode(erg); //Text muss erst noch in einen TextNode gepackt werden
+    var target = document.getElementById("aufgaben2");
+
+    node.appendChild(text); //Der Text wird an das Element angehängt
+    node.classList.add("offen"); //Dem Ganzen wird noch eine Klasse zugewiesen
+    
+    target.appendChild(node); //Der Node wird der Liste angehängt
+
+    document.getElementById("newone").value = "";
+
+    console.log(target.getAttribute("id")); //Zeigt das Attribut eines Elements, geht auch mit class und name
+
+    target.setAttribute("class", "testweise"); //Setzt die Klasse eines bestimmten Elements, geht auch mit id, name
+    target.className = "testweise2"; //Ist die Alternative zu oben
+    console.log(target.getAttribute("class"));
+
+    target.style.backgroundColor = "lightblue"; //So kann man auf das style Attribut eines Elements zugreifen
+   
+    console.log(window.getComputedStyle(target).backgroundColor); //So kann man auf die Angaben des StyleSheets zugreifen
+
+
+}
+
+
+function schieber(event) {
+    var listeNotDone = document.getElementById("aufgabenNotDone");
+    var listeDone = document.getElementById("aufgabenDone");
+
+    if(event.target.className == "offen") {
+
+        var ether = listeNotDone.removeChild(event.target);
+        ether.className = "erledigt";
+        listeDone.appendChild(ether);
+        return;
+
+    }
+
+    if(event.target.className == "erledigt") {
+
+        var ether = listeDone.removeChild(event.target);
+        ether.className = "offen";
+        listeNotDone.appendChild(ether);
+        return;
+
+    }
+
+}
+
+function sorter() {
+
+    var notDone = document.getElementById("aufgabenNotDone").textContent;
+    var done = document.getElementById("aufgabenDone").textContent;
+
+    
+
+
+
+
 }
 
 
