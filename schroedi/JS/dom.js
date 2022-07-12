@@ -190,13 +190,53 @@ function schieber(event) {
 
 }
 
-function sorter() {
+function sorter(notDone) {
 
-    var notDone = document.getElementById("aufgabenNotDone").textContent;
-    var done = document.getElementById("aufgabenDone").textContent;
+    var notDone = document.getElementById("aufgabenNotDone").getElementsByTagName("li");
+    var done = document.getElementById("aufgabenDone").getElementsByTagName("li");
 
-    
+    var erg = [];
+    var comp;
+    var index = 0;
 
+    if(notDone.length > 0 ) {
+        for(var i = 0; i < notDone.length; i++) {
+
+            comp = notDone[i].textContent;
+            
+            console.log("ergebnis: " + comp);
+            console.log("i: " + i);
+
+            for(var j = 0; j < notDone.length; j++) {
+
+                
+
+                console.log("j: " + j);
+
+                if(notDone[j].textContent < comp && i!=j) {
+                    console.log("Drin");
+                    comp = notDone[j].textContent;
+                    index = j;
+                    console.log("Zwischenergebnis: " + comp);
+                    console.log("Index: " + index);
+                }else {
+
+                }
+
+
+            }
+            erg[i] = comp;
+            console.log(erg);
+            notDone[index].textContent = "Zzzzzzzzzzz";
+
+        }
+        
+        
+        for(var z = 0; z < erg.length; z++) {
+            notDone[z].textContent = erg[z];
+        }
+
+    }
 
 
 
