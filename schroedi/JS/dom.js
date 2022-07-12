@@ -12,6 +12,12 @@
 
 function setup () {
 
+    var notDone = document.getElementById("aufgabenNotDone").getElementsByTagName("li");
+    var done = document.getElementById("aufgabenDone").getElementsByTagName("li");
+
+    sorter(notDone);
+    sorter(done);
+
     document.getElementById("erledigen").addEventListener("click", checken2);
     
     var links = document.getElementById("second").getElementsByTagName("a");
@@ -28,7 +34,10 @@ function setup () {
     var klicks = document.getElementById("fourth").getElementsByTagName("li");
     for(var j = 0; j < klicks.length; j++) {
         klicks[j].addEventListener("click", schieber);
+        klicks[j].addEventListener("click", needed);
     }
+
+    
 
 }
 
@@ -170,6 +179,7 @@ function schieber(event) {
     var listeNotDone = document.getElementById("aufgabenNotDone");
     var listeDone = document.getElementById("aufgabenDone");
 
+
     if(event.target.className == "offen") {
 
         var ether = listeNotDone.removeChild(event.target);
@@ -188,12 +198,24 @@ function schieber(event) {
 
     }
 
+
+}
+
+function needed() {
+
+    var sorter1 = document.getElementById("aufgabenNotDone").getElementsByTagName("li");
+    var sorter2 = document.getElementById("aufgabenDone").getElementsByTagName("li");
+
+    sorter(sorter1);
+    sorter(sorter2);
+
+
+
 }
 
 function sorter(notDone) {
 
-    var notDone = document.getElementById("aufgabenNotDone").getElementsByTagName("li");
-    var done = document.getElementById("aufgabenDone").getElementsByTagName("li");
+    
 
     var erg = [];
     var comp;
