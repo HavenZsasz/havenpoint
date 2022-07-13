@@ -33,8 +33,10 @@ function setup () {
 
     var klicks = document.getElementById("fourth").getElementsByTagName("li");
     for(var j = 0; j < klicks.length; j++) {
+        
         klicks[j].addEventListener("click", schieber);
         klicks[j].addEventListener("click", needed);
+        
     }
 
     
@@ -224,41 +226,31 @@ function sorter(notDone) {
     if(notDone.length > 0 ) {
         for(var i = 0; i < notDone.length; i++) {
 
+            index = i;
+
             comp = notDone[i].textContent;
-            
-            console.log("ergebnis: " + comp);
-            console.log("i: " + i);
 
             for(var j = 0; j < notDone.length; j++) {
 
-                
-
-                console.log("j: " + j);
-
-                if(notDone[j].textContent < comp && i!=j) {
-                    console.log("Drin");
+                if(notDone[j].textContent < comp ) {
+                    
                     comp = notDone[j].textContent;
                     index = j;
-                    console.log("Zwischenergebnis: " + comp);
-                    console.log("Index: " + index);
-                }else {
-
                 }
 
-
             }
+            
             erg[i] = comp;
-            console.log(erg);
-            notDone[index].textContent = "Zzzzzzzzzzz";
+            
+            notDone[index].textContent = "Zzzzzzzzzzz";       
 
         }
-        
-        
+           
         for(var z = 0; z < erg.length; z++) {
             notDone[z].textContent = erg[z];
-        }
+        } 
 
-    }
+    } 
 
 
 
