@@ -193,7 +193,7 @@ function Kuchen () {}
 Kuchen.prototype = new Speise();
 
 function Sandwich () {}
-Sandwicht.prototype = new Speise();
+Sandwich.prototype = new Speise();
 
 function Kaffee() {}
 Kaffee.prototype = new Getränk();
