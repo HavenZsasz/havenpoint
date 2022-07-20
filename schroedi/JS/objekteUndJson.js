@@ -20,13 +20,13 @@ document.write(cat["name"]);
 document.write(cat.name);
 document.write(cat["age"]);
 
-window.addEventListener("load", filler);
+
 
 window.addEventListener("load", setup1);
 
 function setup1() {
     document.getElementById("thisform").addEventListener("blur", katzeJSON.update.bind(katzeJSON));
-    document.getElementById("bdaytrigger").addEventListener("click", bdayListe.eintrag.bind(bdayListe));
+    document.getElementById("bdaytrigger").addEventListener("click", eintrag);
 
 }
 
@@ -95,12 +95,37 @@ var katzeJSON =  {
         this[event.target.name] = event.target.value; //nimmt name des Forms und schreibt den Eingabetext in die entsprechende Eigenschaft des Objekts (z.B. ändert den Namen)
         console.log("triggered");
         console.log(this.name);
-    }
+    },
+
+    filler1: function() {
+
+
+        var stuff = document.getElementsByTagName("input");
+        
+        for(var i = 0; i < stuff.length; i++) {
+    
+           
+            if(katzeJSON[stuff[i].id]) {
+                stuff[i].value = this[stuff[i].id];
+            }
+            
+    
+            
+    
+        }
+    
+        //katzeJSON.gruß();
+    
+        
+    
+    },
 
 
 
 
 }
+
+window.addEventListener("load", katzeJSON.filler1.bind(katzeJSON));
 
 
 
@@ -112,25 +137,64 @@ katzeJSON.nerven1 = function() {
 
 }
 
-var bdayListe = {
-    name: "",
-    tag: "",
+var bdayListe = {};
+    
 
-    eintrag: function() {
-        var name = document.getElementById("name1").value;
-        var tag = document.getElementById("bday").value;
+function eintrag() {
+        var name = document.getElementById("name1");
+        var tag = document.getElementById("bday");
         bdayListe[name.value] = tag.value;
         tag.value = "";
         name.value = "";
 
-        for(var eintrag in bdayListe) {
-            document.write(bdayListe[eintrag]);
+        var ul = document.getElementById("ausgabe");
+        while(ul.firstChild) {
+            ul.removeChild(ul.firstChild);
         }
 
+        for(var name in bdayListe) {
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(name + " - " + bdayListe[name]));
+            ul.appendChild(li);
 
-    }
+        }
+
 
 }
 
 
+
+function Dinosaurier(name, rasse, besitzer) {
+    this.name = name;
+    this.rasse = rasse;
+    this.besitzer = besitzer;
+}
+Dinosaurier.prototype = {
+    rawr: function() {
+        alert(this.name + " sagt !RAWR!");
+    }
+}
+
+var dino1 = new Dinosaurier("Zsasz", "T-Rex", "Lord Vasica");
+var dino2 = new Dinosaurier("Tim", "Stego", "Lord Vasica");
+var dino3 = new Dinosaurier("Lukas", "Ankylo", "Lord Vasica");
+var dino4 = new Dinosaurier("Lea", "Argentinosaurus", "Lord Vasica");
+var dino5 = new Dinosaurier("Saskia", "Brachiosaurus", "Lord Vasica");
+
+function Lebensmittel() {}
+
+function Speise() {}
+Speise.prototype = new Lebensmittel();
+
+function Getränk () {}
+Getränk.prototype = new Lebensmittel();
+
+function Kuchen () {}
+Kuchen.prototype = new Speise();
+
+function Sandwich () {}
+Sandwicht.prototype = new Speise();
+
+function Kaffee() {}
+Kaffee.prototype = new Getränk();
 
