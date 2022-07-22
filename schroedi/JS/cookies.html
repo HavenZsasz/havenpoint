@@ -10,6 +10,30 @@
 </head>
 
 
+<style>
+
+    #abwurf {
+        height: 200px;
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3em;
+        border-radius: 50px;
+
+    }
+
+    .hover {
+        border: 5px red solid;
+        color: red;
+    }
+
+
+</style>
+
+
+
+
 <body>
 
     <input type = "text" id = "name" placeholder="Name eingeben">
@@ -23,11 +47,24 @@
     </ul>
     <br>
     <br>
-    <input type = "file" id = "dateien" name = "dateien" multiple accept="image/*"/> <!--Multiple bedeutet, dass man mehrere Dateien gleichzeitig auswählen und reinladen kann-->
+    <input type = "file" id = "dateien" name = "dateien" multiple style = "display: none;"> <!--Multiple bedeutet, dass man mehrere Dateien gleichzeitig auswählen und reinladen kann; Mit accept: "img/*" kann man nur bestimmte Datentypen für den Upload akzeptieren-->
+    <br> <!--Style none lässt den ursprünglichen Button verschwinden. Wir nutzen stattdessen den selbstgebauten Button-->
+    <button id = "knopf" type = "button" style = "color: red; background-color: purple; height: 100px; cursor: pointer;">KOMM SCHON BABY KLICK MICH VERDAMMT</button>
     <br>
+
     <ul id = "printer">
 
     </ul>
+    <ul id = progress>
+        <li id = "start"></li>
+        <li id = "prozent"></li>
+        <li id = "ende"></li>
+    </ul>
+    <br>
+    <div id = "rezept"></div>
+    <br>
+    <br>
+    <div id = "abwurf">!REZEPT HIER ABWERFEN!</div>
 
 
 

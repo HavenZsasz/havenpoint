@@ -133,7 +133,19 @@ function writer3() {
 
 function init() {
 
-    document.getElementById("dateien").addEventListener("change", chooseFile2);
+    document.getElementById("dateien").addEventListener("change", chooseFile3);
+
+    document.getElementById("knopf").addEventListener("click", function() {
+        document.getElementById("dateien").click(); //Dies simuliert den Klick auf unserem PseudoButton
+    })
+
+    document.getElementById("abwurf").addEventListener("dragover", drueberziehen);
+    document.getElementById("abwurf").addEventListener("dragenter", hoveringin);
+    document.getElementById("abwurf").addEventListener("dragleave", hoveringout);
+    document.getElementById("abwurf").addEventListener("drop", chooseFile4);
+    document.getElementById("abwurf").addEventListener("drop", hoveringout);
+
+    //document.getElementById("abwurf").addEventListener("dragover", hovering);
 
 }
 
@@ -171,7 +183,7 @@ function createColumn(attri) {
 }
 
 
-
+//chooseFile2
 
 
 
@@ -181,6 +193,11 @@ function chooseFile2(event) {
 
         var leser = new FileReader();
         leser.addEventListener("load", bildLaden);
+        leser.addEventListener("error", fehler);
+        leser.addEventListener("loadstart", starter);
+        leser.addEventListener("progress", fortschritt);
+        leser.addEventListener("loadend", beendet);
+
         leser.readAsDataURL(event.target.files[0]);
     }
 
@@ -194,5 +211,100 @@ function bildLaden(event) {
     document.getElementById("printer").appendChild(img);
 }
 
+function fehler(event) {
+
+    var meldung;
+
+    switch(event.target.error.name) {
+        case "NotFoundError": meldung = "Datei nicht gefunden"; break; //Bei Case muss nach erfolgreichem Case mit break die Prüfung abgebrochen werden, sonst wird automatisch der Befehl des nächsten Case auch ausgelöst
+        case "EncodingError": meldung = "Datei ist zu lang"; break;
+        case "SecurityError": //hier wird nun beispielsweise automatisch das meldung des nächsten Case übernommen
+        case "NotReadableError": meldung = "Darf Datei nicht lesen"; break;
+        default: meldung = "Keine Ahnung, aber irgendwas funzt nicht";
+    }
+    alert(meldung);
+    
+}
+
+function starter(){
+    document.getElementById("start").innerHTML = "Das Laden beginnt!";
+}
+
+function fortschritt(event) {
+
+    document.getElementById("prozent").innerHTML = ((event.loaded * 100)/event.total);
+
+}
+
+function beendet() {
+    document.getElementById("ende").innerHTML = "Das Laden ist beendet";
+}
+
 
 window.addEventListener("load", init);
+
+
+//chooseFile3
+
+function chooseFile3(event) {
+
+    if(event.target.files[0]) {
+        var filer = new FileReader();
+        filer.addEventListener("load", text);
+        filer.readAsText(event.target.files[0], "UFT-8");
+    }
+
+}
+
+function text(event){
+    
+    var paper = document.getElementById("rezept");
+    var zeilen = event.target.result.split("\n");
+    var titel = document.createElement("h1");
+    titel.appendChild(document.createTextNode(zeilen[0]));
+    paper.appendChild(titel);
+
+    var rest = document.createElement("ul");
+    paper.appendChild(rest);
+
+    for(var i = 1; i < zeilen.length; i++) {
+        var element = document.createElement("li");
+        element.appendChild(document.createTextNode(zeilen[i]));
+        paper.appendChild(element);
+    }
+
+
+
+}
+
+function hoveringin(event) {
+
+    event.target.classList.add("hover");
+
+}
+
+function hoveringout(event) {
+    event.target.classList.remove("hover");
+}
+
+function hovering(event) {
+    event.target.classList.toggle("hover");
+}
+
+//Folgende Funktion ist in html5 notwendig, dass die vorherige Klasse beim drag&drop gestoppt wird
+
+function drueberziehen (event) {
+    event.stopPropagation();
+    event.preventDefault();
+    event.dataTransfer.dropEffect = "move";
+}
+
+//chooseFile4 -> Lösung bei Drag&Drop:
+
+function chooseFile4(event) {
+    event.stopPropagation();
+    event.preventDefault();
+    var data = new FileReader();
+    data.addEventListener("load", text);
+    data.readAsText(event.dataTransfer.files[0], "UFT-8");
+}

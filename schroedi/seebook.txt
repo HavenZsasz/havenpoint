@@ -66,3 +66,5 @@ EVENTS DES FILE-READERS:
 
 AUFGABEN ZUM ÜBEN!:
     S. 610
+
+Massives Defizit in Kapitel 15 -> Am besten alle Aufgaben nochmal probieren
