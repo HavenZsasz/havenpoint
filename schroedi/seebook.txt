@@ -46,12 +46,17 @@ NodeTypes:
 DOM - MEISTERAUFGABE:
     S. 553/554
 
-OPTIMALER CHECK VON COOKIES IN JS & SETZEN VON COOKIES:
+OPTIMALER CHECK VON COOKIES IN JS & SETZEN VON COOKIES, VERFALLSDATUM ETC.:
     S. 601ff.
 
+Modernizr-Skript zum Checken, ob diverse Browser-Features zur Verfügung stehen:
+    http://modernizr.com  (S.606)
 
 
 
 
 
 
+
+AUFGABEN ZUM ÜBEN!:
+    S. 610
