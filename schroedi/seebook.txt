@@ -52,6 +52,12 @@ OPTIMALER CHECK VON COOKIES IN JS & SETZEN VON COOKIES, VERFALLSDATUM ETC.:
 Modernizr-Skript zum Checken, ob diverse Browser-Features zur Verfügung stehen:
     http://modernizr.com  (S.606)
 
+DAS storage EVENT, MIT ANDEREN TABS EMPFANGEN:
+    S. 615
+
+EVENTS DES FILE-READERS:
+    S. 622
+
 
 
 

@@ -126,5 +126,73 @@ function writer3() {
 
 }
 
+//File API
 
 
+
+
+function init() {
+
+    document.getElementById("dateien").addEventListener("change", chooseFile2);
+
+}
+
+function chooseFile(event) {
+
+    var dateien = event.target.files;
+
+    for(var i = 0; i < dateien.length; i++) {
+
+        displayInfo(dateien[i]);
+
+    }
+
+}
+
+function displayInfo(datei) {
+
+    var tr = document.createElement("tr");
+    tr.appendChild(createColumn(datei.name));
+    tr.appendChild(createColumn(datei.type)); //gibt den Mime-Type: "ungenau"/"genau" z.B. "image"/"jpeg"
+    tr.appendChild(createColumn(datei.lastModifiedDate.toLocaleDateString())); 
+    tr.appendChild(createColumn(datei.size));
+    document.getElementById("printer").appendChild(tr);
+
+
+
+}
+
+function createColumn(attri) {
+
+    var cell = document.createElement("td");
+    cell.appendChild(document.createTextNode(attri));
+    return cell;
+
+}
+
+
+
+
+
+
+function chooseFile2(event) {
+
+    if(event.target.files[0]) {
+
+        var leser = new FileReader();
+        leser.addEventListener("load", bildLaden);
+        leser.readAsDataURL(event.target.files[0]);
+    }
+
+}
+
+function bildLaden(event) {
+    var img = document.createElement("img");
+    img.setAttribute("alt", "Geladenes Bild");
+    img.setAttribute("src", event.target.result);
+    console.log(event.target.result);
+    document.getElementById("printer").appendChild(img);
+}
+
+
+window.addEventListener("load", init);
