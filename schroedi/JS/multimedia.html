@@ -7,7 +7,11 @@
    
     <link rel='stylesheet' href='java.css'>
     <script type = "text/javascript"  src='multimedia.js'></script>
+
+
+
 </head>
+
 
 <style>
 
@@ -15,12 +19,17 @@
         width: 100%;
     }
 
+    a {
+        display: block;
+        background-color: red;
+    }
+
 
 </style>
 
 <body>
 
-    <video src = "Kim Peek 1.mp4" controls></video> <!--Das boolsche Argument controls gibt dem Video oder Audio die Control Buttons-->
+    <video src = "Kim Peek 1.mp4" controls autoplay></video> <!--Das boolsche Argument controls gibt dem Video oder Audio die Control Buttons-->
     <br>
     <video controls>
         <source src = "Kim Peek 1.mp4" type = "video/mp4"> <!--Wichtig: Da niemand sich einigen konnte, immer Videos und Audios in beiden Formaten angeben: Mp4 bzw mp3 und webm-->
@@ -28,9 +37,15 @@
         Dein Browser unterstützt das Video-Format nicht. Du kannst 
         das Video aber herunterladen unter <a href = "Kim Peek 1.mp4"> herunterladen.</a>
     </video>
-    <audio src = "04 Asche zu Asche.mp3" controls></audio>
+    
 
-    <audio src = "nickp3012_2014-02-25_21-35-07.mp3" controls autoplay></audio>
+
+    <audio id = "player" autoplay controls>
+        <source src = "nickp3012_2014-02-25_21-35-07.mp3" type = "audio/mp3">
+    </audio>
+
+    <button id = "button">Klicker</button>
+    <a id = "test">Klick Mich</a>
 
 
 
