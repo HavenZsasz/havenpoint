@@ -46,12 +46,31 @@ NodeTypes:
 DOM - MEISTERAUFGABE:
     S. 553/554
 
-OPTIMALER CHECK VON COOKIES IN JS & SETZEN VON COOKIES:
+OPTIMALER CHECK VON COOKIES IN JS & SETZEN VON COOKIES, VERFALLSDATUM ETC.:
     S. 601ff.
 
+Modernizr-Skript zum Checken, ob diverse Browser-Features zur Verfügung stehen:
+    http://modernizr.com  (S.606)
+
+DAS storage EVENT, MIT ANDEREN TABS EMPFANGEN:
+    S. 615
+
+EVENTS DES FILE-READERS:
+    S. 622
+
+VIDEO-TAG UNTERTITEL SETZEN:
+    S.649
+
+VIDEO UND AUDIO ATTRIBUTE:
+    S.651
 
 
 
 
 
 
+
+AUFGABEN ZUM ÜBEN!:
+    S. 610
+
+Massives Defizit in Kapitel 15 -> Am besten alle Aufgaben nochmal probieren
