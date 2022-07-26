@@ -350,17 +350,41 @@
         left: 60%;
         min-width: 200px;
         max-width: 200px;
+        min-height: 70px;
+        max-height: 70px;
         display:none;
         transform: rotate(-45deg);
         font-weight: bold;
-        border: 0.1px solid rgb(51, 51, 51);
         border-radius: 10px;
+        border: 1px solid rgb(121, 118, 118);
         background-color: rgb(226, 223, 223);
-        opacity: 0.9;
+        opacity: 0.96;
         
 
     }
 
+    #plus-neues-inserat {
+
+        margin-top:10px;
+        padding-bottom: 8px;
+
+    }
+
+    #plus-neue-anfrage {
+        border-top:1px solid black;
+        padding-top: 5px;
+        
+    }
+
+    #plus-neues-inserat-link {
+        margin-left: 45px;
+        
+        
+    }
+
+    #plus-neue-anfrage-link {
+        margin-left: 45px;
+    }
 
 
 
