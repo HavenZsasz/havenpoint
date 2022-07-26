@@ -370,6 +370,10 @@
 
     }
 
+    .dark-theme #plus-neue-anfrage {
+        border-top: 1px solid rgba(221, 216, 216, 0.558);
+    }
+
     #plus-neue-anfrage {
         border-top:1px solid white;
         padding-top: 5px;
