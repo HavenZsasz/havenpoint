@@ -23,6 +23,10 @@ function setup() {
     });
 
 
+    document.getElementById("genial").addEventListener("click", musik);
+
+    zeichnen();
+
 
 } 
 
@@ -36,4 +40,49 @@ function stopper() {
     document.getElementById("kim").pause();
 }
 
+/*
+navigator.getUserMedia = navigator.getUserMedia ||
+                         navigator.webkitGetUserMedia ||
+                         navigator.mozGetUserMedia;
 
+if (navigator.getUserMedia) {
+   navigator.getUserMedia({ audio: true, video: { width: 1280, height: 720 } },
+      function(stream) {
+         const video = document.querySelector('video');
+         video.srcObject = stream;
+         video.onloadedmetadata = function(e) {
+           video.play();
+         };
+      },
+      function(err) {
+         console.error(`The following error occurred: ${err.name}`);
+      }
+   );
+} else {
+   console.log("getUserMedia not supported");
+}
+*/
+
+function musik(event) {
+
+    event.preventDefault();
+    var jukebox = document.getElementById("creator");
+    jukebox.src = event.target.href;
+    jukebox.play();
+
+}
+
+
+function zeichnen() {
+    var canvas = document.getElementById("grafik");
+    var context = canvas.getContext("2d");
+
+   
+    context.lineStyle = "#000000";
+    context.lineWidth = 1;
+    context.fillStyle = "#FFD700";
+    context.fillRect(0,0,30,60);
+    context.strokeRect(0,0,30,60);
+
+    
+}
