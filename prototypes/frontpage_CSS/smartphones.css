@@ -68,6 +68,11 @@
     }
 
 
+    .dark-theme #plus-neue-anfrage {
+        border-top: 1px solid rgba(221, 216, 216, 0.558);
+    }
+
+
 
     .dark-theme #suche {
         background-color: rgb(51, 51, 51);
@@ -350,17 +355,42 @@
         left: 60%;
         min-width: 200px;
         max-width: 200px;
+        min-height: 70px;
+        max-height: 70px;
         display:none;
         transform: rotate(-45deg);
         font-weight: bold;
-        border: 0.1px solid rgb(51, 51, 51);
         border-radius: 10px;
-        background-color: rgb(226, 223, 223);
-        opacity: 0.9;
+        border: 1px solid white;
+        background-color: rgb(232, 228, 228);
+        opacity: 0.96;
         
 
     }
 
+    #plus-neues-inserat {
+
+        margin-top:10px;
+        padding-bottom: 8px;
+
+    }
+
+
+    #plus-neue-anfrage {
+        border-top:1px solid white;
+        padding-top: 5px;
+        
+    }
+
+    #plus-neues-inserat-link {
+        margin-left: 45px;
+        
+        
+    }
+
+    #plus-neue-anfrage-link {
+        margin-left: 45px;
+    }
 
 
 
@@ -516,12 +546,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-right: 5%;
 
     }
 
     #round-container-mobile {
         overflow: hidden;
         display: flex;
+        justify-content: center;
+        align-items: center;
         height: 80px;
         width: 80px;
         border-radius: 50%;
@@ -540,12 +573,16 @@
     }
 
 
-
+    #dropdown-mobile-liste {
+        margin-left: 0;
+    }
 
 
     #dropdown-mobile-liste a {
         font-size: larger;
     }
+
+
 
 
 
