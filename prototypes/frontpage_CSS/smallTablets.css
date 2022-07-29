@@ -1,6 +1,4 @@
 @media only screen and (min-device-width: 551px) and (max-device-width: 767px) {
-
-
     * {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         transition-property: all;
@@ -25,7 +23,7 @@
 
     .geklickt {
         color: rgb(0, 220, 253);
-        font-weight: bold;
+        font-weight: bolder;
     }
 
 
@@ -33,10 +31,12 @@
 
 
 
-    .dark-theme #plus-container,
     .dark-theme #entdecken,
     .dark-theme #neuware,
     .dark-theme #inserate,
+    .dark-theme #dienstleistungen,
+    .dark-theme #automobil,
+    .dark-theme #immobilien,
     .dark-theme #mehr {
         text-decoration: none;
         box-sizing: border-box;
@@ -50,9 +50,36 @@
 
     }
 
+    .dark-theme #plus-container {
+
+        border-color: rgba(221, 216, 216, 0.558);
+        background-color: rgb(65, 64, 64);
+
+    }
+
+    .dark-theme #plus-container::before,
+    .dark-theme #plus-container::after {
+        background: rgb(228, 221, 221);
+
+
+    }
+
+    .dark-theme #plus-dropdown {
+        background-color: rgb(51, 51, 51);
+        opacity: 0.9;
+        border: 1px solid rgba(221, 216, 216, 0.558);
+    }
+
+
+    .dark-theme #plus-neue-anfrage {
+        border-top: 1px solid rgba(221, 216, 216, 0.558);
+    }
+
+
+
     .dark-theme #suche {
         background-color: rgb(51, 51, 51);
-        
+
     }
 
     .dark-theme #suche::placeholder {
@@ -73,7 +100,7 @@
     .dark-theme #dropdown-mehr {
         background-color: black;
         color: rgb(228, 221, 221);
-        opacity: 0.6;
+        opacity: 0.8;
     }
 
     .dark-theme #dropdown-mehr a {
@@ -86,7 +113,7 @@
 
     .dark-theme .vorschlag-container {
         background-color: rgb(51, 51, 51);
-        
+
     }
 
     .dark-theme #mehr-anzeigen {
@@ -99,7 +126,8 @@
 
     }
 
-    h1, h2 {
+    h1,
+    h2 {
         font-size: x-large;
     }
 
@@ -121,6 +149,7 @@
     #logo-mehr-mobile {
         display: flex;
         justify-content: space-between;
+        
     }
 
     #search-container {
@@ -207,26 +236,11 @@
     }
 
 
-    #dienstleistungen {
-        display:none;
-    }
-
-    #immobilien {
-        display: none;
-
-    }
-
-    #automobil {
-        display: none;
-    }
-
-
-    #plus,
     #entdecken,
     #neuware,
-    #dienstleistungen,
     #inserate,
     #mehr {
+        margin: 3px 7px 3px 7px;
         text-decoration: none;
         color: black;
         font-size: larger;
@@ -239,18 +253,20 @@
 
     }
 
-    #plus,
-    #entdecken,
-    #neuware,
-    #dienstleistungen,
-    #inserate {
-        margin: 3px 7px 3px 7px;
+    #automobil,
+    #immobilien,
+    #dienstleistungen {
+        display: none;
     }
 
 
     #entdecken:hover,
     #neuware:hover,
-    #inserate:hover {
+    #dienstleistungen:hover,
+    #inserate:hover,
+    #automobil:hover,
+    #immobilien:hover,
+    #mehr:hover {
         color: rgb(0, 220, 253);
         background-color: black;
         opacity: 0.5;
@@ -323,9 +339,49 @@
     }
 
     #plus-dropdown {
+        position: relative;
+        top: -250%;
+        left: 60%;
+        min-width: 200px;
+        max-width: 200px;
+        min-height: 70px;
+        max-height: 70px;
         display:none;
         transform: rotate(-45deg);
+        font-weight: bold;
+        border-radius: 10px;
+        border: 1px solid white;
+        background-color: rgb(232, 228, 228);
+        opacity: 0.96;
+        
+
     }
+
+    #plus-neues-inserat {
+
+        margin-top:10px;
+        padding-bottom: 8px;
+
+    }
+
+
+    #plus-neue-anfrage {
+        border-top:1px solid white;
+        padding-top: 5px;
+        
+    }
+
+    #plus-neues-inserat-link {
+        margin-left: 45px;
+        
+        
+    }
+
+    #plus-neue-anfrage-link {
+        margin-left: 45px;
+    }
+
+
 
     #mehr {
         font-size: xx-large;
@@ -408,7 +464,7 @@
         display: none;
         overflow: hidden;
         background-color: #bbb;
-        opacity: 0.7;
+        opacity: 0.9;
         color: black;
         position: fixed;
         right: 0;
@@ -479,12 +535,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-right: 5%;
 
     }
 
     #round-container-mobile {
         overflow: hidden;
         display: flex;
+        justify-content: center;
+        align-items: center;
         height: 80px;
         width: 80px;
         border-radius: 50%;
@@ -503,12 +562,16 @@
     }
 
 
-
+    #dropdown-mobile-liste {
+        margin-left: 0;
+    }
 
 
     #dropdown-mobile-liste a {
         font-size: larger;
     }
+
+
 
 
 
@@ -527,7 +590,7 @@
     }
 
     #alle-vorschlaege-container {
-        
+
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -540,14 +603,14 @@
         display: block;
         border-radius: 10px;
         padding: 5px;
-        width:44%;
+        width: 44%;
         z-index: 1000;
         height: 100%;
         max-height: 270px;
         min-height: 270px;
         overflow: hidden;
         line-height: 120.5%;
-        
+
     }
 
     .artikel-bild-container {
@@ -555,7 +618,7 @@
         justify-content: center;
         height: 120px;
         margin-top: 5px;
-        width:98%;
+        width: 98%;
     }
 
     em {
@@ -570,8 +633,8 @@
     #vorschlag-bild,
     #vorschlag-bild-2 {
         max-width: 97%;
-        
-        
+
+
 
     }
 
@@ -594,10 +657,10 @@
         font-style: italic;
     }
 
-    .preis-bezeichner  {
+    .preis-bezeichner {
 
         font-weight: bolder;
-        font-size:80%;
+        font-size: 80%;
 
     }
 
@@ -615,14 +678,6 @@
         padding: 13px 0 13px 0;
         margin-top: 15px;
     }
-
-
-
-
-
-
-
-
 
 
 
