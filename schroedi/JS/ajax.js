@@ -5,7 +5,7 @@ var ajaxRequest = new XMLHttpRequest();
 ajaxRequest.addEventListener("load", ajaxGeladen);
 ajaxRequest.addEventListener("error", ajaxFehler);
 
-ajaxRequest.open("get", "/ajaxURL");
+ajaxRequest.open("get", "http://localhost/ajaxURL");
 ajaxRequest.send();
 
 function ajaxGeladen(event) {
