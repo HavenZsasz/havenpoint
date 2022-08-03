@@ -73,6 +73,10 @@ BIBLIOTHEKEN FÜR PLOTS:
 (CANVAS-STUFF UND OPERATIONEN:
     S. 672ff)
 
+MOZILLA DEMOS ZU CANVAS:
+    https://developer.mozilla.org/en-US/demos/tag/tech:canvas   -> S. 704
+
+
 
 
 
