@@ -13,6 +13,10 @@ function loginSave() {
         localStorage.setItem('loginHavn', 'signedIn');
         window.open("https://htmlpreview.github.io/?https://raw.githubusercontent.com/HavenZsasz/havenpoint/main/prototypes/frontpage.html","_self");
 
+    } else {
+
+        window.alert("Anmeldedaten sind ungültig");
+
     }
 }
 
