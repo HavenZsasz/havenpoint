@@ -5,10 +5,10 @@ function loginSaveSetup() {
 }
 
 function loginSave() {
-    var emailInput = document.getElementById("email");
-    var passwortInput = document.getElementById("passwort");
+    var emailInput = document.getElementById("email").value;
+    var passwortInput = document.getElementById("passwort").value;
 
-    if(emailInput.value == admin && passwortInput.value == "0") {
+    if(emailInput == "admin" && passwortInput == "0") {
         var loginHavn = "signedIn";
         localStorage.setItem('loginHavn', 'signedIn');
         window.open("https://htmlpreview.github.io/?https://raw.githubusercontent.com/HavenZsasz/havenpoint/main/prototypes/frontpage.html","_self");
