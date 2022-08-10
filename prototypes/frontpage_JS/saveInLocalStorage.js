@@ -1,7 +1,7 @@
 function loginSaveSetup() {
 
 
-    if (localStorage.getItem("loginHavn")) {
+    if (localStorage.getItem("loginHavnn")) {
 
         window.open("https://htmlpreview.github.io/?https://raw.githubusercontent.com/HavenZsasz/havenpoint/main/prototypes/frontpage.html", "_self");
 
