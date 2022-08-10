@@ -407,6 +407,39 @@
         z-index: 1;
     }
 
+    @keyframes signIn {
+
+        from {
+            filter: blur(0);
+        }
+
+        66% {
+            filter: blur(9.9px);
+        }
+
+        to {
+            filter: blur(10px);
+        }
+        
+    }
+
+    @keyframes signInClose {
+
+        from {
+            filter: blur(10px);
+        }
+
+        66% {
+            filter: blur(9.9px);
+        }
+
+        to {
+            filter: blur(0);
+        }
+        
+    }
+
+
     @keyframes allSwipeLeft {
         from {
             filter: blur(0);
@@ -678,6 +711,46 @@
         padding: 13px 0 13px 0;
         margin-top: 15px;
     }
+
+    #login-box {
+        display: none;
+        border: 1px solid black;
+        z-index: 40000;
+        position: fixed;
+        bottom: 40%;
+        left: 30%;
+        height:130px;
+        width:200px;
+        border-radius: 10px;
+        background-color: rgba(221, 216, 216, 0.7);
+    }
+
+    #login-box > label {
+        margin-left: 10px;
+    }
+
+    #login-mail, #login-passwort {
+        margin-left: 6.6%;
+        
+    }
+
+    #anmelde-button {
+        margin-top: 10px;
+        margin-left: 10px;
+        background-color: rgb(0, 220, 253);
+        font-weight: bold;
+        line-height: 1;
+        border-radius: 6px;
+    }
+
+    #close-login-box {
+        transform: rotate(45deg);
+        margin-left: 175px;
+        margin-top: -8px;
+        font-size: xx-large;
+        width:5px;
+    }
+
 
 
 
