@@ -3,7 +3,7 @@ function loginSaveSetup() {
 
     if (localStorage.getItem("loginHavn")) {
 
-        window.open("https://htmlpreview.github.io/?https://raw.githubusercontent.com/HavenZsasz/havenpoint/main/prototypes/frontpage.html", "_self");
+        window.open("frontpage.html", "_self");
 
     } else {
 
@@ -22,7 +22,7 @@ function loginSave() {
     if (emailInput == "admin" && passwortInput == "0") {
         var loginHavn = "signedIn";
         localStorage.setItem('loginHavn', 'signedIn');
-        window.open("https://htmlpreview.github.io/?https://raw.githubusercontent.com/HavenZsasz/havenpoint/main/prototypes/frontpage.html", "_self");
+        window.open("frontpage.html", "_self");
 
     } else {
 
