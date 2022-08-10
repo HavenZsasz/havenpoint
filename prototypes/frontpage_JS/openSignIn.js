@@ -3,6 +3,8 @@ function setupAnmelden() {
 }
 
 function dropAnmelden() {
+    document.getElementById('over-all').style.animation="signIn 0.5s forwards";
+    document.getElementById("login-box").style.display = "block";
     
 }
 

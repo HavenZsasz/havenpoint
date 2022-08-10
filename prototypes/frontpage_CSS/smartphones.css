@@ -426,6 +426,22 @@
         z-index: 1;
     }
 
+    @keyframes signIn {
+
+        from {
+            filter: blur(0);
+        }
+
+        66% {
+            filter: blur(9.9px);
+        }
+
+        to {
+            filter: blur(10px);
+        }
+        
+    }
+
     @keyframes allSwipeLeft {
         from {
             filter: blur(0);
