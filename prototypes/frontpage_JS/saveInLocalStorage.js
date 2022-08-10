@@ -22,7 +22,7 @@ function loginSave() {
     if (emailInput == "admin" && passwortInput == "0") {
         var loginHavn = "signedIn";
         localStorage.setItem('loginHavn', 'signedIn');
-        window.open("frontpage.html", "_self");
+        window.open("/frontpage.html", "_self");
 
     } else {
 
