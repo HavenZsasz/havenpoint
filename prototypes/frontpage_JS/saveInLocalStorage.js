@@ -15,7 +15,7 @@ function loginSave() {
 
     } else {
 
-        window.alert("Anmeldedaten sind ungültig");
+        window.alert("Anmeldedaten sind ungültig! Probiers mal mit 'admin' und '0'");
 
     }
 }
