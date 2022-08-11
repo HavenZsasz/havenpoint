@@ -26,6 +26,7 @@ function loginSave() {
     if (emailInput == "admin" && passwortInput == "0") {
         var loginHavn = "signedIn";
         localStorage.setItem('loginHavn', 'signedIn');
+        document.getElementById("logout").style.display ="block";
         document.location.reload();
         
 
