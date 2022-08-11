@@ -76,9 +76,8 @@ BIBLIOTHEKEN FÜR PLOTS:
 MOZILLA DEMOS ZU CANVAS:
     https://developer.mozilla.org/en-US/demos/tag/tech:canvas   -> S. 704
 
-
-
-
+AJAX WERTE FÜR DEN responseType:
+    S. 726/727
 
 
 
