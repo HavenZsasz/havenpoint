@@ -748,6 +748,12 @@
         width:5px;
     }
 
+    #logout {
+
+        display: none;
+
+    }
+
 
 
 
