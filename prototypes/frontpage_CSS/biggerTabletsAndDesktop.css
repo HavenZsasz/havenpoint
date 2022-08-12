@@ -561,6 +561,10 @@
 
     }
 
+    #anmelden {
+        cursor:pointer;
+    }
+
     #div-for-round-container-mobile {
         display: flex;
         justify-content: center;
@@ -764,6 +768,7 @@
         border:0;
         border-radius: 6px;
         height: 25px;
+        cursor: pointer;
     }
 
     #close-login-box {
@@ -772,6 +777,7 @@
         margin-top: -14px;
         font-size: xx-large;
         width:5px;
+        cursor: pointer;
     }
 
     #round-container-dropdown {

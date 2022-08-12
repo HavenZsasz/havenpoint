@@ -14,6 +14,7 @@ function closeSignIn() {
     document.getElementById('over-all').style.animation="signInClose 0.2s forwards";
     document.getElementById("login-box").style.display = "none";
 
+
 }
 
 function loginSave() {
