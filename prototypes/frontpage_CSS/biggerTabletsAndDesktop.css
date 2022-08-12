@@ -711,39 +711,65 @@
 
     #login-box {
         display: none;
-        border: 1px solid black;
+        border: 0;
         z-index: 40000;
         position: fixed;
+        line-height: 1.7;
         bottom: 40%;
         left: 30%;
         height:190px;
         width:200px;
         border-radius: 10px;
-        background-color: rgba(221, 216, 216, 0.7);
+        background-color: rgba(185, 183, 183, 0.7);
     }
 
-    #login-box > label {
+    #login-email-box {
+        margin-top: -20px;
+
+    }
+    #login-passwort-box {
+        margin-top: 4px;
+    }
+
+
+    #mail-label, #pw-label {
         margin-left: 10px;
+    }
+
+    #mail-label {
+        margin-left: 13px;
     }
 
     #login-mail, #login-passwort {
         margin-left: 6.6%;
+        border: 0;
+        border-radius: 7px;
+        background-color: rgba(255, 255, 255, 0.463);
+        height: 25px;
+        width: 165px;
         
+    }
+
+    #login-mail:focus, #login-passwort:focus {
+        background-color: white;
+        color: black;
     }
 
     #anmelde-button {
         margin-top: 10px;
         margin-left: 10px;
-        background-color: rgb(0, 220, 253);
-        font-weight: bold;
+        background-color: rgba(241, 239, 239, 0.628);
+        font-weight: bolder;
         line-height: 1;
+        border:0;
         border-radius: 6px;
+        height: 25px;
     }
 
     #close-login-box {
         transform: rotate(45deg);
         margin-left: 175px;
-        margin-top: -8px;
+        margin-top: -14px;
         font-size: xx-large;
         width:5px;
     }
