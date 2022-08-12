@@ -735,16 +735,30 @@
         border: 0;
         z-index: 40000;
         position: fixed;
+        line-height: 1.7;
         bottom: 40%;
         left: 30%;
-        height:160px;
+        height:190px;
         width:200px;
         border-radius: 10px;
         background-color: rgba(185, 183, 183, 0.7);
     }
 
-    #login-box > label {
+    #login-email-box {
+        margin-top: -20px;
+
+    }
+    #login-passwort-box {
+        margin-top: 4px;
+    }
+
+
+    #mail-label, #pw-label {
         margin-left: 10px;
+    }
+
+    #mail-label {
+        margin-left: 13px;
     }
 
     #login-mail, #login-passwort {
@@ -765,7 +779,7 @@
         margin-top: 10px;
         margin-left: 10px;
         background-color: rgba(241, 239, 239, 0.628);
-        font: weight 700px;
+        font-weight: bolder;
         line-height: 1;
         border:0;
         border-radius: 6px;
@@ -775,7 +789,7 @@
     #close-login-box {
         transform: rotate(45deg);
         margin-left: 175px;
-        margin-top: -8px;
+        margin-top: -14px;
         font-size: xx-large;
         width:5px;
     }
