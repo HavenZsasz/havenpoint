@@ -1,0 +1,35 @@
+
+#inhalt {
+    width: 74%;
+    padding: 1em 4% 1em 2%;
+    float: left;
+}
+
+#sidebar {
+    float: right;
+    width: 20%;
+}
+
+#fuss {
+    width: 100%;
+    text-align: center;
+    clear: both; /*Sorgt dafür, dass es keinesfalls neben floatenden Elementen steht, sondern immer darunter*/
+    background-color: lightblue;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    #inhalt {
+        float: none;
+        width: 100%;
+    }
+
+    #sidebar {
+        float: none;
+        width: 100%;
+    }
+
+}
+
+
