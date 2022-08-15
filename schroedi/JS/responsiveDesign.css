@@ -1,4 +1,4 @@
-@media screen and (min-width: 801px) {
+@media screen and (min-device-width: 301px) and (max-device-width: 550px) {
 #inhalt {
     width: 74%;
     padding: 1em 4% 1em 2%;
@@ -18,7 +18,7 @@
 }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 300px) {
 
     #inhalt {
         float: none;
