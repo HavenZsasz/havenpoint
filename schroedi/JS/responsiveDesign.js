@@ -7,6 +7,7 @@ window.addEventListener("load", bildLader);
 function setup () {
 
     geo();
+    ecma();
 
 
 
@@ -49,5 +50,13 @@ function geo() {
             var laenge = position.coords.longitude;
             console.log(laenge);
         });
+    }
+}
+
+function ecma () {
+    var map = new Map();
+    map.set("Arasaka", "24.11.1998");
+    for(let [schluessel, wert] of map) {
+        alert(schluessel + " " + wert);
     }
 }
