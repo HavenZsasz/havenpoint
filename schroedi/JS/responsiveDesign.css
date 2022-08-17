@@ -34,9 +34,20 @@
 }
 
 body {
-    background-image: url(/images/Hintergrund.png);
+   /* background-image: url(/images/Hintergrund.png); */
     background-size: cover;
 }
+
+#galerie {
+
+    width: 100%;
+    height: 400px;
+    background-color: lightcyan;
+
+
+}
+
+
 
 
 

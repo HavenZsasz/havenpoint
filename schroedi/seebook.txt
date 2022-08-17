@@ -91,7 +91,21 @@ RESPONSIVE DESIGN FRAMEWORKS:
     http://unsemantic.com
     www.yaml.de
     http://imperavi.com/kube/css/grid
-    
+
+PICTURE TAG FÜR BILDER AUF DEM HANDY:
+    S. 770
+
+TOUCHE-EVENTS UND EIGENSCHAFTEN: 
+    S. 779/780
+SWIPE-MEDIATHEK:
+    S. 781
+
+COOLE WEBSITES:
+    S. 795
+
+ECMA - ANONYME FUNKTIONEN:
+    S. 813
+
 
 
 
