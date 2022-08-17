@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link id="stylesheet" rel="stylesheet" href="frontpage_CSS/biggerTabletsAndDesktop.css">
+    <link id="stylesheet" rel="stylesheet" href="frontpage_CSS/smartphones.css">
+    <link id="stylesheet" rel="stylesheet" href="frontpage_CSS/miniDisplays.css">
+    <link id="stylesheet" rel="stylesheet" href="frontpage_CSS/smallTablets.css">
+    <script src="https://code.jquery.com/jquery-latest.js"></script> <!--Hier wird JQuery eingebunden-->
+
+
+
+
+    <title>Havenpoint - Startseite</title>
+</head>
+
+<body>
+
+
+
+    <div id="all">
+        <!--#all = Container für alles, das nicht zum Dropdown der Mobile Version gehört, um die Seite aufzuteilen-->
+        <div id="sitehead">
+
+            <div id="logo-mehr-mobile">
+                <!--Ausrichtung des Hamburger Buttons am Logo; für die Desktop-Version: #mehr {display:none;} im CSS setzen-->
+
+                <a id="click-logo" href="frontpage.html"><img id="logo" src="logoDayKomprimiert1.png"></a>
+
+                <a id="mehr" href="#">&#9776</a>
+            </div>
+
+            <form id="search-container">
+                <input id="suche" type="search" placeholder="Alle Kategorien durchsuchen...">
+
+
+            </form>
+
+            <div id="round-container">
+                <img id="profilbild" src="segelKomprimiert2.png">
+            </div>
+        </div>
+
+        <div id="navigation">
+            <div id="plus-container"></div>
+
+            <a id="entdecken" style="color:rgb(0,220,253);font-weight:bold;" href="#">Entdecken</a>
+            <a id="neuware" href="#">Neuware</a>
+            <a id="inserate" href="#">Inserate</a>
+            <a id="automobil" href="#">Automobil</a>
+            <a id="immobilien" href="#">Immobilien</a>
+
+
+        </div>
+
+
+        <h1 id="jquery-test1">Aktuelle Topseller (vorübergehend JQuery Testseite)</h1>
+        <h2 id="jquery-test">Hallo TEST JQUERY</h2>
+        <br>
+        <a href="#" title="JQuery Testlink">TEST für JQuery</a><br>
+        <div id="show-n-hide">hdahduwhwadhhhwfhhohhhhwdapiofhhwadihihdhhdiohhowhhrhaohohshchohiwhahoidhhohhioahfiohfahhwahfoihiohshsahfhh3efhohaihashcashcioheiofhaiofhhioshcioha</div>
+    </div>
+    <!--Dropdown Menü der Mobile Version-->
+    <div id="dropdown-mehr">
+        <a id="close-mobile-dropdown" href="#">&#9776</a>
+        <div id="div-for-round-container-mobile">
+            <div id="round-container-mobile">
+
+                <img id="profilbild-mobile" src="segelKomprimiert2.png">
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <ul id="dropdown-mobile-liste">
+            <li id="toggle-switch-li">
+                <div id="toggle-switch">
+                    <div id="lightmode">L</div>
+                    <div id="darkmode">D</div>
+                    <div id="auto-dark-light">auto</div>
+                </div>
+            </li>
+            <li id="startseite-mobile-li"><a id="startseite-mobile" href="frontpage.html">Startseite</a></li>
+            <li id="neuware-mobile-li"><a id="neuware-mobile" href="#">Neuware</a></li>
+            <li id="inserate-mobile-li"><a id="inserate-mobile" href="#">Inserate</a></li>
+            <li id="automobil-mobile-li"><a id="automobil-mobile" href="#">Automobil</a></li>
+            <li id="immobilien-mobile-li"><a id="immobilien-mobile" href="#">Immobilien</a></li>
+
+        </ul>
+
+    </div>
+    <!--Ende des Dropdown Contents-->
+
+
+    
+    <script src="frontpage_JS/darkmode.js"></script>
+    <script src="frontpage_JS/dropdown.js"></script>
+    <script src="frontpage_JS/jquerytest.js"></script>
+    <noscript>Dein Browser unterstützt leider kein JavaScript (oder JavaScript ist nicht aktiviert), dementsprechend
+        können Inhalte und Funktionen fehlen. ;(</noscript>
+
+
+</body>
+
+</html>
