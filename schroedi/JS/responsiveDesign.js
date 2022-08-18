@@ -54,9 +54,34 @@ function geo() {
 }
 
 function ecma () {
+    var test1 = "Tester";
+    var test2 = "Tester2";
     var map = new Map();
     map.set("Arasaka", "24.11.1998");
     for(let [schluessel, wert] of map) {
         alert(schluessel + " " + wert);
+    }
+    alert (`Hallo das ist ein Test ${test1} ${test2}`); //So lassen sich Strings besser zusammenführen
+    //In die geschweiften Klammern können auch Funktionen aufgerufen werden
+}
+
+//Klasse und neue Art der Vererbung an Prototypen
+
+class Katze {
+    constructor (name, rasse, besitzer) {
+        this.name = name;
+    }
+    miau();
+}
+
+class Katze extends Haustier {
+
+}
+
+class Lucy extends Katze {
+    miau() {
+        if(Math.random() > 0.5) {
+            super.miau(); //super greift auf eine Methode aus einem der überliegenden Prototypen zu, die im eigenen Objekttype eigentlich überschrieben wurde
+        }
     }
 }
