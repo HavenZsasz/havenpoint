@@ -80,6 +80,10 @@
         border-top: 1px solid rgba(221, 216, 216, 0.558);
     }
 
+    .dark-theme #search-container {
+        background-color: rgb(51, 51, 51);
+    }
+
 
 
     .dark-theme #suche {
