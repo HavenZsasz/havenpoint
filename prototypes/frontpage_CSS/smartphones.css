@@ -160,6 +160,8 @@
     #search-container {
         display: flex;
         align-items: center;
+        justify-content: left;
+        background-color: rgb(236, 233, 233); 
         width: 96%;
         height: 40px;
         margin-top: 20px;
@@ -172,13 +174,19 @@
 
     }
 
+    #suchlupe {
+        width:7%;
+        padding-left: 2%;
+
+    }
+
     #suche {
 
         height: 100%;
-        width: 100%;
+        width: 94%;
+        background-color: inherit;
         border-radius: inherit;
         border: 0;
-        background-color: rgba(221, 216, 216, 0.558);
         text-overflow: ellipsis;
 
     }
@@ -187,16 +195,14 @@
 
     #suche::placeholder {
         color: rgb(124, 122, 122);
+        opacity: 1;
         font-size: large;
         padding-left: 10px;
 
     }
 
     #suche:focus {
-        box-shadow: 0 0 3px 0 #1183d6;
-        border-color: #1183d6;
-        background-color: rgb(241, 239, 239);
-        border: 1px solid;
+        background-color: rgb(189, 198, 216);
         outline: none;
     }
 
