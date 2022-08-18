@@ -800,15 +800,26 @@
         z-index: 1000;
         position: relative;
         border: 1px solid white;
-        padding-bottom: 5px;
         border-radius: 10px;
         background-color:rgba(90, 82, 82, 0.253);
-        width: 80px;
-        height: 20px;
+        width: 90px;
+        height: 80px;
         left: 30%;
         
 
     }
+
+    #mein-profil-div, #ueber-uns-div {
+        border-bottom: 1px solid white;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    } 
+
+     #logout-div {
+        padding-top: 3px;
+        padding-bottom: 3px;
+     }
+
 
     #connect-round-and-dropdown {
         display: block;
