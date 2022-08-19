@@ -13,13 +13,16 @@ body{
     position: fixed;
     width: 100%;
     display: flex;
-    padding: 10px 10px 10px 10px;
+    padding: 0px 10px 0px 10px;
     border-bottom: 1px solid black;
+    height: 100px;
+    align-items: flex-end;
+    top: 0;
     
 }
 
 #clickLogo {
-    width: 100px;
+    height: 70px;
 }
 
 
@@ -28,16 +31,21 @@ body{
     display: block;
     text-decoration: none;
     color: black;
-    
     margin: 0;
     padding: 0;
     
 }
 #menu a:hover {
-    background-color: rgb(0, 220, 253);
-    transition: all;
-    transition-duration: 1s;
-    border-radius: 10px;
+
+    color: rgb(0, 220, 253);
+    background-color: black;
+    opacity: 0.8;
+    padding: 5px;
+    border-radius: 14%;
+    border: 1px rgb(0, 220, 253) solid;
+    box-shadow: 0px 0px 10px rgb(0, 220, 253),
+
+        0px 0px 20px rgb(0, 220, 203);
 }
 
 #menu {
@@ -49,4 +57,19 @@ body{
     align-items: flex-end;
     margin: 0 0 0 50px;
     font-size: 1.3em;
+
 }
+
+#test {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  
+}
+
+.main {
+  margin-top: 100px;
+}
+
+
+
