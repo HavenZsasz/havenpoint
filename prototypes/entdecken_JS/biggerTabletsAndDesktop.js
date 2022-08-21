@@ -7,7 +7,8 @@ function setup() {
     slideDefault();
     document.getElementById("clickLeft").addEventListener("click", slideLeft);
     document.getElementById("clickRight").addEventListener("click", slideRight);
-
+    document.getElementById("slideshow").addEventListener("mouseover", showButtons);
+    document.getElementById("slideshow").addEventListener("mouseout", hideButtons);
 
 }
 
@@ -58,4 +59,18 @@ function slideRight() {
     } 
 
 }
+
+function showButtons () {
+    var buttons = document.querySelectorAll(".clicker");
+    buttons[0].setAttribute("style", "opacity:1");
+    buttons[1].setAttribute("style", "opacity:1");
+}
+
+function hideButtons() {
+    var buttons = document.querySelectorAll(".clicker");
+    buttons[0].setAttribute("style", "opacity:0");
+    buttons[1].setAttribute("style", "opacity:0");
+}
+
+
 //#endregion
