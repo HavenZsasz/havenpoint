@@ -77,7 +77,9 @@ body{
   
 }
 .main-objects {
-  margin: 50px 0 50px 0;
+
+  margin: 0 0 20px 0;
+  
 }
 
 
@@ -143,6 +145,58 @@ body{
 
 
 
+
 /* #endregion*/
 
 
+/* #region MostVisited Slieder*/
+
+#mostVisited {
+  display: flex;
+  margin:10px;
+  border: solid black 1px;
+  overflow: scroll;
+
+}
+
+.mostVisited {
+  height: 200px;
+  min-width: 30%;
+  background-color: rgba(0,0,0,0.02);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mostVisited img {
+  margin: 10px 0 0 0;
+  height: 50%;
+  width: 80%;
+}
+.mostVisited div{
+  display: flex;
+  height: 50%;
+  padding: 10px;
+  align-items: flex-end;
+  color: black;
+  justify-content: space-around;
+}
+#preis {
+  margin: 0 10px 0 50px;
+}
+#beschreibung {
+  margin: 0 50px 0 10px;
+}
+#mostVisitedHeader{
+  margin: 0 0 0 20px;
+  font-weight: bold;
+
+}
+
+
+
+
+
+/* #endregion*/

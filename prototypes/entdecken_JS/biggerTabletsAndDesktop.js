@@ -5,10 +5,13 @@ window.addEventListener("load", setup);
 function setup() {
 
     slideDefault();
+    //#region slideshow Event-Listener
     document.getElementById("clickLeft").addEventListener("click", slideLeft);
     document.getElementById("clickRight").addEventListener("click", slideRight);
     document.getElementById("slideshow").addEventListener("mouseover", showButtons);
     document.getElementById("slideshow").addEventListener("mouseout", hideButtons);
+    //#endregion
+
 
 }
 
