@@ -33,7 +33,6 @@ function setup() {
     }
 }
 
-const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 var counterDarkmodeHavn;
 
 function toggleDarkmode() {
