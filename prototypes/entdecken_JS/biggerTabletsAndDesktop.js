@@ -12,7 +12,9 @@ function setup() {
     document.getElementById("slideshow").addEventListener("mouseout", hideButtons);
     //#endregion
 
-
+    document.getElementById("neuware_tab").addEventListener("mouseover", erweiterung_aktivieren);
+    document.getElementById("tab_erweiterungen").addEventListener("mouseout", erweiterung_deaktivieren);
+    
 }
 
 //#region /////////////////////// SLIDER ///////////////////////
@@ -75,5 +77,23 @@ function hideButtons() {
     buttons[1].setAttribute("style", "opacity:0");
 }
 
+
+//#endregion
+
+
+//#region ############# TABS ##############
+
+function erweiterung_aktivieren() {
+
+    document.getElementById("tab_erweiterungen").setAttribute("style", "display:block");
+
+    document.getElementById("tab_erweiterungen").addEventListener("mouseover", erweiterung_aktivieren);
+}
+
+function erweiterung_deaktivieren() {
+
+    document.getElementById("tab_erweiterungen").setAttribute("style", "display:none");
+
+}
 
 //#endregion
