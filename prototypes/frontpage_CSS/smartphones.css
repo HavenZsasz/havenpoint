@@ -665,6 +665,8 @@
       margin: auto;
       margin-left: -10px;
       margin-right: -10px;
+      border-radius: 10px;
+      overflow: hidden;
     }
     
     /* Next & previous buttons */
