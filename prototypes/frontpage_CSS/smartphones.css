@@ -835,6 +835,70 @@
         display: block;
     }
 
+    #slideable-div {
+        overflow: scroll;
+        display:flex;
+        overflow-y: hidden;
+    }
+
+    .vorschlag-container-slide {
+        height: 300px;
+        background-color: rgba(221, 216, 216, 0.558);
+        border-radius: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 10px;
+        flex-direction: column;
+    }
+
+    .artikel-bild-container-slide {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #vorschlag-bild-slide {
+        height: 100%;
+    }
+
+    #em-slide {}
+
+    .preis-bezeichner-slide {}
+
+    .bezeichner-slide {}
+
+    .zustand-bezeichner-slide {}
+
+    .shop-bezeichner-slide {}
+
+    #vorschlag-bild-slide-2 {
+        height: 100%;
+    }
+
+    #vorschlag-bild-slide-3 {
+        height: 100%;
+    }
+
+    #vorschlag-bild-slide-4 {
+        height: 100%;
+    }
+
+    #vorschlag-bild-slide-5 {
+        height: 100%;
+    }
+
+    #vorschlag-bild-slide-6 {
+        height: 100%;
+    }
+
+    #vorschlag-bild-slide-7 {
+        height: 100%;
+    }
+
+
+
+
 
 
 
