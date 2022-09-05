@@ -103,21 +103,31 @@ body{
 #tab_erweiterungen {
   width: 80%;
   height: 300px;
-  background-color: red;
+  background-color: white;
   position: fixed;
   z-index: 1;
   left: 10%;
-  margin: 10px 0 0 0;
+  margin: 11px 0 0 0;
   display: none;
 }
 
 #tab_erweiterungen>div {
   position: absolute;
   height: 100%;
-  width: 70%;
-  background-color: aqua;
-  display: flex;
+  width: 100%;
+  display: none;
   
+}
+
+#tab_erweiterungen img {
+  max-height: 80%;
+  width: 100%;
+  cursor: pointer;
+}
+#tab_erweiterungen #bild {
+  position: absolute;
+  right: 10%;
+  width: 50%;
 }
 
 #tab_erweiterungen>div>div {
@@ -131,9 +141,16 @@ body{
   
 }
 
-#neuware_erweiterung {
-  
+#tab_erweiterungen span {
+  cursor: pointer;
 }
+
+#tab_erweiterungen span:hover {
+  border-bottom: 1px solid rgb(0, 220, 253);
+}
+
+
+
 
 
 
