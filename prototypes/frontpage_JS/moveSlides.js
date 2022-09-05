@@ -1,12 +1,12 @@
 function slides() {
   
-  setTimeout(autoslide, 10000);
+ var timeoutauto = setTimeout(autoslide, 6000);
 
 }
 
 function autoslide() {
   plusSlides(1);
-  setTimeout(autoslide, 10000);
+  timeoutauto;
 }
 
 let slideIndex = 1;
@@ -17,6 +17,7 @@ function plusSlides(n) {
 }
 
 function currentSlide(n) {
+  clearTimeout(timeoutauto);
   showSlides(slideIndex = n);
 }
 
