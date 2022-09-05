@@ -2,7 +2,13 @@ function slides() {
     document.getElementsByClassName("dot")[0].addEventListener("click", currentSlide(1));
     document.getElementsByClassName("dot")[1].addEventListener("click", currentSlide(2));
     document.getElementsByClassName("dot")[2].addEventListener("click", currentSlide(3));
+    setTimeout(autoslide, 10000);
 
+}
+
+function autoslide() {
+  plusSlides(1);
+  setTimeout(autoslide, 10000);
 }
 
 let slideIndex = 1;
