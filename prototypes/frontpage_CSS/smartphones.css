@@ -655,6 +655,20 @@
 
     }
 
+    #main-slider {
+
+        width: 100%;
+        overflow-x: scroll;
+
+    }
+
+    #image-div {
+    }
+
+    #main-slider-pic-1 {
+        width:100%;
+    }
+
     #alle-vorschlaege-container {
 
         display: flex;
