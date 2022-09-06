@@ -24,6 +24,8 @@ body{
     margin: 0;
     padding: 0;
 }
+
+/*#region*//************** NAVBAR UND SEARCHBAR **********/
 #navbar {
     position: fixed;
     width: 100%;
@@ -38,6 +40,35 @@ body{
     
 }
 
+#navbar_right {
+  width: calc(100% - 220px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#search_bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+#searcher {
+  width: 80%;
+  font-size: 1.5em;
+  border: none;
+  background-color: rgba(0,0,0,0.04);
+}
+#searcher:focus {
+  outline: none;
+  border: 1px solid rgb(0, 220, 253);
+}
+#suchlupe {
+  width:5%;
+  padding-left: 3%;
+}
+
 #clickLogo {
     height: 70px;
 }
@@ -48,28 +79,29 @@ body{
     display: block;
     text-decoration: none;
     color: black;
-    margin: 0;
+    margin: 10px 0 0 0;
     padding: 0;
+    text-align: center;
     
 }
 #menu a:hover {
 
-    color: rgb(0, 220, 253);
-    background-color: black;
-    opacity: 0.8;
-    padding: 5px;
-    border-radius: 14%;
-    border: 1px rgb(0, 220, 253) solid;
-    box-shadow: 0px 0px 10px rgb(0, 220, 253),
+  border-radius: 30%;
+  box-shadow:
+  
+    inset 0 0 50px #fff,     
+    inset 20px 0 110px rgb(0, 220, 253),  
+    
+    0 0 50px #fff,            /* outer white */
+    -10px 0 80px rgb(0, 220, 253),      
+    10px 0 80px rgb(0, 220, 253);      
 
-        0px 0px 20px rgb(0, 220, 203);
 }
 
 #menu {
     display: flex;
     justify-content: space-around;
-    width: calc(100% - 200px);
-    margin: 0;
+    width: 100%;
     padding: 0;
     align-items: flex-end;
     margin: 0 0 0 50px;
@@ -78,37 +110,39 @@ body{
 
 }
 
-#test {
-  width: 100%;
-  height: 100px;
-  background-color: lightblue;
+#profilepic {
+  max-width: 100%;
+  max-height: 100%;
+}
+#profileclick {
+  width: 7%;
+  height: 70%;
+  margin: 10px 20px 10px 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
   
 }
 
-.main {
-  margin-top: 100px;
-  z-index: 0;
-  padding: 50px 0 50px 0;
-  
-}
-.main-objects {
+/*#endregion*/
 
-  margin: 0 0 20px 0;
-  
-}
+
+
 
 
 /* #region/ /******************* TAB ERWEITERUNGEN *****/
 
 #tab_erweiterungen {
-  width: 80%;
-  height: 300px;
-  background-color: white;
+  width: 100%;
+  height: 311px;
   position: fixed;
   z-index: 1;
-  left: 10%;
-  margin: 11px 0 0 0;
+  left: 0%;
+  margin: 0;
   display: none;
+  padding: 11px 0 0 0;
 }
 
 #tab_erweiterungen>div {
@@ -149,17 +183,27 @@ body{
   border-bottom: 1px solid rgb(0, 220, 253);
 }
 
-
-
-
-
-
+.erweiterungen {
+  background-color: white;
+}
 
 
 /* #endregion*/
 
 
 /* #region*//************************ SLIDESHOW ******************/
+
+.main {
+  margin-top: 100px;
+  z-index: 0;
+  padding: 50px 0 50px 0;
+  
+}
+.main-objects {
+
+  margin: 0 0 20px 0;
+  
+}
 
 #slideshow {
   display: flex;
@@ -229,6 +273,7 @@ body{
   margin:10px;
   border: solid black 1px;
   overflow: scroll;
+  overflow-y: hidden;
 
 }
 

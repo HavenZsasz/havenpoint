@@ -18,6 +18,7 @@ function setup() {
 
     for(var i = 1; i < tabs.length; i++) {
         tabs[i].addEventListener("mouseover", erweiterung_aktivieren);
+        tabs[i].addEventListener("mouseout", erweiterung_deaktivieren);
     }
 
     
@@ -141,10 +142,6 @@ function erweiterung_aktivieren2(event) {
 function erweiterung_deaktivieren() {
 
     document.getElementById("tab_erweiterungen").setAttribute("style", "display:none");
-
-
-    
-    
 
 } 
 
