@@ -387,7 +387,7 @@
         border: 1px solid white;
         background-color: rgb(232, 228, 228);
         opacity: 0.96;
-        z-index: 1000;
+        z-index: 100000000;
         
 
     }
@@ -404,7 +404,7 @@
     #plus-neue-anfrage {
         border-top:1px solid white;
         padding-top: 5px;
-        z-index: 1001;
+        z-index: 10000001;
         
     }
 
