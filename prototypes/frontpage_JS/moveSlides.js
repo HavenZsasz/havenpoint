@@ -17,7 +17,6 @@ function plusSlides(n) {
 }
 
 function currentSlide(n) {
-  clearTimeout(timeoutauto);
   showSlides(slideIndex = n);
 }
 

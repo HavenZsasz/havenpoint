@@ -396,6 +396,7 @@
 
         margin-top:10px;
         padding-bottom: 8px;
+        z-index: 1001;
 
     }
 
@@ -403,17 +404,20 @@
     #plus-neue-anfrage {
         border-top:1px solid white;
         padding-top: 5px;
+        z-index: 1001;
         
     }
 
     #plus-neues-inserat-link {
         margin-left: 45px;
+        z-index: 1001;
         
         
     }
 
     #plus-neue-anfrage-link {
         margin-left: 45px;
+        z-index: 1001;
     }
 
 
@@ -668,7 +672,7 @@
       margin-right: -10px;
       border-radius: 10px;
       overflow: hidden;
-      z-index: 0.5;
+      z-index: 1;
     }
     
     /* Next & previous buttons */
