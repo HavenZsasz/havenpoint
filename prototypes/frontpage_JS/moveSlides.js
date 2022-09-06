@@ -6,7 +6,7 @@ function slides() {
 
 function autoslide() {
   plusSlides(1);
-  timeoutauto;
+  setTimeout(autoslide, 6000);
 }
 
 let slideIndex = 1;
