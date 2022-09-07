@@ -158,15 +158,16 @@
     #logo {
         width: 100%;
         height: auto;
-        margin-left: 30%;
+        margin-left: 160%;
     }
 
     #logo-bg {
         position: absolute;
-        top: -5px;
+        top: -10px;
         z-index: -1;
-        height: 150px;
-        width: 100%;
+        height: 90px;
+        width: 100%
+
     }
 
     #logo-mehr-mobile {
