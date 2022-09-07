@@ -19,6 +19,8 @@
 
 <body>
 
+    <div id = "login-background"></div>
+
     <div id = "navbar">
         
         <a id = "clickLogoLink" href = "frontpage.html"><img id = "clickLogo" src = "/images/logoDayKomprimiert1.png"></a>
@@ -42,7 +44,7 @@
             </div>
         </div>
 
-        <a id = "profileclick" href = "frontpage.html"><img id = "profilepic" src = "/images/logoDayKomprimiert1.png"></a>
+        <span id = "profileclick"><img id = "profilepic" src = "/images/logoDayKomprimiert1.png"></span>
 
     </div>
 
@@ -158,6 +160,28 @@
         </div>
 
     </div>
+
+    
+    <div id = "login-box" class="login-box">
+        <h2>Login</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" name="" required="">
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="" required="">
+            <label>Password</label>
+          </div>
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </a>
+        </form>
+      </div>
     
 
     <div class = "main">
@@ -169,6 +193,14 @@
             <img class = "slider animate-left" src = "/schroedi/ducks/ente7.jpg">
             <span id = "clickLeft" class = "clicker">&#10094;</span>
             <span id = "clickRight" class = "clicker">&#10095;</span>
+
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(0)"></span> 
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+            </div>
 
         </div>
 

@@ -1,4 +1,5 @@
 
+
 window.addEventListener("load", setup);
 
 
@@ -25,8 +26,13 @@ function setup() {
     document.getElementById("tab_erweiterungen").addEventListener("mouseout", erweiterung_deaktivieren);
     
     //#endregion
-}
 
+
+    document.getElementById("profileclick").addEventListener("click",openLogin);
+    document.getElementById("login-background").addEventListener("click",closeLogin);
+
+
+}
 //#region /////////////////////// SLIDER ///////////////////////
 
 var counter = 0;
@@ -45,6 +51,23 @@ function slideDefault() {
         }
     }
     
+}
+
+function currentSlide(page) {
+
+    var slides = document.querySelectorAll(".slider");
+    var length = slides.length;
+
+    if(slides) {
+        if(length > 1) {
+            
+            for(var i = 0; i < length; i++) {
+                    slides[i].setAttribute("style","display:none");
+            }
+        }
+    }
+    slides[page].setAttribute("style", "display:block");
+
 }
 
 function slideLeft() {
@@ -92,6 +115,7 @@ function hideButtons() {
 
 
 //#region ############# TABS ##############
+
 
 
 function erweiterung_aktivieren(event) {
@@ -146,3 +170,37 @@ function erweiterung_deaktivieren() {
 } 
 
 //#endregion
+
+
+
+//#region ########### LOGIN-MASKE ##########
+
+
+function openLogin() {
+
+    document.getElementById("login-background").setAttribute("style", "display: block");
+    document.getElementById("login-box").setAttribute("style","display:block");
+
+}
+
+function closeLogin () {
+
+    document.getElementById("login-box").setAttribute("style","display: none");
+    document.getElementById("login-background").setAttribute("style", "display: none");
+
+}
+
+
+
+
+
+
+//#endregion
+
+
+
+
+
+
+
+
