@@ -9,6 +9,7 @@ function setup() {
         if (prefersDarkScheme.matches) {
             document.body.classList.add("dark-theme");
             logo.setAttribute("src", "logoNightKomprimiert1.png");
+            document.getElementById("logo-bg").setAttribute("src", "HintergrundDark.png");
             document.getElementById("auto-dark-light").style.backgroundColor = "rgb(0, 220, 253)";
             document.getElementById("auto-dark-light").style.color = "#121212";
             document.getElementById("darkmode").style.backgroundColor = "#121212";
@@ -20,6 +21,7 @@ function setup() {
         } else {
             document.body.classList.remove("dark-theme");
             logo.setAttribute("src", "logoDayKomprimiert1.png");
+            document.getElementById("logo-bg").setAttribute("src", "Hintergrund.png");
             document.getElementById("auto-dark-light").style.backgroundColor = "black";
             document.getElementById("auto-dark-light").style.color = "rgb(0, 220, 253)";
             document.getElementById("lightmode").style.backgroundColor = "#bbb";
@@ -34,11 +36,13 @@ function setup() {
         if (counterDarkmodeHavn == 0) {
             document.body.classList.remove("dark-theme");
             logo.setAttribute("src", "logoDayKomprimiert1.png");
+            document.getElementById("logo-bg").setAttribute("src", "Hintergrund.png");
             document.getElementById("lightmode").style.backgroundColor = "white";
             document.getElementById("lightmode").style.color = "black";
         } else if (counterDarkmodeHavn == 1) {
             document.body.classList.add("dark-theme");
             logo.setAttribute("src", "logoNightKomprimiert1.png");
+            document.getElementById("logo-bg").setAttribute("src", "HintergrundDark.png");
             document.getElementById("darkmode").style.backgroundColor = "rgb(0, 220, 253)";
             document.getElementById("darkmode").style.color = "#121212";
         
@@ -47,12 +51,14 @@ function setup() {
             if (prefersDarkScheme.matches) {
                 document.body.classList.add("dark-theme");
                 logo.setAttribute("src", "logoNightKomprimiert1.png");
+                document.getElementById("logo-bg").setAttribute("src", "HintergrundDark.png");
                 document.getElementById("auto-dark-light").style.backgroundColor = "rgb(0, 220, 253)";
                 document.getElementById("auto-dark-light").style.color = "#121212";
 
             } else {
                 document.body.classList.remove("dark-theme");
                 logo.setAttribute("src", "logoDayKomprimiert1.png");
+                document.getElementById("logo-bg").setAttribute("src", "Hintergrund.png");
                 document.getElementById("auto-dark-light").style.backgroundColor = "black";
                 document.getElementById("auto-dark-light").style.color = "rgb(0, 220, 253";
 
@@ -82,10 +88,12 @@ function toggleDarkmode(event) {
         document.getElementById("auto-dark-light").style.backgroundColor = "#bbb";
         document.getElementById("auto-dark-light").style.color = "black";
         logo.setAttribute("src", "logoDayKomprimiert1.png");
+        document.getElementById("logo-bg").setAttribute("src", "Hintergrund.png");
     } else if(event.target == document.getElementById("darkmode")) {
         localStorage.setItem('counterDarkmodeHavn', '1');
         document.body.classList.add("dark-theme");
         logo.setAttribute("src", "logoNightKomprimiert1.png");
+        document.getElementById("logo-bg").setAttribute("src", "HintergrundDark.png");
         document.getElementById("darkmode").style.backgroundColor = "rgb(0, 220, 253)";
         document.getElementById("darkmode").style.color = "black";
         document.getElementById("lightmode").style.backgroundColor = "#121212";
@@ -99,6 +107,7 @@ function toggleDarkmode(event) {
         if (prefersDarkScheme.matches) {
             document.body.classList.add("dark-theme");
             logo.setAttribute("src", "logoNightKomprimiert1.png");
+            document.getElementById("logo-bg").setAttribute("src", "HintergrundDark.png");
             document.getElementById("auto-dark-light").style.backgroundColor = "rgb(0, 220, 253)";
             document.getElementById("auto-dark-light").style.color = "black";
             document.getElementById("darkmode").style.backgroundColor = "#121212";
@@ -109,6 +118,7 @@ function toggleDarkmode(event) {
         } else {
             document.body.classList.remove("dark-theme");
             logo.setAttribute("src", "logoDayKomprimiert1.png");
+            document.getElementById("logo-bg").setAttribute("src", "Hintergrund.png");
             document.getElementById("auto-dark-light").style.backgroundColor = "black";
             document.getElementById("auto-dark-light").style.color = "rgb(0, 220, 253)";
             document.getElementById("lightmode").style.backgroundColor = "#bbb";
