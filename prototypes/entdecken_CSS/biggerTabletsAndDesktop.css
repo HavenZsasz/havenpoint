@@ -344,11 +344,11 @@ body{
   opacity: 0.8;
   z-index: 9998;
   position: fixed;
-  display: none;
+  /*display: none;*/
 }
 
 .login-box {
-  display: none;
+  /*display: none;*/
   position: fixed;
   top: 50%;
   left: 50%;
@@ -414,7 +414,7 @@ body{
   overflow: hidden;
   transition: .5s;
   margin-top: 40px;
-  letter-spacing: 4px
+  letter-spacing: 4px;
 }
 
 .login-box a:hover {
@@ -507,6 +507,19 @@ body{
   }
 }
 
+#buttons-login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.no-show {
+  font-size: 16px;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+#registrieren span {
+  display: none;
+}
 
 
 /* #endregion*/
