@@ -6,26 +6,26 @@ function setup() {
 
 
         if (prefersDarkScheme.matches) {
-            document.body.classList.add("dark-theme");
-
+            
+            addDarkness();
 
         } else {
-            document.body.classList.remove("dark-theme");
+            removeDarkness();
         }
     } else {
 
         counterDarkmodeHavn = JSON.parse(localStorage["counterDarkmodeHavn"]);
         if (counterDarkmodeHavn == 0) {
-            document.body.classList.remove("dark-theme");
+            removeDarkness();
         } else if (counterDarkmodeHavn == 1) {
-            document.body.classList.add("dark-theme");
+            addDarkness();
 
         } else {
 
             if (prefersDarkScheme.matches) {
-                document.body.classList.add("dark-theme");
+                addDarkness();
             } else {
-                document.body.classList.remove("dark-theme");
+                removeDarkness();
             }
 
         }
@@ -39,19 +39,19 @@ function toggleDarkmode() {
     if (localStorage.getItem("counterDarkmodeHavn") == undefined) {
         var counterDarkmodeHavn = 0;
         localStorage.setItem('counterDarkmodeHavn', '0');
-        document.body.classList.remove("dark-theme");
+        removeDarkness();
     } else {
         if (localStorage.getItem("counterDarkmodeHavn") == 0) {
             var counterDarkmodeHavn = 1;
-            document.body.classList.add("dark-theme");
+            addDarkness();
             localStorage.setItem('counterDarkmodeHavn', '1');
         } else if(localStorage.getItem("counterDarkmodeHavn") == 1) {
-            document.body.classList.remove("dark-theme");
+            removeDarkness();
             var counterDarkmodeHavn = 0;
             localStorage.setItem('counterDarkmodeHavn', '0');
 
         } else {
-            document.body.classList.remove("dark-theme");
+            removeDarkness();
             var counterDarkmodeHavn = 0;
             localStorage.setItem('counterDarkmodeHavn', '0');
 
@@ -66,6 +66,18 @@ function toggleDarkmode() {
 
 
     }
+
+}
+
+function addDarkness () {
+
+    document.body.classList.add("dark-theme");
+
+}
+
+function removeDarkness () {
+
+    document.body.classList.remove("dark-theme");
 
 }
 

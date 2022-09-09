@@ -212,6 +212,7 @@ function switchLogin(event) {
             var registrierung_laser = registrieren.getElementsByTagName("span");
             setVisible(registrierung_laser);
             document.getElementById("caption_login").innerHTML = "Registrierung";
+            document.getElementById("regi-box").setAttribute("style", "display: block");
         }
     }
 
@@ -224,6 +225,7 @@ function switchLogin(event) {
             var registrierung_laser = registrieren.getElementsByTagName("span");
             setInvisible(registrierung_laser);
             document.getElementById("caption_login").innerHTML = "Login";
+            document.getElementById("regi-box").setAttribute("style","display:none");
         }
     }
 
