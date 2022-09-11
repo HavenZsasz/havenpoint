@@ -15,6 +15,9 @@
 .dark-theme .mostVisited{
   background-color: rgba(255,255,255,0.1);
 }
+.dark-theme #mostVisited {
+  border: 1px solid white;
+}
 .dark-theme .mostVisited:hover {
   border: 1px solid rgb(0, 220, 253);
 }
@@ -27,7 +30,32 @@
 .dark-theme #navbar #menu a{
   color: white;
 }
+.dark-theme #navbar #menu a:hover {
+  border-radius: 0%;
+  box-shadow: none;
+  color: rgb(0, 220, 253);
+}
+.dark-theme #searcher {
+  background-color: rgba(255,255,255,0.1);
+}
+
+.dark-theme #profileclick {
+  border: 1px solid white;
+}
+
+.dark-theme .erweiterungen {
+  background-color: black;
+}
+
+
+
 /*#endregion*/
+
+.dark-theme #login-background {
+  opacity: 0.8;
+  background-color: black;
+}
+
 
 
 /*#endregion */
