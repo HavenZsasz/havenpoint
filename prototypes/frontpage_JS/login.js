@@ -6,7 +6,7 @@ function dropAnmelden() {
     document.getElementById('over-all').style.animation="signIn 0.5s forwards";
     document.getElementById("login-box").style.display = "block";
     document.getElementById("close-login-box").addEventListener("click", closeSignIn);
-    document.getElementById("anmelde-button").addEventListener("click", loginSave);
+    document.getElementById("login").addEventListener("click", loginSave);
     
 }
 

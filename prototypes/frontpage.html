@@ -394,19 +394,83 @@
     </div>
     <!--Ende des Dropdown Contents-->
 
-    <div id="login-box">
-        <div id="close-login-box">+
+     <!--#region---> <!------------- LOGIN MASKE ------->
+    
+     <div id = "login-box" class="login-box">
+        <div id="close-login-box">+</div>
+        <h2 id = "caption_login">Login</h2>
+        <form>
+          <div class="user-box">
+            <input id="login-mail" type="text" name="" required="">
+            <label>E-Mail Adresse</label>
+          </div>
+          <div class="user-box">
+            <input id="login-passwort" type="password" name="" required="">
+            <label>Passwort</label>
+          </div>
+
+        <div id = "regi-box">
+          <div class="user-box">
+            <input type="password" name="" required="">
+            <label>Passwort Wiederholen</label>
+          </div>
+        <div class = "moreThanOne">
+          <div class="user-box registration">
+            <input type="text" name="" required="">
+            <label>Vorname</label>
+          </div>
+          <div class="user-box registration">
+            <input type="text" name="" required="">
+            <label>Nachname</label>
+          </div>
         </div>
-        <div id="login-email-box">
-            <span id="mail-label">E-mail: </span> <input id="login-mail" placeholder="E-Mail eingeben" name="email"
-                type="text">
+        <div class = "moreThanOne">
+            <div class="user-box registration">
+              <input type="text" name="" required="">
+              <label>PLZ</label>
+            </div>
+            <div class="user-box registration">
+              <input type="text" name="" required="">
+              <label>Wohnort</label>
+            </div>
         </div>
-        <div id="login-passwort-box">
-            <span id="pw-label">Passwort: </span> <input id="login-passwort" placeholder="Passwort eingeben"
-                name="passwort" type="password">
+        <div class = "moreThanOne">
+            <div class="user-box registration">
+              <input type="text" name="" required="">
+              <label>Straße</label>
+            </div>
+            <div class="user-box registration">
+              <input type="text" name="" required="">
+              <label>Hausnummer</label>
+            </div>
         </div>
-        <button id="anmelde-button" type="button">Einloggen</button>
-    </div>
+
+            <div class="user-box">
+                <input type="text" name="" required="" onfocus="(this.type = 'date')" onblur="(this.type='text')">
+                <label>Geburtsdatum</label>
+             </div>
+
+        </div>
+            <div id = "buttons-login">
+                <a id = "login" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Login
+                </a>
+                <a id = "registrieren" class = "no-show" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Anmelden
+                </a>
+            </div>
+        </form>
+      </div>
+
+      <!--#endregion-->
 
 
 
