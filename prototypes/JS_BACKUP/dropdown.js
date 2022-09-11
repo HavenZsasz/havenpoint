@@ -1,3 +1,9 @@
+function setup_dropdown_mehr() {
+
+    document.getElementById("mehr").addEventListener("click", dropdown_mehr);
+    document.getElementById("close-mobile-dropdown").addEventListener("click", dropdown_close);
+
+}
 
 function dropdown_mehr() {
 
@@ -35,3 +41,5 @@ function dropdown_close() {
     document.getElementById("click-logo").style.pointerEvents = "all";
     document.getElementById("plus-container").addEventListener("click", plusOpen);
 }
+
+window.addEventListener("load", setup_dropdown_mehr);

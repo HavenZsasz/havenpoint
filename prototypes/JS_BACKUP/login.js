@@ -1,3 +1,6 @@
+function setupAnmelden() {
+    document.getElementById("anmelden").addEventListener("click", dropAnmelden);
+}
 
 function dropAnmelden() {
     document.getElementById('over-all').style.animation="signIn 0.5s forwards";
@@ -51,3 +54,5 @@ function loginSave() {
 
     }
 }
+
+window.addEventListener("load", setupAnmelden);

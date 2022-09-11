@@ -1,4 +1,6 @@
-
+function setupProfileDropdown() {
+    document.getElementById("round-container-mobile").addEventListener("click", openProfileDropdown);
+}
 
 function openProfileDropdown() {
 
@@ -17,3 +19,5 @@ function closeProfileDropdown() {
 
 
 }
+
+window.addEventListener("load", setupProfileDropdown);

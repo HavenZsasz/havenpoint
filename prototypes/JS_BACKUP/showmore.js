@@ -1,4 +1,7 @@
-
+function setupShowMore() {
+    document.getElementById("mehr-anzeigen").addEventListener("click", showMore);
+    document.getElementById("mehr-anzeigen-2").addEventListener("click", showMore);
+}
 
 function showMore(event) {
     if(event.target == document.getElementById("mehr-anzeigen")) {
@@ -13,3 +16,5 @@ function showMore(event) {
     
 
 }
+
+window.addEventListener("load", setupShowMore);

@@ -12,4 +12,3 @@ function loginCheck() {
 }
 
 window.addEventListener("load", loginCheck);
-

@@ -1,4 +1,7 @@
+function setupPlus() {
+    document.getElementById("plus-container").addEventListener("click", plusOpen);
 
+}
 
 function plusOpen() {
 
@@ -28,3 +31,5 @@ function plusClose() {
     document.getElementById("plus-container").addEventListener("click", plusOpen);
 
 }
+
+window.addEventListener("load", setupPlus);

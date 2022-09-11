@@ -1,3 +1,8 @@
+function slides() {
+  
+ var timeoutauto = setTimeout(autoslide, 6000);
+
+}
 
 function autoslide() {
   plusSlides(1);
@@ -30,3 +35,5 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+window.addEventListener("load", slides);
