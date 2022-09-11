@@ -125,7 +125,7 @@
 
     }
 
-    .dark-theme #mehr-anzeigen {
+    .dark-theme #mehr-anzeigen, .dark-theme #mehr-anzeigen-2 {
         background-color: rgb(51, 51, 51);
     }
 
