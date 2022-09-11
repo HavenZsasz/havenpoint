@@ -17,6 +17,7 @@ function plusOpen() {
 function fTimeout() {
 
     document.getElementById("plus-dropdown").style.display = "block";
+    document.getElementById("seiteninhalt").style.marginTop = "50px";
 
 }
 
@@ -24,6 +25,7 @@ function plusClose() {
 
     document.getElementById("plus-container").style.animation = "rotateBack 1s forwards";
     document.getElementById("plus-dropdown").style.display = "none";
+    document.getElementById("seiteninhalt").style.marginTop = "0px";
     document.getElementById("plus-container").removeEventListener("click", plusClose);
     document.getElementById("plus-container").addEventListener("click", plusOpen);
 
