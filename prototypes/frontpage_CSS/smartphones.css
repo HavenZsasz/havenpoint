@@ -873,6 +873,12 @@
         margin-top: -10%;
     }
 
+    #logindaten-falsch {
+        display: none;
+        margin-bottom: 10%;
+        
+    }
+
 #login-background {
     top: 0;
     height: 100%;
