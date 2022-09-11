@@ -769,7 +769,7 @@
 
     }
 
-    #alle-vorschlaege-container, #alle-vorschlaege-container-interessant-2 {
+    #alle-vorschlaege-container, #alle-vorschlaege-container-interessant-2, #alle-vorschlaege-container-trend-2 {
 
         display: flex;
         justify-content: space-around;
@@ -777,7 +777,7 @@
         height: 90%;
     }
 
-    #alle-vorschlaege-container-interessant-2 {
+    #alle-vorschlaege-container-interessant-2, #alle-vorschlaege-container-trend-2 {
         display: none;
 
     }
@@ -816,7 +816,7 @@
     }
 
     #vorschlag-bild,
-    #vorschlag-bild-2, #vorschlag-bild-interessant-2, #vorschlag-bild-interessant-3 {
+    #vorschlag-bild-2, #vorschlag-bild-interessant-2, #vorschlag-bild-interessant-3, #vorschlag-bild-trend-2, #vorschlag-bild-trend-3 {
         max-width: 97%;
 
 
@@ -849,12 +849,12 @@
 
     }
 
-    #flex-for-mehr-anzeigen {
+    #flex-for-mehr-anzeigen, #flex-for-mehr-anzeigen-2 {
         display: flex;
         justify-content: center;
     }
 
-    #mehr-anzeigen {
+    #mehr-anzeigen, #mehr-anzeigen-2 {
         background-color: rgba(221, 216, 216, 0.558);
         border-radius: 100px;
         text-align: center;
