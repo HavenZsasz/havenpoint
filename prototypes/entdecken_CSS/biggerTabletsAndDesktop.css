@@ -18,6 +18,18 @@
 .dark-theme .mostVisited:hover {
   border: 1px solid rgb(0, 220, 253);
 }
+
+/*#region*//******* DARK MODE NAVBAR*/
+.dark-theme #navbar {
+  background-color: black;
+  border-bottom: 1px solid white;
+}
+.dark-theme #navbar #menu a{
+  color: white;
+}
+/*#endregion*/
+
+
 /*#endregion */
 
 body{

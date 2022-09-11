@@ -72,12 +72,14 @@ function toggleDarkmode() {
 function addDarkness () {
 
     document.body.classList.add("dark-theme");
+    document.getElementById("clickLogo").src = "/images/logoNightKomprimiert1.png";
 
 }
 
 function removeDarkness () {
 
     document.body.classList.remove("dark-theme");
+    document.getElementById("clickLogo").src = "/images/logoDayKomprimiert1.png";
 
 }
 
