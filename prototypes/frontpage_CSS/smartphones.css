@@ -166,7 +166,6 @@
 
         width: 80px;
         height: auto;
-        margin: auto;
   
     }
 
@@ -192,7 +191,7 @@
         background-color: rgb(236, 233, 233); 
         width: 96%;
         height: 40px;
-        margin-top: 20px;
+        margin-top: 25px;
         margin-bottom: 20px;
         border-radius: 5px;
         overflow: hidden;
