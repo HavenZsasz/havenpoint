@@ -67,6 +67,16 @@ body{
 
 
 /*#region*//************** NAVBAR UND SEARCHBAR **********/
+
+#logo-bg {
+  position: absolute;
+  z-index: -5;
+  height: 20px;
+  width: 100%;
+  height: 80%;
+  left: 0;
+}
+
 #navbar {
     position: fixed;
     width: 100%;
@@ -569,3 +579,17 @@ body{
 
 
 /* #endregion*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
