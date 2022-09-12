@@ -49,6 +49,8 @@ function slideDefault() {
     var slides = document.querySelectorAll(".slider");
     var length = slides.length;
 
+    
+
     if(slides) {
         if(length > 1) {
             
@@ -65,12 +67,16 @@ function currentSlide(page) {
     var slides = document.querySelectorAll(".slider");
     var length = slides.length;
 
+    var dot = document.querySelectorAll(".dot");
+    var lengthDot = dot.length;
+
     if(slides) {
         if(length > 1) {
             
             for(var i = 0; i < length; i++) {
                     slides[i].setAttribute("style","display:none");
             }
+            
         }
     }
     slides[page].setAttribute("style", "display:block");
@@ -83,12 +89,15 @@ function slideLeft() {
 
     
 
-    if(counter > 0) {
+    if(counter >= 0) {
         slides[counter].setAttribute("style", "display:none");
         counter = counter - 1;
+
+        if(counter < 0) {
+            counter = slides.length - 1;
+        }
         slides[counter].setAttribute("style", "display:block");
     }
-
     
 
 }
@@ -97,9 +106,13 @@ function slideRight() {
     var slides = document.querySelectorAll(".slider");
     var length = slides.length;
 
-    if(counter < length-1) {
+    if(counter <= length-1) {
         slides[counter].setAttribute("style", "display:none");
         counter = counter +1;
+
+        if(counter > length - 1) {
+            counter = 0;
+        }
         slides[counter].setAttribute("style", "display:block");
     } 
 
