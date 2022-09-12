@@ -145,6 +145,11 @@
         font-size: x-large;
     }
 
+    #logo-center-filler {
+        width: 11%;
+        height:10px;
+    }
+
     #center-logo {
         display: flex;
         margin-top: -17%;
@@ -180,7 +185,7 @@
 
     #logo-mehr-mobile {
         display: flex;
-        justify-content:right;
+        justify-content:space-between;
         
     }
 
