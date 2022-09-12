@@ -5,12 +5,17 @@ window.addEventListener("load", setup);
 
 function setup() {
 
-    slideDefault();
+    
     //#region slideshow Event-Listener
     document.getElementById("clickLeft").addEventListener("click", slideLeft);
     document.getElementById("clickRight").addEventListener("click", slideRight);
     document.getElementById("slideshow").addEventListener("mouseover", showButtons);
     document.getElementById("slideshow").addEventListener("mouseout", hideButtons);
+
+    var dotArray = document.querySelectorAll(".dot");
+    activateHover(dotArray);
+
+    slideDefault();
     //#endregion
 
     //#region Tabs Event-Listener
@@ -44,10 +49,29 @@ function setup() {
 
 var counter = 0;
 
+//Hover-Funktionen nötig, da ich in anderen Funktionen die Background-color ändere und so die Pseudo-Klasse :hover nicht mehr greift
+
+function activateHover(dotArray) {
+    for(var i = 0; i < dotArray.length; i++) {
+        dotArray[i].addEventListener("mouseover", buttonHover);
+        dotArray[i].addEventListener("mouseout", buttonHoverOff);
+    }
+
+}
+function buttonHover(event) {
+    event.target.setAttribute("style", "background-color:#717171");
+    
+}
+function buttonHoverOff(event) {
+    event.target.setAttribute("style", "background-color: #bbb");
+}
+
 function slideDefault() {
 
     var slides = document.querySelectorAll(".slider");
     var length = slides.length;
+
+    var dot = document.querySelectorAll(".dot");
 
     
 
@@ -57,6 +81,9 @@ function slideDefault() {
             for(var i = 1; i < length; i++) {
                 slides[i].setAttribute("style","display:none");
             }
+            dot[0].removeEventListener("mouseout",buttonHoverOff); //Sorgt dafür, dass der Hover Effekt funktioniert und der Button Grau bleibt, wenn er es sein soll
+            dot[0].setAttribute("style", "background-color:#717171");
+            
         }
     }
     
@@ -68,35 +95,44 @@ function currentSlide(page) {
     var length = slides.length;
 
     var dot = document.querySelectorAll(".dot");
-    var lengthDot = dot.length;
 
     if(slides) {
         if(length > 1) {
             
             for(var i = 0; i < length; i++) {
                     slides[i].setAttribute("style","display:none");
+                    dot[i].setAttribute("style","background-color:#bbb");
             }
             
         }
     }
+    
     slides[page].setAttribute("style", "display:block");
+    dot[page].setAttribute("style","background-color:#717171");
+    activateHover(document.querySelectorAll(".dot"));
+    dot[page].removeEventListener("mouseout",buttonHoverOff);
 
 }
 
 function slideLeft() {
 
     var slides = document.querySelectorAll(".slider");
+    var dot = document.querySelectorAll(".dot");
 
     
 
     if(counter >= 0) {
         slides[counter].setAttribute("style", "display:none");
+        dot[counter].setAttribute("style","background-color:#bbb");
         counter = counter - 1;
 
         if(counter < 0) {
             counter = slides.length - 1;
         }
         slides[counter].setAttribute("style", "display:block");
+        dot[counter].setAttribute("style","background-color:#717171");
+        activateHover(document.querySelectorAll(".dot"));
+        dot[counter].removeEventListener("mouseout",buttonHoverOff);
     }
     
 
@@ -104,16 +140,21 @@ function slideLeft() {
 function slideRight() {
 
     var slides = document.querySelectorAll(".slider");
+    var dot = document.querySelectorAll(".dot");
     var length = slides.length;
 
     if(counter <= length-1) {
         slides[counter].setAttribute("style", "display:none");
+        dot[counter].setAttribute("style","background-color:#bbb");
         counter = counter +1;
 
         if(counter > length - 1) {
             counter = 0;
         }
         slides[counter].setAttribute("style", "display:block");
+        dot[counter].setAttribute("style","background-color:#717171");
+        activateHover(document.querySelectorAll(".dot"));
+        dot[counter].removeEventListener("mouseout",buttonHoverOff);
     } 
 
 }

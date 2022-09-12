@@ -309,11 +309,6 @@ body{
   transition: background-color 0.6s ease;
 }
 
-.dot:hover {
-  background-color: #717171;
-}
-
-
 
 
 /* #endregion*/
