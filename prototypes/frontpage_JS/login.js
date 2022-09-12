@@ -7,6 +7,10 @@ function dropAnmelden() {
     
 }
 
+function openRegister() {
+
+}
+
 function closeSignIn() {
     document.getElementById('over-all').style.animation="signInClose 0.1s forwards";
     document.getElementById("login-box").style.display = "none";

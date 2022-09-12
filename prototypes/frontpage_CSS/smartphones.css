@@ -145,6 +145,13 @@
         font-size: x-large;
     }
 
+    #center-logo {
+        display: flex;
+        margin-top: -17%;
+        width: 100%;
+        justify-content: center;
+    }
+
 
     #click-logo {
         width: 80px;
@@ -157,9 +164,10 @@
 
     #logo {
 
-        width: 100%;
+        width: 80px;
         height: auto;
-        margin-left: 170%;
+        margin: auto;
+  
     }
 
     #logo-bg {
@@ -173,7 +181,7 @@
 
     #logo-mehr-mobile {
         display: flex;
-        justify-content: space-between;
+        justify-content:right;
         
     }
 
