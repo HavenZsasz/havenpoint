@@ -10,6 +10,11 @@ function dropAnmelden() {
 function closeSignIn() {
     document.getElementById('over-all').style.animation="signInClose 0.1s forwards";
     document.getElementById("login-box").style.display = "none";
+    document.getElementById("login-mail").value = "";
+    document.getElementById("login-passwort").value = "";
+    document.getElementById("logindaten-falsch").style.display ="none";
+    document.getElementById("login-mail").style.backgroundColor ="rgb(120,120,120)";
+    document.getElementById("login-passwort").style.backgroundColor ="rgb(120,120,120)";
 
 
 }
@@ -18,6 +23,7 @@ function loginSave() {
 
     var emailInput = document.getElementById("login-mail").value;
     var passwortInput = document.getElementById("login-passwort").value;
+    
 
 
 
