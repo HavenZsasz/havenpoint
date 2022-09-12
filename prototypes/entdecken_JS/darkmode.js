@@ -1,6 +1,7 @@
 function setup() {
 
     document.getElementById("darkmode").addEventListener("click", toggleDarkmode);
+    
 
     if (localStorage.getItem("counterDarkmodeHavn") == undefined) {
 
@@ -57,15 +58,9 @@ function toggleDarkmode() {
 
         }
 
-
-
-
-
-
-
-
-
     }
+
+    
 
 }
 
@@ -74,7 +69,7 @@ function addDarkness () {
     document.body.classList.add("dark-theme");
     document.getElementById("clickLogo").src = "/images/logoNightKomprimiert1.png";
     document.getElementById("profilepic").src = "/images/logoNightKomprimiert1.png";
-
+    
 }
 
 function removeDarkness () {
@@ -82,7 +77,7 @@ function removeDarkness () {
     document.body.classList.remove("dark-theme");
     document.getElementById("clickLogo").src = "/images/logoDayKomprimiert1.png";
     document.getElementById("profilepic").src = "/images/logoDayKomprimiert1.png";
-
+    
 }
 
 
