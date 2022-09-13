@@ -62,6 +62,10 @@
 
     }
 
+    .dark-theme #plus-neues-inserat-link, .dark-theme #plus-neue-anfrage-link {
+        color: white;
+    }
+
     .dark-theme #plus-container::before,
     .dark-theme #plus-container::after {
         background: rgb(228, 221, 221);
@@ -356,6 +360,11 @@
 
 
 
+    }
+
+    #plus-neues-inserat-link, #plus-neue-anfrage-link {
+        text-decoration: none;
+        color: black;
     }
 
     @keyframes rotate {
