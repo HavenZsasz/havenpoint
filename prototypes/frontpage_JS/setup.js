@@ -81,6 +81,8 @@ function frontpageSetup() {
 
 
     document.getElementById("anmelden").addEventListener("click", dropAnmelden);
+    document.getElementById("login").addEventListener("click",switchLogin);
+    document.getElementById("registrieren").addEventListener("click", switchLogin);
 
 
 
