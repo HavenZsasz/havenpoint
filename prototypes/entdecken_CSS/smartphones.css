@@ -1,4 +1,4 @@
-@media only screen and (min-device-width: 316px) and (max-device-width: 550px) {
+@media only screen and (min-device-width: 316px) and  (max-device-width: 550px) {
 
     #desktop-version {
         display: none;
