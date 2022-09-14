@@ -1,6 +1,7 @@
 
 
 window.addEventListener("load", setup);
+window.addEventListener("load", loginCheck);
 
 
 function setup() {
@@ -48,6 +49,8 @@ function setup() {
     document.getElementById("registrieren").addEventListener("click", switchLogin);
 
     document.getElementById("login").addEventListener("click", loginSave);
+
+    document.getElementById("logout").addEventListener("click", logout);
 
 
 
@@ -266,9 +269,11 @@ function erweiterung_deaktivieren() {
 
 function openLogin() {
 
-    document.getElementById("login-background").setAttribute("style", "display: block");
-    document.getElementById("login-box").setAttribute("style","display:block");
 
+        document.getElementById("login-background").setAttribute("style", "display: block");
+        document.getElementById("login-box").setAttribute("style","display:block");
+
+    
 }
 
 function closeLogin () {
