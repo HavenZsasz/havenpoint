@@ -61,3 +61,53 @@ function loginSave() {
 
     }
 }
+
+function switchLogin(event) {
+
+    var registrieren = document.getElementById("registrieren");
+    var login = document.getElementById("login");
+
+    if(event.target.id == "registrieren") {
+        if(registrieren.className == "no-show") {
+            registrieren.classList.remove("no-show");
+            login.classList.add("no-show");
+            var login_laser = login.getElementsByTagName("span");
+            setInvisible(login_laser);
+            var registrierung_laser = registrieren.getElementsByTagName("span");
+            setVisible(registrierung_laser);
+            document.getElementById("caption_login").innerHTML = "Registrierung";
+            document.getElementById("regi-box").setAttribute("style", "display: block");
+        }
+    }
+
+    if(event.target.id == "login") {
+        if(login.className == "no-show") {
+            login.classList.remove("no-show");
+            registrieren.classList.add("no-show");
+            var login_laser = login.getElementsByTagName("span");
+            setVisible(login_laser);
+            var registrierung_laser = registrieren.getElementsByTagName("span");
+            setInvisible(registrierung_laser);
+            document.getElementById("caption_login").innerHTML = "Login";
+            document.getElementById("regi-box").setAttribute("style","display:none");
+        }
+    }
+
+
+
+}
+
+function setInvisible (laser) {
+
+    for(var i = 0; i < laser.length; i++) {
+        laser[i].setAttribute("style", "display:none");
+    }
+
+}
+
+function setVisible (laser) {
+    
+    for(var i = 0; i < laser.length; i++) {
+        laser[i].setAttribute("style", "display:block");
+    }
+}
