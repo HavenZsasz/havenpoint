@@ -342,7 +342,6 @@ function loginSave() {
         document.getElementById("logindaten-falsch").style.display = "none";
         var loginHavn = "signedIn";
         localStorage.setItem('loginHavn', 'signedIn');
-        document.getElementById("logout").style.display ="block";
         document.location.reload();
         document.getElementById("login-mail").style.backgroundColor = "rgb(120,120,120)";
         document.getElementById("login-passwort").style.backgroundColor = "rgb(120,120,120)";
