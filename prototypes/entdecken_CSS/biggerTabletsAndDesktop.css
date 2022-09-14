@@ -1,7 +1,8 @@
 
 * {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+    
+  }
 
 /* #region*//************ DARK MODE *****************/
 
@@ -41,6 +42,7 @@
 
 .dark-theme #profileclick {
   border: 1px solid white;
+  background-color: rgb(18,18,18);
 }
 
 .dark-theme .erweiterungen {
@@ -58,6 +60,7 @@
 
 
 
+
 /*#endregion */
 
 body{
@@ -72,9 +75,9 @@ body{
   position: absolute;
   z-index: -5;
   height: 20px;
-  width: 110%;
-  height: 70%;
-  left: -10%;
+  width: 17%;
+  height: 60%;
+  left: 0;
 }
 
 #navbar {
@@ -118,6 +121,7 @@ body{
 #suchlupe {
   width:5%;
   padding-left: 3%;
+  cursor: pointer;
 }
 
 #clickLogo {
@@ -325,7 +329,7 @@ body{
 /* #endregion*/
 
 
-/* #region MostVisited Slider*/
+/* #region*/ /******************** MostVisited Slider ************/
 
 #mostVisited {
   display: flex;
@@ -358,7 +362,6 @@ body{
   height: 50%;
   padding: 10px;
   align-items: flex-end;
-  
   justify-content: space-around;
 }
 #preis {
@@ -371,6 +374,10 @@ body{
   margin: 0 0 0 20px;
   font-weight: bold;
 
+}
+
+.productSlider {
+  margin: 100px 0 0 0;
 }
 
 
@@ -577,6 +584,16 @@ body{
 }
 #registrieren span {
   display: none;
+}
+
+
+#close-login-box {
+  transform: rotate(45deg);
+  margin-left: -5px;
+  margin-top: -30px;
+  font-size: xx-large;
+  width:5px;
+  cursor: pointer;
 }
 
 

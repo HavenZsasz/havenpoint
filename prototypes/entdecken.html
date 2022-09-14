@@ -38,11 +38,11 @@
             <div id = "menu">
 
                 <a id = "entdecken_tab" href = "">Entdecken</a>
-                <a id = "neuware_tab" href = "">Neuware</a>
-                <a id = "inserate_tab" href = "">Inserate</a>
-                <a id = "dienstleistungen_tab" href = "">Dienstleistungen</a>
-                <a id = "automobil_tab" href = "">Automobil</a>
-                <a id = "immobilien_tab" href = "">Immobilien</a>
+                <a id = "neuware_tab" href = "/prototypes/neuware.html">Neuware</a>
+                <a id = "inserate_tab" href = "/prototypes/inserate.html">Inserate</a>
+                <a id = "dienstleistungen_tab" href = "/prototypes/services.html">Dienstleistungen</a>
+                <a id = "automobil_tab" href = "/prototypes/automobil.html">Automobil</a>
+                <a id = "immobilien_tab" href = "/prototypes/immobilien.html">Immobilien</a>
         
             </div>
         </div>
@@ -169,16 +169,19 @@
     <!--#region---> <!------------- LOGIN MASKE ------->
     
     <div id = "login-box" class="login-box">
+        <div id="close-login-box">+</div>
         <h2 id = "caption_login">Login</h2>
+        <div id="logindaten-falsch"></div>
         <form>
           <div class="user-box">
-            <input type="text" name="" required="">
+            <input id = "login-mail" type="text" name="" required="">
             <label>Username</label>
           </div>
           <div class="user-box">
-            <input type="password" name="" required="">
+            <input id = "login-passwort" type="password" name="" required="">
             <label>Passwort</label>
           </div>
+
 
         <div id = "regi-box">
           <div class="user-box">
@@ -244,7 +247,12 @@
       <!--#endregion-->
     
 
+    <!--#region--> <!--------------- MAIN -------------->
+
+
     <div class = "main">
+
+    <!--#region--> <!-------------- SLIDE SHOW --------->
 
         <div id = "slideshow" class = "main-objects">
 
@@ -264,7 +272,9 @@
 
         </div>
 
-    <!--#region MostVisited-->
+    <!--#endregion-->
+
+    <!--#region---------------------- MostVisited ---------->
 
         <span id = "mostVisitedHeader">DAS IST DER NEUESTE SHIT - DAS UND NUR DAS</span>
 
@@ -317,7 +327,73 @@
         </div>
     <!--#endregion -->
 
+    <!--#region---------------------- MostVisited ---------->
+
+    <div class = "productSlider">
+
+        <span id = "mostVisitedHeader">DAS GEHT IN DER KATEGORIE AUTOMOBILE</span>
+
+        <div id = "mostVisited" class = "main-objects">
+
+            <div id = "firstMostVisited" class = "mostVisited">
+                <img src ="/schroedi/ducks/ente8.jpg">
+                <div>
+                    <span id = "beschreibung">Fetter Computer</span>
+                    <span id = "preis">1.299€</span>
+                </div>
+            </div>
+            <div id = "secondMostVisited" class = "mostVisited">
+                <img src ="/schroedi/ducks/ente1.jpg">
+                <div>
+                    <span id = "beschreibung">Geiler Teppich</span>
+                    <span id = "preis">1.299€</span>
+                </div>
+            </div>
+            <div id = "thirdMostVisited" class = "mostVisited">
+                <img src ="/schroedi/ducks/ente2.jpg">
+                <div>
+                    <span id = "beschreibung">Fetter Computer</span>
+                    <span id = "preis">1.299€</span>
+                </div>
+            </div>
+            <div id = "thirdMostVisited" class = "mostVisited">
+                <img src ="/schroedi/ducks/ente3.jpg">
+                <div>
+                    <span id = "beschreibung">Fetter Computer</span>
+                    <span id = "preis">1.299€</span>
+                </div>
+            </div>
+            <div id = "thirdMostVisited" class = "mostVisited">
+                <img src ="/schroedi/ducks/ente6.jpg">
+                <div>
+                    <span id = "beschreibung">Fetter Computer</span>
+                    <span id = "preis">1.299€</span>
+                </div>
+            </div>
+            <div id = "thirdMostVisited" class = "mostVisited">
+                <img src ="/schroedi/ducks/ente8.jpg">
+                <div>
+                    <span id = "beschreibung">Fetter Computer</span>
+                    <span id = "preis">1.299€</span>
+                </div>
+            </div>
+        </div>   
+
     </div>
+    <!--#endregion -->
+
+
+
+
+
+    </div>
+
+    <!--#endregion-->
+
+
+
+
+
     <br><br><br><br><br><br><br><br><br><br><br>
 
 
