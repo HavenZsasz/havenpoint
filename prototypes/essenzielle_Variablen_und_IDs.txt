@@ -17,6 +17,4 @@ WICHTIGE ID'S
 
 WICHTIGE KLASSEN
 
-.dark-theme_m -> Darkmode Klasse
-
 --------------------------------------------------------------------------------------------
