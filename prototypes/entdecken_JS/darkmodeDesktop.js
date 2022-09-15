@@ -1,6 +1,6 @@
 function setup_d() {
 
-    document.getElementById("darkmodeDesktop_d").addEventListener("click", toggleDarkmode_d);
+    document.getElementById("darkmodeDesktop").addEventListener("click", toggleDarkmode_d);
     
 
     if (localStorage.getItem("counterDarkmodeHavn") == undefined) {

@@ -11,7 +11,7 @@ function setup_d() {
     
     //#region slideshow Event-Listener
     var dotArray_d = document.querySelectorAll(".dot_d");
-    darkMode(dotArray_d);
+    darkMode_d(dotArray_d);
 
     document.getElementById("clickLeft_d").addEventListener("click", slideLeft_d);
     document.getElementById("clickRight_d").addEventListener("click", slideRight_d);
