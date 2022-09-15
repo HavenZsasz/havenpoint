@@ -34,6 +34,7 @@ function loginSave_m() {
         audio_m.play();
         closeSignIn_m();
         dropdown_close_m();
+        document.getElementById("secretsource-h_m").innerHTML = "Long live the King";
 
 
     } else {
