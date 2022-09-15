@@ -1,7 +1,6 @@
 
 
 window.addEventListener("load", setup);
-window.addEventListener("load", loginCheck);
 
 
 function setup() {
@@ -11,7 +10,7 @@ function setup() {
 
     
     //#region slideshow Event-Listener
-    var dotArray = document.querySelectorAll(".dot");
+    var dotArray = document.querySelectorAll(".dot_d");
     darkMode(dotArray);
 
     document.getElementById("clickLeft").addEventListener("click", slideLeft);
@@ -103,7 +102,7 @@ function slideDefault() {
     var slides = document.querySelectorAll(".slider");
     var length = slides.length;
 
-    var dot = document.querySelectorAll(".dot"); 
+    var dot = document.querySelectorAll(".dot_d"); 
 
     if(slides) {
         if(length > 1) {
@@ -119,12 +118,12 @@ function slideDefault() {
     
 }
 
-function currentSlide(page) {
+function currentSlide_d(page) {
 
     var slides = document.querySelectorAll(".slider");
     var length = slides.length;
 
-    var dot = document.querySelectorAll(".dot");
+    var dot = document.querySelectorAll(".dot_d");
 
     if(slides) {
         if(length > 1) {
@@ -139,7 +138,7 @@ function currentSlide(page) {
     
     slides[page].setAttribute("style", "display:block");
     dot[page].setAttribute("style","background-color:"+dotHoverColor);
-    activateHover(document.querySelectorAll(".dot"));
+    activateHover(document.querySelectorAll(".dot_d"));
     dot[page].removeEventListener("mouseout",buttonHoverOff);
 
 }
@@ -147,7 +146,7 @@ function currentSlide(page) {
 function slideLeft() {
 
     var slides = document.querySelectorAll(".slider");
-    var dot = document.querySelectorAll(".dot");
+    var dot = document.querySelectorAll(".dot_d");
 
     
 
@@ -161,7 +160,7 @@ function slideLeft() {
         }
         slides[counter].setAttribute("style", "display:block");
         dot[counter].setAttribute("style","background-color:" + dotHoverColor);
-        activateHover(document.querySelectorAll(".dot"));
+        activateHover(document.querySelectorAll(".dot_d"));
         dot[counter].removeEventListener("mouseout",buttonHoverOff);
     }
     
@@ -170,7 +169,7 @@ function slideLeft() {
 function slideRight() {
 
     var slides = document.querySelectorAll(".slider");
-    var dot = document.querySelectorAll(".dot");
+    var dot = document.querySelectorAll(".dot_d");
     var length = slides.length;
 
     if(counter <= length-1) {
@@ -183,7 +182,7 @@ function slideRight() {
         }
         slides[counter].setAttribute("style", "display:block");
         dot[counter].setAttribute("style","background-color:" + dotHoverColor);
-        activateHover(document.querySelectorAll(".dot"));
+        activateHover(document.querySelectorAll(".dot_d"));
         dot[counter].removeEventListener("mouseout",buttonHoverOff);
     } 
 
@@ -345,12 +344,12 @@ function loginSave() {
 
     if (emailInput == "admin" && passwortInput == "0") {
         document.getElementById("logindaten-falsch").style.display = "none";
+        
         var loginHavn = "signedIn";
         localStorage.setItem('loginHavn', 'signedIn');
         document.location.reload();
-        document.getElementById("login-mail").style.backgroundColor = "rgb(120,120,120)";
-        document.getElementById("login-passwort").style.backgroundColor = "rgb(120,120,120)";
         
+      
 
     } else {
 
