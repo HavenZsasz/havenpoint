@@ -1,19 +1,19 @@
 
 
-function openProfileDropdown() {
+function openProfileDropdown_m() {
 
-    document.getElementById("round-container-mobile").removeEventListener("click", openProfileDropdown);
-    document.getElementById("round-container-mobile").addEventListener("click", closeProfileDropdown);
-    document.getElementById("round-container-dropdown").style.display = "block";
+    document.getElementById("round-container-mobile_m").removeEventListener("click", openProfileDropdown_m);
+    document.getElementById("round-container-mobile_m").addEventListener("click", closeProfileDropdown_m);
+    document.getElementById("round-container-dropdown_m").style.display = "block";
 
 
 }
 
-function closeProfileDropdown() {
+function closeProfileDropdown_m() {
 
-    document.getElementById("round-container-mobile").removeEventListener("click", closeProfileDropdown);
-    document.getElementById("round-container-mobile").addEventListener("click", openProfileDropdown);
-    document.getElementById("round-container-dropdown").style.display = "none";
+    document.getElementById("round-container-mobile_m").removeEventListener("click", closeProfileDropdown_m);
+    document.getElementById("round-container-mobile_m").addEventListener("click", openProfileDropdown_m);
+    document.getElementById("round-container-dropdown_m").style.display = "none";
 
 
 }

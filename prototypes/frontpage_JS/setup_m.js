@@ -1,66 +1,66 @@
-function frontpageSetup() {
+function frontpageSetup_m() {
 /*----------Darkmode-Loader----------*/
-    document.getElementById("lightmode").addEventListener("click", toggleDarkmode);
-    document.getElementById("darkmode").addEventListener("click", toggleDarkmode);
-    document.getElementById("auto-dark-light").addEventListener("click", toggleDarkmode);
+    document.getElementById("lightmode_m").addEventListener("click", toggleDarkmode_m);
+    document.getElementById("darkmode_m").addEventListener("click", toggleDarkmode_m);
+    document.getElementById("auto-dark-light_m").addEventListener("click", toggleDarkmode_m);
 
     if (localStorage.getItem("counterDarkmodeHavn") == undefined) {
 
         if (prefersDarkScheme.matches) {
-            document.body.classList.add("dark-theme");
+            document.body.classList.add("dark-theme_m");
             logo.setAttribute("src", "logoNightKomprimiert1.png");
-            document.getElementById("logo-bg").setAttribute("src", "HintergrundDark.png");
-            document.getElementById("auto-dark-light").style.backgroundColor = "rgb(0, 220, 253)";
-            document.getElementById("auto-dark-light").style.color = "#121212";
-            document.getElementById("darkmode").style.backgroundColor = "#121212";
-            document.getElementById("darkmode").style.color = "rgb(228, 221, 221)";
-            document.getElementById("lightmode").style.backgroundColor = "#121212";
-            document.getElementById("lightmode").style.color = "rgb(228, 221, 221)";
+            document.getElementById("logo-bg_m").setAttribute("src", "HintergrundDark.png");
+            document.getElementById("auto-dark-light_m").style.backgroundColor = "rgb(0, 220, 253)";
+            document.getElementById("auto-dark-light_m").style.color = "#121212";
+            document.getElementById("darkmode_m").style.backgroundColor = "#121212";
+            document.getElementById("darkmode_m").style.color = "rgb(228, 221, 221)";
+            document.getElementById("lightmode_m").style.backgroundColor = "#121212";
+            document.getElementById("lightmode_m").style.color = "rgb(228, 221, 221)";
 
 
         } else {
-            document.body.classList.remove("dark-theme");
+            document.body.classList.remove("dark-theme_m");
             logo.setAttribute("src", "logoDayKomprimiert1.png");
-            document.getElementById("logo-bg").setAttribute("src", "Hintergrund.png");
-            document.getElementById("auto-dark-light").style.backgroundColor = "black";
-            document.getElementById("auto-dark-light").style.color = "rgb(0, 220, 253)";
-            document.getElementById("lightmode").style.backgroundColor = "#bbb";
-            document.getElementById("lightmode").style.color = "black";
-            document.getElementById("darkmode").style.backgroundColor = "#bbb";
-            document.getElementById("darkmode").style.color = "black";
+            document.getElementById("logo-bg_m").setAttribute("src", "Hintergrund.png");
+            document.getElementById("auto-dark-light_m").style.backgroundColor = "black";
+            document.getElementById("auto-dark-light_m").style.color = "rgb(0, 220, 253)";
+            document.getElementById("lightmode_m").style.backgroundColor = "#bbb";
+            document.getElementById("lightmode_m").style.color = "black";
+            document.getElementById("darkmode_m").style.backgroundColor = "#bbb";
+            document.getElementById("darkmode_m").style.color = "black";
             
         }
     } else {
 
         counterDarkmodeHavn = JSON.parse(localStorage["counterDarkmodeHavn"]);
         if (counterDarkmodeHavn == 0) {
-            document.body.classList.remove("dark-theme");
+            document.body.classList.remove("dark-theme_m");
             logo.setAttribute("src", "logoDayKomprimiert1.png");
-            document.getElementById("logo-bg").setAttribute("src", "Hintergrund.png");
-            document.getElementById("lightmode").style.backgroundColor = "white";
-            document.getElementById("lightmode").style.color = "black";
+            document.getElementById("logo-bg_m").setAttribute("src", "Hintergrund.png");
+            document.getElementById("lightmode_m").style.backgroundColor = "white";
+            document.getElementById("lightmode_m").style.color = "black";
         } else if (counterDarkmodeHavn == 1) {
-            document.body.classList.add("dark-theme");
+            document.body.classList.add("dark-theme_m");
             logo.setAttribute("src", "logoNightKomprimiert1.png");
-            document.getElementById("logo-bg").setAttribute("src", "HintergrundDark.png");
-            document.getElementById("darkmode").style.backgroundColor = "rgb(0, 220, 253)";
-            document.getElementById("darkmode").style.color = "#121212";
+            document.getElementById("logo-bg_m").setAttribute("src", "HintergrundDark.png");
+            document.getElementById("darkmode_m").style.backgroundColor = "rgb(0, 220, 253)";
+            document.getElementById("darkmode_m").style.color = "#121212";
         
         } else {
 
             if (prefersDarkScheme.matches) {
-                document.body.classList.add("dark-theme");
+                document.body.classList.add("dark-theme_m");
                 logo.setAttribute("src", "logoNightKomprimiert1.png");
-                document.getElementById("logo-bg").setAttribute("src", "HintergrundDark.png");
-                document.getElementById("auto-dark-light").style.backgroundColor = "rgb(0, 220, 253)";
-                document.getElementById("auto-dark-light").style.color = "#121212";
+                document.getElementById("logo-bg_m").setAttribute("src", "HintergrundDark.png");
+                document.getElementById("auto-dark-light_m").style.backgroundColor = "rgb(0, 220, 253)";
+                document.getElementById("auto-dark-light_m").style.color = "#121212";
 
             } else {
-                document.body.classList.remove("dark-theme");
+                document.body.classList.remove("dark-theme_m");
                 logo.setAttribute("src", "logoDayKomprimiert1.png");
-                document.getElementById("logo-bg").setAttribute("src", "Hintergrund.png");
-                document.getElementById("auto-dark-light").style.backgroundColor = "black";
-                document.getElementById("auto-dark-light").style.color = "rgb(0, 220, 253";
+                document.getElementById("logo-bg_m").setAttribute("src", "Hintergrund.png");
+                document.getElementById("auto-dark-light_m").style.backgroundColor = "black";
+                document.getElementById("auto-dark-light_m").style.color = "rgb(0, 220, 253";
 
             }
 
@@ -71,8 +71,8 @@ function frontpageSetup() {
     /*----------Dropdown-Loader----------*/
 
 
-    document.getElementById("mehr").addEventListener("click", dropdown_mehr);
-    document.getElementById("close-mobile-dropdown").addEventListener("click", dropdown_close);
+    document.getElementById("mehr_m").addEventListener("click", dropdown_mehr_m);
+    document.getElementById("close-mobile-dropdown_m").addEventListener("click", dropdown_close_m);
 
 
     /*----------Dropdown-Loader-ENDE----------*/
@@ -80,9 +80,9 @@ function frontpageSetup() {
 
 
 
-    document.getElementById("anmelden").addEventListener("click", dropAnmelden);
-    document.getElementById("login").addEventListener("click",switchLogin);
-    document.getElementById("registrieren").addEventListener("click", switchLogin);
+    document.getElementById("anmelden_m").addEventListener("click", dropAnmelden_m);
+    document.getElementById("login_m").addEventListener("click",switchLogin_m);
+    document.getElementById("registrieren_m").addEventListener("click", switchLogin_m);
 
 
 
@@ -91,7 +91,7 @@ function frontpageSetup() {
 
 
 
-    document.getElementById("logout").addEventListener("click", logout);
+    document.getElementById("logout_m").addEventListener("click", logout_m);
 
 
 
@@ -100,7 +100,7 @@ function frontpageSetup() {
 
 
 
-    var timeoutauto = setTimeout(autoslide, 6000);
+    var timeoutauto = setTimeout(autoslide_m, 6000);
 
 
 
@@ -109,7 +109,7 @@ function frontpageSetup() {
 
 
 
-    document.getElementById("plus-container").addEventListener("click", plusOpen);
+    document.getElementById("plus-container_m").addEventListener("click", plusOpen_m);
 
 
 
@@ -118,7 +118,7 @@ function frontpageSetup() {
 
 
 
-    document.getElementById("round-container-mobile").addEventListener("click", openProfileDropdown);
+    document.getElementById("round-container-mobile_m").addEventListener("click", openProfileDropdown_m);
 
 
 
@@ -127,8 +127,8 @@ function frontpageSetup() {
 
 
 
-    document.getElementById("mehr-anzeigen").addEventListener("click", showMore);
-    document.getElementById("mehr-anzeigen-2").addEventListener("click", showMore);
+    document.getElementById("mehr-anzeigen_m").addEventListener("click", showMore_m);
+    document.getElementById("mehr-anzeigen-2_m").addEventListener("click", showMore_m);
 
 
 
@@ -139,4 +139,4 @@ function frontpageSetup() {
 
 }
 
-window.addEventListener("load", frontpageSetup);
+window.addEventListener("load", frontpageSetup_m);
