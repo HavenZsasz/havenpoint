@@ -28,7 +28,7 @@ function setup_d() {
 
     var tabs_d = document.getElementById("menu_d").getElementsByTagName("a");
 
-    for(var i = 1; i < tabs.length; i++) {
+    for(var i = 1; i < tabs_d.length; i++) {
         tabs_d[i].addEventListener("mouseover", erweiterung_aktivieren_d);
         tabs_d[i].addEventListener("mouseout", erweiterung_deaktivieren_d);
     }
