@@ -101,7 +101,7 @@ function frontpageSetup_m() {
 
 
 
-    var timeoutauto = setTimeout(autoslide_m, 6000);
+    var timeoutauto_m = setTimeout(autoslide_m, 6000);
 
 
 

@@ -25,13 +25,13 @@ function closeSignIn_m() {
 
 function loginSave_m() {
 
-    var emailInput = document.getElementById("login-mail_m").value;
-    var passwortInput = document.getElementById("login-passwort_m").value;
+    var emailInput_m  = document.getElementById("login-mail_m").value;
+    var passwortInput_m  = document.getElementById("login-passwort_m").value;
     
 
 
 
-    if (emailInput == "admin" && passwortInput == "0") {
+    if (emailInput_m  == "admin" && passwortInput_m  == "0") {
         document.getElementById("logindaten-falsch_m").style.display = "none";
         var loginHavn = "signedIn";
         localStorage.setItem('loginHavn', 'signedIn');
@@ -44,7 +44,7 @@ function loginSave_m() {
     } else {
 
 
-        if(passwortInput != 0 && emailInput == "admin") {
+        if(passwortInput_m  != 0 && emailInput_m  == "admin") {
             document.getElementById("login-mail_m").style.backgroundColor = "rgb(120,120,120)";
             document.getElementById("login-passwort_m").style.backgroundColor = "red";
             document.getElementById("logindaten-falsch_m").style.display = "block";
@@ -64,30 +64,30 @@ function loginSave_m() {
 
 function switchLogin_m(event) {
 
-    var registrieren = document.getElementById("registrieren_m");
-    var login = document.getElementById("login_m");
+    var registrieren_m  = document.getElementById("registrieren_m");
+    var login_m  = document.getElementById("login_m");
 
     if(event.target.id == "registrieren_m") {
-        if(registrieren.className == "no-show_m") {
-            registrieren.classList.remove("no-show_m");
-            login.classList.add("no-show_m");
-            var login_laser = login.getElementsByTagName("span");
-            setInvisible(login_laser);
+        if(registrieren_m.className == "no-show_m") {
+            registrieren_m.classList.remove("no-show_m");
+            login_m.classList.add("no-show_m");
+            var login_laser_m = login_m.getElementsByTagName("span");
+            setInvisible_m(login_laser_m);
             var registrierung_laser = registrieren.getElementsByTagName("span");
-            setVisible(registrierung_laser);
+            setVisible_m(registrierung_laser_m);
             document.getElementById("caption_login_m").innerHTML = "Registrierung";
             document.getElementById("regi-box_m").setAttribute("style", "display: block");
         }
     }
 
     if(event.target.id == "login_m") {
-        if(login.className == "no-show_m") {
-            login.classList.remove("no-show_m");
-            registrieren.classList.add("no-show_m");
-            var login_laser = login.getElementsByTagName("span");
-            setVisible(login_laser);
-            var registrierung_laser = registrieren.getElementsByTagName("span");
-            setInvisible(registrierung_laser);
+        if(login_m.className == "no-show_m") {
+            login_m.classList.remove("no-show_m");
+            registrieren_m.classList.add("no-show_m");
+            var login_laser_m = login_m.getElementsByTagName("span");
+            setVisible_m(login_laser_m);
+            var registrierung_laser_m = registrieren_m.getElementsByTagName("span");
+            setInvisible_m(registrierung_laser_m);
             document.getElementById("caption_login_m").innerHTML = "Login";
             document.getElementById("regi-box_m").setAttribute("style","display:none");
         }
@@ -97,17 +97,17 @@ function switchLogin_m(event) {
 
 }
 
-function setInvisible_m (laser) {
+function setInvisible_m (laser_m) {
 
-    for(var i = 0; i < laser.length; i++) {
-        laser[i].setAttribute("style", "display:none");
+    for(var i = 0; i < laser_m.length; i++) {
+        laser_m[i].setAttribute("style", "display:none");
     }
 
 }
 
-function setVisible_m (laser) {
+function setVisible_m (laser_m) {
     
-    for(var i = 0; i < laser.length; i++) {
-        laser[i].setAttribute("style", "display:block");
+    for(var i = 0; i < laser_m.length; i++) {
+        laser_m[i].setAttribute("style", "display:block");
     }
 }
