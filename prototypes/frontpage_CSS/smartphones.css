@@ -142,6 +142,10 @@
 
     }
 
+    .dark-theme_m #mehr-anzeigen_m, .dark-theme_m #mehr-anzeigen-2_m {
+        background-color: rgb(51, 51, 51);
+    }
+
     #sitehead_m {
         display: block;
 
