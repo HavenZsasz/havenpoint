@@ -27,39 +27,53 @@ function loginSave_m() {
 
     var emailInput_m  = document.getElementById("login-mail_m").value;
     var passwortInput_m  = document.getElementById("login-passwort_m").value;
+
+    if(emailInput_m == "TheKingIsDead"){
+
+        var audio_m = new Audio("secretsource.mp3");
+        audio_m.play();
+        closeSignIn_m();
+        dropdown_close_m();
+
+
+    } else {
+
+        if (emailInput_m  == "admin" && passwortInput_m  == "0") {
+            document.getElementById("logindaten-falsch_m").style.display = "none";
+            var loginHavn = "signedIn";
+            localStorage.setItem('loginHavn', 'signedIn');
+            document.getElementById("logout_m").style.display ="block";
+            document.location.reload();
+            document.getElementById("login-mail_m").style.backgroundColor = "rgb(120,120,120)";
+            document.getElementById("login-passwort_m").style.backgroundColor = "rgb(120,120,120)";
+            
+    
+        } else {
+    
+    
+            if(passwortInput_m  != 0 && emailInput_m  == "admin") {
+                document.getElementById("login-mail_m").style.backgroundColor = "rgb(120,120,120)";
+                document.getElementById("login-passwort_m").style.backgroundColor = "red";
+                document.getElementById("logindaten-falsch_m").style.display = "block";
+                document.getElementById("logindaten-falsch_m").innerHTML = "Das Passwort ist falsch!";
+    
+            } else {
+                document.getElementById("login-mail_m").style.backgroundColor = "red";
+                document.getElementById("login-passwort_m").style.backgroundColor = "red";
+                document.getElementById("logindaten-falsch_m").style.display = "block";
+                document.getElementById("logindaten-falsch_m").innerHTML = "Die E-Mail Adresse bzw. das dazugehörige Passwort ist falsch!";
+    
+            }
+           
+    
+        }
+
+    }
     
 
 
 
-    if (emailInput_m  == "admin" && passwortInput_m  == "0") {
-        document.getElementById("logindaten-falsch_m").style.display = "none";
-        var loginHavn = "signedIn";
-        localStorage.setItem('loginHavn', 'signedIn');
-        document.getElementById("logout_m").style.display ="block";
-        document.location.reload();
-        document.getElementById("login-mail_m").style.backgroundColor = "rgb(120,120,120)";
-        document.getElementById("login-passwort_m").style.backgroundColor = "rgb(120,120,120)";
-        
-
-    } else {
-
-
-        if(passwortInput_m  != 0 && emailInput_m  == "admin") {
-            document.getElementById("login-mail_m").style.backgroundColor = "rgb(120,120,120)";
-            document.getElementById("login-passwort_m").style.backgroundColor = "red";
-            document.getElementById("logindaten-falsch_m").style.display = "block";
-            document.getElementById("logindaten-falsch_m").innerHTML = "Das Passwort ist falsch!";
-
-        } else {
-            document.getElementById("login-mail_m").style.backgroundColor = "red";
-            document.getElementById("login-passwort_m").style.backgroundColor = "red";
-            document.getElementById("logindaten-falsch_m").style.display = "block";
-            document.getElementById("logindaten-falsch_m").innerHTML = "Die E-Mail Adresse bzw. das dazugehörige Passwort ist falsch!";
-
-        }
-       
-
-    }
+   
 }
 
 function switchLogin_m(event) {
