@@ -63,8 +63,7 @@
         </div>
 
 
-        <!--#region-->
-        <!--------------- TABS --------->
+        <!--#region--> <!--------------- TABS --------->
 
         <div id="tab_erweiterungen">
 
@@ -178,11 +177,12 @@
 
         <!--#endregion-->
 
-        <!--#region--->
-        <!------------- LOGIN MASKE ------->
+        <!--#region---> <!------------- LOGIN MASKE ------->
 
         <div id="login-box" class="login-box">
+            <div id = "logout"><div>LOGOUT</div></div>
             <div id="close-login-box">+</div>
+            
             <h2 id="caption_login">Login</h2>
             <div id="logindaten-falsch"></div>
             <form>
@@ -261,14 +261,12 @@
         <!--#endregion-->
 
 
-        <!--#region-->
-        <!--------------- MAIN -------------->
+        <!--#region--> <!--------------- MAIN -------------->
 
 
         <div class="main">
 
-            <!--#region-->
-            <!-------------- SLIDE SHOW --------->
+            <!--#region--> <!-------------- SLIDE SHOW --------->
 
             <div id="slideshow" class="main-objects">
 
@@ -281,9 +279,9 @@
                 <br>
 
                 <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(0)"></span>
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot_d" onclick="currentSlide_d(0)"></span>
+                    <span class="dot_d" onclick="currentSlide_d(1)"></span>
+                    <span class="dot_d" onclick="currentSlide_d(2)"></span>
                 </div>
 
             </div>
@@ -424,7 +422,7 @@
         <br><br><br><br><br><br><br><br><br><br>
         <br><br><br><br><br><br><br><br><br><br>
 
-        <button id="darkmode" type="button">Darkmode</button>
+        <button id="darkmodeDesktop" type="button">Darkmode</button>
     </div>
 
 
@@ -891,8 +889,12 @@
 
        
         <script src="entdecken_JS/darkmodeDesktop.js"></script>
-        <script type="text/javascript" src='/prototypes/entdecken_JS/biggerTabletsAndDesktop.js'></script>
-    
+        <script src='/prototypes/entdecken_JS/biggerTabletsAndDesktop.js'></script>
+        <script src='/prototypes/entdecken_JS/loginCheck.js'></script>
+        <script src='/prototypes/entdecken_JS/logout.js'></script>
+
+
+
     
         <script src="frontpage_JS/setup.js"></script>
         <script src="frontpage_JS/darkmode.js"></script>
