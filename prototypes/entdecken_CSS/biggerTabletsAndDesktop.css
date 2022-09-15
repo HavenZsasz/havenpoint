@@ -12,45 +12,45 @@
 /* #region*//************ DARK MODE *****************/
 
 
-.dark-theme {
+.dark-theme_d {
   background-color: rgb(18,18,18);
   color:white;
   
 }
 
-.dark-theme .mostVisited{
+.dark-theme_d .mostVisited_d{
   background-color: rgba(255,255,255,0.1);
 }
-.dark-theme #mostVisited {
+.dark-theme_d #mostVisited_d {
   border: 1px solid white;
 }
-.dark-theme .mostVisited:hover {
+.dark-theme_d .mostVisited_d:hover {
   border: 1px solid rgb(0, 220, 253);
 }
 
 /*#region*//******* DARK MODE NAVBAR*/
-.dark-theme #navbar {
+.dark-theme_d #navbar_d {
   background-color: rgb(18,18,18);
   border-bottom: 1px solid white;
 }
-.dark-theme #navbar #menu a{
+.dark-theme_d #navbar_d #menu_d a{
   color: white;
 }
-.dark-theme #navbar #menu a:hover {
+.dark-theme_d #navbar_d #menu_d a:hover {
   border-radius: 0%;
   box-shadow: none;
   color: rgb(0, 220, 253);
 }
-.dark-theme #searcher {
+.dark-theme_d #searcher_d {
   background-color: rgba(255,255,255,0.1);
 }
 
-.dark-theme #profileclick {
+.dark-theme_d #profileclick_d {
   border: 1px solid white;
   background-color: rgb(18,18,18);
 }
 
-.dark-theme .erweiterungen {
+.dark-theme_d .erweiterungen_d {
   background-color: rgb(18,18,18);
 }
 
@@ -58,7 +58,7 @@
 
 /*#endregion*/
 
-.dark-theme #login-background {
+.dark-theme_d #login-background_d {
   opacity: 0.8;
   background-color: rgb(18,18,18);
 }
@@ -76,7 +76,7 @@ body{
 
 /*#region*//************** NAVBAR UND SEARCHBAR **********/
 
-#logo-bg {
+#logo-bg_d {
   position: absolute;
   z-index: -5;
   height: 20px;
@@ -85,7 +85,7 @@ body{
   left: 0;
 }
 
-#navbar {
+#navbar_d {
     position: fixed;
     width: 100%;
     display: flex;
@@ -99,7 +99,7 @@ body{
     
 }
 
-#navbar_right {
+#navbar_right_d {
   width: calc(100% - 220px);
   display: flex;
   flex-direction: column;
@@ -107,35 +107,35 @@ body{
   
 }
 
-#search_bar {
+#search_bar_d {
   width: 100%;
   display: flex;
   justify-content: center;
   
 }
-#searcher {
+#searcher_d {
   width: 80%;
   font-size: 1.5em;
   border: none;
   background-color: rgba(0,0,0,0.04); /*rgb(245,245,245)*/
 }
-#searcher:focus {
+#searcher_d:focus {
   outline: none;
   border: 1px solid rgb(0, 220, 253);
 }
-#suchlupe {
+#suchlupe_d {
   width:5%;
   padding-left: 3%;
   cursor: pointer;
 }
 
-#clickLogo {
+#clickLogo_d {
     height: 70px;
 }
 
 
 
-#menu a{
+#menu_d a{
     display: block;
     text-decoration: none;
     color: black;
@@ -145,7 +145,7 @@ body{
     
     
 }
-#menu a:hover {
+#menu_d a:hover {
 
   border-radius: 30%;
   box-shadow:
@@ -159,7 +159,7 @@ body{
 
 }
 
-#menu {
+#menu_d {
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -171,12 +171,12 @@ body{
 
 }
 
-#profilepic {
+#profilepic_d {
   max-width: 100%;
   max-height: 100%;
   display: none;
 }
-#profileclick {
+#profileclick_d {
   width: 7%;
   height: 70%;
   margin: 10px 20px 10px 10px;
@@ -195,7 +195,7 @@ body{
 
 /* #region/ /******************* TAB ERWEITERUNGEN *****/
 
-#tab_erweiterungen {
+#tab_erweiterungen_d {
   width: 100%;
   height: 311px;
   position: fixed;
@@ -206,7 +206,7 @@ body{
   padding: 11px 0 0 0;
 }
 
-#tab_erweiterungen>div {
+#tab_erweiterungen_d>div {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -214,18 +214,18 @@ body{
   
 }
 
-#tab_erweiterungen img {
+#tab_erweiterungen_d img {
   max-height: 80%;
   width: 100%;
   cursor: pointer;
 }
-#tab_erweiterungen #bild {
+#tab_erweiterungen_d #bild_d {
   position: absolute;
   right: 10%;
   width: 50%;
 }
 
-#tab_erweiterungen>div>div {
+#tab_erweiterungen_d>div>div {
   height: 100%;
   position: relative;
   display: flex;
@@ -236,15 +236,15 @@ body{
   
 }
 
-#tab_erweiterungen span {
+#tab_erweiterungen_d span {
   cursor: pointer;
 }
 
-#tab_erweiterungen span:hover {
+#tab_erweiterungen_d span:hover {
   border-bottom: 1px solid rgb(0, 220, 253);
 }
 
-.erweiterungen {
+.erweiterungen_d {
   background-color: white;
 }
 
@@ -254,31 +254,31 @@ body{
 
 /* #region*//************************ SLIDESHOW ******************/
 
-.main {
+.main_d {
   margin-top: 100px;
   z-index: 0;
   padding: 50px 0 50px 0;
   
 }
-.main-objects {
+.main-objects_d {
 
   margin: 0 0 20px 0;
   
 }
 
-#slideshow {
+#slideshow_d {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.slider {
+.slider_d {
   height: 300px;
   width: calc(100%);
 }
 
-#slideshow .clicker {
+#slideshow_d .clicker_d {
   border: solid 1px black;
   padding: 16px;
   cursor: pointer;
@@ -292,25 +292,25 @@ body{
   opacity: 0;
   
 }
-#slideshow:hover {
+#slideshow_d:hover {
   cursor: pointer;
 }
 
-#clickLeft {
+#clickLeft_d {
   left:0;
   
 }
-#clickRight {
+#clickRight_d {
   right: 0;
   
 }
 
-#slideshow .clicker:hover {
+#slideshow_d .clicker_d:hover {
   background-color: black;
   color: rgb(0, 220, 253);
 }
 
-.animate-left {
+.animate-left_d {
   position: relative;
   animation: animateleft 0.8s;
 }
@@ -337,7 +337,7 @@ body{
 
 /* #region*/ /******************** MostVisited Slider ************/
 
-#mostVisited {
+#mostVisited_d {
   display: flex;
   margin:10px;
   border: solid black 1px;
@@ -346,7 +346,7 @@ body{
 
 }
 
-.mostVisited {
+.mostVisited_d {
   height: 200px;
   min-width: 30%;
   max-width: 35%;
@@ -358,31 +358,31 @@ body{
   cursor: pointer;
 }
 
-.mostVisited img {
+.mostVisited_d img {
   margin: 10px 0 0 0;
   height: 50%;
   width: 80%;
 }
-.mostVisited div{
+.mostVisited_d div{
   display: flex;
   height: 50%;
   padding: 10px;
   align-items: flex-end;
   justify-content: space-around;
 }
-#preis {
+#preis_d {
   margin: 0 10px 0 50px;
 }
-#beschreibung {
+#beschreibung_d {
   margin: 0 50px 0 10px;
 }
-#mostVisitedHeader{
+#mostVisitedHeader_d{
   margin: 0 0 0 20px;
   font-weight: bold;
 
 }
 
-.productSlider {
+.productSlider_d {
   margin: 100px 0 0 0;
 }
 
@@ -395,7 +395,7 @@ body{
 
 /* #region*//**************** LOGIN-MASKE **********/
 
-#login-background {
+#login-background_d {
   top: 0;
   height: 100%;
   width: 100%;
@@ -408,7 +408,7 @@ body{
 
 
 
-.login-box {
+.login-box_d {
   display: none;
   position: fixed;
   top: 50%;
@@ -423,18 +423,18 @@ body{
   z-index: 9999;
 }
 
-.login-box h2 {
+.login-box_d h2 {
   margin: 0 0 30px;
   padding: 0;
   color: #fff;
   text-align: center;
 }
 
-.login-box .user-box {
+.login-box_d .user-box_d {
   position: relative;
 }
 
-.login-box .user-box input {
+.login-box_d .user-box_d input {
   width: 100%;
   padding: 10px 0;
   font-size: 16px;
@@ -445,19 +445,19 @@ body{
   outline: none;
   background: transparent;
 }
-.moreThanOne {
+.moreThanOne_d {
   display: flex;
   justify-content: space-between;
 }
-.registration {
+.registration_d {
   width: 40%;
 }
 
-#regi-box {
+#regi-box_d {
   display:none;
 }
 
-.login-box .user-box label {
+.login-box_d .user-box_d label {
   position: absolute;
   top:0;
   left: 0;
@@ -468,15 +468,15 @@ body{
   transition: .5s;
 }
 
-.login-box .user-box input:focus ~ label,
-.login-box .user-box input:valid ~ label {
+.login-box_d .user-box_d input:focus ~ label,
+.login-box_d .user-box_d input:valid ~ label {
   top: -20px;
   left: 0;
   color: rgb(0, 220, 253);
   font-size: 12px;
 }
 
-.login-box form a {
+.login-box_d form a {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -490,7 +490,7 @@ body{
   letter-spacing: 4px;
 }
 
-.login-box a:hover {
+.login-box_d a:hover {
   background: rgb(0, 220, 253);
   color: #fff;
   border-radius: 5px;
@@ -500,12 +500,12 @@ body{
               0 0 100px rgb(0, 220, 253);
 }
 
-.login-box a span {
+.login-box_d a span {
   position: absolute;
   display: block;
 }
 
-.login-box a span:nth-child(1) {
+.login-box_d a span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -523,7 +523,7 @@ body{
   }
 }
 
-.login-box a span:nth-child(2) {
+.login-box_d a span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
@@ -542,7 +542,7 @@ body{
   }
 }
 
-.login-box a span:nth-child(3) {
+.login-box_d a span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -561,7 +561,7 @@ body{
   }
 }
 
-.login-box a span:nth-child(4) {
+.login-box_d a span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
@@ -580,22 +580,22 @@ body{
   }
 }
 
-#buttons-login {
+#buttons-login_d {
   display: flex;
   justify-content: space-between;
 }
 
-.no-show {
+.no-show_d {
   font-size: 16px;
   text-transform: uppercase;
   opacity: 0.5;
 }
-#registrieren span {
+#registrieren_d span {
   display: none;
 }
 
 
-#close-login-box {
+#close-login-box_d {
   transform: rotate(45deg);
   margin-left: -5px;
   margin-top: -30px;
@@ -604,7 +604,7 @@ body{
   cursor: pointer;
 }
 
-#logout {
+#logout_d {
   z-index: 9999;
   
   position: absolute;
@@ -623,7 +623,7 @@ body{
   border-radius: 10px;
   
 }
-#logout div {
+#logout_d div {
   cursor: pointer;
 }
 
