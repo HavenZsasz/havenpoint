@@ -19,7 +19,7 @@ function setup_d() {
     document.getElementById("slideshow_d").addEventListener("mouseout", hideButtons_d);
 
     
-    activateHover_d(dotArray);
+    activateHover_d(dotArray_d);
 
     slideDefault_d();
     //#endregion
