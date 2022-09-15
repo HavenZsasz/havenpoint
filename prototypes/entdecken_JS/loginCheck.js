@@ -1,16 +1,16 @@
 
 
 
-function loginCheck2() {
+function loginCheck2_d() {
     if(!localStorage.getItem("loginHavn")) {
-        document.getElementById("profilepic").setAttribute("style","display:none");
-        document.getElementById("logout").setAttribute("style","display:none");
+        document.getElementById("profilepic_d").setAttribute("style","display:none");
+        document.getElementById("logout_d").setAttribute("style","display:none");
         
     } else if(localStorage.getItem("loginHavn")) {
-        document.getElementById("profilepic").setAttribute("style","display:block");
-        document.getElementById("logout").setAttribute("style", "display:flex");
+        document.getElementById("profilepic_d").setAttribute("style","display:block");
+        document.getElementById("logout_d").setAttribute("style", "display:flex");
     }
 }
 
-window.addEventListener("load", loginCheck2);
+window.addEventListener("load", loginCheck2_d);
 
