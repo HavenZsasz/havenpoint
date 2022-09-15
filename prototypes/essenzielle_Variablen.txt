@@ -1,3 +1,0 @@
-loginHavn -> Login Variable
-counterDarkmodeHavn -> Darkmode Variable
-prefersDarkScheme -> Darkmode Variable für den Systemzustand

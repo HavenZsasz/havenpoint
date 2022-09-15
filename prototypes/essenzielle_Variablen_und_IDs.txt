@@ -1,0 +1,22 @@
+--------------------------------------------------------------------------------------------
+
+WICHTIGE VARIABLEN
+
+loginHavn -> Login Variable
+counterDarkmodeHavn -> Darkmode Variable
+prefersDarkScheme -> Darkmode Variable für den Systemzustand
+
+--------------------------------------------------------------------------------------------
+
+WICHTIGE ID'S
+
+#mobile-version -> ID für mobile Ansicht
+#desktop-version -> ID für Desktopansicht
+
+--------------------------------------------------------------------------------------------
+
+WICHTIGE KLASSEN
+
+.dark-theme_m -> Darkmode Klasse
+
+--------------------------------------------------------------------------------------------
