@@ -1022,23 +1022,29 @@
         text-decoration: none;
     }
 
+    #div-for-rating_m {
+        display: flex;
+        justify-content:center;
+        margin-top: -10px;
+    }
+
+    #rating_m {
+        font-weight: 900;
+    }
 
 
 
+    #div-for-stars_m {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: -40px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    #stars_m {
+        color: rgb(0, 220, 253);
+        font-size: x-large;
+    }
 
 
 
