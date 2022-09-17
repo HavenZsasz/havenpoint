@@ -1046,6 +1046,17 @@
         font-size: x-large;
     }
 
+    #div-for-comment-example_m {
+        margin-top: -34px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #comment-example_m {
+        font-size: small;
+        font-weight: 600;
+    }
+
 
 
 
