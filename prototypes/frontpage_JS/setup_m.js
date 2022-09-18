@@ -6,7 +6,7 @@ function frontpageSetup_m() {
     var logo_m = document.getElementById("logo_m");
 
     if (localStorage.getItem("counterDarkmodeHavn") == undefined) {
-≈         
+
         if (prefersDarkScheme.matches) {
             document.body.classList.add("dark-theme_m");
             logo_m.setAttribute("src", "logoNightKomprimiert1.png");
