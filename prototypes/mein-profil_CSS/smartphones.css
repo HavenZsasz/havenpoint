@@ -1058,6 +1058,192 @@
  
     }
 
+    #my-profile-timeline_m {
+        width: 100%;
+    }
+
+    #alle-vorschlaege-container_m, #alle-vorschlaege-container-interessant-2_m, #alle-vorschlaege-container-trend-2_m {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90%;
+    }
+
+    #alle-vorschlaege-container-interessant-2_m, #alle-vorschlaege-container-trend-2_m {
+        display: none;
+
+    }
+
+    .vorschlag-container_m {
+        background-color: rgba(221, 216, 216, 0.558);
+        position: relative;
+        display: block;
+        border-radius: 10px;
+        padding: 5px;
+        width: 44%;
+        z-index: 1000;
+        height: 100%;
+        max-height: 290px;
+        min-height: 290px;
+        overflow: hidden;
+        line-height: 120.5%;
+
+    }
+
+    .artikel-bild-container_m {
+        display: flex;
+        justify-content: center;
+        height: 120px;
+        margin-top: 5px;
+        width: 98%;
+    }
+
+    em {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        font-size: large;
+        text-overflow: ellipsis;
+        width: 975;
+    }
+
+    #vorschlag-bild_m,
+    #vorschlag-bild-2_m, #vorschlag-bild-interessant-2_m, #vorschlag-bild-interessant-3_m, #vorschlag-bild-trend-2_m, #vorschlag-bild-trend-3_m {
+        max-width: 97%;
+
+
+
+    }
+
+    .artikel-bezeichner_m {
+        font-size: smaller;
+
+    }
+
+    .zustand-bezeichner_m {
+        font-weight: bolder;
+    }
+
+    .bezeichner_m {
+        font-size: small;
+    }
+
+    .shop-bezeichner_m {
+        color: rgb(0, 220, 253);
+        font-weight: bolder;
+        font-style: italic;
+    }
+
+    .preis-bezeichner_m {
+
+        font-weight: bolder;
+        font-size: 80%;
+
+    }
+
+    #flex-for-mehr-anzeigen_m, #flex-for-mehr-anzeigen-2_m {
+        display: flex;
+        justify-content: center;
+    }
+
+    #mehr-anzeigen_m, #mehr-anzeigen-2_m {
+        background-color: rgba(221, 216, 216, 0.558);
+        border-radius: 100px;
+        text-align: center;
+        font-weight: bolder;
+        width: 150px;
+        padding: 13px 0 13px 0;
+        margin-top: 15px;
+    }
+
+    #my-profile-anfragen_m {
+        width: 100%;
+
+    }
+
+    #slideable-div_m {
+        overflow: scroll;
+        display:flex;
+        overflow-y: hidden;
+        padding-bottom: 7px;
+    }
+
+    .vorschlag-container-slide_m {
+        height: 300px;
+        min-width: 180px;
+        max-width: 180px;
+        background-color: rgba(221, 216, 216, 0.558);
+        border-radius: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 7px;
+        flex-direction: column;
+    }
+
+    .artikel-bild-container-slide_m {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #vorschlag-bild-slide_m {
+        height: 100%;
+    }
+
+    #em-slide_m {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+        font-size: large;
+        text-overflow: ellipsis;
+        width: 975;
+    }
+
+    .preis-bezeichner-slide_m {
+        font-weight: bolder;
+        font-size: 80%;
+    }
+
+    .bezeichner-slide_m {
+        font-size: small;
+    }
+
+    .zustand-bezeichner-slide_m {
+        font-weight: bolder;
+    }
+
+    .shop-bezeichner-slide_m {
+        color: rgb(0, 220, 253);
+        font-weight: bolder;
+        font-style: italic;
+    }
+
+    #vorschlag-bild-slide-2_m {
+        height: 100%;
+    }
+
+    #vorschlag-bild-slide-3_m {
+        height: 100%;
+    }
+
+    #vorschlag-bild-slide-4_m {
+        height: 100%;
+    }
+
+    #vorschlag-bild-slide-5_m {
+        height: 100%;
+    }
+
+    #vorschlag-bild-slide-6_m {
+        height: 100%;
+    }
+
+    #vorschlag-bild-slide-7_m {
+        height: 100%;
+    }
+
 
 
 
