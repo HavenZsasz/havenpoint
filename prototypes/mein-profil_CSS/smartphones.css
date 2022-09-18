@@ -1244,6 +1244,11 @@
         height: 100%;
     }
 
+    #anfragen-beschreibung_m {
+        font-weight: 400;
+        font-size: small;
+    }
+
 
 
 
