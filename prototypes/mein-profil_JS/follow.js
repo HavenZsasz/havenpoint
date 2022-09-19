@@ -3,7 +3,7 @@ function follow_setup__m() {
     if(!localStorage.getItem("followMmHavn")) {
         document.getElementById("follow-profile_m").innerHTML = "Folgen";
     } else {
-        document.getElementById("follow-profile_m").innerHTML = "Gefolgt";
+        document.getElementById("follow-profile_m").innerHTML = "Gefolgt &#10003;";
 
     }
 }
@@ -11,7 +11,7 @@ function follow_setup__m() {
 function follow_m() {
 
     if(!localStorage.getItem("followMmHavn")) {
-        document.getElementById("follow-profile_m").innerHTML = "Gefolgt";
+        document.getElementById("follow-profile_m").innerHTML = "Gefolgt &#10003;";
         var followMmhavn = true;
         localStorage.setItem('followMmHavn',true);
     } else {
