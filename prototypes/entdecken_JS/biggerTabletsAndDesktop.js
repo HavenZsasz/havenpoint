@@ -24,6 +24,27 @@ function setup_d() {
     slideDefault_d();
     //#endregion
 
+    //#region MostVisited Event-Listener
+
+        var leftClickMostVisited = document.querySelectorAll(".leftClickMostVisited_d");
+
+        for(var i = 0; i < leftClickMostVisited.length; i++) {
+            leftClickMostVisited[i].addEventListener("click", scrollToLeft);
+        }
+
+        var rightClickMostVisited = document.querySelectorAll(".rightClickMostVisited_d");
+
+        for(var i = 0; i < rightClickMostVisited.length; i++) {
+            rightClickMostVisited[i].addEventListener("click", scrollToRight);
+        }
+
+
+
+
+    //#endregion
+
+
+
     //#region Tabs Event-Listener
 
     var tabs_d = document.getElementById("menu_d").getElementsByTagName("a");
@@ -202,6 +223,39 @@ function hideButtons_d() {
 
 
 //#endregion
+
+
+//#region ////////////////////// MOSTVISITED ////////////////
+
+//Bestimmt wie weit maximal gescrolled werden kann
+var maxScrollLeft = document.getElementById("mostVisited_d").scrollWidth - document.getElementById("mostVisited_d").clientWidth;
+
+
+//Scrollt entsprechend
+function scrollToLeft (event) {
+    console.log("doppeltOk");
+    event.target.parentNode.scrollLeft -= maxScrollLeft;
+}
+
+function scrollToRight (event) {
+    console.log("OK");
+    event.target.parentNode.scrollLeft += maxScrollLeft;
+}
+
+
+
+
+
+
+
+
+
+//#endregion
+
+
+
+
+
 
 
 //#region ############# TABS ##############
@@ -388,6 +442,17 @@ function loginSave_d() {
 
 
 //#endregion
+
+
+
+
+
+
+
+
+
+
+
 
 
 
