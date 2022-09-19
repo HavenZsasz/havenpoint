@@ -450,12 +450,6 @@ function loginSave_d() {
 
 
 
-<span id="clickLeftMostVisited_d" class="clickerMostVisited_d leftClickMostVisited_d">&#10094;</span>
-<span id="clickRightMostVisited_d" class="clickerMostVisited_d rightClickMostVisited_d">&#10095;</span>
-
-<link id="stylesheet" rel="stylesheet" href="/prototypes/multiple_css/biggerTabletsAndDesktop_multiple.css">
-
-
 
 
 
