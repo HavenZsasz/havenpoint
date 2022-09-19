@@ -997,6 +997,17 @@
         background-color: white;
     }
 
+    #profil-bezeichner-div_m {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    #profil-bezeichner_m {
+        font-weight: 500;
+    }
+
     #my-profile-img_m {
         width: 80%;
     }
@@ -1012,14 +1023,21 @@
         font-size: xx-large;
     }
 
-    #edit-profile-div_m {
+    #follow-profile-div_m {
         display: flex;
         justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 5px;
     }
 
-    #edit-profile_m {
-        color: blue;
+    #follow-profile_m {
+        color:black;
+        font-weight: 900;
+        font-size: large;
         text-decoration: none;
+        border: 1px solid black;
+        padding: 8px;
+        border-radius: 15px;
     }
 
     #div-for-rating_m {
