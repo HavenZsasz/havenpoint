@@ -271,6 +271,11 @@ function openLogin_d() {
 
         document.getElementById("login-background_d").setAttribute("style", "display: block");
         document.getElementById("login-box_d").setAttribute("style","display:block");
+        window.addEventListener("keypress", function(e) {
+            if(e.key === "Enter") {
+                loginSave_d();
+            }
+        })
 
     
 }
@@ -370,6 +375,12 @@ function loginSave_d() {
        
 
     }
+
+    window.removeEventListener("keypress", function(e) {
+        if(e.key === "Enter") {
+            loginSave_d();
+        }
+    })
 }
 
 
