@@ -1296,6 +1296,60 @@
         font-size: small;
     }
 
+    @keyframes openSearchbar {
+        0% {
+            display: flex;
+            height: 0;
+        }
+
+
+
+        100% {
+            display: flex;
+            height: 35px;
+        }
+        
+    }
+
+    @keyframes closeSearchbar {
+        0% {
+            height: 34.99px;
+        }
+
+
+
+        100% {
+            display: none;
+            width: 0;
+        }
+        
+    }
+
+    #over-div-suchfeld_m {
+        width:100%;
+        display: none;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    #suchfeld_m {
+        width: inherit;
+        height: inherit;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+
+    #suchfeld_m::placeholder {
+
+    }
+
+    #div-suchfeld_m {
+        border: 1px solid black;
+        width: 350px;
+        height: 35px;
+        border: none;
+    }
+
 
 
 
