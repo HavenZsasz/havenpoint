@@ -1342,6 +1342,21 @@
         border: none;
     }
 
+    #inserate-plus-suche_m {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    #inserate-suche_m {
+        width: 190px;
+        height: 30px;
+        border-radius: 10px;
+        border: 0.5px solid black;
+        margin-right: 100px;
+    }
+
 
 
 
