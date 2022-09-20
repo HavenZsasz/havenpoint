@@ -146,6 +146,10 @@
         background-color: rgb(51, 51, 51);
     }
 
+    .dark-theme_m #shop-overview_m {
+        border-bottom: 2px solid white;
+    }
+
     .dark-theme_m #follow-profile_m {
         border-color: #bbb;
         color: white;
@@ -274,19 +278,33 @@
 
     }
 
+    #nav-div_m {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
 
     #navigation_m {
         display: flex;
         justify-content: space-around;
         background-color: rgba(221, 216, 216, 0.558);
         align-items: center;
-        margin-top: 15px;
+        margin-top: 20px;
         margin-bottom: 15px;
         padding-left: 2px;
         padding-right: 2px;
         height: 34px;
         border-radius: 10px;
-        width: 100%;
+        width: 90%;
+    }
+
+    #shop-overview_m, #shop-info_m, #shop-bewertungen_m {
+        font-weight: 600;
+    }
+
+    #shop-overview_m {
+        border-bottom: 2px solid black;
     }
 
     #inserate_m {
