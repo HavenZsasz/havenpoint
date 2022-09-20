@@ -32,6 +32,7 @@
             <div id="all_m">
                 <!--#all = Container für alles, das nicht zum Dropdown der Mobile Version gehört, um die Seite aufzuteilen-->
                 <div id="sitehead_m">
+                    <div id="header_m">
                     <img id="logo-bg_m" src="Hintergrund.png">
 
                     <div id="logo-mehr-mobile_m">
@@ -52,11 +53,8 @@
 
                         <a id="mehr_m" href="#">&#9776</a>
                     </div>
-
-
-                    <div id="round-container_m">
-                        <img id="profilbild_m" src="segelKomprimiert2.png">
                     </div>
+
 
                     <div id="nav-div_m">
                         <div id="navigation_m">
@@ -408,6 +406,25 @@
         <script src="frontpage_JS/login_m.js"></script>
         <script src="frontpage_JS/logout_m.js"></script>
         <script src="frontpage_JS/profiledropdown_m.js"></script>
+        <script>
+            // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("navigation_m");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+        </script>
 
 
         <script src="mein-profil_JS/switchComments_m.js"></script>
