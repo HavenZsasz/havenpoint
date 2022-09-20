@@ -1336,10 +1336,6 @@
         border-radius: 10px;
     }
 
-    #suchfeld_m::placeholder {
-
-    }
-
     #div-suchfeld_m {
         border: 1px solid black;
         width: 350px;
