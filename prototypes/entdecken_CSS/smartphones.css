@@ -1233,6 +1233,10 @@
         height: 100%;
     }
 
+    #everything {
+        display: block !important;
+    }
+
 
 
 

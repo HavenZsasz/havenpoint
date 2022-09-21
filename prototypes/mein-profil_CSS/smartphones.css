@@ -1290,6 +1290,10 @@
         font-size: small;
     }
 
+    #everything {
+        display: block !important;
+    }
+
 
 
 
