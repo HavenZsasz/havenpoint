@@ -188,7 +188,6 @@
     overflow: hidden;
     cursor: pointer;
     background-color: white;
-    
   }
   
   /*#endregion*/
@@ -665,6 +664,54 @@
   }
   
   /* #endregion*/
+
+
+
+#loggedInDropDownSquare_d {
+
+  height: 50px;
+  background-color: white;
+  position: fixed;
+  z-index: 3;
+  right: 0;
+
+  width: 79px;
+  height: calc(200px);
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  right: 10px;
+  top: 49px;
+
+}
+
+#loggedInDropDownDownerCircle_d {
+  
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  background-color: white;
+  width: 79px;
+  height: 80px;
+  border: 1px solid black;
+  border-radius: 50%;
+  right: 10px;
+  top: 209px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   }
   
