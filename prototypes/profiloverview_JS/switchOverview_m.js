@@ -9,35 +9,9 @@ var info_m = document.getElementById("shop-info_m");
 var ratings_m = document.getElementById("shop-bewertungen_m");
 var position_m;
 
-let touchstartX = 0
-let touchendX = 0
-    
-function checkDirection() {
-  if (localStorage.getItem("position_m") == "overview" && touchendX < touchstartX) {
-    switchToInfo_m();
 
-  } else if(localStorage.getItem("position_m") == "overview" && touchendX > touchstartX) {
-    switchToRatings_m();
 
-  } else if(localStorage.getItem("position_m") == "info" && touchendX < touchstartX) {
-    switchToRatings_m();
-  } else if(localStorage.getItem("position_m") == "info" && touchendX > touchstartX) {
-    switchToOverview_m();
-  } else if(localStorage.getItem("position_m") == "ratings" && touchendX < touchstartX) {
-    switchToOverview_m();
-  } else if(localStorage.getItem("position_m") == "ratings" && touchendX > touchstartX) {
-    switchToInfo_m();
-  }
-}
-
-document.addEventListener('touchstart', e => {
-  touchstartX = e.changedTouches[0].screenX;
-});
-
-document.addEventListener('touchend', e => {
-  touchendX = e.changedTouches[0].screenX;
-  checkDirection();
-});
+ 
 
 function switchToInfo_m() {
     localStorage.setItem("position_m", "info");
@@ -91,5 +65,4 @@ function switchToOverview_m() {
 
 }
 
-window.addEventListener("load", checkDirection);
 window.addEventListener("load", setupOverviewSwitcher_m);
