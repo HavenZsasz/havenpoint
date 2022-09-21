@@ -20,7 +20,6 @@ function closeSearchbar_m() {
 
 function setupSticky_m() {
     window.onscroll = function () { stickyHeader_m() };
-
 }
 // When the user scrolls the page, execute myFunction
 
