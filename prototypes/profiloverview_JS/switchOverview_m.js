@@ -7,6 +7,23 @@ var overview_m = document.getElementById("shop-overview_m");
 var info_m = document.getElementById("shop-info_m");
 var ratings_m = document.getElementById("shop-bewertungen_m");
 
+let touchstartX = 0
+let touchendX = 0
+    
+function checkDirection() {
+  if (touchendX < touchstartX) alert('swiped left!')
+  if (touchendX > touchstartX) alert('swiped right!')
+}
+
+document.addEventListener('touchstart', e => {
+  touchstartX = e.changedTouches[0].screenX
+})
+
+document.addEventListener('touchend', e => {
+  touchendX = e.changedTouches[0].screenX
+  checkDirection()
+})
+
 function switchToInfo_m() {
 
     overview_m.style.borderBottom = "none";
@@ -56,4 +73,5 @@ function switchToOverview_m() {
 
 }
 
+window.addEventListener("load", checkDirection);
 window.addEventListener("load", setupOverviewSwitcher_m);
