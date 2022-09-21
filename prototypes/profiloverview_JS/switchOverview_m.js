@@ -31,13 +31,13 @@ function checkDirection() {
 }
 
 document.addEventListener('touchstart', e => {
-  touchstartX = e.changedTouches[0].screenX
-})
+  touchstartX = e.changedTouches[0].screenX;
+});
 
 document.addEventListener('touchend', e => {
-  touchendX = e.changedTouches[0].screenX
-  checkDirection()
-})
+  touchendX = e.changedTouches[0].screenX;
+  checkDirection();
+});
 
 function switchToInfo_m() {
     localStorage.setItem("position_m", "info");
