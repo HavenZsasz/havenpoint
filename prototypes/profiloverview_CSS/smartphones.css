@@ -1370,6 +1370,10 @@
         background-color: red;
     }
 
+    #everything {
+        display:block !important;
+    }
+
 
 
 
