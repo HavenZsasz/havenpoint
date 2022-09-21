@@ -1,18 +1,33 @@
 function setupOverviewSwitcher_m() {
     document.getElementById("shop-info_m").addEventListener("click", switchToInfo_m);
     document.getElementById("shop-bewertungen_m").addEventListener("click", switchToRatings_m);
+    localStorage.setItem("position_m", "overview");
 }
 
 var overview_m = document.getElementById("shop-overview_m");
 var info_m = document.getElementById("shop-info_m");
 var ratings_m = document.getElementById("shop-bewertungen_m");
+var position_m;
 
 let touchstartX = 0
 let touchendX = 0
     
 function checkDirection() {
-  if (touchendX < touchstartX) alert('swiped left!')
-  if (touchendX > touchstartX) alert('swiped right!')
+  if (localStorage.getItem("position_m") == "overview" && touchendX < touchstartX) {
+    switchToInfo_m();
+
+  } else if(localStorage.getItem("position_m") == "overview" && touchendX > touchstartX) {
+    switchToRatings_m();
+
+  } else if(localStorage.getItem("position_m") == "info" && touchendX < touchstartX) {
+    switchToRatings_m();
+  } else if(localStorage.getItem("position_m") == "info" && touchendX > touchstartX) {
+    switchToOverview_m();
+  } else if(localStorage.getItem("position_m") == "ratings" && touchendX < touchstartX) {
+    switchToOverview_m();
+  } else if(localStorage.getItem("position_m") == "ratings" && touchendX > touchstartX) {
+    switchToInfo_m();
+  }
 }
 
 document.addEventListener('touchstart', e => {
@@ -25,6 +40,7 @@ document.addEventListener('touchend', e => {
 })
 
 function switchToInfo_m() {
+    localStorage.setItem("position_m", "info");
 
     overview_m.style.borderBottom = "none";
     ratings_m.style.borderBottom = "none";
@@ -42,6 +58,7 @@ function switchToInfo_m() {
 }
 
 function switchToRatings_m() {
+    localStorage.setItem("position_m", "ratings");
     overview_m.style.borderBottom = "none";
     info_m.style.borderBottom = "none";
     ratings_m.style.borderBottom = "3px solid rgb(0, 220, 253)";
@@ -57,6 +74,7 @@ function switchToRatings_m() {
 }
 
 function switchToOverview_m() {
+    localStorage.setItem("position_m", "overview");
     info_m.style.borderBottom = "none";
     ratings_m.style.borderBottom = "none";
     overview_m.style.borderBottom = "3px solid rgb(0, 220, 253)";
