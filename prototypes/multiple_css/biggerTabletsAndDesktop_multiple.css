@@ -699,11 +699,11 @@
 
 
 }
-/*##########LÄDT CSS BEVOR DIE HTML ANGEZEIGT WIRD###########*/
+/*#region #########LÄDT CSS BEVOR DIE HTML ANGEZEIGT WIRD###########*/
 
-/*#everything {
+#everything {
   display: block !important;
-}*/
+}
 
 /* #endregion*/
 
