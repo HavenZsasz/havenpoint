@@ -439,7 +439,17 @@ function loginSave_d() {
 
 
 function openLoggedInDropDown_d () {
-    
+
+    document.getElementById("loggedInDropDownSquare_d").setAttribute("style","display:block");
+
+    document.getElementById("profileclick_d").addEventListener("click", closeLoggedInDropDown_d);
+
+}
+
+function closeLoggedInDropDown_d() {
+
+    document.getElementById("loggedInDropDownSquare_d").setAttribute("style","display:none");
+    document.getElementById("profileclick_d").removeEventListener("click", closeLoggedInDropDown_d);
 }
 
 

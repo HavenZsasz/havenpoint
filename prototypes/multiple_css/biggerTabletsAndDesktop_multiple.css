@@ -53,15 +53,36 @@
   .dark-theme_d .erweiterungen_d {
     background-color: rgb(18,18,18);
   }
+
+  .dark-theme_d #login-background_d {
+    opacity: 0.8;
+    background-color: rgb(18,18,18);
+  }
+
+  .dark-theme_d #loggedInDropDownSquare_d {
+    background-color: rgb(18,18,18);
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+
+  .dark-theme_d #lighter_d {
+    background-color: rgba(255,255,255,0.1);
+  }
+  .dark-theme_d #darker_d {
+    background-color: rgb(0, 220, 253);
+    color: black;
+  }
+  .dark-theme_d #system_d {
+    background-color: rgba(255,255,255,0.1);
+  }
+
   
   
   
   /*#endregion*/
   
-  .dark-theme_d #login-background_d {
-    opacity: 0.8;
-    background-color: rgb(18,18,18);
-  }
+  
   
   
   
@@ -95,7 +116,7 @@
       align-items: flex-end;
       top: 0;
       background-color: white;
-      z-index: 1;
+      z-index: 2;
       
   }
   
@@ -188,6 +209,7 @@
     overflow: hidden;
     cursor: pointer;
     background-color: white;
+    z-index: 5;
   }
   
   /*#endregion*/
@@ -640,32 +662,10 @@
     cursor: pointer;
   }
   
-  #logout_d {
-    z-index: 9999;
-    
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
-    display: none;
   
-    background: rgb(120,120,120);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
-    border-radius: 10px;
-    
-  }
-  #logout_d div {
-    cursor: pointer;
-  }
   
-  /* #endregion*/
 
-
+/***************** Login Drop Down **********/
 
 #loggedInDropDownSquare_d {
 
@@ -676,29 +676,78 @@
   right: 0;
 
   width: 79px;
-  height: calc(200px);
+  height: 200px;
   border-left: 1px solid black;
   border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 0 0 5px 5px;
   right: 10px;
   top: 49px;
-
-}
-
-#loggedInDropDownDownerCircle_d {
   
-  position: fixed;
-  z-index: 2;
-  right: 0;
-  background-color: white;
-  width: 79px;
-  height: 80px;
-  border: 1px solid black;
-  border-radius: 50%;
-  right: 10px;
-  top: 209px;
-
+  display: none;
 
 }
+
+#dreiWege_d {
+  display: flex;
+  justify-content: space-around;
+  margin: 60px 0 0 0;
+}
+
+#dreiWege_d div {
+  
+  border-radius: 25%;
+  width: 30%;
+  text-align: center;
+  cursor: pointer;
+}
+
+#lighter_d {
+  background-color: rgb(0, 220, 253);
+}
+#darker_d {
+  background-color: rgb(240,240,240);
+}
+#system_d {
+  background-color: rgb(240,240,240);
+}
+
+
+
+#logout_d {
+  position: absolute;
+  bottom: 10px;
+  margin: 10px 0 0 0;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+
+}
+
+#myProfile_d {
+  font-size: 12px;
+  text-align: center;
+  margin: 20px 0 0 0;
+  cursor: pointer;
+}
+
+#settings_d {
+  font-size: 12px;
+  text-align: center;
+  margin: 20px 0 0 0;
+  cursor: pointer;
+}
+
+
+
+
+
+/* #endregion*/
+
+
+
+
+
 /*#region #########LÄDT CSS BEVOR DIE HTML ANGEZEIGT WIRD###########*/
 
 #everything {
