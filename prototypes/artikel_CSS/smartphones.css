@@ -1385,6 +1385,29 @@
         width:85%;
     }
 
+    #artikel-rating_m {
+        color: rgb(0, 220, 253);
+    }
+
+    select {
+        border-radius: 10px;
+        padding: 2px;
+        background-color: rgba(221, 216, 216, 0.558);
+        font-weight: 600;
+    }
+
+    .dark-theme_m select {
+        background-color: rgb(51, 51, 51);
+        color: white;
+    }
+
+    div > label {
+        font-size: 600;
+        font-weight: 600;
+    }
+
+   
+
 
 
 
