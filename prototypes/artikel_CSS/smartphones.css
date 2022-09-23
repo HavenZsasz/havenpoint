@@ -722,6 +722,8 @@
 
     #seiteninhalt_m {
         margin: 0 18px 0 18px;
+        display: flex;
+        justify-content: center;
         height: 100%;
 
     }
