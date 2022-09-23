@@ -720,12 +720,6 @@
         width: auto
     }
 
-    #seiteninhalt_m {
-        margin: 0 18px 0 18px;
-        height: 100%;
-
-    }
-
     
     /* #region*//**************** LOGIN-MASKE **********/
 
@@ -1373,30 +1367,29 @@
         display:block !important;
     }
 
-    #productcard_m {
-        display: flex;
-        justify-content: center;
-        width: 95%;
+
+
+    #seiteninhalt_m {
+        display: block;
+        margin: 0 18px 0 18px;
         height: 100%;
-        background-color: rgba(221, 216, 216, 0.558);
-        border-radius: 10px;
 
     }
 
-    .dark-theme_m #productcard_m {
-        background-color: rgb(51, 51, 51);
-    }
-
-    #productcard-img-div_m {
+    #artikel-bild-div_m {
         display: flex;
-        width: 90%;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
-    #productcard-img_m {
-        height: 200px;
+    #artikel-bild_m {
+        width: 100%;
     }
+
+  
+
+
 
 
 
