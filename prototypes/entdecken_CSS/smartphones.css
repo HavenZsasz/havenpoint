@@ -26,6 +26,15 @@
         border-bottom: 3px solid rgb(0, 220, 253);
     }
 
+    .sticky_m {
+
+
+        position: fixed;
+        top: 15px;
+        width: 100%;
+        z-index:9999999999999999999;
+    }
+
 
 
 
