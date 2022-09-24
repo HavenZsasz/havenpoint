@@ -297,6 +297,8 @@
     #frontpage_m, #entdecken_m {
         font-weight: 700;
         font-size: larger;
+        text-decoration: none;
+        color: inherit;
 
     }
 
