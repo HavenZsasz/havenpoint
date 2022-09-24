@@ -5,8 +5,8 @@ var counterDarkmodeHavn;
 
 function toggleDarkmode_m(event) {
     if (localStorage.getItem("counterDarkmodeHavn") == undefined) {
-        var counterDarkmodeHavn = 0;
-        localStorage.setItem('counterDarkmodeHavn', '0');
+        var counterDarkmodeHavn = 3;
+        localStorage.setItem('counterDarkmodeHavn', '3');
     }
 
     if (event.target == document.getElementById("lightmode_m")) {
