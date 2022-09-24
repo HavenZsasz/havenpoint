@@ -1,8 +1,9 @@
 @media only screen and (min-device-width: 316px) and (max-device-width: 550px) {
 
     #desktop-version {
-        display:none;
+        display: none;
     }
+
     * {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         transition-property: all;
@@ -18,12 +19,21 @@
 
     #login-inhalt_m {
 
-        display:none;
+        display: none;
 
     }
 
     .aktive-seite_m {
         border-bottom: 3px solid rgb(0, 220, 253);
+    }
+
+    .sticky_m {
+
+
+        position: fixed;
+        top: 15px;
+        width: 100%;
+        z-index:9999999999999999999;
     }
 
 
@@ -70,7 +80,8 @@
 
     }
 
-    .dark-theme_m #plus-neues-inserat-link_m, .dark-theme_m #plus-neue-anfrage-link_m {
+    .dark-theme_m #plus-neues-inserat-link_m,
+    .dark-theme_m #plus-neue-anfrage-link_m {
         color: white;
     }
 
@@ -137,7 +148,8 @@
 
     }
 
-    .dark-theme_m #mehr-anzeigen, .dark-theme_m #mehr-anzeigen-2 {
+    .dark-theme_m #mehr-anzeigen,
+    .dark-theme_m #mehr-anzeigen-2 {
         background-color: rgb(51, 51, 51);
     }
 
@@ -146,7 +158,8 @@
 
     }
 
-    .dark-theme_m #mehr-anzeigen_m, .dark-theme_m #mehr-anzeigen-2_m {
+    .dark-theme_m #mehr-anzeigen_m,
+    .dark-theme_m #mehr-anzeigen-2_m {
         background-color: rgb(51, 51, 51);
     }
 
@@ -163,7 +176,7 @@
 
     #logo-center-filler_m {
         width: 11%;
-        height:10px;
+        height: 10px;
     }
 
 
@@ -181,7 +194,7 @@
 
         width: 80px;
         height: auto;
-  
+
     }
 
     #logo-bg_m {
@@ -190,20 +203,19 @@
         z-index: -1;
         height: 90px;
         width: 100%
-
     }
 
     #logo-mehr-mobile_m {
         display: flex;
-        justify-content:space-between;
-        
+        justify-content: space-between;
+
     }
 
     #search-container_m {
         display: flex;
         align-items: center;
         justify-content: left;
-        background-color: rgb(236, 233, 233); 
+        background-color: rgb(236, 233, 233);
         width: 96%;
         height: 40px;
         margin-top: 25px;
@@ -217,7 +229,7 @@
     }
 
     #suchlupe_m {
-        width:7%;
+        width: 7%;
         padding-left: 2%;
 
     }
@@ -288,7 +300,8 @@
         width: 100%;
     }
 
-    #frontpage_m, #entdecken_m {
+    #frontpage_m,
+    #entdecken_m {
         font-weight: 700;
         font-size: larger;
         text-decoration: none;
@@ -330,7 +343,8 @@
         width: 92%;
     }
 
-    #frontpage_m, #entdecken_m {
+    #frontpage_m,
+    #entdecken_m {
         font-weight: 700;
         font-size: larger;
 
@@ -338,7 +352,7 @@
 
     #undisplay-mehr_m {
         width: 2px;
-        height:2px;
+        height: 2px;
         margin-top: 60px;
     }
 
@@ -365,22 +379,33 @@
 
     }
 
-    #plus-neues-inserat-link_m, #plus-neue-anfrage-link_m {
+    #plus-neues-inserat-link_m,
+    #plus-neue-anfrage-link_m {
         text-decoration: none;
         color: black;
     }
 
     @keyframes rotate {
 
-        0% {transform:rotate(0deg);}
-        100% {transform: rotate(45deg);}
-        
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(45deg);
+        }
+
     }
 
     @keyframes rotateBack {
 
-        0% {transform:rotate(45deg);}
-        100% {transform: rotate(0deg);}
+        0% {
+            transform: rotate(45deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
 
     }
 
@@ -417,7 +442,7 @@
         max-width: 200px;
         min-height: 70px;
         max-height: 70px;
-        display:none;
+        display: none;
         transform: rotate(-45deg);
         font-weight: bold;
         border-radius: 10px;
@@ -425,13 +450,13 @@
         background-color: rgb(232, 228, 228);
         opacity: 0.96;
         z-index: 100000000;
-        
+
 
     }
 
     #plus-neues-inserat_m {
 
-        margin-top:10px;
+        margin-top: 10px;
         padding-bottom: 8px;
         z-index: 1001;
 
@@ -439,17 +464,17 @@
 
 
     #plus-neue-anfrage_m {
-        border-top:1px solid white;
+        border-top: 1px solid white;
         padding-top: 5px;
         z-index: 10000001;
-        
+
     }
 
     #plus-neues-inserat-link_m {
         margin-left: 45px;
         z-index: 1001;
-        
-        
+
+
     }
 
     #plus-neue-anfrage-link_m {
@@ -496,7 +521,7 @@
         to {
             filter: blur(10px);
         }
-        
+
     }
 
     @keyframes signInClose {
@@ -512,7 +537,7 @@
         to {
             filter: blur(0);
         }
-        
+
     }
 
     @keyframes allSwipeLeft {
@@ -697,95 +722,110 @@
 
     }
 
-    .mySlides_m {display: none}
-    #img-slider1_m, #img-slider-2_m, #img-slider-3_m {vertical-align: middle;}
-    
+    .mySlides_m {
+        display: none
+    }
+
+    #img-slider1_m,
+    #img-slider-2_m,
+    #img-slider-3_m {
+        vertical-align: middle;
+    }
+
     /* Slideshow container */
     .slideshow-container_m {
-      max-width: 1000px;
-      position: relative;
-      margin: auto;
-      margin-left: -10px;
-      margin-right: -10px;
-      border-radius: 10px;
-      overflow: hidden;
-      z-index: 1;
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        margin-left: -10px;
+        margin-right: -10px;
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 1;
     }
-    
+
     /* Next & previous buttons */
-    .prev_m, .next_m {
-      cursor: pointer;
-      position: absolute;
-      top: 50%;
-      width: auto;
-      padding: 16px;
-      margin-top: -22px;
-      color: white;
-      font-weight: bold;
-      font-size: 18px;
-      transition: 0.6s ease;
-      border-radius: 0 3px 3px 0;
-      user-select: none;
+    .prev_m,
+    .next_m {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
     }
-    
+
     /* Position the "next button" to the right */
     .next_m {
-      right: 0;
-      border-radius: 3px 0 0 3px;
+        right: 0;
+        border-radius: 3px 0 0 3px;
     }
-    
+
     /* On hover, add a black background color with a little bit see-through */
-    .prev_m:hover, .next_m:hover {
-      background-color: rgba(0,0,0,0.8);
+    .prev_m:hover,
+    .next_m:hover {
+        background-color: rgba(0, 0, 0, 0.8);
     }
-    
+
     /* Caption text */
     .text_m {
-      color: white;
-      font-size: 15px;
-      padding: 8px 12px;
-      position: absolute;
-      bottom: 28px;
-      width: 100%;
-      text-align: center;
-      margin-left: -10px;
+        color: white;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 28px;
+        width: 100%;
+        text-align: center;
+        margin-left: -10px;
 
     }
-    
+
     /* Number text (1/3 etc) */
     .numbertext_m {
-      color: #f2f2f2;
-      font-size: 12px;
-      padding: 8px 12px;
-      position: absolute;
-      top: 0;
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
     }
-    
+
     /* The dots/bullets/indicators */
     .dot_m {
-      cursor: pointer;
-      height: 12px;
-      width: 12px;
-      margin: 0 2px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
+        cursor: pointer;
+        height: 12px;
+        width: 12px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
     }
-    
-    .active_m, .dot_m:hover {
-      background-color: #717171;
+
+    .active_m,
+    .dot_m:hover {
+        background-color: #717171;
     }
-    
+
     /* Fading animation */
     .fade_m {
-      animation-name: fade;
-      animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
     }
-    
+
     @keyframes fade {
-      from {opacity: .4} 
-      to {opacity: 1}
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
     }
 
     .em-mainslider_m {
@@ -794,7 +834,9 @@
 
     }
 
-    #alle-vorschlaege-container_m, #alle-vorschlaege-container-interessant-2_m, #alle-vorschlaege-container-trend-2_m {
+    #alle-vorschlaege-container_m,
+    #alle-vorschlaege-container-interessant-2_m,
+    #alle-vorschlaege-container-trend-2_m {
 
         display: flex;
         justify-content: space-around;
@@ -802,7 +844,8 @@
         height: 90%;
     }
 
-    #alle-vorschlaege-container-interessant-2_m, #alle-vorschlaege-container-trend-2_m {
+    #alle-vorschlaege-container-interessant-2_m,
+    #alle-vorschlaege-container-trend-2_m {
         display: none;
 
     }
@@ -841,7 +884,11 @@
     }
 
     #vorschlag-bild_m,
-    #vorschlag-bild-2_m, #vorschlag-bild-interessant-2_m, #vorschlag-bild-interessant-3_m, #vorschlag-bild-trend-2_m, #vorschlag-bild-trend-3_m {
+    #vorschlag-bild-2_m,
+    #vorschlag-bild-interessant-2_m,
+    #vorschlag-bild-interessant-3_m,
+    #vorschlag-bild-trend-2_m,
+    #vorschlag-bild-trend-3_m {
         max-width: 97%;
 
 
@@ -874,12 +921,14 @@
 
     }
 
-    #flex-for-mehr-anzeigen_m, #flex-for-mehr-anzeigen-2_m {
+    #flex-for-mehr-anzeigen_m,
+    #flex-for-mehr-anzeigen-2_m {
         display: flex;
         justify-content: center;
     }
 
-    #mehr-anzeigen_m, #mehr-anzeigen-2_m {
+    #mehr-anzeigen_m,
+    #mehr-anzeigen-2_m {
         background-color: rgba(221, 216, 216, 0.558);
         border-radius: 100px;
         text-align: center;
@@ -888,7 +937,9 @@
         padding: 13px 0 13px 0;
         margin-top: 15px;
     }
-    /* #region*//**************** LOGIN-MASKE **********/
+
+    /* #region*/
+    /**************** LOGIN-MASKE **********/
 
     #close-login-box_m {
         transform: rotate(45deg);
@@ -901,210 +952,221 @@
     #logindaten-falsch_m {
         display: none;
         margin-bottom: 10%;
-        
+
     }
 
-#login-background_m {
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    opacity: 0.8;
-    z-index: 9998;
-    position: fixed;
-    display: none;
-  }
-  
-  .login-box_m {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 90%;
-    padding: 40px;
-    transform: translate(-50%, -50%);
-    background: rgb(120,120,120);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
-    border-radius: 10px;
-    z-index: 9999;
-  }
-  
-  .login-box_m h2 {
-    margin: 0 0 30px;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-  }
-  
-  .login-box_m .user-box_m {
-    position: relative;
-  }
-  
-  .login-box_m .user-box_m input {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
-  }
-  .moreThanOne_m {
-    display: flex;
-    justify-content: space-between;
-  }
-  .registration_m {
-    width: 40%;
-  }
-  
-  #regi-box_m {
-    display:none;
-  }
-  
-  .login-box_m .user-box_m label {
-    position: absolute;
-    top:0;
-    left: 0;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    pointer-events: none;
-    transition: .5s;
-  }
-  
-  .login-box_m .user-box_m input:focus ~ label,
-  .login-box_m .user-box_m input:valid ~ label {
-    top: -20px;
-    left: 0;
-    color: rgb(0, 220, 253);
-    font-size: 12px;
-  }
-  
-  .login-box_m form a {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    color: rgb(0, 220, 253);
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: .5s;
-    margin-top: 40px;
-    letter-spacing: 4px;
-  }
-  
-  .login-box_m a:hover {
-    background: rgb(0, 220, 253);
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgb(0, 220, 253),
-                0 0 25px rgb(0, 220, 253),
-                0 0 50px rgb(0, 220, 253),
-                0 0 100px rgb(0, 220, 253);
-  }
-  
-  .login-box_m a span {
-    position: absolute;
-    display: block;
-  }
-  
-  .login-box_m a span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, rgb(0, 220, 253));
-    animation: btn-anim1 1s linear infinite;
-  }
-  
-  @keyframes btn-anim1 {
-    0% {
-      left: -100%;
+    #login-background_m {
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        opacity: 0.8;
+        z-index: 9998;
+        position: fixed;
+        display: none;
     }
-    50%,100% {
-      left: 100%;
+
+    .login-box_m {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+        background: rgb(120, 120, 120);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+        border-radius: 10px;
+        z-index: 9999;
     }
-  }
-  
-  .login-box_m a span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, rgb(0, 220, 253));
-    animation: btn-anim2 1s linear infinite;
-    animation-delay: .25s
-  }
-  
-  @keyframes btn-anim2 {
-    0% {
-      top: -100%;
+
+    .login-box_m h2 {
+        margin: 0 0 30px;
+        padding: 0;
+        color: #fff;
+        text-align: center;
     }
-    50%,100% {
-      top: 100%;
+
+    .login-box_m .user-box_m {
+        position: relative;
     }
-  }
-  
-  .login-box_m a span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, rgb(0, 220, 253));
-    animation: btn-anim3 1s linear infinite;
-    animation-delay: .5s
-  }
-  
-  @keyframes btn-anim3 {
-    0% {
-      right: -100%;
+
+    .login-box_m .user-box_m input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent;
     }
-    50%,100% {
-      right: 100%;
+
+    .moreThanOne_m {
+        display: flex;
+        justify-content: space-between;
     }
-  }
-  
-  .login-box_m a span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, rgb(0, 220, 253));
-    animation: btn-anim4 1s linear infinite;
-    animation-delay: .75s
-  }
-  
-  @keyframes btn-anim4 {
-    0% {
-      bottom: -100%;
+
+    .registration_m {
+        width: 40%;
     }
-    50%,100% {
-      bottom: 100%;
+
+    #regi-box_m {
+        display: none;
     }
-  }
-  
-  #buttons-login_m {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .no-show_m {
-    font-size: 16px;
-    text-transform: uppercase;
-    opacity: 0.5;
-  }
-  #registrieren_m span {
-    display: none;
-  }
+
+    .login-box_m .user-box_m label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        pointer-events: none;
+        transition: .5s;
+    }
+
+    .login-box_m .user-box_m input:focus~label,
+    .login-box_m .user-box_m input:valid~label {
+        top: -20px;
+        left: 0;
+        color: rgb(0, 220, 253);
+        font-size: 12px;
+    }
+
+    .login-box_m form a {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        color: rgb(0, 220, 253);
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: 40px;
+        letter-spacing: 4px;
+    }
+
+    .login-box_m a:hover {
+        background: rgb(0, 220, 253);
+        color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgb(0, 220, 253),
+            0 0 25px rgb(0, 220, 253),
+            0 0 50px rgb(0, 220, 253),
+            0 0 100px rgb(0, 220, 253);
+    }
+
+    .login-box_m a span {
+        position: absolute;
+        display: block;
+    }
+
+    .login-box_m a span:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, rgb(0, 220, 253));
+        animation: btn-anim1 1s linear infinite;
+    }
+
+    @keyframes btn-anim1 {
+        0% {
+            left: -100%;
+        }
+
+        50%,
+        100% {
+            left: 100%;
+        }
+    }
+
+    .login-box_m a span:nth-child(2) {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, rgb(0, 220, 253));
+        animation: btn-anim2 1s linear infinite;
+        animation-delay: .25s
+    }
+
+    @keyframes btn-anim2 {
+        0% {
+            top: -100%;
+        }
+
+        50%,
+        100% {
+            top: 100%;
+        }
+    }
+
+    .login-box_m a span:nth-child(3) {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, rgb(0, 220, 253));
+        animation: btn-anim3 1s linear infinite;
+        animation-delay: .5s
+    }
+
+    @keyframes btn-anim3 {
+        0% {
+            right: -100%;
+        }
+
+        50%,
+        100% {
+            right: 100%;
+        }
+    }
+
+    .login-box_m a span:nth-child(4) {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, rgb(0, 220, 253));
+        animation: btn-anim4 1s linear infinite;
+        animation-delay: .75s
+    }
+
+    @keyframes btn-anim4 {
+        0% {
+            bottom: -100%;
+        }
+
+        50%,
+        100% {
+            bottom: 100%;
+        }
+    }
+
+    #buttons-login_m {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .no-show_m {
+        font-size: 16px;
+        text-transform: uppercase;
+        opacity: 0.5;
+    }
+
+    #registrieren_m span {
+        display: none;
+    }
 
 
-  
-  
-  /* #endregion*/
+
+
+    /* #endregion*/
 
     #anmelde-button_m {
         margin-top: 10px;
@@ -1112,7 +1174,7 @@
         background-color: rgba(241, 239, 239, 0.628);
         font-weight: bolder;
         line-height: 1;
-        border:0;
+        border: 0;
         border-radius: 6px;
         height: 25px;
     }
@@ -1123,24 +1185,25 @@
         position: relative;
         border: 1px solid white;
         border-radius: 10px;
-        background-color:rgba(90, 82, 82, 0.253);
+        background-color: rgba(90, 82, 82, 0.253);
         width: 90px;
         height: 80px;
         left: 30%;
-        
+
 
     }
 
-    #mein-profil-div_m, #ueber-uns-div_m {
+    #mein-profil-div_m,
+    #ueber-uns-div_m {
         border-bottom: 1px solid white;
         padding-top: 4px;
         padding-bottom: 4px;
-    } 
+    }
 
-     #logout-div_m {
+    #logout-div_m {
         padding-top: 3px;
         padding-bottom: 3px;
-     }
+    }
 
 
     #connect-round-and-dropdown_m {
@@ -1149,7 +1212,7 @@
 
     #slideable-div_m {
         overflow: scroll;
-        display:flex;
+        display: flex;
         overflow-y: hidden;
     }
 
