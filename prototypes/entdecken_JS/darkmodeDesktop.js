@@ -1,8 +1,13 @@
+
+const prefersDarkScheme_d = window.matchMedia("(prefers-color-scheme: dark)");
+
+
 function setup_d() {
 
 
     document.getElementById("lighter_d").addEventListener("click",toggleLightMode_d);
     document.getElementById("darker_d").addEventListener("click", toggleDarkmode_d);
+    document.getElementById("system_d").addEventListener("click", toggleMode_d);
 
     
     
@@ -10,7 +15,7 @@ function setup_d() {
     if (localStorage.getItem("counterDarkmodeHavn") == undefined) {
 
 
-        if (prefersDarkScheme.matches) {
+        if (prefersDarkScheme.matches_d) {
             
             addDarkness_d();
 
@@ -27,7 +32,7 @@ function setup_d() {
 
         } else {
 
-            if (prefersDarkScheme.matches) {
+            if (prefersDarkScheme_d.matches) {
                 addDarkness_d();
             } else {
                 removeDarkness_d();
@@ -41,6 +46,20 @@ function setup_d() {
 }
 
 var counterDarkmodeHavn;
+
+function toggleMode_d() {
+
+    if(prefersDarkScheme_d.matches) {
+        var counterDarkmodeHavn = 1;
+        localStorage.setItem('counterDarkmodeHavn', '1');
+        addDarkness_d();
+    }else {
+        var counterDarkmodeHavn = 0;
+        localStorage.setItem('counterDarkmodeHavn', '0');
+        removeDarkness_d();
+    }
+
+}
 
 function toggleLightMode_d () {
 
@@ -96,22 +115,17 @@ function removeDarkness_d () {
     
 }
 
-/*
-function setColorToDarkModeButton_d () {
 
-    if(counterDarkmodeHavn == 0) {
-        document.getElementById("lighter_d").setAttribute("style","background-color:rgb(0, 220, 253)");
-        document.getElementById("darker_d").setAttribute("style","background-color:rgb(240,240,240)");
-    }
-
-    if(counterDarkmodeHavn == 1) {
-        document.getElementById("lighter_d").setAttribute("style","background-color:rgb(240, 240, 240)");
-        document.getElementById("darker_d").setAttribute("style","background-color:rgb(0,220,253)");
-    }
-
+function systemAddDarkness_d () {
 
 }
-*/
+
+function systemRemoveDarkness_d () {
+
+}
+
+
+
 
 
 
