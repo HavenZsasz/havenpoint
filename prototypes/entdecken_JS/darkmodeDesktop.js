@@ -53,15 +53,20 @@ function toggleMode_d() {
         var counterDarkmodeHavn = 1;
         localStorage.setItem('counterDarkmodeHavn', '1');
         addDarkness_d();
+        document.body.classList.add("system_dark-theme_d");
     }else {
         var counterDarkmodeHavn = 0;
         localStorage.setItem('counterDarkmodeHavn', '0');
         removeDarkness_d();
+        document.body.classList.add("system_light-theme_d");
     }
 
 }
 
 function toggleLightMode_d () {
+
+    document.body.classList.remove("system_dark-theme_d");
+    document.body.classList.remove("system_light-theme_d");
 
     if (localStorage.getItem("counterDarkmodeHavn") == undefined) {
         var counterDarkmodeHavn = 0;
@@ -80,6 +85,9 @@ function toggleLightMode_d () {
 }
 
 function toggleDarkmode_d () {
+
+    document.body.classList.remove("system_dark-theme_d");
+    document.body.classList.remove("system_light-theme_d");
 
     if (localStorage.getItem("counterDarkmodeHavn") == undefined) {
         var counterDarkmodeHavn = 1;
@@ -100,6 +108,7 @@ function toggleDarkmode_d () {
 
 function addDarkness_d () {
 
+    
     document.body.classList.add("dark-theme_d");
     document.getElementById("clickLogo_d").src = "/images/logoNightKomprimiert1.png";
     document.getElementById("profilepic_d").src = "/images/logoNightKomprimiert1.png";
@@ -111,17 +120,9 @@ function removeDarkness_d () {
     document.body.classList.remove("dark-theme_d");
     document.getElementById("clickLogo_d").src = "/images/logoDayKomprimiert1.png";
     document.getElementById("profilepic_d").src = "/images/logoDayKomprimiert1.png";
+    
 
     
-}
-
-
-function systemAddDarkness_d () {
-
-}
-
-function systemRemoveDarkness_d () {
-
 }
 
 

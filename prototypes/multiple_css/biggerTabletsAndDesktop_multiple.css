@@ -77,6 +77,31 @@
     background-color: rgba(255,255,255,0.1);
   }
 
+  .system_dark-theme_d #lighter_d {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+  }
+  .system_dark-theme_d #darker_d {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+  }
+  .system_dark-theme_d #system_d {
+    background-color: rgb(0, 220, 253);
+    color: black;
+  }
+  .system_light-theme_d #lighter_d {
+    background-color: rgb(240,240,240);
+    color: black;
+  }
+  .system_light-theme_d #darker_d {
+    background-color: rgb(240,240,240);
+    color: black;
+  }
+  .system_light-theme_d #system_d {
+    background-color: rgb(0, 220, 253);
+    color: black;
+  }
+
   
   
   
