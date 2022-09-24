@@ -270,43 +270,33 @@
 
     }
 
+    #nav-div_m {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 
     #navigation_m {
         display: flex;
         justify-content: space-around;
         background-color: rgba(221, 216, 216, 0.558);
         align-items: center;
-        margin-top: 15px;
+        margin-top: 20px;
         margin-bottom: 15px;
         padding-left: 2px;
         padding-right: 2px;
-        height: 52px;
-        width: 100%;
+        height: 34px;
+        border-radius: 10px;
+        width: 90%;
     }
 
-    #inserate_m {
-    
-        display:none;
-    }
-
-    #dienstleistungen_m {
-        display: none;
-    }
-
-    #immobilien_m {
-        display: none;
+    #frontpage_m, #entdecken_m, #neuware_m, #inserate_m {
+        font-weight: 600;
 
     }
 
-    #automobil_m {
-        display: none;
-    }
 
 
-    #entdecken_m,
-    #neuware_m,
-    #dienstleistungen_m,
-    #inserate_m,
     #mehr_m {
         text-decoration: none;
         color: black;
@@ -327,28 +317,7 @@
     }
 
 
-    #entdecken_m,
-    #neuware_m,
-    #dienstleistungen_m,
-    #inserate_m {
-        margin: 3px 7px 3px 7px;
-    }
 
-
-    #entdecken_m:hover,
-    #neuware_m:hover,
-    #inserate_m:hover {
-        color: rgb(0, 220, 253);
-        background-color: black;
-        opacity: 0.5;
-        padding: 10px;
-        border-radius: 14%;
-        border: 1px rgb(0, 220, 253) solid;
-        box-shadow: 0px 0px 10px rgb(0, 220, 253),
-
-            0px 0px 20px rgb(0, 220, 203);
-
-    }
 
 
 
