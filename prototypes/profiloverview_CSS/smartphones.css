@@ -309,11 +309,6 @@
         border-bottom: 3px solid rgb(0, 220, 253);
     }
 
-    #inserate_m {
-    
-        display:none;
-    }
-
     #dienstleistungen_m {
         display: none;
     }
@@ -328,10 +323,6 @@
     }
 
 
-    #entdecken_m,
-    #neuware_m,
-    #dienstleistungen_m,
-    #inserate_m,
     #mehr_m {
         text-decoration: none;
         color: black;
@@ -352,28 +343,6 @@
     }
 
 
-    #entdecken_m,
-    #neuware_m,
-    #dienstleistungen_m,
-    #inserate_m {
-        margin: 3px 7px 3px 7px;
-    }
-
-
-    #entdecken_m:hover,
-    #neuware_m:hover,
-    #inserate_m:hover {
-        color: rgb(0, 220, 253);
-        background-color: black;
-        opacity: 0.5;
-        padding: 10px;
-        border-radius: 14%;
-        border: 1px rgb(0, 220, 253) solid;
-        box-shadow: 0px 0px 10px rgb(0, 220, 253),
-
-            0px 0px 20px rgb(0, 220, 203);
-
-    }
 
 
 
@@ -1357,10 +1326,6 @@
         margin: 0 18px 0 18px;
         display: none;
         height: 100%;
-    }
-
-    .aktive-seite_m {
-        background-color: red;
     }
 
     #everything {
