@@ -283,6 +283,11 @@
 
     }
 
+    #block-nav_m {
+        display: block;
+        width:100%;
+    }
+
     #nav-div_m {
         width: 100%;
         display: flex;

@@ -5,7 +5,7 @@ function setupSticky_m() {
 
 
 // Get the header
-var header_m = document.getElementById("navigation_m");
+var header_m = document.getElementById("block-nav_m");
 
 // Get the offset position of the navbar
 var sticky_m = header_m.offsetTop;
