@@ -516,6 +516,29 @@
         z-index: 1;
     }
 
+    .dark-theme_m #div-cart_m {
+        background-color: #121212;
+    }
+
+    #div-cart_m {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        z-index:900000;
+        border: 1px solid black;
+        top: 80%;
+        left: 70%;
+        background-color: rgba(255, 255, 255, 0.809);
+    }
+
+    #cart-icon_m {
+        width: 50px;
+    }
+
     @keyframes signIn {
 
         from {
