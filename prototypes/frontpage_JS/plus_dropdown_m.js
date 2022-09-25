@@ -17,7 +17,7 @@ function plusOpen_m() {
 function fTimeout_m() {
 
     document.getElementById("plus-dropdown_m").style.display = "block";
-    document.getElementById("seiteninhalt_m").style.marginTop = "50px";
+    document.getElementById("seiteninhalt_m").style.marginTop = "-20px";
 
 }
 
