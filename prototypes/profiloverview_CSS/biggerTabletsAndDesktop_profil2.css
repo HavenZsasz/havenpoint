@@ -635,12 +635,24 @@
     overflow: hidden;
 
 }
+#profilbildDiv_d>img {
+    height: 100px;
+}
 
 #profilHead_d {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 10px 0 0 0;
+}
+
+#profilBildDivLeft_d {
+    width: 44%;
+    background-color: rgb(240,240,240);
+}
+
+#profilBildDivRight_d {
+    width: 44%;
+    background-color: rgb(240,240,240);
 }
 
 
