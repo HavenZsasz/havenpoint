@@ -614,7 +614,39 @@
 /* #endregion*/
 
 
+/*#region*/ /*********** ShopDarstellung *********/
 
+#titelbildDiv_d {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+#titelbildDiv_d>img {
+    width: 98%;
+}
+
+#profilbildDiv_d {
+    border: 1px solid rgb(200,200,200);
+    background-color: white;
+    width: fit-content;
+    border-radius: 25% 25% 25% 25%;
+    overflow: hidden;
+
+}
+
+#profilHead_d {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}
+
+
+
+
+/*#endregion*/
 
 
 
