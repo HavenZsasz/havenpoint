@@ -9,8 +9,8 @@ function frontpageSetup_m() {
 
         if (prefersDarkScheme.matches) {
             document.body.classList.add("dark-theme_m");
-            logo_m.setAttribute("src", "logoNightKomprimiert1.png");
-            document.getElementById("logo-bg_m").setAttribute("src", "HintergrundDark.png");
+            logo_m.setAttribute("src", "assets/logoNightKomprimiert1.png");
+            document.getElementById("logo-bg_m").setAttribute("src", "assets/HintergrundDark.png");
             document.getElementById("auto-dark-light_m").style.backgroundColor = "rgb(0, 220, 253)";
             document.getElementById("auto-dark-light_m").style.color = "#121212";
             document.getElementById("darkmode_m").style.backgroundColor = "#121212";
@@ -21,8 +21,8 @@ function frontpageSetup_m() {
 
         } else {
             document.body.classList.remove("dark-theme_m");
-            logo_m.setAttribute("src", "logoDayKomprimiert1.png");
-            document.getElementById("logo-bg_m").setAttribute("src", "Hintergrund.png");
+            logo_m.setAttribute("src", "assets/logoDayKomprimiert1.png");
+            document.getElementById("logo-bg_m").setAttribute("src", "assets/Hintergrund.png");
             document.getElementById("auto-dark-light_m").style.backgroundColor = "black";
             document.getElementById("auto-dark-light_m").style.color = "rgb(0, 220, 253)";
             document.getElementById("lightmode_m").style.backgroundColor = "#bbb";
@@ -36,14 +36,14 @@ function frontpageSetup_m() {
         counterDarkmodeHavn = JSON.parse(localStorage["counterDarkmodeHavn"]);
         if (counterDarkmodeHavn == 0) {
             document.body.classList.remove("dark-theme_m");
-            logo_m.setAttribute("src", "logoDayKomprimiert1.png");
-            document.getElementById("logo-bg_m").setAttribute("src", "Hintergrund.png");
+            logo_m.setAttribute("src", "assets/logoDayKomprimiert1.png");
+            document.getElementById("logo-bg_m").setAttribute("src", "assets/Hintergrund.png");
             document.getElementById("lightmode_m").style.backgroundColor = "white";
             document.getElementById("lightmode_m").style.color = "black";
         } else if (counterDarkmodeHavn == 1) {
             document.body.classList.add("dark-theme_m");
-            logo_m.setAttribute("src", "logoNightKomprimiert1.png");
-            document.getElementById("logo-bg_m").setAttribute("src", "HintergrundDark.png");
+            logo_m.setAttribute("src", "assets/logoNightKomprimiert1.png");
+            document.getElementById("logo-bg_m").setAttribute("src", "assets/HintergrundDark.png");
             document.getElementById("darkmode_m").style.backgroundColor = "rgb(0, 220, 253)";
             document.getElementById("darkmode_m").style.color = "#121212";
         
@@ -51,15 +51,15 @@ function frontpageSetup_m() {
 
             if (prefersDarkScheme.matches) {
                 document.body.classList.add("dark-theme_m");
-                logo_m.setAttribute("src", "logoNightKomprimiert1.png");
-                document.getElementById("logo-bg_m").setAttribute("src", "HintergrundDark.png");
+                logo_m.setAttribute("src", "assets/logoNightKomprimiert1.png");
+                document.getElementById("logo-bg_m").setAttribute("src", "assets/HintergrundDark.png");
                 document.getElementById("auto-dark-light_m").style.backgroundColor = "rgb(0, 220, 253)";
                 document.getElementById("auto-dark-light_m").style.color = "#121212";
 
             } else {
                 document.body.classList.remove("dark-theme_m");
-                logo_m.setAttribute("src", "logoDayKomprimiert1.png");
-                document.getElementById("logo-bg_m").setAttribute("src", "Hintergrund.png");
+                logo_m.setAttribute("src", "assets/logoDayKomprimiert1.png");
+                document.getElementById("logo-bg_m").setAttribute("src", "assets/Hintergrund.png");
                 document.getElementById("auto-dark-light_m").style.backgroundColor = "black";
                 document.getElementById("auto-dark-light_m").style.color = "rgb(0, 220, 253";
 
