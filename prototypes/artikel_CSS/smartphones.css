@@ -400,6 +400,49 @@
         color: black;
     }
 
+    .dark-theme_m #div-cart_m {
+        background-color: #121212;
+    }
+
+    #div-cart_m {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        z-index:900000;
+        border: 1px solid black;
+        top: 80%;
+        left: 70%;
+        background-color: rgba(255, 255, 255, 0.809);
+    }
+
+
+    #cart-counter_m {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 382723807357238523957279;
+        margin-top: 7px;
+        margin-left: 27px;
+        padding: 1px;
+        width: 15px;
+        height:15px;
+        border: 1px solid black;
+        border-radius: 50%;
+        color: #fbf9f9;
+        background-color: rgb(0, 220, 253);
+
+    }
+
+
+    #cart-icon_m {
+        width: 50px;
+    }
+
     @keyframes rotate {
 
         0% {transform:rotate(0deg);}
