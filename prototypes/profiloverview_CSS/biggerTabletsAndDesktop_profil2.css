@@ -135,14 +135,13 @@
       position: fixed;
       width: 100%;
       display: flex;
-      padding: 0px 10px 10px 10px;
+      padding: 10px 10px 10px 10px;
       border-bottom: 1px solid rgba(0,0,0,1);
-      height: 100px;
+      height: 110px;
       align-items: flex-end;
       top: 0;
       background-color: white;
       z-index: 2;
-      margin: 10px 0 0 0;
       
   }
   
@@ -303,6 +302,7 @@
     margin-top: 100px;
     z-index: 0;
     padding: 50px 0 50px 0;
+    position: relative;
     
   }
   
@@ -621,6 +621,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    opacity: 0.2;
 
 }
 #titelbildDiv_d>img {
@@ -633,6 +634,7 @@
     width: fit-content;
     border-radius: 25% 25% 25% 25%;
     overflow: hidden;
+    z-index: 2;
 
 }
 #profilbildDiv_d>img {
@@ -643,17 +645,59 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    position: absolute;
+    top: calc(50px + 25%);
+    z-index: 1;
 }
 
-#profilBildDivLeft_d {
-    width: 44%;
-    background-color: rgb(240,240,240);
+#profilBildHintergrund_d {
+  position: absolute;
+  width: 800px;
+  height: 400px;
+  background-color: white;
+  z-index: 1;
+  top: 50%;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
 }
 
-#profilBildDivRight_d {
-    width: 44%;
-    background-color: rgb(240,240,240);
+#profilBildHintergrundBeschriftung_d {
+  width: 95%;
+  height: 60%;
+  position: relative;
+  top: 15%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
+#profilBildHintergrundBeschriftung_d>h3 {
+  position: absolute;
+  top: 45px;
+  font-size: 1em;
+  font-weight: lighter;
+  
+}
+#profilRatingsUndStatistik_d {
+  width: 100%;
+  height: 200px;
+  background-color: red;
+  display: flex;
+  justify-content: space-around;
+
+}
+#profilStatistiken_d {
+  width: 45%;
+  height: 100px;
+  background-color: purple;
+}
+#profilRatings_d {
+  width: 45%;
+  height: 100px;
+  background-color: purple;
+}
+
+
 
 
 
