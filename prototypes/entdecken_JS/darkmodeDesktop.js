@@ -110,16 +110,16 @@ function addDarkness_d () {
 
     
     document.body.classList.add("dark-theme_d");
-    document.getElementById("clickLogo_d").src = "/images/logoNightKomprimiert1.png";
-    document.getElementById("profilepic_d").src = "/images/logoNightKomprimiert1.png";
+    document.getElementById("clickLogo_d").src = "/prototypes/assets/logoNightKomprimiert1.png";
+    document.getElementById("profilepic_d").src = "/prototypes/assets/logoNightKomprimiert1.png";
     
 }
 
 function removeDarkness_d () {
 
     document.body.classList.remove("dark-theme_d");
-    document.getElementById("clickLogo_d").src = "/images/logoDayKomprimiert1.png";
-    document.getElementById("profilepic_d").src = "/images/logoDayKomprimiert1.png";
+    document.getElementById("clickLogo_d").src = "/prototypes/assets/logoDayKomprimiert1.png";
+    document.getElementById("profilepic_d").src = "/prototypes/assets/logoDayKomprimiert1.png";
     
 
     
