@@ -701,14 +701,14 @@
   z-index: 3;
   right: 0;
 
-  width: 77px;
+  width: 75px;
   height: 200px;
   border-left: 1px solid black;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
   border-radius: 0 0 5px 5px;
-  right: 10px;
-  top: 56px;
+  right: 11px;
+  top: 63px;
   
   display: none;
 

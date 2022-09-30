@@ -532,14 +532,14 @@
   z-index: 3;
   right: 0;
 
-  width: 77px;
+  width: 75px;
   height: 200px;
   border-left: 1px solid black;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
   border-radius: 0 0 5px 5px;
-  right: 10px;
-  top: 56px;
+  right: 11px;
+  top: 63px;
   
   display: none;
 
@@ -686,11 +686,25 @@
   justify-content: space-around;
 
 }
+
 #profilStatistiken_d {
   width: 45%;
   height: 100px;
   background-color: purple;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+#profilStatistiken_d div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#profilStatistiken_d div span:nth-child(2) {
+  font-weight: lighter;
+}
+
+
 #profilRatings_d {
   width: 45%;
   height: 100px;
