@@ -9,6 +9,10 @@ function setupCartCheck_m() {
         document.getElementById("cart-counter_m").style.width = "20px";
 
     }
+
+    if(cartUsed > 99) {
+        document.getElementById("cart-counter_m").style.width = "25px";
+    }
     
 
     document.getElementById("cart-counter_m").innerHTML = cartUsed;

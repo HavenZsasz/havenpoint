@@ -12,6 +12,8 @@ function addTocard_m(event) {
     if(cartUsed > 9) {
         document.getElementById("cart-counter_m").style.width = "20px";
 
+    } else if(cartUsed > 99) {
+        document.getElementById("cart-counter_m").style.width = "25px";
     }
 
     document.getElementById("cart-counter_m").innerHTML = cartUsed;
