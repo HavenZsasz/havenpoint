@@ -4,7 +4,6 @@ function setupaddToCart_m() {
 }
 
 var cartUsed;
-localStorage.setItem("cartUsed", 0);
 
 
 function addTocard_m(event) {

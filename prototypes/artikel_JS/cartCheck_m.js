@@ -1,6 +1,11 @@
 
 function setupCartCheck_m() {
 
+    if(!cartUsed) {
+        cartUsed=0;
+        localStorage.setItem("cartUsed", 0);
+    }
+
     cartUsed = parseInt(localStorage.getItem("cartUsed"));
 
     if(cartUsed > 0) {
