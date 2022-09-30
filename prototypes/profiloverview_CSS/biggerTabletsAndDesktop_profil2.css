@@ -681,7 +681,6 @@
 #profilRatingsUndStatistik_d {
   width: 100%;
   height: 200px;
-  background-color: red;
   display: flex;
   justify-content: space-around;
 
@@ -690,7 +689,6 @@
 #profilStatistiken_d {
   width: 45%;
   height: 100px;
-  background-color: purple;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -708,8 +706,32 @@
 #profilRatings_d {
   width: 45%;
   height: 100px;
-  background-color: purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+#profilRatings_d div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#stars_d {
+  color: rgb(0, 220, 253);
+}
+
+#profilReviews_d {
+  max-width: 90%;
+  height: 50px;
+  background-color: rgb(240,240,240);
+  padding: 0px 10px 0px 10px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
 
 
 
