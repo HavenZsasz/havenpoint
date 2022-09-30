@@ -107,7 +107,17 @@
   
   /*#endregion*/
   
-  
+
+  .dark-theme_d #profilBildHintergrund_d {
+    background-color: rgb(18,18,18);
+  }
+  .dark-theme_d #profilReviews_d {
+    background-color: rgb(25,25,25);
+  }
+  .dark-theme_d #inserateSearcher_d {
+    background-color: rgb(18,18,18);
+    color: white;
+  }
   
   
   
@@ -646,7 +656,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    top: calc(50px + 25%);
+    top: 175px;
     z-index: 1;
 }
 
@@ -656,7 +666,7 @@
   height: 400px;
   background-color: white;
   z-index: 1;
-  top: 50%;
+  top: 50px;
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -740,7 +750,77 @@
 
 /*#endregion*/
 
+/*#region **************** Produkte *************/
 
+
+#shopInserate_d {
+  margin: 270px 0 0 1%;
+  width: 98%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+#productBar_d {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#productBar_d span {
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+#inserateSearcher_d{
+  height: 60%;
+  width: 300px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  border-style: solid;
+  background-color: white;
+}
+#inserateSearcher_d:focus {
+  outline: none;
+  border: 1px solid rgb(0, 220, 253);
+}
+
+#shopArtikelListe_d {
+  max-width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.artikelShop_d {
+  width: 300px;
+  height: 220px;
+  overflow: hidden;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(230,230,230);
+}
+.artikelShop_d img {
+  max-width: 100%;
+}
+.shopProduktBeschreibung_d {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+
+
+
+
+
+/*#endregion*/
 
 
 
