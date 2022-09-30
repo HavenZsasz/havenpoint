@@ -118,6 +118,9 @@
     background-color: rgb(18,18,18);
     color: white;
   }
+  .dark-theme_d .artikelShop_d {
+    background-color: rgb(50,50,50);
+  }
   
   
   
@@ -742,6 +745,28 @@
   border-radius: 10px;
 }
 
+
+#shopUmschalteButtons_d {
+
+  width: 300px;
+  height: 150px;
+  position: absolute;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#shopUmschalteButtons_d span {
+  font-size: 1.2em;
+  cursor: pointer;
+}
+#shopUmschalteShop_d {
+  border-bottom: 1px solid rgb(0, 220, 253);
+}
+#shopUmschalteButtons_d span:hover {
+  border-bottom: 1px solid rgb(0, 220, 253);
+}
 
 
 
