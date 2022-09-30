@@ -1375,6 +1375,28 @@
         display:block !important;
     }
 
+    #warenkorb-div_m {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #warenkorb_m {
+        width: 100%;
+    }
+
+    #article-div_m {
+        background-color: rgba(221, 216, 216, 0.558);
+        width: 90%;
+        display: flex;
+
+        
+    }
+
+    #article-img_m > img {
+        height: 60px;
+    }
+
 
    
 
