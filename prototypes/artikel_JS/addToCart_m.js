@@ -32,6 +32,7 @@ function addTocard_m(event) {
     if(event.target == document.getElementById("in-den-warenkorb_m")) {
        
         document.getElementById("div-cart_m").style.display = "flex";
+        
     }
 
 }
