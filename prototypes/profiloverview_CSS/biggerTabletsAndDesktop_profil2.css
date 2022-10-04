@@ -76,6 +76,18 @@
   .dark-theme_d #system_d {
     background-color: rgba(255,255,255,0.1);
   }
+  .dark-theme_d #weitereInfosShop_d>div {
+    background-color: rgba(255,255,255,0.1);
+  }
+  .dark-theme_d #ueberUnsDiv_d div {
+    background-color: rgba(255,255,255,0.1);
+  }
+
+
+
+
+
+
 
   .system_dark-theme_d #lighter_d {
     background-color: rgba(255,255,255,0.1);
@@ -918,6 +930,7 @@
   right: 30px;
   top: 30px;
   border-radius: 25px;
+  
 }
 
 
