@@ -1388,13 +1388,21 @@
     #article-div_m {
         background-color: rgba(221, 216, 216, 0.558);
         width: 90%;
-        display: flex;
+        display: none;
 
         
     }
 
+    #infos_m {
+        display: block;
+    }
+
     #article-img_m > img {
         height: 60px;
+    }
+
+    #div-empty-cart_m {
+        display: flex;
     }
 
 
