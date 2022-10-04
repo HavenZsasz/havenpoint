@@ -616,17 +616,6 @@
 
 
 
-
-
-/*#region #########LÄDT CSS BEVOR DIE HTML ANGEZEIGT WIRD###########*/
-
-#everything {
-  display: block !important;
-}
-
-/* #endregion*/
-
-
 /*#region*/ /*********** ShopDarstellung *********/
 
 #titelbildDiv_d {
@@ -785,7 +774,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 
@@ -795,6 +783,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 #productBar_d span {
   font-weight: bolder;
@@ -845,18 +834,67 @@
 
 
 
+
+
+
 /*#endregion*/
 
 /*#region ************* Shop Info ********/
 
 #shopInfo_d {
   display: none;
+  margin: 270px 0 0 1%;
+  width: 98%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#shopBewertung_d {
-  display: none;
+#shopInfoBox_d {
+  width: 100%;
+  height: 800px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  
 }
 
+#ueberUnsDiv_d {
+  width: 100%;
+  background-color: purple;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 20px 0;
+}
+#ueberUnsDiv_d span {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+#ueberUnsDiv_d div {
+  width: 40%;
+  height: 200px;
+  overflow: scroll;
+  background-color: blue;
+  text-align: center;
+  line-height: 200%;
+  padding: 10px;
+}
+
+#weitereInfosShop_d {
+  width: 100%;
+  height: 400px;
+  background-color: green;
+  display: flex;
+  justify-content: space-around;
+
+}
+#weitereInfosShop_d div {
+  width: 40%;
+  height: 100%;
+  background-color: yellow;
+}
 
 
 
@@ -867,8 +905,30 @@
 
 /*#region ************* Shop Bewertung ********/
 
+#shopBewertung_d {
+  display: none;
+  margin: 270px 0 0 1%;
+  width: 98%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
 /*#endregion*/
 
+
+
+/*#region #########LÄDT CSS BEVOR DIE HTML ANGEZEIGT WIRD###########*/
+
+#everything {
+  display: block !important;
+}
+
+/* #endregion*/
 
 
   
