@@ -849,6 +849,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 #shopInfoBox_d {
@@ -857,16 +858,17 @@
   background-color: red;
   display: flex;
   flex-direction: column;
-  
+  position: relative;
 }
 
 #ueberUnsDiv_d {
   width: 100%;
-  background-color: purple;
+  height: 360px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 0 20px 0;
+  position: relative;
 }
 #ueberUnsDiv_d span {
   font-size: 1.5em;
@@ -874,26 +876,58 @@
 }
 #ueberUnsDiv_d div {
   width: 40%;
-  height: 200px;
+  max-height: 300px;
   overflow: scroll;
-  background-color: blue;
+  background-color: rgb(240,240,240);
+  border-radius: 25px;
   text-align: center;
   line-height: 200%;
   padding: 10px;
+  margin: 10px 0 0 0;
 }
 
 #weitereInfosShop_d {
   width: 100%;
   height: 400px;
-  background-color: green;
+
   display: flex;
   justify-content: space-around;
 
 }
-#weitereInfosShop_d div {
+#weitereInfosShop_d>div {
   width: 40%;
   height: 100%;
-  background-color: yellow;
+  background-color: rgb(240,240,240);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  
+}
+
+#shopInfoBildLinks_d {
+  max-height: 300px;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+#shopInfoBildRechts_d {
+  max-height: 300px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  border-radius: 25px;
+}
+
+
+
+.harteCaptions_d {
+  color: grey;
+  font-size: 1.2em;
+}
+.harteFakten_d {
+  font-size: 1.2em;
 }
 
 
@@ -920,15 +954,6 @@
 
 /*#endregion*/
 
-
-
-/*#region #########LÄDT CSS BEVOR DIE HTML ANGEZEIGT WIRD###########*/
-
-#everything {
-  display: block !important;
-}
-
-/* #endregion*/
 
 
   
