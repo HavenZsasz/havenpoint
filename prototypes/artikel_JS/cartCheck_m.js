@@ -1,8 +1,8 @@
 
 function setupCartCheck_m() {
 
-    if(!cartUsed) {
-        cartUsed=0;
+    if(!localStorage.getItem("cartUsed")) {
+        
         localStorage.setItem("cartUsed", 0);
     }
 
