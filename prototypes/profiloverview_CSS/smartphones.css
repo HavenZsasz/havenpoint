@@ -1014,7 +1014,7 @@
 
     #connect-header_m {
         margin-top: -40px;
-        background-color: white;
+        background-color: rgb(240, 236, 238);
         position: relative;
         z-index:100;
         border-radius: 30px;
@@ -1032,7 +1032,7 @@
         z-index: 10;
         opacity: 0.5;
         width: 100%;
-        border-radius: 2% 2% 2% 2%;
+        border-radius: 3%;
         overflow: hidden;
 
     }
