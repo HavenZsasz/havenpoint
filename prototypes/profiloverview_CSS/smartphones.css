@@ -1006,6 +1006,11 @@
     justify-content: center;
     }
 
+    .dark-theme_m #connect-header_m {
+        background-color: #121212;
+        border-color: #121212;
+    }
+
     #connect-header_m {
         margin-top: -40px;
         background-color: white;
