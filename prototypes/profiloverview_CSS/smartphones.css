@@ -997,8 +997,30 @@
         display: flex;
         width: 100%;
         justify-content: center;
-        margin-top: -100px;
-        z-index: 100;
+        margin-top: -50px;
+        z-index: 101;
+    }
+
+    #flex-connecter_m {
+    display: flex;
+    justify-content: center;
+    }
+
+    .dark-theme_m #connect-header_m {
+        background-color: rgb(51, 51, 51);
+        border-color: rgb(51, 51, 51);
+        
+    }
+
+    #connect-header_m {
+        margin-top: -40px;
+        background-color: white;
+        position: relative;
+        z-index:100;
+        border-radius: 30px;
+        height: 280px;
+        border: 1px solid white;
+        width: 95%;
     }
 
 
@@ -1009,6 +1031,9 @@
         height: 150px;
         z-index: 10;
         opacity: 0.5;
+        width: 100%;
+        border-radius: 2% 2% 2% 2%;
+        overflow: hidden;
 
     }
 
@@ -1021,13 +1046,13 @@
 
 
     #round-my-profile-img-container_m {
-        border: 1px solid black;
+        border: 1px solid gray;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 30%;
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         background-color: white;
     }
 
