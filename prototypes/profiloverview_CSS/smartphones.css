@@ -1040,7 +1040,7 @@
 
 
     #round-my-profile-img-container_m {
-        border: 1px solid black;
+        border: 1px solid gray;
         display: flex;
         justify-content: center;
         align-items: center;
