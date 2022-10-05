@@ -997,8 +997,24 @@
         display: flex;
         width: 100%;
         justify-content: center;
-        margin-top: -100px;
-        z-index: 100;
+        margin-top: -50px;
+        z-index: 101;
+    }
+
+    #flex-connecter_m {
+    display: flex;
+    justify-content: center;
+    }
+
+    #connect-header_m {
+        margin-top: -50px;
+        background-color: white;
+        position: relative;
+        z-index:100;
+        border-radius: 30px;
+        height: 280px;
+        border: 1px solid white;
+        width: 95%;
     }
 
 
@@ -1009,6 +1025,9 @@
         height: 150px;
         z-index: 10;
         opacity: 0.5;
+        width: 100%;
+        border-radius: 2% 2% 2% 2%;
+        overflow: hidden;
 
     }
 
@@ -1026,8 +1045,8 @@
         justify-content: center;
         align-items: center;
         border-radius: 30%;
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         background-color: white;
     }
 
