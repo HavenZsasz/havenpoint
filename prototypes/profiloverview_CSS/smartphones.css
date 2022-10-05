@@ -993,12 +993,12 @@
     }
 
     #profile-header_m {
+        position: relative;
         display: flex;
         width: 100%;
         justify-content: center;
         margin-top: -100px;
         z-index: 100;
-        background-color: black;
     }
 
 
