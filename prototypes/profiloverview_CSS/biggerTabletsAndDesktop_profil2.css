@@ -732,11 +732,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 #profilRatings_d div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }
 #stars_d {
   color: rgb(0, 220, 253);
@@ -1003,7 +1005,6 @@
 .customerReviewLeft_d>div {
   height: 50%;
   width: 100%;
-  
   
   display: flex;
   flex-direction: column;

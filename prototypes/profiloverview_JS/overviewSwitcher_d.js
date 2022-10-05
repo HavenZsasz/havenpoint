@@ -15,6 +15,7 @@ function setup_d () {
     shopButton_d.addEventListener("click", showShop_d);
     infoButton_d.addEventListener("click", showInfo_d);
     bewertungButton_d.addEventListener("click", showBewertungen_d);
+    document.getElementById("profilRatings_d").querySelector("div").addEventListener("click", showBewertungen_d);
 
     if(whichSiteLoaded_d == 0 || whichSiteLoaded_d == undefined) {
         showShop_d();
