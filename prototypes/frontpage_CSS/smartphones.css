@@ -33,7 +33,7 @@
         position: fixed;
         top: 15px;
         width: 100%;
-        z-index:9999999999999999999;
+        z-index: 9999999999999999999;
     }
 
 
@@ -440,7 +440,7 @@
     }
 
     #plus-dd-div_m {
-        width:100%;
+        width: 100%;
         display: flex;
         justify-content: center;
         margin-top: -15px;
@@ -451,14 +451,14 @@
         max-width: 200px;
         min-height: 70px;
         max-height: 70px;
-        display:none;
+        display: none;
         font-weight: bold;
         border-radius: 10px;
         border: 1px solid white;
         background-color: rgb(232, 228, 228);
         opacity: 0.96;
         z-index: 100000000;
-        
+
 
     }
 
@@ -528,7 +528,7 @@
         width: 60px;
         height: 60px;
         border-radius: 50%;
-        z-index:900000;
+        z-index: 900000;
         border: 1px solid black;
         top: 80%;
         left: 70%;
@@ -546,7 +546,7 @@
         margin-left: 27px;
         padding: 1px;
         width: 15px;
-        height:15px;
+        height: 15px;
         border: 1px solid black;
         border-radius: 50%;
         color: #fbf9f9;
@@ -987,6 +987,10 @@
         width: 150px;
         padding: 13px 0 13px 0;
         margin-top: 15px;
+    }
+
+    .shop-bezeichner_m {
+        text-decoration: none;
     }
 
     /* #region*/
