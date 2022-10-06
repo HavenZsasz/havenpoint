@@ -994,7 +994,7 @@
 .customerReviewLeft_d {
   width: 20%;
   height: 250px;
-  background-color: rgb(240,240,240);
+  
   border-radius: 20px 20px 20px 20px;
   border-right: 1px solid rgb(150,150,150);
   display: flex;
@@ -1016,7 +1016,7 @@
 .customerReviewMiddle_d {
   width: 40%;
   height: calc(250px - 40px);
-  background-color: rgb(240,240,240);
+  
   border-radius: 20px 20px 20px 20px;
   overflow: scroll;
   border-right: 1px solid rgb(150,150,150);
@@ -1042,6 +1042,107 @@
   font-size: 1.2em;
   margin: 0 0 30px 0;
 }
+
+
+#bewertungsStatistiken_d {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 20px 0;
+
+}
+
+
+
+
+#statistikenLeft_d {
+  width: 25%;
+  height: 120px;
+  background-color: rgb(240,240,240);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0 10px 0 0;
+  border-radius: 15px;
+}
+#statistikenLeft_d>div:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+}
+#statistikenLeft_d>div:nth-child(1)>span:nth-child(1){
+  font-weight: 600;
+}
+#statistikenLeft_d>div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  height: 60%;
+  align-items: center;
+}
+#statistikenLeft_d>div:nth-child(2)>div {
+  display: flex;
+  flex-direction: column;
+}
+#statistikenLeft_d>div:nth-child(2)>div>span {
+  margin: 3px;
+}
+#statistikenLeft_d>div:nth-child(2)>div>span:nth-child(1) {
+  border-bottom: 1px solid black;
+  font-weight: 700;
+  width: fit-content;
+}
+
+
+#statistikenRight_d {
+  width: 65%;
+  height: 120px;
+  
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#statistikenRight_d>div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+}
+#statistikenRight_d>div:nth-child(1)>span:nth-child(1){
+  font-weight: 600;
+}
+#statistikenRight_d>div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  height: 60%;
+  align-items: center;
+}
+#statistikenRight_d>div:nth-child(2)>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+#statistikenRight_d>div:nth-child(2)>div>span {
+  margin: 3px;
+}
+#statistikenRight_d>div:nth-child(2)>div>span:nth-child(1) {
+  border-bottom: 1px solid black;
+  font-weight: 700;
+  width: fit-content;
+}
+#statistikenRight_d>div:nth-child(2)>div>div {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+
+
+
 
 
 /*#endregion*/
