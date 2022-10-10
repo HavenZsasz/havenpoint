@@ -980,6 +980,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin: 40px 0 0 0;
 
 }
 
@@ -1058,6 +1059,13 @@
   height: fit-content;
   width: fit-content;
 }
+#arrowUp_d {
+  display: inline-block;
+  transform: rotate(-90deg);
+  height: fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
 #customerReviewKlein_d {
   position: relative;
   display: flex;
@@ -1074,6 +1082,10 @@
   flex-direction: column;
   align-items: center;
 }
+.liftGoesDown_d {
+  cursor: pointer;
+}
+
 
 
 
@@ -1127,7 +1139,7 @@
 #statistikenRight_d {
   width: 65%;
   height: 120px;
-  
+  background-color: rgb(240,240,240);
   border-radius: 15px;
   padding: 10px;
   display: flex;
