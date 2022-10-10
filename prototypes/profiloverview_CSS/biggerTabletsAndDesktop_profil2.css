@@ -142,6 +142,18 @@
   .dark-theme_d .customerReviewRight_d {
     background-color: rgba(255,255,255,0.1);
   }
+  .dark-theme_d #statistikenLeft_d {
+    background-color: rgba(255,255,255,0.1);
+  }
+  .dark-theme_d #statistikenLeft_d>div:nth-child(2) span:nth-child(1) {
+    border-bottom: 1px solid rgb(0, 220, 253);
+  }
+  .dark-theme_d #statistikenRight_d {
+    background-color: rgba(255,255,255,0.1);
+  }
+  .dark-theme_d #statistikenRight_d>div:nth-child(2)>div>span:nth-child(1) {
+    border-bottom: 1px solid rgb(0, 220, 253);
+  }
   
   
   
