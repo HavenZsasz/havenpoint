@@ -12,13 +12,16 @@ var artikel2;
 function addTocard_m(event) {
 
     if(event.target == document.getElementById("in-den-warenkorb_m")) {
+        console.log("funzt");
         artikel1 = parseInt(localStorage.getItem("artikel1")) + 1;
         localStorage.setItem("artikel1", JSON.stringify(artikel1));
-    } else if(event.target == document.getElementById("in-den-warenkorb-2_m")) {
+    } else {
+        alert("test");
         artikel2 = parseInt(localStorage.getItem("artikel2")) + 1;
         localStorage.setItem("artikel2", JSON.stringify(artikel2));
 
     }
+
 
     cartUsed = parseInt(localStorage.getItem("cartUsed")) + 1;
     if(cartUsed > 9) {
