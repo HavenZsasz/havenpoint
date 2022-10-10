@@ -6,6 +6,14 @@ function setupCartCheck_m() {
         localStorage.setItem("cartUsed", 0);
     }
 
+    if(!localStorage.getItem("artikel1")) {
+        localStorage.setItem("artikel1", 0);
+    }
+
+    if(!localStorage.getItem("artikel2")) {
+        localStorage.setItem("artikel2", 0);
+    }
+
     cartUsed = parseInt(localStorage.getItem("cartUsed"));
 
     if(cartUsed > 0) {

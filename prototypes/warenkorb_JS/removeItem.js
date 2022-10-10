@@ -7,6 +7,8 @@ function removeCartSetup_m() {
 
 function removeItem_m() {
     localStorage.setItem("cartUsed", 0);
+    localStorage.setItem("artikel1", 0);
+    localStorage.setItem("artikel2", 0);
     whatsIn();
 }
 
