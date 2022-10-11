@@ -1,7 +1,11 @@
 function setupaddToCart_m() {
     document.getElementById("in-den-warenkorb_m").addEventListener("click", addTocard_m);
-    document.getElementById("in-den-warenkorb-2_m").addEventListener("click", addTocard_m);
+    document.getElementById("testtesttest").addEventListener("click", hurensohn);
 
+}
+
+function hurensohn() {
+    alert("hurensohn");
 }
 
 var cartUsed;
@@ -10,6 +14,7 @@ var artikel2;
 
 
 function addTocard_m(event) {
+
 
     if(event.target == document.getElementById("in-den-warenkorb_m")) {
         console.log("funzt");
