@@ -1,6 +1,7 @@
 function removeCartSetup_m() {
 
     document.getElementById("entfernen_m").addEventListener("click", removeItem_m);
+    document.getElementById("entfernen2_m").addEventListener("click", removeItem_m);
 
     
 }
