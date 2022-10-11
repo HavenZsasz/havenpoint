@@ -40,7 +40,7 @@ function addTocard2_m(event) {
 
     
     
-    if(event.target == document.getElementById("in-den-warenkorb_m")) {
+    if(event.target == document.getElementById("in-den-warenkorb-2_m")) {
        
         document.getElementById("div-cart_m").style.display = "flex";
         
