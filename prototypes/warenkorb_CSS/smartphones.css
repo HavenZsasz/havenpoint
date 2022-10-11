@@ -1393,6 +1393,14 @@
         
     }
 
+    #article2-div_m {
+        background-color: rgba(221, 216, 216, 0.558);
+        width: 90%;
+        display: none;
+
+        
+    }
+
     #infos_m {
         display: block;
     }
