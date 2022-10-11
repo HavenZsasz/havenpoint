@@ -1,5 +1,5 @@
 function setupaddToCart_m() {
-    document.getElementById("in-den-warenkorb_m").addEventListener("click", addTocard_m);
+    document.getElementById("in-den-warenkorb-2_m").addEventListener("click", addTocard2_m);
 
 }
 
@@ -8,10 +8,13 @@ var artikel1;
 var artikel2;
 
 
-function addTocard_m(event) {
+function addTocard2_m(event) {
 
-        artikel1 = parseInt(localStorage.getItem("artikel1")) + 1;
-        localStorage.setItem("artikel1", JSON.stringify(artikel1));
+
+
+        artikel2 = parseInt(localStorage.getItem("artikel2")) + 1;
+        localStorage.setItem("artikel2", JSON.stringify(artikel2));
+
 
 
     cartUsed = parseInt(localStorage.getItem("cartUsed")) + 1;
