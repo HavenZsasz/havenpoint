@@ -1380,6 +1380,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-left: 25px;
+        margin-top: 20px;
     }
     #warenkorb_m {
         width: 100%;
@@ -1411,6 +1413,7 @@
 
     #div-empty-cart_m {
         display: flex;
+        margin-left: 25px;
     }
 
 
