@@ -1426,6 +1426,13 @@
         width: 100%;
     }
 
+    #expost_m {
+        background-color: rgb(51, 51, 51);
+        border-radius: 5px;
+        padding: 8px;
+        margin-top: 10px;
+    }
+
   
 
 
