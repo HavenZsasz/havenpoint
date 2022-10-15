@@ -1426,8 +1426,12 @@
         width: 100%;
     }
 
-    #expost_m {
+    .dark-theme_m #expost_m {
         background-color: rgb(51, 51, 51);
+    }
+
+    #expost_m {
+        
         border-radius: 5px;
         padding: 8px;
         margin-top: 10px;
