@@ -233,12 +233,12 @@ var maxScrollLeft = document.getElementById("mostVisited_d").scrollWidth - docum
 
 //Scrollt entsprechend
 function scrollToLeft (event) {
-    console.log("doppeltOk");
+    
     event.target.parentNode.scrollLeft -= maxScrollLeft;
 }
 
 function scrollToRight (event) {
-    console.log("OK");
+    
     event.target.parentNode.scrollLeft += maxScrollLeft;
 }
 
