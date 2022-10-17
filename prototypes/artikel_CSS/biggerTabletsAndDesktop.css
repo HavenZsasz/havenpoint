@@ -16,7 +16,8 @@
 #artikelShopInfo_d {
     width: 30%;
     height: 500px;
-    background-color: red;
+    border-right: 1px solid grey;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,7 +27,8 @@
 #artikelBild_d {
     width: 40%;
     height: 500px;
-    background-color: blue;
+    border-right: 1px solid grey;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +41,7 @@
 #artikelEinkaufActions_d {
     width: 30%;
     height: 500px;
-    background-color: purple;
+   
 }
 #profilBildArtikelSeite_d {
     border: 1px solid grey;
@@ -94,6 +96,7 @@
 #preiseKauf_d {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 #preiseKauf_d div {
     margin: 0 10px 0 0;
@@ -101,10 +104,13 @@
 
 
 #artikelZustand_d {
-    left: 30px;
-    top: 80px;
-    position: absolute;
     font-weight: bolder;
+    width: 25%;
+}
+#artikelName_d {
+    max-width: 50%;
+    overflow: scroll;
+    font-size: 1.5em;
 }
 
 
@@ -118,9 +124,64 @@
     flex-direction: column;
     margin: 0 0 0 10px;
 }
+#pseudoDiv_d {
+    width: 25%;
+}
 
 
+#topBarNameNeu_d {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+    font-size: 1.5em;
+    height: fit-content;
+    
+}
 
+#mehrwertsteuer_d {
+    font-size: 0.8em;
+    font-weight: lighter;
+}
+
+#sparenSparen_d {
+    font-size: 0.8em;
+}
+#sofortKaufenPreisAlt_d {
+    text-decoration: line-through;
+}
+#sofortKaufenPreis_d {
+    font-size: 1.5em;
+}
+
+
+.buttonsKaufen_d {
+    padding: 5px;
+    border: 1px solid grey;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+#sofortKaufenButton_d {
+    background-color: rgb(0, 220, 253);
+}
+#inDenWarenkorbButton_d {
+    background-color: rgb(200,200,200);
+}
+
+
+#artikelAnzahl_d {
+    height: 30px;
+    width: 60px;
+    font-size: 1.5em;
+    text-align: center;
+}
+#artikelAnzahl_d:focus {
+    outline: 1px solid rgb(0, 220, 253);
+    
+}
 
 
 
