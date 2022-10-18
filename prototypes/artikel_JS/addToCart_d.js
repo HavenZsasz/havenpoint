@@ -17,10 +17,10 @@ function addTocard_d(event) {
 
     cartUsed = parseInt(localStorage.getItem("cartUsed")) + 1;
     if(cartUsed > 9) {
-        document.getElementById("cart-counter_d").style.width = "20px";
+        document.getElementById("cart-counter_d").style.width = "30px";
 
     } else if(cartUsed > 99) {
-        document.getElementById("cart-counter_d").style.width = "25px";
+        document.getElementById("cart-counter_d").style.width = "35px";
     }
 
     document.getElementById("cart-counter_d").innerHTML = cartUsed;

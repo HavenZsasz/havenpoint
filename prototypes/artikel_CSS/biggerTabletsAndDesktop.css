@@ -289,8 +289,8 @@
     display: none;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     z-index:900000;
     border: 1px solid black;
@@ -306,10 +306,10 @@
     position: absolute;
     z-index: 382723807357238523957279;
     margin-top: 7px;
-    margin-left: 53px;
+    margin-left: 45px;
     padding: 1px;
-    width: 35px;
-    height:35px;
+    width: 25px;
+    height:25px;
     border: 1px solid black;
     border-radius: 50%;
     color: #fbf9f9;
@@ -319,7 +319,7 @@
 
 
 #cart-icon_d {
-    width: 100px;
+    width: 80px;
 }
 
   
