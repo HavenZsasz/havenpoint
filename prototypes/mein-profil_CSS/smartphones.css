@@ -1440,7 +1440,11 @@
         background-color: rgb(245, 245, 245);
     }
 
-    .vorschlag-container-slideshared_m {
+    .dark-theme_m #expost_m {
+        border: 1px solid rgb(59, 58, 58);
+    }
+
+    #vorschlag-container-slideshared_m {
         background-color: rgba(221, 216, 216, 0.558);
         padding: 15px;
         border-radius: 10px;
@@ -1448,11 +1452,23 @@
         margin-bottom: 10px;
     }
 
+    .dark-theme_m #vorschlag-container-slideshared_m {
+        background-color: rgba(90, 82, 82, 0.253);
+
+    }
+
     #like-sheet_m {
         width: 100%;
         display: flex;
         margin-top: 12px;
         justify-content: space-around;
+        align-items: center;
+    }
+
+    #splitter_m {
+        width: 2px;
+        height: 25px;
+        background-color: #bbb;
     }
 
   
