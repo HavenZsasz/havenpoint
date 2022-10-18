@@ -19,11 +19,13 @@ function toggleDarkmode_m(event) {
         document.getElementById("auto-dark-light_m").style.backgroundColor = "#bbb";
         document.getElementById("auto-dark-light_m").style.color = "black";
         logo_m.setAttribute("src", "assets/logoDayKomprimiert1.png");
+        document.getElementById("cart-icon_m").setAttribute("src", "assets/cart.svg");
         document.getElementById("logo-bg_m").setAttribute("src", "assets/Hintergrund.png");
     } else if(event.target == document.getElementById("darkmode_m")) {
         localStorage.setItem('counterDarkmodeHavn', '1');
         document.body.classList.add("dark-theme_m");
         logo_m.setAttribute("src", "assets/logoNightKomprimiert1.png");
+        document.getElementById("cart-icon_m").setAttribute("src", "assets/cartDark.svg");
         document.getElementById("logo-bg_m").setAttribute("src", "assets/HintergrundDark.png");
         document.getElementById("darkmode_m").style.backgroundColor = "rgb(0, 220, 253)";
         document.getElementById("darkmode_m").style.color = "black";
@@ -39,6 +41,7 @@ function toggleDarkmode_m(event) {
             document.body.classList.add("dark-theme_m");
             logo_m.setAttribute("src", "assets/logoNightKomprimiert1.png");
             document.getElementById("logo-bg_m").setAttribute("src", "assets/HintergrundDark.png");
+            document.getElementById("cart-icon_m").setAttribute("src", "assets/cartDark.svg");
             document.getElementById("auto-dark-light_m").style.backgroundColor = "rgb(0, 220, 253)";
             document.getElementById("auto-dark-light_m").style.color = "black";
             document.getElementById("darkmode_m").style.backgroundColor = "#121212";
@@ -49,6 +52,7 @@ function toggleDarkmode_m(event) {
         } else {
             document.body.classList.remove("dark-theme_m");
             logo_m.setAttribute("src", "assets/logoDayKomprimiert1.png");
+            document.getElementById("cart-icon_m").setAttribute("src", "assets/cart.svg");
             document.getElementById("logo-bg_m").setAttribute("src", "assets/Hintergrund.png");
             document.getElementById("auto-dark-light_m").style.backgroundColor = "black";
             document.getElementById("auto-dark-light_m").style.color = "rgb(0, 220, 253)";
