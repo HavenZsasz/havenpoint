@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico">
-    
+
     <link id="stylesheet" rel="stylesheet" href="/prototypes/multiple_css/biggerTabletsAndDesktop_multiple.css">
     <link id="stylesheet" rel="stylesheet" href="/prototypes/warenkorb_CSS/biggerTabletsAndDesktop.css">
-  
-    
+
+
     <title>Havenpoint - Dein Warenkorb</title>
 </head>
 
@@ -275,66 +275,94 @@
 
             <div class="main_d">
 
-                <span id = "captionWarenkorb_d">
+                <span id="captionWarenkorb_d">
                     Dein Warenkorb
                 </span>
 
+                <div id = "artikelContainer_d">
 
-                <div id = "warenkorbArtikel_d">
 
-                    <div id = "article-div_d" class = "artikelContainer_d">
+                    <div id = "artikelImWarenkorb_d">
 
-                        <span id = "mengezahl_d">
-                            
-                        </span>
+
+                        <div id = "bildUndCaption_d">
+
+                            <span><a href = "/prototypes/artikel3.html">Premium Topf</a></span>
+                            <img src = "/prototypes/assets/WMF_Topf.jpeg">
+
+                        </div>
+
+                        <div id = "detailsUndPreis_d">
+
+                            <div id = "identifier_d">
+                                <span>Verkäufer: </span>
+                                <span>Versand aus: </span>
+                                <span>Stückzahl: </span>
+                                <span>Preis: </span>
+                            </div>
+
+                            <div id = "inhalte_d">
+                                <span><a href= "/prototypes/profil2.html">WMF</a></span>
+                                <span>Deutschland</span>
+                                <span id = "mengezahl_d"> </span>
+                                <span id = "artikelPreis_d">12.399,99 EUR</span>
+                            </div>
+
+
+
+                        </div>
+
+
+
 
 
 
 
                     </div>
 
-                    <div id = "article2-div_d" class = "artikelContainer_d">
 
 
-                        <span id = "mengezahl-2_d">
+                    <div id = "zurKasse_d">
 
+                        <div id = "zurKasseButton_d">
+                            Zur Kasse
+                        </div>
 
-                        </span>
+                        <div id = "artikelSumme_d">
+                            <span>Artikel: </span>
+                            <span id = "summeRechnung_d"></span>
+                        </div>
 
+                        <div id = "versandBox_d">
+                            <span>Versand: </span>
+                            <span>Gratis</span>
+                        </div>
+
+                        <div id = "gesamteSumme_d">
+                            <span>Gesamt: </span>
+                            <span id = "gesamtRechnung_d"></span>
+                        </div>
 
 
 
 
                     </div>
-
-                    <div id = "div-empty-cart_d">
-                        Hier Klicken um Warenkorb zu leeren
-                    </div>
-
 
 
 
 
                 </div>
 
-               
 
+                <div id = "div-empty-cart_d">
 
+                </div>
 
-
+                
 
             </div>
 
-
-
-
         </div>
-
-
-
-
-
-
 
 
     </div>
@@ -347,8 +375,9 @@
     <script src='/prototypes/entdecken_JS/loginCheck.js'></script>
     <script src='/prototypes/entdecken_JS/logout.js'></script>
 
-    <script src = "/prototypes/warenkorb_JS/whatsIn_d.js"></script>
-    <script src = "/prototypes/warenkorb_JS/removeItem_d.js"></script>
+    <script src="/prototypes/warenkorb_JS/whatsIn_d.js"></script>
+    <script src="/prototypes/warenkorb_JS/removeItem_d.js"></script>
+    <script src = "/prototypes/warenkorb_JS/kasseBerechnung_d.js"></script>
 
 
     <noscript>Dein Browser unterstützt leider kein JavaScript (oder JavaScript ist nicht aktiviert), dementsprechend

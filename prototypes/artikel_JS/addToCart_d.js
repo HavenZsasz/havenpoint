@@ -10,12 +10,18 @@ var artikel2;
 
 function addTocard_d(event) {
 
+    var artikelAnzahl_d = 0;
 
-        artikel1 = parseInt(localStorage.getItem("artikel1")) + 1;
+    artikelAnzahl_d = parseInt(document.getElementById("artikelAnzahl_d").value);
+
+    console.log(artikelAnzahl_d);
+
+
+        artikel1 = parseInt(localStorage.getItem("artikel1")) + artikelAnzahl_d;
         localStorage.setItem("artikel1", JSON.stringify(artikel1));
 
 
-    cartUsed = parseInt(localStorage.getItem("cartUsed")) + 1;
+    cartUsed = parseInt(localStorage.getItem("cartUsed")) + artikelAnzahl_d;
     if(cartUsed > 9) {
         document.getElementById("cart-counter_d").style.width = "30px";
 
