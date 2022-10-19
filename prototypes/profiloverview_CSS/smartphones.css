@@ -222,8 +222,6 @@
         overflow: hidden;
         margin-left: 1.6%;
         border: 0;
-
-
     }
 
 
@@ -266,7 +264,6 @@
         overflow: hidden;
         min-width: 55px;
         display: none;
-
     }
 
     #round-container_m:hover {
@@ -276,8 +273,6 @@
 
     #profilbild_m {
         height: 100%;
-
-
     }
 
     #nav-div_m {
