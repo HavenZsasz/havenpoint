@@ -48,12 +48,12 @@
         border: 1px solid gray;
         border-radius: 25%;
         padding: 2px;
+        background-color: white;
     }
 
     #conv-img-div_m > img {
         height: 100%;
         width: 100%;
-        background-color: white;
 
     }
 
