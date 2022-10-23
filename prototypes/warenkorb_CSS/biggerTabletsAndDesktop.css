@@ -1,3 +1,25 @@
+
+.dark-theme_d #zurKasse_d {
+    background-color: rgba(255,255,255,0.1);
+}
+.dark-theme_d #zurKasseButton_d {
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #captionWarenkorb_d {
     font-size: 1.5em;
     font-weight: bolder;

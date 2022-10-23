@@ -1,6 +1,23 @@
 @media only screen and (min-device-width: 760px) {
 
 
+
+
+.dark-theme_d #sofortKaufenButton_d {
+    color: black;
+}
+.dark-theme_d #inDenWarenkorbButton_d {
+    color: black;
+}
+
+
+
+
+
+
+
+
+
 .main_d {
     display: flex;
     flex-direction: column;

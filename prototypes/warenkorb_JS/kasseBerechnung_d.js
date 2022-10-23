@@ -14,9 +14,6 @@ function calculateSum_d () {
 
     var splitArray = artikel1Preis.split(/,|\.| /);
 
-    console.log(splitArray);
-
-
     var sum;
 
     var erg;
@@ -31,17 +28,23 @@ function calculateSum_d () {
         hundreds = hundreds * artikel1;
         thousands = thousands * artikel1;
 
+        //Muss noch angepasst werden, falls Versand bspw 4,99 EUR ist. Dann muss auch gleiche Art von Berechnung passieren wie bei dem Summen Preis
+        if (document.getElementById("kostenVersand_d").innerHTML != "Gratis") { 
+            hundreds = hundreds + parseInt(document.getElementById("kostenVersand_d").innerHTML);
+        }
+
         while (decimals > 100) {
-            console.log(decimals);
+            
             decimals = decimals - 100;
             hundreds = hundreds + 1;
         }
 
         while (hundreds > 1000) {
-            console.log(hundreds);
+            
             hundreds = hundreds - 1000;
             thousands = thousands + 1;
         }
+
 
     }
 
