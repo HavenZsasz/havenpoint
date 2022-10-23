@@ -14,10 +14,17 @@
         margin-left: 12px;
     }
 
+  #flex-conv_m {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
 
     #conversation1_m {
         background-color: rgba(221, 216, 216, 0.558);
-        width: 100%;
+        width: 93%;
+        border-radius: 10px;
         height: 80px;
         padding: 5px;
         margin-bottom: 5px;
@@ -41,12 +48,12 @@
         border: 1px solid gray;
         border-radius: 25%;
         padding: 2px;
+        background-color: white;
     }
 
     #conv-img-div_m > img {
         height: 100%;
         width: 100%;
-        background-color: white;
 
     }
 
