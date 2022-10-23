@@ -5,11 +5,13 @@
     }
 
     body {
+        margin: 0;
         
     }
 
     h1 {
         font-size: x-large;
+        margin-left: 12px;
     }
 
 
@@ -18,6 +20,8 @@
         width: 100%;
         height: 80px;
         padding: 5px;
+        margin-bottom: 5px;
+        
     }
 
     #conv-header_m {
@@ -42,18 +46,20 @@
     #conv-img-div_m > img {
         height: 100%;
         width: 100%;
+        background-color: white;
 
     }
 
     #conv-name-div_m {
         margin-left: 5px;
         font-weight: 700;
+        
     }
 
     #message_m {
         margin-left: 5px;
         margin-right: 5px;
-        margin-top: 5px;
+        margin-top: 8px;
         width: 100%;
     }
 
