@@ -126,6 +126,11 @@
     position: relative;
     
   }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
   
   
   /*#region*//************** NAVBAR UND SEARCHBAR **********/
@@ -400,13 +405,17 @@
     overflow-x: scroll;
     overflow-y: hidden;
     align-items: center;
-  
+  }
+  #mostVisited_d a {
+    width: 35%;
+    height: fit-content;
+    margin: 10px;
   }
   
   .mostVisited_d {
     height: 200px;
     
-    max-width: 35%;
+    width: 100%;
     background-color: rgba(0,0,0,0.02);
     margin: 10px;
     display: flex;
@@ -418,8 +427,8 @@
   }
   
   .mostVisitedImageDiv_d {
-    width: 80%;
-    height: 80%;
+    max-width: 80%;
+    max-height: 80%;
     overflow: hidden;
     display: flex;
     justify-content: center;
