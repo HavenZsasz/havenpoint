@@ -67,6 +67,7 @@
 }
 #profilBildArtikelSeite_d img {
     width: 70px;
+    cursor: pointer;
 }
 
 
@@ -80,6 +81,7 @@
 #shopGlimpse_d span{
     font-weight: bolder;
     font-size: 1.5em;
+    cursor: pointer;
 
 }
 #weitereFaktenShop_d span:nth-child(1) {
