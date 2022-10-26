@@ -4,9 +4,6 @@ window.addEventListener("load", setup_d);
 
 
 function setup_d() {
-    
-
-    
 
     
     //#region slideshow Event-Listener
