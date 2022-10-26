@@ -440,7 +440,7 @@ function loginSave_d() {
 
 function openLoggedInDropDown_d () {
 
-    document.getElementById("loggedInDropDownSquare_d").setAttribute("style","display:block");
+    document.getElementById("loggedInDropDownSquare_d").setAttribute("style","display:flex");
 
     document.getElementById("profileclick_d").addEventListener("click", closeLoggedInDropDown_d);
 
