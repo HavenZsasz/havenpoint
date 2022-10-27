@@ -1,3 +1,24 @@
 @media only screen and (min-device-width: 316px) and (max-device-width: 550px) {
-    
+
+
+    #chat_m {
+        border: 1px solid black;
+    }
+
+    #chatfooter_m {
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #texter_m {
+        width: 80%;
+        height: 25px;
+    }
+
+    #send_m {
+        
+
+    }
+
 }
