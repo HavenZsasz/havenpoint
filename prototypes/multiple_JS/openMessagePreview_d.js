@@ -38,7 +38,7 @@ function closeMessagePreview_d ()  {
 
 
 
-function openHaendlerMessage_d () {
+function openHaendlerMessage_d () {
 
     document.getElementById("messagesInPreviewUser_d").setAttribute("style", "display:none;");
     document.getElementById("messagesInPreviewHaendler_d").setAttribute("style","display:flex;");

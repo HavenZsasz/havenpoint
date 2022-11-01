@@ -1,0 +1,112 @@
+
+.main_d {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+#umschalteKnopf_d {
+
+    width: 99%;
+    height: 100px;
+
+
+
+}
+
+
+.messagesContainer_d {
+
+    width: 70%;
+    margin: 10px 0 0 0;
+    background-color: rgb(200,200,200);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.messagesContainer_d div {
+    cursor: pointer;
+}
+
+#umschalteKnopf_d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#haendlerKnopfBig_d {
+    border-bottom: 2px solid rgb(0, 220, 253);
+    cursor: pointer;
+}
+#userKnopfBig_d {
+    cursor: pointer;
+}
+
+
+#user_d {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
