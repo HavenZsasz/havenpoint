@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 
 }
 
@@ -24,13 +25,16 @@
 .messagesContainer_d {
 
     width: 70%;
-    margin: 10px 0 0 0;
+    margin: 800px 0 0 0;
     background-color: rgb(200,200,200);
     border-radius: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    left: 15%;
+    z-index: 2;
 
 }
 .messagesContainer_d div {
@@ -55,6 +59,26 @@
 #user_d {
     display: none;
 }
+
+
+
+
+#test {
+    height: 500px;
+    z-index: 0;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
