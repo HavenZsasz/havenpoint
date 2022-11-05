@@ -21,6 +21,7 @@ function loader_d () {
         read_d[i].addEventListener("click", openMessenger_d);
     }
 
+
 }
 
 
