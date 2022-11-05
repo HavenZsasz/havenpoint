@@ -36,9 +36,9 @@
     left: 15%;
     z-index: 2;
 
-}
-.messagesContainer_d div {
-    cursor: pointer;
+    height: 700px;
+    overflow: scroll;
+
 }
 
 #umschalteKnopf_d {
@@ -72,22 +72,63 @@
 
 
 .sprechblase_d {
-    border-radius: 50px 50px 50px 0px;
+    border-radius: 20px 20px 20px 0;
     width: 40%;
-    height: 100%;
+    min-height: 100%;
+    height: fit-content;
+    position: absolute;
+}
+.sprechblase_d div {
+    margin: 10px;
+    text-align: center;
+    height: fit-content;
+}
+
+.chatBlase_d {
+    width: 100%;
+    min-height: 90px;
+    height: fit-content;
+    position: relative;
+    margin: 20px 0 20px 0;
+    background-color: red;
+    
+}
+
+.left_d {
+    left: 10px;
+    border-radius: 20px 20px 20px 0;
+    background-color: rgb(150,150,150);
+}
+.right_d {
+    right: 10px;
+    border-radius: 20px 20px 0px 20px;
+    background-color: rgb(59,130,246);
+}
+
+
+.uhrzeitLeft_d {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+.uhrzeitRight_d {
     position: absolute;
     left: 10px;
-    background-color: rgb(59,130,246);
-    
-    
+    bottom: 0;
 }
 
-.lefter_d {
+#eingabeNachricht_d {
     width: 100%;
-    height: 10%;
-    position: relative;
+    display: flex;
+    justify-content: center;
 }
-
+#nachrichtDesUsers_d {
+    width: 50%;
+    height: fit-content;
+}
+#nachrichtDesUsers_d:focus{
+    outline: none;
+}
 
 
 

@@ -971,6 +971,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  cursor: pointer;
 }
 .messageNotRead_d {
   position: relative;
@@ -983,6 +984,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  cursor: pointer;
 }
 
 
