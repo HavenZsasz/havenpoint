@@ -63,12 +63,19 @@
 
 
 
-#test {
-    height: 500px;
+#messagesDetail_d {
     z-index: 0;
+    display: flex;
+    width: 40%;
     
 }
 
+
+.sprechblase_d {
+    border-radius: 50px 50px 50px 0px;
+    width: 40%;
+    
+}
 
 
 

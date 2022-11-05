@@ -1,12 +1,12 @@
 
 
 
-window.addEventListener("load", setup_d);
+window.addEventListener("load", loader_d);
 
 
 
 
-function setup_d () {
+function loader_d () {
 
 
 
@@ -21,7 +21,6 @@ function setup_d () {
         read_d[i].addEventListener("click", openMessenger_d);
     }
 
-
 }
 
 
@@ -32,16 +31,23 @@ function setup_d () {
 
 function openMessenger_d(event) {
     
-    document.querySelector(".messagesContainer_d").style.transition = "1s";
-    document.querySelector(".messagesContainer_d").style.width = "40%";
-    document.querySelector(".messagesContainer_d").style.left = "5%";
+    var userContainer_d = document.getElementById("user_d");
+    var haendlerContainer_d = document.getElementById("haendler_d");
+
+
+    userContainer_d.style.transition = "1s";
+    userContainer_d.style.width = "40%";
+    userContainer_d.style.left = "5%";
+
+    haendlerContainer_d.style.transition = "1s";
+    haendlerContainer_d.style.width = "40%";
+    haendlerContainer_d.style.left = "5%";
 
 
 
-    document.getElementById("test").style.display = "flex";
-    document.getElementById("test").style.transition = "1s";
-    document.getElementById("test").style.width = "40%";
-    document.getElementById("test").style.left = "55%";
+    document.getElementById("messagesDetail_d").style.transition = "1s";
+    document.getElementById("messagesDetail_d").style.width = "40%";
+    document.getElementById("messagesDetail_d").style.left = "55%";
     
 
 
