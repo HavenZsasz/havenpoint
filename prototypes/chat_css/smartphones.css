@@ -7,6 +7,11 @@
         background-color: rgba(221, 216, 216, 0.558);
     }
 
+    .dark-theme_m {
+        color: white;
+        background-color: black;
+    }
+
 
     #chat_m {
         width: 100%;
@@ -100,6 +105,11 @@
         border-radius: 20px 20px 0 20px;
         margin-top: 5px;
 
+    }
+
+    .dark-theme_m #bubble2_m, .dark-theme_m #bubble3_m {
+        background-color: rgb(0,220,253);
+        color: white;
     }
 
     #bubble3_m {
