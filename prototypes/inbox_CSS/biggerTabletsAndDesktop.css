@@ -82,8 +82,7 @@
 
 .chatBlase_d {
     width: 100%;
-    min-height: 900px;
-    height: fit-content;
+    height: 500px;
     position: relative;
     background-color: red;
     
