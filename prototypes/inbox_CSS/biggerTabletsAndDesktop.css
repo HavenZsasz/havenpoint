@@ -26,7 +26,7 @@
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     position: absolute;
     left: 15%;
@@ -56,83 +56,102 @@
     display: none;
 }
 
-
-
-
 #messagesDetail_d {
     z-index: 0;
-    display: flex;
     width: 40%;
+}
+
+.nachrichtContainer_d {
+    width: 90%;
+    height: fit-content;
+    
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sprechBlase_d {
+    width: 45%;
+    height: fit-content;
     
 }
-
-
-.sprechblase_d {
-    border-radius: 20px 20px 20px 0;
-    width: 40%;
-    min-height: 100%;
-    height: fit-content;
-    position: absolute;
+.datum_d {
+    width: 45%;
+    height: 100%;
+    font-weight: lighter;
+    font-size: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
-.sprechblase_d div {
+
+.konkreteSprechblase_d {
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(150,150,150);
+    border-radius: 20px 20px 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.konkreteSprechblase_d div {
+    width: 90%;
+    height: fit-content;
     margin: 10px;
     text-align: center;
-    height: fit-content;
 }
 
-.chatBlase_d {
-    width: 100%;
-    height: 500px;
-    position: relative;
-    background-color: red;
-    
+.antwort_d {
+    flex-direction: row-reverse;
 }
 
-.left_d {
-    left: 10px;
-    border-radius: 20px 20px 20px 0;
-    background-color: rgb(150,150,150);
-}
-.right_d {
-    right: 10px;
-    border-radius: 20px 20px 0px 20px;
+.antwort_d .konkreteSprechblase_d {
+    border-radius: 20px 20px 0 20px;
     background-color: rgb(59,130,246);
 }
 
-
-.uhrzeitLeft_d {
-    position: absolute;
-    right: 10px;
-    bottom: 0;
-}
-.uhrzeitRight_d {
-    position: absolute;
-    left: 10px;
-    bottom: 0;
-}
-
-#eingabeNachricht_d {
+#eingabeFeld_d {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    margin: 50px 0 20px 0;
 }
-#nachrichtDesUsers_d {
-    width: 50%;
-    height: fit-content;
-}
-#nachrichtDesUsers_d:focus{
+
+
+
+.textarea {
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 1px 6px;
+    display: block;
+    width: 75%;
+    overflow: hidden;
+    resize: both;
+    min-height: 40px;
+    line-height: 20px;
+    background-color: white;
+    text-align: center;
+  }
+  .textarea:focus {
     outline: none;
-}
+  }
+  
+  .textarea[contenteditable]:empty::before {
+    content: "Möchtest du deinem Chatpartner etwas schreiben?";
+    color: gray;
+  }
 
-
-
-
-
-
-
-
-
-
+  #messageSenden_d {
+    cursor: pointer;
+    width: 15%;
+    background-color: rgb(150,150,150);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+  }
 
 
 
