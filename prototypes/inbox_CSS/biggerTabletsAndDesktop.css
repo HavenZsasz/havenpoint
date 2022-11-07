@@ -116,6 +116,7 @@
     display: flex;
     justify-content: space-around;
     margin: 50px 0 20px 0;
+
 }
 
 
@@ -133,13 +134,14 @@
     line-height: 20px;
     background-color: white;
     text-align: center;
+    border-radius: 20px;
   }
   .textarea:focus {
     outline: none;
   }
   
   .textarea[contenteditable]:empty::before {
-    content: "Möchtest du deinem Chatpartner etwas schreiben?";
+    content: "Nachricht schreiben...";
     color: gray;
   }
 
@@ -152,6 +154,8 @@
     align-items: center;
     border-radius: 25px;
   }
+
+ 
 
 
 
