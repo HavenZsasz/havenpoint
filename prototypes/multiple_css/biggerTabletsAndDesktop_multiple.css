@@ -927,12 +927,19 @@
   border-bottom: 2px solid rgb(0, 220, 253);
   cursor: pointer;
 }
+#haendlerKnopfPreview_d {
+  border-bottom: 2px solid rgb(0, 220, 253);
+  cursor: pointer;
+}
 #borderMessage_d {
   height: 70%;
   width: 1px;
   background-color: black;
 }
 #userKnopf_d {
+  cursor: pointer;
+}
+#userKnopfPreview_d {
   cursor: pointer;
 }
 

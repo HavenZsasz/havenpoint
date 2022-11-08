@@ -7,15 +7,15 @@ window.addEventListener("load", setup_d);
 
 function setup_d () {
 
-    document.getElementById("haendlerKnopfBig_d").addEventListener("click", openHaendlerMessage_d);
-    document.getElementById("userKnopfBig_d").addEventListener("click", openUserMessage_d);
+    document.getElementById("haendlerKnopfBig_d").addEventListener("click", openHaendlerMessageBig_d);
+    document.getElementById("userKnopfBig_d").addEventListener("click", openUserMessageBig_d);
     
 
 
 }
 
 
-function openHaendlerMessage_d () {
+function openHaendlerMessageBig_d () {
 
     document.getElementById("user_d").setAttribute("style", "display:none;");
     document.getElementById("haendler_d").setAttribute("style","display:flex;");
@@ -32,7 +32,7 @@ function openHaendlerMessage_d () {
 }
 
 
-function openUserMessage_d () {
+function openUserMessageBig_d () {
 
 
     document.getElementById("haendler_d").setAttribute("style", "display:none;");
