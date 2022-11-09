@@ -25,6 +25,10 @@ function openHaendlerMessageBig_d () {
 
     document.getElementById("messagesDetail_d").style.transition = "none";
     document.getElementById("messagesDetail_d").style.left = "30%";
+    document.getElementById("messagesDetail_d").style.display = "none";
+    document.getElementById("messagesDetail2_d").style.transition = "none";
+    document.getElementById("messagesDetail2_d").style.left = "30%";
+    document.getElementById("messagesDetail2_d").style.display = "none";
     
 
 
@@ -43,6 +47,10 @@ function openUserMessageBig_d () {
 
     document.getElementById("messagesDetail_d").style.transition = "none";
     document.getElementById("messagesDetail_d").style.left = "30%";
+    document.getElementById("messagesDetail_d").style.display = "none";
+    document.getElementById("messagesDetail2_d").style.transition = "none";
+    document.getElementById("messagesDetail2_d").style.left = "30%";
+    document.getElementById("messagesDetail2_d").style.display = "none";
     
 
 

@@ -32,7 +32,7 @@
     left: 15%;
     z-index: 2;
 
-    height: 700px;
+    max-height: 700px;
     overflow: scroll;
 
 }
@@ -56,10 +56,6 @@
     display: none;
 }
 
-#messagesDetail_d {
-    z-index: 0;
-    width: 40%;
-}
 
 .nachrichtContainer_d {
     width: 90%;
@@ -153,6 +149,22 @@
     justify-content: center;
     align-items: center;
     border-radius: 25px;
+  }
+
+
+
+  #messagesDetail_d {
+    z-index: 0;
+    width: 40%;
+    display: none;
+    transition: 1s;
+  }
+
+  #messagesDetail2_d {
+    display: none;
+    z-index: 0;
+    width: 40%;
+    transition: 1s;
   }
 
  
