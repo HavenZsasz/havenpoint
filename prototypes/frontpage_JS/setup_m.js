@@ -3,7 +3,7 @@ function frontpageSetup_m() {
     document.getElementById("lightmode_m").addEventListener("click", toggleDarkmode_m);
     document.getElementById("darkmode_m").addEventListener("click", toggleDarkmode_m);
     document.getElementById("auto-dark-light_m").addEventListener("click", toggleDarkmode_m);
-    var logo_m = document.getElementById("logo_m");
+
 
     if (localStorage.getItem("counterDarkmodeHavn") == undefined) {
 
