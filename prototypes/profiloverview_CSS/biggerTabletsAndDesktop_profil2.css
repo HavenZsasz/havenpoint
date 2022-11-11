@@ -1135,7 +1135,75 @@
 
 
 
+/*#region ************* Shop Aktivität***********/
 
+
+#shopActivity_d {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 270px 0 0 10%;
+  width: 80%;
+  background-color: purple;
+  border-radius: 20px;
+}
+
+#captionActivity_d {
+  width: 100%;
+  justify-content: flex-start;
+  margin: 30px;
+}
+#captionActivity_d span {
+  margin: 0 0 0 100px;
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+#firstContainer_d {
+  margin: 50px 0 0 0;
+}
+
+.activityContainer_d {
+
+  width: 70%;
+  height: 400px;
+  background-color: red;
+  margin: 20px 0 20px 0;
+  border-radius: 20px;
+
+}
+.activityContainer_d a {
+  font-weight: bolder;
+}
+.whoAndWhat_d {
+  font-size: 1.5em;
+  margin: 0 0 0 20px;
+  word-wrap: break-word;
+  max-width: calc(80% - 20px);
+  width: calc(80% - 20px);
+  display: block;
+}
+.when_d {
+  font-size: 0.8em;
+  font-weight: lighter;
+  display: flex;
+  width: calc(20% - 20px);
+  margin: 0 20px 0 0;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.feedDescription_d {
+  display: flex;
+}
+
+
+
+
+
+
+
+
+/*#endregion*/
 
 
 
