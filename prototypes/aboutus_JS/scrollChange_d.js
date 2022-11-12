@@ -17,20 +17,38 @@ function setup_d () {
 function scroller_d (event) {
 
 
-    var main_d = document.querySelectorAll(".main_d")[0];
+    var starter_d = document.getElementById("startingBanner_d");
 
     var scroller_d = window.pageYOffset;
 
     if(scroller_d < 150) {
-        main_d.style.backgroundColor = "rgb(18,18,18)";
+        starter_d.style.backgroundColor = "rgb(18,18,18)";
         //document.getElementById("bannerWechsel_d").src = "/prototypes/assets/logoNightKomprimiert1.png";
         document.getElementById("bannerWechsel_d").style.opacity = "1";
         document.getElementById("bannerWechsel2_d").style.opacity = "0";
-    }else if (scroller_d >= 150) {
-        main_d.style.backgroundColor = "white";
+
+        document.getElementById("textContainer1_d").style.transform = "scale(1,0)";
+
+    }else if (scroller_d >= 150 && scroller_d < 500) {
+        starter_d.style.backgroundColor = "white";
         //document.getElementById("bannerWechsel_d").src = "/prototypes/assets/logoDayKomprimiert1.png";
         document.getElementById("bannerWechsel_d").style.opacity = "0";
         document.getElementById("bannerWechsel2_d").style.opacity = "1";
+
+        document.getElementById("textContainer1_d").style.transform = "scale(1,1)";
+        document.getElementById("textContainer1_d").style.opacity = "1";
+        document.getElementById("textContainer2_d").style.opacity = "0";
+
+
+    }else if (scroller_d >= 500 && scroller_d < 660) {
+        
+        
+    }else if (scroller_d >= 660) {
+        document.getElementById("textContainer1_d").style.opacity = "0";
+        document.getElementById("textContainer2_d").style.opacity = "1";
+        document.getElementById("textContainer2_d").style.position = "absolute";
+        document.getElementById("textContainer2_d").style.position = "fixed";
+        document.getElementById("textContainer2_d").style.top = "110px";
     }
 
 
