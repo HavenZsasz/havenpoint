@@ -154,6 +154,16 @@
   .dark-theme_d #statistikenRight_d>div:nth-child(2)>div>span:nth-child(1) {
     border-bottom: 1px solid rgb(0, 220, 253);
   }
+
+  .dark-theme_d #shopActivity_d {
+    background-color: rgb(22,22,22);
+  }
+  .dark-theme_d .activityContainer_d {
+    background-color: rgb(26,26,26);
+  }
+  .dark-theme_d .mittelStrich_d {
+    background-color: rgb(60,60,60);
+  }
   
   
   
