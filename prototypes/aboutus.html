@@ -12,9 +12,8 @@
         rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico">
     <link id="stylesheet" rel="stylesheet" href="frontpage_CSS/biggerTabletsAndDesktop.css">
-    <link id="stylesheet" rel="stylesheet" href="frontpage_CSS/smartphones.css">
-    <link id="stylesheet" rel="stylesheet" href="frontpage_CSS/miniDisplays.css">
-    <link id="stylesheet" rel="stylesheet" href="frontpage_CSS/smallTablets.css">
+
+    <link id="stylesheet" rel="stylesheet" href="/prototypes/multiple_css/biggerTabletsAndDesktop_multiple.css">
 
 
 
@@ -26,239 +25,318 @@
 <body>
 
 
-    <div id="over-all">
-        <div id="all">
-            <!--#all = Container für alles, das nicht zum Dropdown der Mobile Version gehört, um die Seite aufzuteilen-->
-            <div id="sitehead">
-                <img id="logo-bg" src="assets/Hintergrund.png">
 
-                <div id="logo-mehr-mobile">
-                    <!--Ausrichtung des Hamburger Buttons am Logo; für die Desktop-Version: #mehr {display:none;} im CSS setzen-->
+    <div id="everything" style="display:none;">
 
-                    <div id="logo-center-filler"></div>
+        <div id="desktop-version">
+            <div id="login-background_d">
+            </div>
 
-                    <a id="click-logo" href="frontpage.html"><img id="logo" src="assets/logoDayKomprimiert1.png"></a>
-                    
+            <div id="navbar_d">
 
 
 
-                    <a id="mehr" href="#">&#9776</a>
-                </div>
-                
-                
-                
+                <a id="clickLogoLink_d" href="frontpage.html"><img id="clickLogo_d"
+                        src="/prototypes/assets/logoDayKomprimiert1.png"></a>
 
-                
+                <div id="navbar_right_d">
 
-                <form id="search-container">
-                    <svg id="suchlupe" width="100%" height="100%" viewBox="0 0 95 93" version="1.1"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                        xml:space="preserve" xmlns:serif="http://www.serif.com/"
-                        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                        <path
-                            d="M46.122,47.008c-3.333,3.718 -7.995,6.22 -13.237,6.753l-2.104,0.106c-11.368,0 -20.597,-9.229 -20.597,-20.596c0,-11.368 9.229,-20.597 20.597,-20.597l2.104,0.107c10.381,1.055 18.492,9.833 18.492,20.49c0,4.081 -1.19,7.887 -3.242,11.09c3.39,1.366 8.762,4.515 14.446,8.598c8.788,6.313 15.013,12.486 13.893,13.775c-1.12,1.289 -9.164,-2.789 -17.952,-9.103c-5.567,-3.999 -10.106,-7.942 -12.4,-10.623Zm-13.696,-29.752c8.113,0.825 14.453,7.685 14.453,16.015c-0,8.329 -6.34,15.19 -14.453,16.015l-1.645,0.083c-8.885,-0 -16.098,-7.213 -16.098,-16.098c-0,-8.885 7.213,-16.098 16.098,-16.098l1.645,0.083Z"
-                            style="fill:#7C7A7A;" />
-                    </svg>
-                    <input id="suche" placeholder="Alle Kategorien durchsuchen...">
+                    <div id="search_bar_d">
+                        <input type="text" id="searcher_d" placeholder="Was darfs sein?">
+                        <svg id="suchlupe_d" width="100%" height="100%" viewBox="0 0 95 93" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xml:space="preserve" xmlns:serif="http://www.serif.com/"
+                            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                            <path
+                                d="M46.122,47.008c-3.333,3.718 -7.995,6.22 -13.237,6.753l-2.104,0.106c-11.368,0 -20.597,-9.229 -20.597,-20.596c0,-11.368 9.229,-20.597 20.597,-20.597l2.104,0.107c10.381,1.055 18.492,9.833 18.492,20.49c0,4.081 -1.19,7.887 -3.242,11.09c3.39,1.366 8.762,4.515 14.446,8.598c8.788,6.313 15.013,12.486 13.893,13.775c-1.12,1.289 -9.164,-2.789 -17.952,-9.103c-5.567,-3.999 -10.106,-7.942 -12.4,-10.623Zm-13.696,-29.752c8.113,0.825 14.453,7.685 14.453,16.015c-0,8.329 -6.34,15.19 -14.453,16.015l-1.645,0.083c-8.885,-0 -16.098,-7.213 -16.098,-16.098c-0,-8.885 7.213,-16.098 16.098,-16.098l1.645,0.083Z"
+                                style="fill:#7C7A7A;" />
+                        </svg>
+                    </div>
 
+                    <div id="menu_d">
 
-                </form>
+                        <a id="entdecken_tab_d" href="/prototypes/entdecken.html">Entdecken</a>
+                        <a id="neuware_tab_d" href="/prototypes/neuware.html">Neuware</a>
+                        <a id="inserate_tab_d" href="/prototypes/inserate.html">Inserate</a>
+                        <a id="dienstleistungen_tab_d" href="/prototypes/services.html">Dienstleistungen</a>
+                        <a id="automobil_tab_d" href="/prototypes/automobil.html">Automobil</a>
+                        <a id="immobilien_tab_d" href="/prototypes/immobilien.html">Immobilien</a>
 
-                <div id="round-container">
-                    <img id="profilbild" src="segelKomprimiert2.png">
+                    </div>
                 </div>
 
+                <div id="profileclick_d"><img id="profilepic_d" src="/prototypes/assets/logoDayKomprimiert1.png"></div>
+                <div id="loggedInDropDownSquare_d">
+                    <div id="dreiWege_d">
+                        <div id="lighter_d">L</div>
+                        <div id="darker_d">D</div>
+                        <div id="system_d">S</div>
+                    </div>
+                    <div id="chatContainer_D"><img id = "inboxIcon_d" src="/prototypes/assets/inbox-icon.svg"></div>
+                    <div id="myProfile_d">Mein Profil</div>
+                    <div id="settings_d">Einstellungen</div>
+                    <div id="logout_d">LOGOUT</div>
+                </div>
 
-                <div id="navigation">
-                    <div id="plus-container">
-                        <div id="plus-dropdown">
-                            <div id="plus-neues-inserat">
-                                <a id="plus-neues-inserat-link" href="neues-inserat.html">Neues Inserat</a>
+            </div>
+
+
+            <!--#region----------------- TABS --------->
+
+            <div id="tab_erweiterungen_d">
+
+                <div id="neuware_erweiterung_d" class="erweiterungen_d">
+                    <div>
+                        <span>Alle anzeigen</span>
+                        <div><img src=""><span>Möbel</span></div>
+                        <div><img src=""><span>Kleidung</span></div>
+                        <div><img src=""><span>Elektronik</span></div>
+                        <div><img src=""><span>Flugzeuge</span></div>
+                    </div>
+                    <div>
+                        <span>NEUWARE</span>
+                        <div><img src=""><span>Möbel</span></div>
+                        <div><img src=""><span>Kleidung</span></div>
+                        <div><img src=""><span>Elektronik</span></div>
+                        <div><img src=""><span>Flugzeuge</span></div>
+                    </div>
+                    <div id="bild_d">
+                        <img src="/schroedi/ducks/ente1.jpg">
+                    </div>
+
+                </div>
+
+                <div id="inserate_erweiterung_d" class="erweiterungen_d">
+                    <div>
+                        <span>Alle anzeigen</span>
+                        <div><img src=""><span>Möbel</span></div>
+                        <div><img src=""><span>Kleidung</span></div>
+                        <div><img src=""><span>Elektronik</span></div>
+                        <div><img src=""><span>Flugzeuge</span></div>
+                    </div>
+                    <div>
+                        <span>INSERATE</span>
+                        <div><img src=""><span>Möbel</span></div>
+                        <div><img src=""><span>Kleidung</span></div>
+                        <div><img src=""><span>Elektronik</span></div>
+                        <div><img src=""><span>Flugzeuge</span></div>
+                    </div>
+                    <div id="bild_d">
+                        <img src="/schroedi/ducks/ente2.jpg">
+                    </div>
+
+                </div>
+
+                <div id="dienstleistungen_erweiterung_d" class="erweiterungen_d">
+                    <div>
+                        <span>Alle anzeigen</span>
+                        <div><img src=""><span>Möbel</span></div>
+                        <div><img src=""><span>Kleidung</span></div>
+                        <div><img src=""><span>Elektronik</span></div>
+                        <div><img src=""><span>Flugzeuge</span></div>
+                    </div>
+                    <div>
+                        <span>DIENSTLEISTUNGEN</span>
+                        <div><img src=""><span>Möbel</span></div>
+                        <div><img src=""><span>Kleidung</span></div>
+                        <div><img src=""><span>Elektronik</span></div>
+                        <div><img src=""><span>Flugzeuge</span></div>
+                    </div>
+                    <div id="bild_d">
+                        <img src="/schroedi/ducks/ente3.jpg">
+                    </div>
+
+                </div>
+
+                <div id="automobil_erweiterung_d" class="erweiterungen_d">
+                    <div>
+                        <span>Alle anzeigen</span>
+                        <div><img src=""><span>Möbel</span></div>
+                        <div><img src=""><span>Kleidung</span></div>
+                        <div><img src=""><span>Elektronik</span></div>
+                        <div><img src=""><span>Flugzeuge</span></div>
+                    </div>
+                    <div>
+                        <span>AUTOMOBIL</span>
+                        <div><img src=""><span>Möbel</span></div>
+                        <div><img src=""><span>Kleidung</span></div>
+                        <div><img src=""><span>Elektronik</span></div>
+                        <div><img src=""><span>Flugzeuge</span></div>
+                    </div>
+                    <div id="bild_d">
+
+                        <img src="/schroedi/ducks/ente4.jpg">
+                    </div>
+
+                </div>
+
+                <div id="immobilien_erweiterung_d" class="erweiterungen_d">
+                    <div>
+                        <span>Alle anzeigen</span>
+                        <div><img src=""><span>Möbel</span></div>
+                        <div><img src=""><span>Kleidung</span></div>
+                        <div><img src=""><span>Elektronik</span></div>
+                        <div><img src=""><span>Flugzeuge</span></div>
+                    </div>
+                    <div>
+                        <span>IMMOBILIEN</span>
+                        <div><img src=""><span>Möbel</span></div>
+                        <div><img src=""><span>Kleidung</span></div>
+                        <div><img src=""><span>Elektronik</span></div>
+                        <div><img src=""><span>Flugzeuge</span></div>
+                    </div>
+                    <div id="bild_d">
+                        <img src="/schroedi/ducks/ente5.jpg">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--#endregion-->
+
+            <!--#region---------------- LOGIN MASKE ------->
+
+
+
+
+
+            <div id="login-box_d" class="login-box_d">
+                <div id="close-login-box_d">+</div>
+
+                <h2 id="caption_login_d">Login</h2>
+                <div id="logindaten-falsch_d"></div>
+                <form>
+                    <div class="user-box_d">
+                        <input id="login-mail_d" type="text" name="" required="">
+                        <label>Username</label>
+                    </div>
+                    <div class="user-box_d">
+                        <input id="login-passwort_d" type="password" name="" required="">
+                        <label>Passwort</label>
+                    </div>
+
+
+                    <div id="regi-box_d">
+                        <div class="user-box_d">
+                            <input type="password" name="" required="">
+                            <label>Passwort Wiederholen</label>
+                        </div>
+                        <div class="moreThanOne">
+                            <div class="user-box_d registration_d">
+                                <input type="text" name="" required="">
+                                <label>Vorname</label>
                             </div>
-                            <div id="plus-neue-anfrage">
-                                <a id="plus-neue-anfrage-link" href="neue-anfrage.html">Neue Anfrage</a>
+                            <div class="user-box_d registration_d">
+                                <input type="text" name="" required="">
+                                <label>Nachname</label>
                             </div>
                         </div>
+                        <div class="moreThanOne_d">
+                            <div class="user-box_d registration_d">
+                                <input type="text" name="" required="">
+                                <label>PLZ</label>
+                            </div>
+                            <div class="user-box_d registration_d">
+                                <input type="text" name="" required="">
+                                <label>Wohnort</label>
+                            </div>
+                        </div>
+                        <div class="moreThanOne_d">
+                            <div class="user-box_d registration_d">
+                                <input type="text" name="" required="">
+                                <label>Straße</label>
+                            </div>
+                            <div class="user-box_d registration_d">
+                                <input type="text" name="" required="">
+                                <label>Hausnummer</label>
+                            </div>
+                        </div>
+
+                        <div class="user-box_d">
+                            <input type="text" name="" required="" onfocus="(this.type = 'date')"
+                                onblur="(this.type='text')">
+                            <label>Geburtsdatum</label>
+                        </div>
+
                     </div>
-
-                    <a id="entdecken" href="entdecken.html">Entdecken</a>
-                    <a id="neuware" href="neuware.html">Neuware</a>
-                    <a id="inserate" href="inserate.html">Inserate</a>
-                    <a id="dienstleistungen" href="services.html">Dienstleistungen</a>
-                    <a id="automobil" href="automobil.html">Automobil</a>
-                    <a id="immobilien" href="immobilien.html">Immobilien</a>
-
-
-                </div>
+                    <div id="buttons-login_d">
+                        <a id="login_d" href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Login
+                        </a>
+                        <a id="registrieren_d" class="no-show_d" href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Registrieren
+                        </a>
+                    </div>
+                </form>
             </div>
 
-
-            <div id="seiteninhalt">
-                <!--Hier drunter kommt der Seiteninhalt (alles unter der NavBar; für alle Versionen)-->
-
-                <br>
-
-                <div id="what-is-havn-div">
-                    <h1>Was ist Havenpoint?</h1>
-                    <span id="what-is-havn">
-                        Havenpoint ist ein ständig wachsender Peer-to-Peer Marktplatz, bei dem die Sicherheit der Nutzer im Vordergrund steht.
-                    </span>
-                </div>
+            <!--#endregion-->
 
 
-               
-                <br>
-                <br>
-                <!--Ende des Seiteninhalts-->
+            <!--#region----------------- MAIN -------------->
+
+
+            <div class = "main">
+                
             </div>
+
+            <!--#endregion-->
+
+
+
+
+
+            <br><br><br><br><br><br><br><br><br><br><br>
+
+
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+
 
         </div>
-        <!--Dropdown Menü der Mobile Version-->
-        <div id="dropdown-mehr">
-            <a id="close-mobile-dropdown" href="#">&#9776</a>
-            <div id="connect-round-and-dropdown">
-                <div id="div-for-round-container-mobile">
-                    <a id="anmelden">Anmelden</a>
-                    <div id="round-container-mobile">
-
-                        <img id="profilbild-mobile" src="assets/segelKomprimiert2.png">
 
 
-                    </div>
 
 
-                </div>
-                <div id="round-container-dropdown">
-                    <div id="mein-profil-div">
-                        <a id="mein-profil" href="mein-profil.html">Mein Profil</a>
-                    </div>
-                    <div id="ueber-uns-div">
-                        <a id="ueber-uns" href="aboutus.html">Über uns</a>
-                    </div>
-                    <div id="logout-div">
-                        <a id="logout">Logout</a>
-                    </div>
-                </div>
-            </div>
 
-            <br>
-            <br>
-            <ul id="dropdown-mobile-liste">
-                <li id="toggle-switch-li">
-                    <div id="toggle-switch">
-                        <div id="lightmode">L</div>
-                        <div id="darkmode">D</div>
-                        <div id="auto-dark-light">System</div>
-                    </div>
-                </li>
-                <li id="startseite-mobile-li"><a id="startseite-mobile" style="color:rgb(0,220,253);font-weight:bold;"
-                        href="frontpage.html">Startseite</a></li>
-                <li id="neuware-mobile-li"><a id="neuware-mobile" href="#">Neuware</a></li>
-                <li id="inserate-mobile-li"><a id="inserate-mobile" href="#">Inserate</a></li>
-                <li id="dienstleistungen-mobile-li"><a id="dienstleistungen-mobile" href="#">Dienstleistungen</a></li>
-                <li id="automobil-mobile-li"><a id="automobil-mobile" href="#">Automobil</a></li>
-                <li id="immobilien-mobile-li"><a id="immobilien-mobile" href="#">Immobilien</a></li>
-
-            </ul>
-
-        </div>
 
     </div>
-    <!--Ende des Dropdown Contents-->
-
-     <!--#region---> <!------------- LOGIN MASKE ------->
-    
-     <div id = "login-box" class="login-box">
-        <div id="close-login-box">+</div>
-        <h2 id = "caption_login">Login</h2>
-        <div id="logindaten-falsch"></div>
-        <form>
-          <div class="user-box">
-            <input id="login-mail" type="text" name="" required="">
-            <label>E-Mail Adresse</label>
-          </div>
-          <div class="user-box">
-            <input id="login-passwort" type="password" name="" required="">
-            <label>Passwort</label>
-          </div>
-
-        <div id = "regi-box">
-          <div class="user-box">
-            <input type="password" name="" required="">
-            <label>Passwort Wiederholen</label>
-          </div>
-        <div class = "moreThanOne">
-          <div class="user-box registration">
-            <input type="text" name="" required="">
-            <label>Vorname</label>
-          </div>
-          <div class="user-box registration">
-            <input type="text" name="" required="">
-            <label>Nachname</label>
-          </div>
-        </div>
-        <div class = "moreThanOne">
-            <div class="user-box registration">
-              <input type="text" name="" required="">
-              <label>PLZ</label>
-            </div>
-            <div class="user-box registration">
-              <input type="text" name="" required="">
-              <label>Wohnort</label>
-            </div>
-        </div>
-        <div class = "moreThanOne">
-            <div class="user-box registration">
-              <input type="text" name="" required="">
-              <label>Straße</label>
-            </div>
-            <div class="user-box registration">
-              <input type="text" name="" required="">
-              <label>Hausnummer</label>
-            </div>
-        </div>
-
-            <div class="user-box">
-                <input type="text" name="" required="" onfocus="(this.type = 'date')" onblur="(this.type='text')">
-                <label>Geburtsdatum</label>
-             </div>
-
-        </div>
-            <div id = "buttons-login">
-                <a id = "login" href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Login
-                </a>
-                <a id = "registrieren" class = "no-show" href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Anmelden
-                </a>
-            </div>
-        </form>
-      </div>
-
-      <!--#endregion-->
 
 
-    <script src="frontpage_JS/setup.js"></script>
-    <script src="frontpage_JS/darkmode.js"></script>
-    <script src="frontpage_JS/dropdown.js"></script>
-    <script src="frontpage_JS/plus_dropdown.js"></script>
-    <script src="frontpage_JS/loginCheck.js"></script>
-    <script src="frontpage_JS/login.js"></script>
-    <script src="frontpage_JS/logout.js"></script>
-    <script src="frontpage_JS/profiledropdown.js"></script>
-    <script src="frontpage_JS/moveSlides.js"></script>
-    <script src="frontpage_JS/showmore.js"></script>
 
-    <script src="artikel_JS/cartCheck_m.js"></script>
-    <script src="artikel_JS/addToCart_m.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="entdecken_JS/darkmodeDesktop.js"></script>
+    <script src='/prototypes/entdecken_JS/loginCheck.js'></script>
+    <script src='/prototypes/entdecken_JS/logout.js'></script>
+    <script src="/prototypes/multiple_JS/showSite_d.js"></script>
+
     <noscript>Dein Browser unterstützt leider kein JavaScript (oder JavaScript ist nicht aktiviert), dementsprechend
         könnten Inhalte und Funktionen fehlen. ;(</noscript>
 
