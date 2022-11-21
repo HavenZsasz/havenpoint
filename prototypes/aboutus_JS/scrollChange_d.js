@@ -38,6 +38,11 @@ function scroller_d (event) {
     var scroller_d = window.pageYOffset;
 
     if(scroller_d < 350) {
+
+        document.getElementById("navbar_d").style.opacity = "1";
+
+
+
         mainContainer_d.style.backgroundColor = "rgb(18,18,18)";
         starter_d.style.backgroundColor = "rgb(18,18,18)";
         //document.getElementById("bannerWechsel_d").src = "/prototypes/assets/logoNightKomprimiert1.png";
@@ -47,6 +52,11 @@ function scroller_d (event) {
         document.getElementById("textContainer1_d").style.transform = "scale(1,0)";
 
     }else if (scroller_d >= 350 && scroller_d < 1000) {
+
+        document.getElementById("navbar_d").style.opacity = "0";
+
+
+
         mainContainer_d.style.backgroundColor = "white";
         starter_d.style.backgroundColor = "white";
         //document.getElementById("bannerWechsel_d").src = "/prototypes/assets/logoDayKomprimiert1.png";
