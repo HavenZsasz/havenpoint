@@ -12,7 +12,6 @@ function frontpageSetup_m() {
             logo_m.setAttribute("src", "assets/logoNightKomprimiert1.png");
             document.getElementById("inbox-icon").setAttribute("src", "assets/inbox-icon-white.svg");
             document.getElementById("cart-icon_m").setAttribute("src", "assets/cartDark.svg");
-            document.getElementById("logo-bg_m").setAttribute("src", "assets/HintergrundDark.png");
             document.getElementById("auto-dark-light_m").style.backgroundColor = "rgb(0, 220, 253)";
             document.getElementById("auto-dark-light_m").style.color = "#121212";
             document.getElementById("darkmode_m").style.backgroundColor = "#121212";
@@ -26,7 +25,6 @@ function frontpageSetup_m() {
             logo_m.setAttribute("src", "assets/logoDayKomprimiert1.png");
             document.getElementById("inbox-icon").setAttribute("src", "assets/inbox-icon.svg");
             document.getElementById("cart-icon_m").setAttribute("src", "assets/cart.svg");
-            document.getElementById("logo-bg_m").setAttribute("src", "assets/Hintergrund.png");
             document.getElementById("auto-dark-light_m").style.backgroundColor = "black";
             document.getElementById("auto-dark-light_m").style.color = "rgb(0, 220, 253)";
             document.getElementById("lightmode_m").style.backgroundColor = "#bbb";
@@ -43,7 +41,6 @@ function frontpageSetup_m() {
             logo_m.setAttribute("src", "assets/logoDayKomprimiert1.png");
             document.getElementById("inbox-icon").setAttribute("src", "assets/inbox-icon.svg");
             document.getElementById("cart-icon_m").setAttribute("src", "assets/cart.svg");
-            document.getElementById("logo-bg_m").setAttribute("src", "assets/Hintergrund.png");
             document.getElementById("lightmode_m").style.backgroundColor = "white";
             document.getElementById("lightmode_m").style.color = "black";
         } else if (counterDarkmodeHavn == 1) {
@@ -51,7 +48,6 @@ function frontpageSetup_m() {
             logo_m.setAttribute("src", "assets/logoNightKomprimiert1.png");
             document.getElementById("inbox-icon").setAttribute("src", "assets/inbox-icon-white.svg");
             document.getElementById("cart-icon_m").setAttribute("src", "assets/cartDark.svg");
-            document.getElementById("logo-bg_m").setAttribute("src", "assets/HintergrundDark.png");
             document.getElementById("darkmode_m").style.backgroundColor = "rgb(0, 220, 253)";
             document.getElementById("darkmode_m").style.color = "#121212";
         
@@ -62,7 +58,6 @@ function frontpageSetup_m() {
                 logo_m.setAttribute("src", "assets/logoNightKomprimiert1.png");
                 document.getElementById("inbox-icon").setAttribute("src", "assets/inbox-icon-white.svg");
                 document.getElementById("cart-icon_m").setAttribute("src", "assets/cartDark.svg");
-                document.getElementById("logo-bg_m").setAttribute("src", "assets/HintergrundDark.png");
                 document.getElementById("auto-dark-light_m").style.backgroundColor = "rgb(0, 220, 253)";
                 document.getElementById("auto-dark-light_m").style.color = "#121212";
 
@@ -71,7 +66,6 @@ function frontpageSetup_m() {
                 logo_m.setAttribute("src", "assets/logoDayKomprimiert1.png");
                 document.getElementById("inbox-icon").setAttribute("src", "assets/inbox-icon.svg");
                 document.getElementById("cart-icon_m").setAttribute("src", "assets/cart.svg");
-                document.getElementById("logo-bg_m").setAttribute("src", "assets/Hintergrund.png");
                 document.getElementById("auto-dark-light_m").style.backgroundColor = "black";
                 document.getElementById("auto-dark-light_m").style.color = "rgb(0, 220, 253";
 
