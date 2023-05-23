@@ -909,7 +909,7 @@
         background-color: rgba(221, 216, 216, 0.558);
         position: relative;
         display: block;
-        border-radius: 10px;
+        border-radius:22px;
         padding: 5px;
         width: 44%;
         z-index: 1000;
