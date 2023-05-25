@@ -20,6 +20,7 @@
     #login-inhalt_m {
 
         display: none;
+   
 
     }
 
@@ -906,8 +907,8 @@
     }
 
     .vorschlag-container_m {
-        border: 2px solid rgba(221, 216, 216, 0.558);
-        background-color: rgba(247, 244, 244, 0.558);
+        border: 2px solid rgb(221, 216, 216);
+        background-color: rgb(250, 247, 247);
         position: relative;
         display: block;
         border-radius:22px;
