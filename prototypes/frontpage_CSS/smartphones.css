@@ -20,6 +20,11 @@
     #login-inhalt_m {
 
         display: none;
+        background-color: rgb(216, 215, 215);
+        margin-top: 17px;
+        padding: 10px;
+        padding-top: 5px;
+        border-radius: 10px;
    
 
     }
