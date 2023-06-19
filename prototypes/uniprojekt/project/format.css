@@ -1,0 +1,111 @@
+.planeInput {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.locationInput {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+
+.planeForm {
+    border: 1px solid black;
+}
+.locationForm {
+    border: 1px solid black;
+}
+
+#search {
+    margin: 20px 0 20px 0;
+    width: 100%;
+}
+#searchText {
+    width: 50%;
+}
+
+#logOut {
+    display: none;
+}
+
+.postings {
+    margin: 15px;
+    border-top: 1px solid black;
+}
+
+#profile {
+
+    border: 1px solid black;
+    background-color: lightgrey;
+    
+    width: fit-content;
+
+    margin: 10px;
+    padding: 10px;
+
+}
+#profile a {
+    text-decoration: none;
+    color: black;
+}
+#profile a:hover {
+    cursor: pointer;
+}
+
+#reco {
+
+    border: 1px solid black;
+    background-color: lightgrey;
+    
+    width: fit-content;
+
+    margin: 10px;
+    padding: 10px;
+
+}
+#reco a {
+    text-decoration: none;
+    color: black;
+}
+#reco a:hover {
+    cursor: pointer;
+}
+.toDoDivs {
+    margin: 10px;
+    padding: 5px;
+    width: fit-content;
+}
+
+#progressBarDiv {
+
+    margin: 10px;
+    width: 50%;
+    height: 40px;
+    border: 1px solid black;
+
+}
+#progressBar {
+    height: 100%;
+    width: 25%;
+    background-color: lightgreen;
+    margin: 0px;
+}
+
+#toDoSignUp {
+    color: green;
+}
+
+#buildYourPlane {
+    width: 100%;
+    
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+
+#personalizedPlane {
+    max-width: 700px;
+    max-height: 300px;
+}
