@@ -21,6 +21,8 @@
 
         display: none;
 
+   
+
     }
 
     .aktive-seite_m {
@@ -219,9 +221,9 @@
         justify-content: left;
         background-color: rgb(236, 233, 233);
         width: 96%;
-        height: 40px;
-        margin-top: 25px;
-        margin-bottom: 20px;
+        height: 55px;
+        margin-top: 10px;
+        margin-bottom: 40px;
         border-radius: 5px;
         overflow: hidden;
         margin-left: 1.6%;
@@ -342,7 +344,7 @@
         justify-content: space-around;
         background-color: rgba(221, 216, 216, 0.558);
         align-items: center;
-        margin-top: -5px;
+        margin-top: -25px;
         margin-bottom: 15px;
         padding-left: 5px;
         padding-right: 5px;
@@ -906,10 +908,11 @@
     }
 
     .vorschlag-container_m {
-        background-color: rgba(221, 216, 216, 0.558);
+        border: 2px solid rgb(221, 216, 216);
+        background-color: rgb(250, 247, 247);
         position: relative;
         display: block;
-        border-radius: 10px;
+        border-radius:22px;
         padding: 5px;
         width: 44%;
         z-index: 1000;
@@ -1280,9 +1283,8 @@
         min-width: 180px;
         max-width: 180px;
         background-color: rgba(221, 216, 216, 0.558);
-        border-radius: 10px;
         padding: 5px;
-        border-radius: 10px;
+        border-radius: 25px;
         padding: 5px;
         margin: 7px;
         flex-direction: column;
