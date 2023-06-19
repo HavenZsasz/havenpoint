@@ -183,10 +183,12 @@
   }
   
   #navbar_right_d {
-    width: calc(100% - 220px);
+    /*width: calc(100% - 500px);*/
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     
   }
   
@@ -213,7 +215,8 @@
   }
   
   #clickLogo_d {
-      height: 90px;
+      max-height: 90px;
+      max-width: 100%;
   }
   
   
@@ -252,6 +255,7 @@
       margin: 0 0 0 0px;
       font-size: 1.3em;
       flex-wrap: wrap;
+     
   
   }
   
