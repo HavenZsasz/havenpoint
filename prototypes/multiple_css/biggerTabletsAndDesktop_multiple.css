@@ -362,11 +362,15 @@
     align-items: center;
     flex-wrap: wrap;
     
+    
+    
   }
   
   .slider_d {
     height: 300px;
-    max-width: calc(100%);
+    width: 100%;
+    
+    
     
   }
 
