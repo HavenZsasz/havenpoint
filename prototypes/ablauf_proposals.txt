@@ -1,9 +1,0 @@
-Vorläufiges Ablaufkonzept (Vorschläge):
-
-- Mehr anzeigen CLICK
-(- PHP Formular ($_GET) -> onClick)
-(- Skript baut SQL Befehlstruktur und ruft Daten zu Nutzer ab (vorläufig Würfelprinzip))
-(- Skript übergibt Informationsblöcke an ng)
-- DIV's erzeugen (nach Template) und per *ngFor iterieren
-- evtl. Ausklappanimation
-- DIV's klickbar machen per Standard CLick Event (JS) oder advanced Event (TypeScript/JQuery)
