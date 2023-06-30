@@ -358,15 +358,19 @@
   
   #slideshow_d {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    
   }
   
   .slider_d {
     height: 300px;
-    width: calc(100%);
+    max-width: calc(100%);
+    
   }
+
+
   
   #slideshow_d .clicker_d {
     border: solid 1px black;
@@ -403,6 +407,7 @@
   .animate-left_d {
     position: relative;
     animation: animateleft 0.8s;
+    
   }
   
   @keyframes animateleft {
@@ -492,6 +497,7 @@
   .productSlider_d {
     margin: 100px 0 0 0;
   }
+ 
 
   .clickerMostVisited_d {
     padding: 16px;
