@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haven Point</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link id="stylesheet" rel="stylesheet" href="day.css">
+   
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <script>
+        function stylesheet() {
+
+            var theme = document.getElementById("stylesheet");
+            var helper = document.getElementById("stylecheck");
+            helper.innerHTML = "Darkmode vollständig";
+
+            if (theme.getAttribute("href") == "day.css") {
+                theme.setAttribute("href", "night.css");
+
+            } else {
+                theme.setAttribute("href", "day.css");
+            }
+
+
+
+        }
+
+
+    </script>
+    <noscript>JavaScript kann nicht geladen werden.</noscript>
+    <style>
+        #helper {
+            height: 10px;
+            width: 10px;
+        }
+
+      
+    </style>
+
+
+
+
+</head>
+
+
+<body>
+    <a id="oben"></a>
+
+
+
+    <div id="head-container">
+        <img class="logo" id="schwarz" src="logoDayKomprimiert1.png">
+
+
+
+
+
+        <input type="search" id="main-search" class="suche" placeholder="Alle Kategorien durchsuchen...">
+
+        <div id="profilbild">
+            
+            <img id="pb" src="segelKomprimiert2.png">
+            <div class="dropdown-content">
+                <a href="#">Mein Profil</a>
+                <a href="#">Einstellungen</a>
+                <a href="#">Meine Bestellungen</a>
+                <a href="#">Support</a>
+                <a href="#">Über Uns</a>
+                
+            </div>
+            
+            
+
+        </div>
+
+    </div>
+    <!-- ToDo: Darkmode % Counter in Webstorage ablegen und ggf zurücksetzen bei Default-Wert -->
+
+
+
+    
+
+    <div class="navhead">
+
+
+
+
+
+
+
+        <div id="navbar">
+
+            <a href="#" id="plus">+</a>
+            <a href="#" id="fuer-dich">Für Dich</a>
+            <a href="#" id="entdecken">Entdecken</a>
+            <a href="#" id="neuware">Neuware</a>
+            <a href="#" id="inserate">Inserate</a>
+            <a href="#" id="immobilien">Immobilien</a>
+            <a href="#" id="automobil">Automobil</a>
+            <div id="clickbox">Mehr</div>
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <br>
+    <h1>Willkommen zurück, $user$!</h1>
+
+    <script>
+        function setup() {
+            
+                var logo = document.getElementById("schwarz");
+                var button = document.getElementById("dark");
+
+            if(localStorage.getItem("counter") == 1) {
+                logo.setAttribute("src", "logoNightKomprimiert1.png");
+                button.firstChild.data = "Lightmode";
+                stylesheet();
+                
+                
+     
+                
+
+            } else {
+                logo.setAttribute("src", "logoDayKomprimiert1.png");
+                button.firstChild.data = "Darkmode";
+                counter = 0; 
+                localStorage["counter"] = JSON.stringify(counter);
+
+            }
+            
+
+        
+
+            
+          
+            document.getElementById("dark").addEventListener("click", darkMode);
+            
+            
+            
+
+        }
+
+        
+
+  
+
+        
+
+        
+
+        function darkMode() {
+
+            if(localStorage.getItem("counter") == undefined) {
+
+                var counter = 0;
+                counter = JSON.parse(localStorage["counter"]);
+
+                counter++;
+                
+                var helper = document.getElementById("helper");
+                helper.innerHTML = counter;
+                var logo = document.getElementById("schwarz");
+                var button = document.getElementById("dark");
+                stylesheet();
+                
+    
+                if (counter % 2 != 0) {
+                    localStorage["counter"] = JSON.stringify(counter);
+                    logo.setAttribute("src", "logoNightKomprimiert1.png");
+                    button.firstChild.data = "Lightmode";
+                      
+    
+    
+    
+    
+                } else {
+                    logo.setAttribute("src", "logoDayKomprimiert1.png");
+                    button.firstChild.data = "Darkmode";
+                    counter = 0; //testweise, um Speicherauslastung ggf. klein zu halten (bei Spam könnte die Zahl theoretisch zu ressourcenintensiv werden für solch eine kleine Funktion)
+                    localStorage["counter"] = JSON.stringify(counter);
+    
+                }
+            } else {
+                counter = JSON.parse(localStorage["counter"]);
+
+                counter++;
+                
+                var helper = document.getElementById("helper");
+                helper.innerHTML = counter;
+                var logo = document.getElementById("schwarz");
+                var button = document.getElementById("dark");
+                stylesheet();
+                
+    
+                if (counter % 2 != 0) {
+                    localStorage["counter"] = JSON.stringify(counter);
+                    logo.setAttribute("src", "logoNightKomprimiert1.png");
+                    button.firstChild.data = "Lightmode";
+                      
+    
+    
+    
+    
+                } else {
+                    logo.setAttribute("src", "logoDayKomprimiert1.png");
+                    button.firstChild.data = "Darkmode";
+                    counter = 0; //testweise, um Speicherauslastung ggf. klein zu halten (bei Spam könnte die Zahl theoretisch zu ressourcenintensiv werden für solch eine kleine Funktion)
+                    localStorage["counter"] = JSON.stringify(counter);
+    
+                }
+            }
+
+           
+
+        }
+
+        window.addEventListener("load", setup);
+
+    </script>
+    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc auctor. Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Morbi imperdiet, mauris ac auctor dictum, nisl ligula egestas nulla, et sollicitudin sem purus in lacus. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. In convallis. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. <br>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Integer malesuada. <br>Nullam at arcu a est sollicitudin euismod. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Etiam bibendum elit eget erat. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Nullam sit amet magna in magna gravida vehicula. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Mauris tincidunt sem sed arcu. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem.
+
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Cras pede libero, dapibus nec, pretium sit amet, tempor quis. Donec quis nibh at felis congue commodo. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. <br>Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. In convallis. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Etiam quis quam. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat. Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis pulvinar. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Etiam neque. Etiam bibendum elit eget erat. In sem justo, commodo ut, suscipit at, pharetra vitae, orci.
+        
+        Vestibulum fermentum tortor id mi. Vivamus ac leo pretium faucibus. Mauris metus. Aenean placerat. Aliquam ornare wisi eu metus. Mauris dictum facilisis augue. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur vitae diam non enim vestibulum interdum. Donec vitae arcu. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Nunc tincidunt ante vitae massa. Donec vitae arcu. Donec quis nibh at felis congue commodo.
+        
+        Vivamus porttitor turpis ac leo. Etiam egestas wisi a erat. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Nunc auctor. Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. In rutrum. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Nunc auctor. Suspendisse nisl. Praesent in mauris eu tortor porttitor accumsan. Aliquam ante. Suspendisse sagittis ultrices augue. Vivamus porttitor turpis ac leo. In rutrum. Nunc tincidunt ante vitae massa. Pellentesque sapien. Pellentesque arcu. Fusce tellus. Duis risus.
+        
+        Nam sed tellus id magna elementum tincidunt. Nulla non arcu lacinia neque faucibus fringilla. Suspendisse nisl. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Mauris elementum mauris vitae tortor. Etiam posuere lacus quis dolor. Nunc dapibus tortor vel mi dapibus sollicitudin. Aenean placerat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas libero. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. In convallis. Aliquam erat volutpat. Donec iaculis gravida nulla. Curabitur vitae diam non enim vestibulum interdum. Quisque tincidunt scelerisque libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</span><br>
+
+
+
+    <a id="jump" href="#oben">Nach oben springen</a> <br>
+    <br>
+    <a href="#" id="dark">Darkmode</a> <span id="helper"></span><span id="stylecheck"></span>
+    
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

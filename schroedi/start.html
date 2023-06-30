@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Der  Boss" content="Nur ein kleiner Test">
+    <title>Havenpoint</title>
+    <link id = "image" rel =  "shortcut icon" href = "/images/logoDayKomprimiert0.png">
+    <link id = "stylesheet" rel = "stylesheet" href = "styler.css">
+
+</head>
+
+<style>
+
+    /*TIPP FÜR PSEUDOKLASSEN: Können auch ohne etwas vor dem Doppelpunkt verwendet werden, dann für alle Objekte*/
+
+
+    input {
+        border: 1px solid black;
+        font-style: italic;
+    }
+    ::placeholder{
+        color:darkgray
+    }
+    input:invalid:focus { /* Da dies spezifischer ist als das untere, greift diese style Regel eher. Wäre das :focus nicht noch dabei, wären diese Regel so wichtig wie die unteren und würden nicht greifen*/
+        background-color: blueviolet;
+    }
+    input:valid:focus {
+        background-color: greenyellow;
+    }
+    input:required {
+        background-color: red;
+    }
+    input:optional {
+        background-color: green;
+        color: black;
+    }
+    input:focus { /*PseudoKlasse, die dem Nutzer zeigt, in welchem Objekt er gerade arbeitet*/
+        border: 2px solid darkblue;
+    }
+    input[type = email] { /*Attribut Selektor, schaut in input nach bestimmter Eigenschaft, z.B. alle inputs wo der type = email ist*/
+        border: 5px solid orange;
+    }
+    *[name] { /*Schaut nach allen Objekten im Dokument und dann explizit nach denen, die ein "name" Tag besitzen*/
+        border: 2px solid yellow;
+    }
+
+
+    .datei {
+        position: relative;
+    }
+
+    .nice {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+    }
+
+    .haesslich {
+        position: relative;
+        opacity: 0;
+        z-index: 2;
+    }
+
+
+
+</style>
+<body>
+    <h1>First header 
+        <br>
+        <span class = "tester"> MAKE THIS ITALIC!!!! (AND BIG)</span>
+    </h1>
+    <p>First try</p>
+    <a class = "link oben" href = "#unten"  id = "meinLink">Link runter</a>
+    <br>
+    <a href = "/schroedi/jumper.html" class = "link", id ="Jumper">Jumper</a>
+    <br>
+    <a href ="http://www.rheinwerk-verlag.de/" class = "link" target = "_blank">Rheinwerk</a>
+    <br>
+    <img src="/images/logoDayKomprimiert0.png" alt = "Logo von Havenpoint" height=20% width=20%/>
+    <br>
+    Dies ist ein <span > Span-Test </span>
+    <p class = "zoom"></p>
+    <p id = "erster">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    <p id = "zweiter">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    <p id = "dritter">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    <p class = "tester">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    <p class = "tryer">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    <p class = "tryer">This is what a <em> em </em> looks like.</p>
+    <br>
+    <span class = "tryer"> Just a little test</span>
+    <br>
+    <br>
+    <ul>
+        <li>Sin City</li>
+        <li>Sin City 2</li>
+        <li>Dune</li>
+        <li>Blade Runner</li>
+    </ul>
+    <ol  id = "Liste" start="9" reversed> <!--Reversed ist ein Boolsches Attribut, True oder False, deshalb reicht es hier einfach nur reversed zu schreiben, man muss nicht reversed = "reversed" schreiben-->
+        <li>Sin City
+            <ul>Sin City 2</ul>
+        </li>
+        <li>Dune</li>
+        <li>Blade Runner</li>
+    </ol>
+    <br>
+    <dl> <!--Definition List; Hier kann man mehrere Definitionen liefern, eine Art Auflistung.-->
+        <dt><dfn>Bible Black, The</dfn></dt>
+        <dd>The Bible Black is the unholiest book of all.</dd>
+        <dt>Normal Bible, The</dt>
+        <dd>Pretty boring Book, if you ask me.</dd>
+        <dd id = "truethat">Yeah, I kinda dislike that book.</dd>
+    </dl>
+    <ol>
+        <li> Sin City
+            <ol>
+                <li> Sin City 1</li>
+                <li> Sin City 2</li>
+            </ol>
+        </li>
+    </ol>
+    <br>
+    <br>
+    <table>
+        <caption>Fucking good movies</caption>
+        <thead id = "koko">Good Movies</thead>
+        <tfoot> <th>Must Watch</th></tfoot>
+        <th scope = "col">Number</th>
+        <th scope = "col">Movie Name</th>
+        <th scope = "col">Actress</th> <!--Ist Spaltenweise befüllt. Besser wäre es, sie Zeilenweise zu befüllen-->
+        <tbody>
+            <tr> 
+                <th scope = "row">First</th>
+                <td>Sin City</td> <td> Jessica Alba</td> <td rowspan="5">Cooler shit</td>
+            </tr>
+            <tr>
+                <th scope = "row">Second</th>
+                <td>Blade Runner 2049</td> <td>Ana de Armas</td>
+            </tr>
+            <tr> 
+                <th scope = "row">Third</th>
+                <td>Baby Driver</td> <td>Lily James</td>
+            </tr>
+        </tbody>
+        
+    </table>
+    <br>
+    <br>
+    <br>
+    <form action ="/forms/hallowelt.php" method = "get" accept-charset="utf-8">
+        <label for = "name">Whats your name?<label>
+        <ul>
+            <li> <input placeholder = "Name" type = "text" name = "name" id = "name"> </li>
+            <li> <input placeholder = "Vorname" type = "text" name = "Vorname"> </li>
+            <li> <input placeholder = "Nachname" type = "text" name = "Spitzname"> </li>
+            <button style = "background: none; border: none;">Say Hello, dear Friend</button> <!--Den Style eingesetzt, damit man den Button selbst formatieren kann-->
+        </ul>
+        
+    </form>   
+    <br>
+    <a class = "link unten" href="#meinLink"  id="unten">Link hoch </a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--PHP------------------------------------------------------->
+
+    <form action ="/hallowelt.php" method = "get" accept-charset="utf-8"> <!--method = "post" um Eingaben zum Server zu schicken wie bspw ein Foto oder das Anlegen eines Nutzerprofils-->
+        <label for = "name">Whats your name?<label>
+        <ul>
+            <li> <input placeholder = "Name" type = "text" name = "name" id = "name"> </li>
+            <li> <input placeholder = "Vorname" type = "text" name = "Vorname"> </li>
+            <li> <input placeholder = "Nachname" type = "text" name = "Spitzname"> </li>
+            <li> <input placeholder = "Password" type = "password" name = "Passwort"> </li> <!--WICHTIG! DAS NICHT FÜR PASSWÖRTER NEHMEN, DA UNVERSCHLÜSSELT! HTTPS NUTZEN!-->
+            <li>
+               <li> <input type = "radio" name = "sex" value = "male" id ="buttonmale" checked = "checked"> <label for = "buttonmale">Female</label> </li>
+               <li> <label for = "buttonfemale">Male</label> <input type = "radio" name = "sex" value = "female" id ="buttonfemale">  </li> <!--Über den Name-Tag wird festgelegt, welche Buttons zusammen gehören-->
+            </li>
+            <li> <input value = "Tester" type = "text" maxlength="5"> </li> <!--Gibt ein vorbefülltes Feld vor, dass so auch zum Server geschickt wird-->
+            <li> <input value = "READONLY" type = "text" readonly> </li> <!--Value wird dennoch übermittel-->
+            <li> <input value = "Tester" type = "text" disabled> </li> <!--Disabled, Wert wird damit auch nicht mehr übermittelt-->
+            <li id = "checkIII"> <label for = "checkI" id = "checkII">Idiot?</label> <input type = "checkbox" value = "an" id = "checkI" name = "extraschleim"> </li>
+            <li> <button style = "background: none; border: none; background-color: lightblue;">Say Hello, dear Friend</button> </li><!--Den Style eingesetzt, damit man den Button selbst formatieren kann-->
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <select name = "dropdown">
+                <option value = "first" selected>first </option>
+                <option value ="second">second</option>
+                <option value = "third">third</option>
+            </select>
+            
+            <br>
+            <br>
+
+            <select name = "zusatz[]" multiple size = "5"> <!--Multiple um mehrere Boxen auswählen zu können und size zeigt wie viele zeilen ohne scrollen angezeigt werden -->
+                <optgroup label = "The Good">
+                    <option value = "intelligent" selected >intelligent</option>
+                    <option value = "gutaussehend">gutaussehend</option>
+                </optgroup>
+                <optgroup label = "The Bad">
+                    <option value = "nach Käse riechend">nach Käse riechend</option>
+                </optgroup>
+                <optgroup label = "The creepy">
+                    <option value = "wohlgeformt">wohlgeformt</option>
+                    <option value = "schmackhaft">schmackhaft</option>
+                </optgroup>
+            </select>
+
+            <br>
+            <br>
+            <br>
+
+
+            <input type = "text" list = "adjektiv" name = "zusatz[]">
+            <datalist id = "adjektiv">
+                <option value = "intelligent"></option>
+                <option value = "gutaussehend"></option>
+
+            </datalist>
+
+
+        </ul>
+        <br>
+        <br>
+        
+        <input type = "email" name ="mailer" required>
+
+        <br>
+        <br>
+
+        
+    </form>   
+    <br>
+    <br>
+    <form action = "/schroedi/forms/stapelsuche.php" method = "get" accept-charset="utf-8" novalidate> <!--novalidate sorgt dafür, dass auch falsch ausgefüllte Felder dennoch an den Browser gesendet werden-->
+
+       <!--Siehe Lösungen in den Downloads zum Buch-->
+
+             <label for = "Stichwort">Stichwort </label><input id = "Stichwort" type = "search" name = "suchwort" placeholder = "Stichwort"> </li>
+
+        <fieldset>
+            <legend>Kategorie</legend>
+            <li> <label name = "Kisten">Kisten</label><input type = "radio" value = "kisten" id = "Kisten" name = "kategorie" checked> </li>
+            <li> <label name = "Flaschen">Flaschen</label><input type = "radio" value = "flaschen" id = "Flaschen" name = "kategorie"> </li>
+        </fieldset>
+        <br>
+        <label name = "Vorrat">Nicht vorrätige Produkte anzeigen? </label> <input type = "checkbox" value = "outofstock" id = "Vorrat" name = "outofstock">
+        <br>
+        <fieldset>
+            <legend>Format</legend>
+            <li> <label name = "Tabelle">Tabelle</label> <input value = "tabelle" type = "hidden" id = "Tabelle" checked name = "format"></li>
+        </fieldset>
+        <br>
+        <br>
+        <button>Suchen</button>
+
+    </form>
+    <br>
+    <br>
+
+    <form action = "/schroedi/forms/stapelsuche.php" method = "get" accept-charset="utf-8">
+
+        <textarea style = "width: 100%; height: 5em;" id = "kommentar" name = "kommentar" maxlength="200" placeholder = "Mehrzeiliger Text, bitte hier eingeben"></textarea>
+
+    </form>
+
+    <!--AKTUELL-->
+
+    <br>
+
+    <form action = "/schroedi/forms/hallowelt.php" method = "post" accept-charset="utf-8" enctype = "multipart/form-data"> <!--Um Dateien hochzuladen muss die Form so gesetzt werden-->
+
+        <input type = "file" name = "upload">
+
+
+    </form>
+
+    <br>
+    <br>
+    <br>
+
+    <form action = "/schroedi/forms/hallowelt.php" method = "post" accept-charset="utf-8" enctype="multipart/form-data"> <!--Siehe hierzu auch den Part in style, so überdeckt man das hässliche Datei auswählen mit hübschen Buttons-->
+
+        <div class = "datei">
+
+            <input type = "file" class = "haesslich">
+            <div class = "nice">
+                <input value = "CHOOSE THE SHIT">
+            </div>
+
+        </div>
+
+
+    </form>
+
+
+    <!--PHP------------------------------------------------------------------->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>

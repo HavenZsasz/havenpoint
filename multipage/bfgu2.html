@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Testseite</title>
+    <link rel="stylesheet" href="testseite.css">
+
+
+
+
+
+    <!--<script>
+        document.createElement("header");
+        document.createElement("footer");
+        document.createElement("section");
+        document.createElement("aside");
+        document.createElement("nav");
+        document.createElement("article");
+
+    
+    </script> Anschließend in CSS einbinden: header, nav,...{display:block;}-->
+
+    <link href="lightbox.css" rel="stylesheet">
+    <script src="jquery-1.7.2.min.js"></script>
+    <script src="lightbox.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <div id="header"></div>
+    </header>
+    <!--standard div + semantic tags für IE8 & alle neuen Brwser; Alternativ: JS Code im Head-->
+
+    <nav>
+        <div id="nav">
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li><a href="#">Newscenter</a></li>
+                <li><a class="ausgewaehlt" href="galerie.html">Galerie</a>
+                    <ul>
+                        <li><a href="#">2012</a></li>
+                        <li><a href="#">2013</a></li>
+                        <li><a href="#">2014</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Entertainment</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="inhalt" class="galerie">
+        
+        <div id="eins">
+
+            <a href="ente1.jpg" rel="lightbox">
+            <img src="ente1.jpg" style="max-width: 100%; max-height:66%;"></a>
+
+        </div>
+        <div id="zwei">
+            <a href="ente2.jpg" rel="lightbox"> <img src="ente2.jpg"></a>
+            <small>Die Ente</small>
+            
+        </div>
+        <div id="drei">
+            <a href="ente3.jpg" rel="lightbox">
+            <img src="ente3.jpg"> </a>
+            
+        </div>
+        <div id="vier">
+            <a href="ente4.jpg" rel="lightbox">
+            <img src="ente4.jpg"> </a>
+            
+        </div>
+        <div id="fünf">
+            <a href="ente5.jpg" rel="lightbox">
+                
+            <img src="ente5.jpg"></a>
+            
+        </div>
+        <div id="sechs">
+            <a href="ente6.jpg" rel="lightbox">
+
+            <img src="ente6.jpg"> </a>
+            
+        </div>
+        <div id="sieben">
+            <a href="ente7.jpg" rel="lightbox">
+            <img src="ente7.jpg"></a>
+            
+        </div>
+        <div id="acht">
+            <a href="ente8.jpg" rel="lightbox">
+            <img src="ente8.jpg"></a>
+            
+        </div>
+
+    </div>
+    
+    <footer>
+        <div id="footer"></div>
+    </footer>
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

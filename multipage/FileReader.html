@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input name="datei" id="datei" type="file" accept="image/*"><br>
+    <br>
+    <div id="ausgabe"></div>
+    <br>
+    <div id="fortschritt"></div>
+
+    
+
+    <script>
+        function init() {
+            document.getElementById("datei").addEventListener("change", waehleDatei);
+        } 
+
+        function waehleDatei(event) {
+            if(event.target.files[0]) {
+                var leser = new FileReader();
+                leser.addEventListener("load", bildGeladen);
+                leser.addEventListener("error", zeigeLadefehler);
+                leser.addEventListener("progress", fortschrittAnzeigen);
+                leser.addEventListener("loadend", ladenBeendet);
+                leser.addEventListener("loadstart", ladenGestartet);
+                leser.readAsDataURL(event.target.files[0]);
+                
+            }
+        }
+
+        function fortschrittAnzeigen(event) {
+            var anzeige = document.getElementById("fortschritt");
+            anzeige.appendChild(document.createTextNode(((event.loaded * 100) / event.total).toFixed(0) + "% geladen."));
+            anzeige.appendChild(document.createElement("br"));
+        }
+
+        function ladenGestartet() {
+            var anzeige = document.getElementById("fortschritt");
+            anzeige.appendChild(document.createTextNode("Laden gestartet"));
+            anzeige.appendChild(document.createElement("br"));
+        }
+
+        function ladenBeendet() {
+            if(event.target.error) {
+                anzeige.appendChild(document.createTextNode(" Laden mit Fehler abgeschlossen"));
+
+            } else {
+                anzeige.appendChild(document.createTextNode(" Laden abgeschlossen"));
+            }
+        }
+
+        function zeigeLadefehler(event) {
+            var meldung;
+            switch(event.target.error.name)  {
+                case "NotFoundError": meldung = "Datei nicht gefunden."; break;
+                case "EncodingError": meldung = "Datei ist zu lang, um sie als Data-URL zu lesen."; break;
+                case "SecurityError": meldung = "Datei ist verdächtig."; break;
+                case "NotReadableError": meldung = "Darf Datei nichzt lesen."; break;
+                default: meldung = "Irgendetwas ist schief gelaufen. Bitte Datei nochmal überprüfen.";
+
+            }
+            alert("Datei konnte nicht geladen werden. Grund:" + meldung);
+        }
+
+        function bildGeladen(event) {
+            var img = document.createElement("img");
+            img.setAttribute("src", event.target.result);
+            document.getElementById("ausgabe").appendChild(img);
+        }
+
+        window.addEventListener("load", init);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,156 @@
+
+/* Selektoren finden sich auf S. 148/149*/
+
+
+
+
+
+span:hover {
+    color:blueviolet;
+    background-color: aqua;
+    
+}
+
+body {
+   /* background-image: url(/images/HintergrundCHECK.png);
+    background-repeat: no-repeat;
+    background-position: left,50;
+    background-attachment: fixed;
+    background-color: wheat; */
+    background: wheat url(/images/HintergrundCHECK.png) no-repeat fixed center top; /*Alternative zu alles einzeln in Zeilen schreiben, die Reihenfolge ist allerdings wichtig! */
+    font-size: 62.5%; /*sinnvoll, da standardmäßig 16 px, 62.5% davon sind 10px. So sind Umrechnungen leicht (Ich will 20px, dann einfach 2em*/
+}
+
+#Jumper {
+    background-color: green;
+    color: rgba(0,0,255,1);
+    opacity: 0.5;
+}
+
+.link {
+
+    background-color: black;
+
+}
+.unten:visited, .oben:visited{
+    background-color: white; /* wenn ein Tag mehrere Klassen hat, gewinnt immer das style, welches weiter unten steht*/
+    color: red;
+}
+.unten:hover, .oben:hover {
+
+    color:black;
+    
+
+}
+
+
+.zoom {
+    padding: 5px;
+    background-color: green;
+    transition: transform .10s; /* Animation */
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+  }
+
+  .zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+
+:visited { /*
+    color: red;  Pseudo Klasse, sorgt dafür, dass bereits besuchte Links nicht lila werden 
+    */
+}
+
+p {
+    background-color: aliceblue;
+}
+#erster {
+    background-color: aqua;
+    font-family: monospace;
+    text-align: justify; /*Blocksatz*/
+}
+#zweiter {
+    font-size: 1.5em;
+    font-family: "this_mine", sans-serif;
+    font-variant: small-caps; /*Alles in Großbuchstaben, nur etwas anders*/
+    text-decoration: underline;
+    text-align: center;
+    font-style: inherit; /*Passt den Style an das umgebende Element an. Wenn Bsp umgebend kursiv ist, wird damit diese Klasse auch kursiv*/
+}
+#dritter {
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase; /*Alles in Großbuchstaben*/
+    text-decoration: line-through;
+    text-indent: 2em;   /*Einrücken der ersten Zeile vom Absatz*/
+}
+
+h1 .tester {    /*Nachfahren Selektor, sorgt dafür, dass lediglich die Klasse "tester" umgeben von h1 angesprochen wird, nicht andere "tester" Klassen*/
+    font-style: italic;
+    font-size: 1.5em;
+}
+.tester {
+    color: blueviolet;
+}
+
+p.tryer {   /*Hiermit werden alle p angesprochen, die als Klassennamen "tryer" heißen. Alle anderen Klassen "tryer" werden nicht angesprochen*/
+    color: red;
+}
+
+@font-face {
+    font-family: "this_mine";
+    src: url('examplefont.eot');
+}
+
+#Liste {
+    background-color: white;
+    list-style-type: lower-alpha;
+}
+ul {
+    list-style-type: circle;
+    /*list-style-image nutzen um ein Bild als AUfzählungszeichen reinzuladen*/
+}
+dl {
+    background-color: aliceblue;
+}
+
+#truethat {
+    color: lightgrey;
+}
+table {
+    border-collapse: collapse; /*Sorgt dafür, dass keine Zwischenräume zwischen den Zellen entstehen*/
+}
+td {
+    text-align: center;
+   /* border-left: 1px solid blue;  ->solid, dashed, dotted möglich <-
+    border-top: 1px solid blue;
+    border-right: 1px solid blue;
+    border-bottom: 1px solid blue; */
+    border: 1px solid blue; /*Macht das selbe, wie die oberen vier Befehle*/
+}
+thead { /*Wieso macht das nichts? Die Tabelle bleibt identisch?*/
+    font-weight: bold;
+    font-size: 2em;
+    color: aqua;
+}
+#koko {
+    font-weight: bold;
+    font-size: 2em;
+    color: aqua;
+}
+
+thead tr {
+    border-bottom: 2px solid black;
+}
+
+tr:nth-child(odd) { /*Funktion, kann jede Funktion der Art an+b aufnehmen*/
+    background-color: grey;
+}
+tr:nth-child(even) {
+    background-color: white;
+}
+tr:nth-child(2n) {
+    border-bottom: 3px solid black;
+}

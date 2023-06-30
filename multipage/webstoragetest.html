@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        function init() {
+            document.getElementById("speichern").addEventListener("click", save);
+
+
+        }
+
+        function save() {
+            var name = document.getElementById("eintrag").value;
+            var menge = document.getElementById("menge").value;
+
+            localStorage.setItem(name, menge);
+
+            var eintrag = document.createElement("li");
+            var liste = document.getElementById("ausgabe");
+            for(var i=0; i<localStorage.length; i++) {
+                var key = localStorage.key(i);
+                var li = document.createElement("li");
+                li.appendChild(document.createTextNode(localStorage[key] + " " + key));
+                liste.appendChild(li);
+            }
+            
+            
+        }
+
+        window.addEventListener("load", init);
+       
+    </script>
+
+    <input id="eintrag" name="eintrag"/> <input id="menge" name="menge">
+    <button type="button" id="speichern">Hinzufügen</button>
+    <h1>Die Liste</h1>
+    <ul id="ausgabe"></ul>
+    
+</body>
+</html>

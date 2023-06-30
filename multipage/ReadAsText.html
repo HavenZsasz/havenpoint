@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bereit-zum-abwurf {
+            border: 2px solid aqua
+        }
+    </style>
+</head>
+<body>
+
+    <div id="datei" style="height:100px;width:200px;border:1px solid black;text-align:center;">Rezepte hier abwerfen</div>
+
+    <script>
+        function waehleDatei(event) {
+            event.stopPropagation();
+            event.preventDefault();
+            if(event.dataTransfer.files[0]) {
+                var leser = new FileReader();
+                leser.addEventListener("load", dateiGeladen);
+                leder.addEventListener("error", zeigeLadefehler);
+                leser.readAsText(event.dataTransfer.files[0], "UTF-8");
+            }
+        }
+
+        function zeigeLadefehler(event) {
+            alert("Konnte nicht geladen werden");
+        }
+
+        function dateiGeladen(event) {
+            var body = document.getElementsByTagName("body")[0];
+            var zeilen = event.target.result.split("\n");
+            var title = document.createElement("h1");
+            title.appendChild(document.createTextNode(zeilen[0]));
+            body.appendChild(title);
+            var ausgabe = document.createElement("ul");
+            body.appendChild(ausgabe);
+            for(var i=1;i<zeilen.length;i++) {
+                var li = document.createElement("li");
+                li.appendChild(document.createTextNode(zeilen[i]));
+                ausgabe.appendChild(li);
+            }
+
+        }
+
+        function dragenter(event) {
+            event.target.classList.add("bereit-zum-abwurf");
+        }
+
+        function dragleave(event) {
+            event.target.classList.remove("bereit-zum-abwurf");
+        }
+
+        function dragover(event) {
+            event.stopPropagation();
+            event.preventDefault();
+            event.dataTransfer.dropEffect = "copy";
+        }
+
+        function init() {
+            document.getElementById("datei").addEventListener("change", waehleDatei);
+            var einwurf = document.getElementById("dateientwurf");
+            einwurf.addEventListener("dragenter", dragenter);
+            einwurf.addEventListener("dragleave", dragleave);
+            einwurf.addEventListener("dragover", dragover); //Drag n Drop kann nur verwendet werden, wenn man das dragover Event abschaltet
+        }
+
+        window.addEventListener("load", init);
+    </script>
+    
+</body>
+</html>

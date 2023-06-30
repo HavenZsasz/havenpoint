@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input name="dateien" id="dateien" type="file" multiple>
+
+    <script>
+        function init() {
+            document.getElementById("dateien").addEventListener("change", waehleDateien);
+
+        }
+
+        function waehleDateien(event) {
+            var dateien = event.target.files;
+            for(var i=0; i<dateien.length; i++) {
+                schreibeInfo(dateien[i]);
+            }
+        }
+
+        function schreibeInfo(datei) {
+            var tr = document.createElement("tr");
+            tr.appendChild(erzeugeSpalte(datei.name));
+            tr.appendChild(erzeugeSpalte(datei.type));
+            tr.appendChild(erzeugeSpalte(datei.lastModifiedDate.toLocaleDateString()));
+            tr.appendChild(erzeugeSpalte(datei.size));
+            document.getElementById("ausgabe").appendChild(tr);
+        }
+
+        function erzeugeSpalte(text) {
+            var spalte = document.createElement("td");
+            spalte.appendChild(document.createTextNode(text));
+            return spalte;
+        }
+        window.addEventListener("load", init);
+    </script>
+
+    <table id="ausgabe"></table>
+</body>
+</html>

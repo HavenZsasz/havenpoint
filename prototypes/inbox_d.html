@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link id="stylesheet" rel="stylesheet" href="frontpage_CSS/smartphones.css">
+    <link id="stylesheet" rel="stylesheet" href="frontpage_CSS/miniDisplays.css">
+    <link id="stylesheet" rel="stylesheet" href="frontpage_CSS/smallTablets.css">
+
+    <link id="stylesheet" rel="stylesheet" href="/prototypes/multiple_css/biggerTabletsAndDesktop_multiple.css">
+    <link id="stylesheet" rel="stylesheet" href="/prototypes/inbox_CSS/biggerTabletsAndDesktop.css">
+
+
+
+    <title>Havenpoint - WMF</title>
+</head>
+
+<body>
+
+    <div id="everything" style="display:none;">
+
+        <div id="desktop-version">
+            <div id="login-background_d">
+            </div>
+
+            <div id="navbar_d">
+
+
+
+                <a id="clickLogoLink_d" href="frontpage.html"><img id="clickLogo_d"
+                        src="/prototypes/assets/logoDayKomprimiert1.png"></a>
+
+                <div id="navbar_right_d">
+
+                    <div id="search_bar_d">
+                        <input type="text" id="searcher_d" placeholder="Was darfs sein?">
+                        <svg id="suchlupe_d" width="100%" height="100%" viewBox="0 0 95 93" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xml:space="preserve" xmlns:serif="http://www.serif.com/"
+                            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                            <path
+                                d="M46.122,47.008c-3.333,3.718 -7.995,6.22 -13.237,6.753l-2.104,0.106c-11.368,0 -20.597,-9.229 -20.597,-20.596c0,-11.368 9.229,-20.597 20.597,-20.597l2.104,0.107c10.381,1.055 18.492,9.833 18.492,20.49c0,4.081 -1.19,7.887 -3.242,11.09c3.39,1.366 8.762,4.515 14.446,8.598c8.788,6.313 15.013,12.486 13.893,13.775c-1.12,1.289 -9.164,-2.789 -17.952,-9.103c-5.567,-3.999 -10.106,-7.942 -12.4,-10.623Zm-13.696,-29.752c8.113,0.825 14.453,7.685 14.453,16.015c-0,8.329 -6.34,15.19 -14.453,16.015l-1.645,0.083c-8.885,-0 -16.098,-7.213 -16.098,-16.098c-0,-8.885 7.213,-16.098 16.098,-16.098l1.645,0.083Z"
+                                style="fill:#7C7A7A;" />
+                        </svg>
+                    </div>
+
+                    <div id="menu_d">
+
+                        <a id="entdecken_tab_d" href="/prototypes/entdecken.html">Entdecken</a>
+                        <a id="neuware_tab_d" href="/prototypes/neuware.html">Neuware</a>
+                        <a id="inserate_tab_d" href="/prototypes/inserate.html">Inserate</a>
+                        <a id="dienstleistungen_tab_d" href="/prototypes/services.html">Dienstleistungen</a>
+                        <a id="automobil_tab_d" href="/prototypes/automobil.html">Automobil</a>
+                        <a id="immobilien_tab_d" href="/prototypes/immobilien.html">Immobilien</a>
+
+                    </div>
+                </div>
+
+                <div id="profileclick_d">
+                    <img id="profilepic_d" src="assets/logoDayKomprimiert1.png">
+                    <div id="newMessage_d">1</div>
+                </div>
+                <div id="loggedInDropDownSquare_d">
+                    <div id="dreiWege_d">
+                        <div id="lighter_d">L</div>
+                        <div id="darker_d">D</div>
+                        <div id="system_d">S</div>
+                    </div>
+                    <div id="chatContainer_d"><img id="inboxIcon_d" src="/prototypes/assets/inbox-icon.svg">
+                        <div id="newMessage1_d">1</div>
+                    </div>
+                    <div id="myProfile_d">Mein Profil</div>
+                    <div id="settings_d">Einstellungen</div>
+                    <div id="logout_d">LOGOUT</div>
+                </div>
+
+            </div>
+
+            <!--#region-----MESSAGE PREVIEW-->
+
+            <div id="messagePreviewContainer_d">
+
+
+                <div id="topBarMessagePreview_d">
+                    <div id="closeMessagePreview_d">&#8594;</div>
+                    <a href="/prototypes/inbox_d.html">
+                        <div id="openMessagesInFull_d">Full-Screen Mode</div>
+                    </a>
+                </div>
+                <div id="messageUmschalteButton_d">
+                    <div id="buttonsZumUmschalten_d">
+                        <div id="haendlerKnopf_d">Händler</div>
+                        <div id="borderMessage_d"></div>
+                        <div id="userKnopf_d">User</div>
+                    </div>
+                </div>
+
+                <div id="messagesInPreviewHaendler_d">
+
+                    <div class="messageNotRead_d">
+                        <div id="obereSpalteMessage_d">
+                            <div id="leftMessage_d">
+                                <div id="profilBildMessage_d">
+                                    <img src="/prototypes/assets/WMF-Profilbild.webp">
+                                </div>
+                                <div id="profilNameMessage_d">
+                                    WMF Töpferverband
+                                </div>
+                            </div>
+                            <div id="rightMessage_d">
+                                19:07 Uhr
+                            </div>
+                        </div>
+                        <div id="untereSpalteMessage_d">
+                            Wir haben Ihre Bestellung erhalten, vielen Dank!
+                        </div>
+                    </div>
+                    <div class="messageRead_d">
+                        <div id="obereSpalteMessage_d">
+                            <div id="leftMessage_d">
+                                <div id="profilBildMessage_d">
+                                    <img src="/prototypes/assets/nature-3101465_1280.jpeg">
+                                </div>
+                                <div id="profilNameMessage_d">
+                                    Der Deine-Mutter Shop
+                                </div>
+                            </div>
+                            <div id="rightMessage_d">
+                                Gestern
+                            </div>
+                        </div>
+                        <div id="untereSpalteMessage_d">
+                            Was ledschde Preiz?
+                        </div>
+                    </div>
+                    <div class="messageRead_d">
+                        <div id="obereSpalteMessage_d">
+                            <div id="leftMessage_d">
+                                <div id="profilBildMessage_d">
+                                    <img src="/prototypes/assets/mmKlein.svg">
+                                </div>
+                                <div id="profilNameMessage_d">
+                                    Seriöser iPhone Händler
+                                </div>
+                            </div>
+                            <div id="rightMessage_d">
+                                24.04.2022
+                            </div>
+                        </div>
+                        <div id="untereSpalteMessage_d">
+                            Ich: Zu deinem teuren Scheißpreis kauf ich gar nix.
+                        </div>
+                    </div>
+                    <div class="messageRead_d">
+                        <div id="obereSpalteMessage_d">
+                            <div id="leftMessage_d">
+                                <div id="profilBildMessage_d">
+                                    <img src="/prototypes/assets/WMF-Profilbild.webp">
+                                </div>
+                                <div id="profilNameMessage_d">
+                                    WMF Töpferverband
+                                </div>
+                            </div>
+                            <div id="rightMessage_d">
+                                26.07.1999
+                            </div>
+                        </div>
+                        <div id="untereSpalteMessage_d">
+                            Ich: Lutsch mir den Hoden du Drecksau.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="messagesInPreviewUser_d">
+
+                    <div class="messageNotRead_d">
+                        <div id="obereSpalteMessage_d">
+                            <div id="leftMessage_d">
+                                <div id="profilBildMessage_d">
+                                    <img src="/prototypes/assets/ente5.jpg">
+                                </div>
+                                <div id="profilNameMessage_d">
+                                    Entenverkäufer
+                                </div>
+                            </div>
+                            <div id="rightMessage_d">
+                                20:07 Uhr
+                            </div>
+                        </div>
+                        <div id="untereSpalteMessage_d">
+                            Deine Ente kommt pünktlich zum Abendessen.
+                        </div>
+                    </div>
+                    <div class="messageRead_d">
+                        <div id="obereSpalteMessage_d">
+                            <div id="leftMessage_d">
+                                <div id="profilBildMessage_d">
+                                    <img src="/prototypes/assets/iphone.jpeg">
+                                </div>
+                                <div id="profilNameMessage_d">
+                                    NeilA380
+                                </div>
+                            </div>
+                            <div id="rightMessage_d">
+                                Gestern
+                            </div>
+                        </div>
+                        <div id="untereSpalteMessage_d">
+                            Unter 10.000 EUR red ich gar nicht mit dir.
+                        </div>
+                    </div>
+                    <div class="messageRead_d">
+                        <div id="obereSpalteMessage_d">
+                            <div id="leftMessage_d">
+                                <div id="profilBildMessage_d">
+                                    <img src="/prototypes/assets/logoDayKomprimiert1.png">
+                                </div>
+                                <div id="profilNameMessage_d">
+                                    Havenpoint
+                                </div>
+                            </div>
+                            <div id="rightMessage_d">
+                                24.04.2022
+                            </div>
+                        </div>
+                        <div id="untereSpalteMessage_d">
+                            Ich: Super, danke für den geniale Einkauf!
+                        </div>
+                    </div>
+                    <div class="messageRead_d">
+                        <div id="obereSpalteMessage_d">
+                            <div id="leftMessage_d">
+                                <div id="profilBildMessage_d">
+                                    <img src="/prototypes/assets/WMF_Pop.jpeg">
+                                </div>
+                                <div id="profilNameMessage_d">
+                                    I_LOVE_GESCHIRR69
+                                </div>
+                            </div>
+                            <div id="rightMessage_d">
+                                26.07.1999
+                            </div>
+                        </div>
+                        <div id="untereSpalteMessage_d">
+                            You know whats hard?
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+            <!--#endregion-->
+
+
+            <!--#region----------------- TABS --------->
+
+            <div id="tab_erweiterungen_d">
+
+                <div id="neuware_erweiterung_d" class="erweiterungen_d">
+                    <div>
+                        <span>Alle anzeigen</span>
+                        <div><img src=""><span>Möbel</span></div>
+                        <div><img src=""><span>Kleidung</span></div>
+                        <div><img src=""><span>Elektronik</span></div>
+                        <div><img src=""><span>Flugzeuge</span></div>
+                    </div>
+                    <div>
+                        <span>NEUWARE</span>
+                        <div><img src=""><span>Möbel</span></div>
+                        <div><img src=""><span>Kleidung</span></div>
+                        <div><img src=""><span>Elektronik</span></div>
+                        <div><img src=""><span>Flugzeuge</span></div>
+                    </div>
+                    <div id="bild_d">
+                        <img src="/schroedi/ducks/ente1.jpg">
+                    </div>
+
+                </div>
+
+                <div id="inserate_erweiterung_d" class="erweiterungen_d">
+                    <div>
+                        <span>Alle anzeigen</span>
+                        <div><img src=""><span>Möbel</span></div>
+                        <div><img src=""><span>Kleidung</span></div>
+                        <div><img src=""><span>Elektronik</span></div>
+                        <div><img src=""><span>Flugzeuge</span></div>
+                    </div>
+                    <div>
+                        <span>INSERATE</span>
+                        <div><img src=""><span>Möbel</span></div>
+                        <div><img src=""><span>Kleidung</span></div>
+                        <div><img src=""><span>Elektronik</span></div>
+                        <div><img src=""><span>Flugzeuge</span></div>
+                    </div>
+                    <div id="bild_d">
+                        <img src="/schroedi/ducks/ente2.jpg">
+                    </div>
+
+                </div>
+
+                <div id="dienstleistungen_erweiterung_d" class="erweiterungen_d">
+                    <div>
+                        <span>Alle anzeigen</span>
+                        <div><img src=""><span>Möbel</span></div>
+                        <div><img src=""><span>Kleidung</span></div>
+                        <div><img src=""><span>Elektronik</span></div>
+                        <div><img src=""><span>Flugzeuge</span></div>
+                    </div>
+                    <div>
+                        <span>DIENSTLEISTUNGEN</span>
+                        <div><img src=""><span>Möbel</span></div>
+                        <div><img src=""><span>Kleidung</span></div>
+                        <div><img src=""><span>Elektronik</span></div>
+                        <div><img src=""><span>Flugzeuge</span></div>
+                    </div>
+                    <div id="bild_d">
+                        <img src="/schroedi/ducks/ente3.jpg">
+                    </div>
+
+                </div>
+
+                <div id="automobil_erweiterung_d" class="erweiterungen_d">
+                    <div>
+                        <span>Alle anzeigen</span>
+                        <div><img src=""><span>Möbel</span></div>
+                        <div><img src=""><span>Kleidung</span></div>
+                        <div><img src=""><span>Elektronik</span></div>
+                        <div><img src=""><span>Flugzeuge</span></div>
+                    </div>
+                    <div>
+                        <span>AUTOMOBIL</span>
+                        <div><img src=""><span>Möbel</span></div>
+                        <div><img src=""><span>Kleidung</span></div>
+                        <div><img src=""><span>Elektronik</span></div>
+                        <div><img src=""><span>Flugzeuge</span></div>
+                    </div>
+                    <div id="bild_d">
+
+                        <img src="/schroedi/ducks/ente4.jpg">
+                    </div>
+
+                </div>
+
+                <div id="immobilien_erweiterung_d" class="erweiterungen_d">
+                    <div>
+                        <span>Alle anzeigen</span>
+                        <div><img src=""><span>Möbel</span></div>
+                        <div><img src=""><span>Kleidung</span></div>
+                        <div><img src=""><span>Elektronik</span></div>
+                        <div><img src=""><span>Flugzeuge</span></div>
+                    </div>
+                    <div>
+                        <span>IMMOBILIEN</span>
+                        <div><img src=""><span>Möbel</span></div>
+                        <div><img src=""><span>Kleidung</span></div>
+                        <div><img src=""><span>Elektronik</span></div>
+                        <div><img src=""><span>Flugzeuge</span></div>
+                    </div>
+                    <div id="bild_d">
+                        <img src="/schroedi/ducks/ente5.jpg">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--#endregion-->
+
+            <!--#region---------------- LOGIN MASKE ------->
+
+
+
+
+
+            <div id="login-box_d" class="login-box_d">
+                <div id="close-login-box_d">+</div>
+
+                <h2 id="caption_login_d">Login</h2>
+                <div id="logindaten-falsch_d"></div>
+                <form>
+                    <div class="user-box_d">
+                        <input id="login-mail_d" type="text" name="" required="">
+                        <label>Username</label>
+                    </div>
+                    <div class="user-box_d">
+                        <input id="login-passwort_d" type="password" name="" required="">
+                        <label>Passwort</label>
+                    </div>
+
+
+                    <div id="regi-box_d">
+                        <div class="user-box_d">
+                            <input type="password" name="" required="">
+                            <label>Passwort Wiederholen</label>
+                        </div>
+                        <div class="moreThanOne">
+                            <div class="user-box_d registration_d">
+                                <input type="text" name="" required="">
+                                <label>Vorname</label>
+                            </div>
+                            <div class="user-box_d registration_d">
+                                <input type="text" name="" required="">
+                                <label>Nachname</label>
+                            </div>
+                        </div>
+                        <div class="moreThanOne_d">
+                            <div class="user-box_d registration_d">
+                                <input type="text" name="" required="">
+                                <label>PLZ</label>
+                            </div>
+                            <div class="user-box_d registration_d">
+                                <input type="text" name="" required="">
+                                <label>Wohnort</label>
+                            </div>
+                        </div>
+                        <div class="moreThanOne_d">
+                            <div class="user-box_d registration_d">
+                                <input type="text" name="" required="">
+                                <label>Straße</label>
+                            </div>
+                            <div class="user-box_d registration_d">
+                                <input type="text" name="" required="">
+                                <label>Hausnummer</label>
+                            </div>
+                        </div>
+
+                        <div class="user-box_d">
+                            <input type="text" name="" required="" onfocus="(this.type = 'date')"
+                                onblur="(this.type='text')">
+                            <label>Geburtsdatum</label>
+                        </div>
+
+                    </div>
+                    <div id="buttons-login_d">
+                        <a id="login_d" href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Login
+                        </a>
+                        <a id="registrieren_d" class="no-show_d" href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Registrieren
+                        </a>
+                    </div>
+                </form>
+            </div>
+
+            <!--#endregion-->
+
+
+            <!--#region----------------- MAIN -------------->
+
+
+            <div class="main_d">
+
+                <div id="umschalteKnopf_d">
+
+
+                    <div id="messageUmschalteButton_d">
+                        <div id="buttonsZumUmschalten_d">
+                            <div id="haendlerKnopfBig_d">Händler</div>
+                            <div id="borderMessage_d"></div>
+                            <div id="userKnopfBig_d">User</div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div id="haendler_d" class="messagesContainer_d">
+
+                    <div class="messageNotRead_d">
+                        <div id="obereSpalteMessage_d">
+                            <div id="leftMessage_d">
+                                <div id="profilBildMessage_d">
+                                    <img src="/prototypes/assets/WMF-Profilbild.webp">
+                                </div>
+                                <div id="profilNameMessage_d" class = "messageSearcher_d">WMF Töpferverband</div>
+                            </div>
+                            <div id="rightMessage_d">
+                                19:07 Uhr
+                            </div>
+                        </div>
+                        <div id="untereSpalteMessage_d">
+                            Wir haben Ihre Bestellung erhalten, vielen Dank!
+                        </div>
+                    </div>
+                    <div class="messageRead_d">
+                        <div id="obereSpalteMessage_d">
+                            <div id="leftMessage_d">
+                                <div id="profilBildMessage_d">
+                                    <img src="/prototypes/assets/nature-3101465_1280.jpeg">
+                                </div>
+                                <div id="profilNameMessage_d">Fliegendes Klassenzimmer</div>
+                            </div>
+                            <div id="rightMessage_d">
+                                Gestern
+                            </div>
+                        </div>
+                        <div id="untereSpalteMessage_d">
+                            Was ledschde Preiz?
+                        </div>
+                    </div>
+                    <div class="messageRead_d">
+                        <div id="obereSpalteMessage_d">
+                            <div id="leftMessage_d">
+                                <div id="profilBildMessage_d">
+                                    <img src="/prototypes/assets/mmKlein.svg">
+                                </div>
+                                <div id="profilNameMessage_d">
+                                    Seriöser iPhone Händler
+                                </div>
+                            </div>
+                            <div id="rightMessage_d">
+                                24.04.2022
+                            </div>
+                        </div>
+                        <div id="untereSpalteMessage_d">
+                            Ich: Zu deinem teuren Scheißpreis kauf ich gar nix.
+                        </div>
+                    </div>
+                    <div class="messageRead_d">
+                        <div id="obereSpalteMessage_d">
+                            <div id="leftMessage_d">
+                                <div id="profilBildMessage_d">
+                                    <img src="/prototypes/assets/WMF-Profilbild.webp">
+                                </div>
+                                <div id="profilNameMessage_d">
+                                    WMF Töpferverband
+                                </div>
+                            </div>
+                            <div id="rightMessage_d">
+                                26.07.1999
+                            </div>
+                        </div>
+                        <div id="untereSpalteMessage_d">
+                            Ich: Lutsch mir den Hoden du Drecksau.
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <div id="messagesDetail_d" class="messagesContainer_d">
+
+                    <div class="nachrichtContainer_d">
+                        <div class="sprechBlase_d">
+                            <div class="konkreteSprechblase_d">
+                                <div>
+                                    Hallo, bitte kaufen Sie einen Topf von mir. Unsere Töpfe sind wirklich der blanke
+                                    Wahnsinn, die können alles. Hallo, bitte kaufen Sie einen Topf von mir. Unsere Töpfe
+                                    sind wirklich der blanke Wahnsinn, die können alles. Hallo, bitte kaufen Sie einen
+                                    Topf von mir. Unsere Töpfe sind wirklich der blanke Wahnsinn, die können alles.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="datum_d">
+                            <div>
+                                19.08.2022 16:10 Uhr
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="nachrichtContainer_d">
+                        <div class="sprechBlase_d">
+                            <div class="konkreteSprechblase_d">
+                                <div>
+                                    Hallo, bitte kaufen Sie einen Topf von mir. Unsere Töpfe sind wirklich der blanke
+                                    Wahnsinn, die können alles. Hallo, bitte kaufen Sie einen Topf von mir. Unsere Töpfe
+                                    sind wirklich der blanke Wahnsinn, die können alles. Hallo, bitte kaufen Sie einen
+                                    Topf von mir. Unsere Töpfe sind wirklich der blanke Wahnsinn, die können alles.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="datum_d">
+                            <div>
+                                19.08.2022 17:10 Uhr
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="nachrichtContainer_d">
+                        <div class="sprechBlase_d">
+                            <div class="konkreteSprechblase_d">
+                                <div>
+                                    Ist wirklich gar nicht teuer und einfach nur super toll.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="datum_d">
+                            <div>
+                                19.08.2022 21:02 Uhr
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="nachrichtContainer_d antwort_d">
+                        <div class="sprechBlase_d">
+                            <div class="konkreteSprechblase_d">
+                                <div>
+                                    Hören Sie auf mich zu belästigen!!!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="datum_d">
+                            <div>
+                                20.08.2022 22:22 Uhr
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="nachrichtContainer_d">
+                        <div class="sprechBlase_d">
+                            <div class="konkreteSprechblase_d">
+                                <div>
+                                    Wir haben Ihre Bestellung erhalten, vielen Dank!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="datum_d">
+                            <div>
+                                20.11.2022 10:02 Uhr
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div id="eingabeFeld_d">
+
+
+                        <span class="textarea" role="textbox" contenteditable></span>
+
+                        <div id="messageSenden_d">
+                            Senden
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+                <div id="messagesDetail2_d" class="messagesContainer_d">
+
+                    <div class="nachrichtContainer_d">
+                        <div class="sprechBlase_d">
+                            <div class="konkreteSprechblase_d">
+                                <div>
+                                    Was ledschde Preiz?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="datum_d">
+                            <div>
+                                19.08.2022 16:10 Uhr
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div id="eingabeFeld_d">
+
+
+                        <span class="textarea" role="textbox" contenteditable></span>
+
+                        <div id="messageSenden_d">
+                            Senden
+                        </div>
+
+
+                    </div>
+
+
+
+
+                </div>
+
+                <div id="user_d" class="messagesContainer_d">
+
+                    <div class="messageNotRead_d">
+                        <div id="obereSpalteMessage_d">
+                            <div id="leftMessage_d">
+                                <div id="profilBildMessage_d">
+                                    <img src="/prototypes/assets/ente5.jpg">
+                                </div>
+                                <div id="profilNameMessage_d">
+                                    Entenverkäufer
+                                </div>
+                            </div>
+                            <div id="rightMessage_d">
+                                20:07 Uhr
+                            </div>
+                        </div>
+                        <div id="untereSpalteMessage_d">
+                            Deine Ente kommt pünktlich zum Abendessen.
+                        </div>
+                    </div>
+                    <div class="messageRead_d">
+                        <div id="obereSpalteMessage_d">
+                            <div id="leftMessage_d">
+                                <div id="profilBildMessage_d">
+                                    <img src="/prototypes/assets/iphone.jpeg">
+                                </div>
+                                <div id="profilNameMessage_d">
+                                    NeilA380
+                                </div>
+                            </div>
+                            <div id="rightMessage_d">
+                                Gestern
+                            </div>
+                        </div>
+                        <div id="untereSpalteMessage_d">
+                            Unter 10.000 EUR red ich gar nicht mit dir.
+                        </div>
+                    </div>
+                    <div class="messageRead_d">
+                        <div id="obereSpalteMessage_d">
+                            <div id="leftMessage_d">
+                                <div id="profilBildMessage_d">
+                                    <img src="/prototypes/assets/logoDayKomprimiert1.png">
+                                </div>
+                                <div id="profilNameMessage_d">
+                                    Havenpoint
+                                </div>
+                            </div>
+                            <div id="rightMessage_d">
+                                24.04.2022
+                            </div>
+                        </div>
+                        <div id="untereSpalteMessage_d">
+                            Ich: Super, danke für den geniale Einkauf!
+                        </div>
+                    </div>
+                    <div class="messageRead_d">
+                        <div id="obereSpalteMessage_d">
+                            <div id="leftMessage_d">
+                                <div id="profilBildMessage_d">
+                                    <img src="/prototypes/assets/WMF_Pop.jpeg">
+                                </div>
+                                <div id="profilNameMessage_d">
+                                    I_LOVE_GESCHIRR69
+                                </div>
+                            </div>
+                            <div id="rightMessage_d">
+                                26.07.1999
+                            </div>
+                        </div>
+                        <div id="untereSpalteMessage_d">
+                            You know whats hard?
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+            <!--#endregion-->
+
+
+            
+
+
+            <br><br><br><br><br><br><br><br><br><br><br>
+
+
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <script src="entdecken_JS/darkmodeDesktop.js"></script>
+    <script src='/prototypes/profiloverview_JS/navbar_d.js'></script>
+    <script src='/prototypes/entdecken_JS/loginCheck.js'></script>
+    <script src='/prototypes/entdecken_JS/logout.js'></script>
+
+
+    <script src="/prototypes/multiple_JS/openMessagePreview_d.js"></script>
+    <script src="/prototypes/multiple_JS/showSite_d.js"></script>
+    <script src="/prototypes/inbox_JS/viewSwitch_d.js"></script>
+    <script src="/prototypes/inbox_JS/openMessages_d.js"></script>
+
+
+
+
+    <noscript>Dein Browser unterstützt leider kein JavaScript (oder JavaScript ist nicht aktiviert), dementsprechend
+        könnten Inhalte und Funktionen fehlen. ;(</noscript>
+
+
+
+</body>
+
+</html>

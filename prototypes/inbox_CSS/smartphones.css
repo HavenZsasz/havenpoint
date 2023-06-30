@@ -1,0 +1,135 @@
+@media only screen and (min-device-width: 316px) and (max-device-width: 550px) {
+
+    * {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    body {
+        margin: 0;
+        margin-top: 12px;
+        
+    }
+
+    .dark-theme_m {
+        background-color: #121212;
+        color: rgb(228, 221, 221);
+        transition-property: all;
+        transition-duration: 0.3s;
+    }
+
+
+
+    em {
+    font-weight: 700;
+    font-size:500;
+    font-style: normal;
+    margin-left: 18px;
+
+    }
+
+    h1 {
+        font-size: x-large;
+        margin-left: 12px;
+    }
+
+    #switch-flexer_m {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 13px;
+    }
+
+    #div-haendler_m {
+        display: block;
+    }
+
+    #div-user_m {
+        display: none;
+    }
+
+    #haendler_m {
+        border-bottom: 3px solid rgb(0,220,253);
+    }
+
+    #haendler_m, #user_m {
+        font-weight: 600;
+        font-size: medium;
+    }
+
+    #switch-div_m {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(221, 216, 216, 0.558);
+        border-radius: 10px;
+        padding-left: 2px;
+        padding-right: 2px;
+        width: 180px;
+        height: 34px;
+    }
+
+  #flex-conv_m {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .dark-theme_m #conversation1_m {
+    background-color: rgb(51, 51, 51);
+  }
+
+  .dark-theme_m #switch-div_m {
+    background-color: rgb(51, 51, 51);
+  }
+
+
+    #conversation1_m {
+        background-color: rgba(221, 216, 216, 0.558);
+        width: 93%;
+        border-radius: 10px;
+        height: 80px;
+        padding: 5px;
+        margin-bottom: 5px;
+        
+    }
+
+    #conv-header_m {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    #conv-img-div_m {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: 25px;
+        width: 25px;
+        margin-left: 5px;
+        border: 1px solid gray;
+        border-radius: 25%;
+        padding: 2px;
+        background-color: white;
+    }
+
+    #conv-img-div_m > img {
+        height: 100%;
+        width: 100%;
+
+    }
+
+    #conv-name-div_m {
+        margin-left: 5px;
+        font-weight: 700;
+        
+    }
+
+    #message_m {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 8px;
+        width: 100%;
+    }
+
+}

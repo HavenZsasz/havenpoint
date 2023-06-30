@@ -1,0 +1,144 @@
+body {
+    color: black;
+    background-color: white;
+    transition-property: background-color, color, opacity, padding, border-radius;
+    transition-duration: 1s;
+}
+
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.darkmode {
+    background-color: black;
+    color: white;
+}
+
+#profilbild {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    left: 70%;
+    bottom: 70%;
+    border-radius: 50%;
+    border: 1px black solid;
+    overflow:hidden
+    
+    
+}
+
+
+
+
+.logo {
+    height: 25%;
+    width: 25%;
+}
+
+#dark {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 1px black solid;
+    padding: 2px;
+    font-weight: bold;
+    border-radius: 8%;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 0.5s;
+    color: black;
+}
+
+#dark:hover {
+    padding: 5px;
+    color: rgb(0, 220, 253);
+    background-color: aliceblue;
+}
+
+#fuer-dich, #entdecken, #neuware, #inserate, #automobil, #immobilien {
+    text-decoration: none;
+    color: black;
+    margin: 5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    transition-property: background-color, color, opacity, padding, border-radius;
+    transition-duration: 1s;
+}
+
+.navilinkdark {
+    text-decoration: none;
+    color: rgb(0, 220, 253);
+    margin: 5%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    transition-property: background-color, color, opacity, padding, border-radius, border, box-shadow;
+    transition-duration: 0.5s;
+}
+
+#fuer-dich:hover, #entdecken:hover, #neuware:hover, #inserate:hover, #automobil:hover, #immobilien:hover {
+    color: rgb(0, 220, 253);
+    background-color: black;
+    opacity: 0.5;
+    padding: 5px;
+    border-radius: 14%;
+    border: 1px rgb(0, 220, 253) solid;
+    box-shadow: 0px 0px 10px  rgb(0, 220, 253),
+    
+    0px 0px 20px  rgb(0, 220, 203);
+    
+}
+
+.navilinkdark {
+    color: rgb(0, 220, 253);
+    background-color: white;
+    opacity: 0.5;
+    padding: 5px;
+    border-radius: 5%;
+    
+}
+
+#navbar {
+    margin-top: 3%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding:1% 1%;
+}
+
+#navbardark {
+    margin-top: 3%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding:1% 1%;
+}
+
+#navbar > #plus {
+    border-radius: 50%;
+    border: 2px solid gray;
+    padding: 0px 4px 1px 4px;
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    transition-property: all;
+    transition-duration: 0.5s;
+    
+}
+
+#navbar > #plus:hover {
+    border: 2px solid rgb(0, 220, 253);
+    color: rgb(0, 220, 253);
+    background-color: gray;
+    
+    
+}
+
+
+.Suche {
+    position: relative;
+    left: 450px;
+    top: 120px;
+    width: 300px;
+    
+    border: 0.5px dashed rgba(black, black, black, 0.5);
+    
+    
+}

@@ -1,0 +1,128 @@
+FORMULARE:
+    Eingabevalidierungstypen: Seite 241
+
+BLOCKELEMENTE:
+    Super Darstellung, wie die Stelleschrauben von Boxen aussehen
+    (MARGIN, PADDING, etc.): Seite 259
+    
+    Gesetz des Kompass: Seite 267
+
+    Collapsing Margins: Seite 270
+
+    Erklärung z-index: Seite 304
+
+WAS WIRD VON WELCHEM BROWSER UNTERSTÜTZT?:
+    http://caniuse.com
+
+
+EIGENE SEITE ERSTELLEN:
+    Sectioning-Tags kompatibel mit IE8 machen: Seite 313
+
+UNTERSCHIED EM UND %:
+    em orientiert sich an der Textgröße, % am umgebenden Element
+
+TRANSFORM OPERATIONEN:
+    Die verschiedenen Operationen von Transform: S. 366
+    Wieso Reihenfolge wichtig ist: S. 368
+
+Falsy Werte in JavaScript:
+    Siehe S. 436
+
+stopPropagation() und preventDefault():
+    S. 510
+
+Maus und Keyboard Klick-Events
+    S. 511
+
+ÜBERSICHT ÜBER WEITERE EVENT-HANDLER:
+    S. 514ff
+
+DOM - OPERATIONEN:
+    S. 526
+
+NodeTypes:
+    S. 539
+
+DOM - MEISTERAUFGABE:
+    S. 553/554
+
+OPTIMALER CHECK VON COOKIES IN JS & SETZEN VON COOKIES, VERFALLSDATUM ETC.:
+    S. 601ff.
+
+Modernizr-Skript zum Checken, ob diverse Browser-Features zur Verfügung stehen:
+    http://modernizr.com  (S.606)
+
+DAS storage EVENT, MIT ANDEREN TABS EMPFANGEN:
+    S. 615
+
+EVENTS DES FILE-READERS:
+    S. 622
+
+VIDEO-TAG UNTERTITEL SETZEN:
+    S.649
+
+VIDEO UND AUDIO ATTRIBUTE:
+    S.651
+
+VIDEO UND AUDIO EVENTS:
+    S. 658
+
+BIBLIOTHEKEN FÜR PLOTS:
+    S. 671
+
+(CANVAS-STUFF UND OPERATIONEN:
+    S. 672ff)
+
+MOZILLA DEMOS ZU CANVAS:
+    https://developer.mozilla.org/en-US/demos/tag/tech:canvas   -> S. 704
+
+AJAX WERTE FÜR DEN responseType:
+    S. 726/727
+
+AJAX NAVIGATION UND SETZEN VON BOOKMARKS ÜBER FRAGMENTE!:
+    S. 734
+
+!WEBSOCKET!:
+    S. 744
+
+RESPONSIVE DESIGN FRAMEWORKS:
+    S. 760
+    http://bradforst.github.io/this-is-responsive/patterns.html
+    http://unsemantic.com
+    www.yaml.de
+    http://imperavi.com/kube/css/grid
+
+PICTURE TAG FÜR BILDER AUF DEM HANDY:
+    S. 770
+
+TOUCHE-EVENTS UND EIGENSCHAFTEN: 
+    S. 779/780
+SWIPE-MEDIATHEK:
+    S. 781
+
+COOLE WEBSITES:
+    S. 795
+
+ECMA - ANONYME FUNKTIONEN:
+    S. 813
+ECMA - NEUE METHODEN
+    S. 834ff
+REGULÄRE AUSDRÜCKE UM BSP EINEN INPUT ZU VALIDIEREN:
+    S. 850
+
+
+
+
+
+
+MEDIA TYPES BEI MEDIA QUERIES:
+    S. 749
+MEDIA FEATURES:
+    S. 752
+
+
+
+AUFGABEN ZUM ÜBEN!:
+    S. 610
+
+Massives Defizit in Kapitel 15 -> Am besten alle Aufgaben nochmal probieren

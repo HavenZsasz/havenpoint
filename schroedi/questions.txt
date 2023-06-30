@@ -1,0 +1,4 @@
+2:
+    In php: allgemein css Anpassungen scheinen nicht auf der Seite anzukommen?!
+    Also die css an sich wird hinterlegt, aber neue Anpassungen werden nicht in die 
+    browser ansicht übernommen

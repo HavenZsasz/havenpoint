@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8"/>
+    <title>Der Koenig macht Geschichte!</title>
+  </head>
+  <body>
+	<div id="der-koenig-spricht"></div>
+	<button id="frag-den-koenig" type="submit">Euer Majestät, was sollen wir tun?</button>
+	<script>
+        /*In diesem Array wird alles gespeichert, was der König je zu uns gesagt hat.*/
+		var vergangenheit = [];
+
+        window.addEventListener("load", init);
+
+        function init(){
+            document.getElementById("frag-den-koenig").addEventListener("click", ajax);
+            /*Dieser Eventlistener ist wichtig: er sorgt dafür, dass ein JavaScript- Eintrag aus der Browsergeschichte
+            wiederhergestellt wird.*/
+            window.addEventListener("popstate", popState);
+        }
+
+        /*Beim Ajax versenden bleibt alles beim alten.*/
+		function ajax(){
+			var ajaxRequest = new XMLHttpRequest();
+			ajaxRequest.addEventListener("load", ajaxGeladen);
+			ajaxRequest.addEventListener("error", ajaxFehler);
+			ajaxRequest.open("get", "/ajax/derkoenig.php");
+			ajaxRequest.send();
+		}
+		
+		function ajaxGeladen(event){
+			var text = "Der König befiehlt: " + event.target.responseText;
+			sprich(text);
+            /*Ab hier wird es interessant: die Befehle des Königs werden in die Chronik eingetragen.*/
+			vergangenheit.push(text);
+            /*Dann wird der Titel des Dokuments geändert, damit der Benutzer immer sehen kann, in welchem Schritt er gerade steht.*/
+			document.title = "Der König sprach (" + vergangenheit.length + ")";
+            /*Und das wichtigste zum Schluß: es wird ein Eintrag in der Browserhistorie erzeugt. Jetzt kann man in der Zeit zurückspringen.
+             Das Array mit alten Befehlen wird dabei als Statusobjekt übergeben. */
+			window.history.pushState(vergangenheit, "Der König sprach (" + vergangenheit.length + ")");
+		}
+		
+		function sprich(text){
+			var p = document.createElement("p");
+			p.appendChild(document.createTextNode(text));
+			document.getElementById("der-koenig-spricht").appendChild(p);
+		}
+		
+		function ajaxFehler(event){
+			alert(event.target.statusText);
+		}
+
+        /*Diese Funktion stellt einen alten Zustand wieder her, wenn in der Historie zurückgesprungen wird*/
+		function popState(event){
+            /*Sie räumt den Ausgabebereich auf*/
+			document.getElementById("der-koenig-spricht").innerHTML = "";
+			if (event.state){
+                /*Holt das Statusobjekt aus dem Event.*/
+                vergangenheit = event.state;
+                /*Und schreibt die alten Befehle wieder auf die Seite.*/
+                document.title = "Der König sprach (" + vergangenheit.length + ")";
+				for (var i = 0; i < event.state.length; i++){
+					sprich(event.state[i]);
+				}
+			}
+		}
+
+	</script>
+  </body>
+</html>
