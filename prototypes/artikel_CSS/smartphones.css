@@ -1496,7 +1496,8 @@
     }
 
     #havnpay_m {
-        width: 180px;
+        width: 220px;
+        height: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
