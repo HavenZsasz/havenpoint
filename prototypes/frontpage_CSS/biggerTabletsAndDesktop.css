@@ -1,5 +1,17 @@
 @media only screen and (min-device-width: 760px) {
 
+    html, body {
+        margin: 0;
+        height: 100%;
+        background-color: black;
+    }
+
+    #logo {
+        height: 30px;
+        
+    }
+
+
 
 
   
