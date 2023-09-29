@@ -39,6 +39,13 @@
                     <img src="prototypes/assets/segelweiß.svg" style="height: 80px;">
                 </div>
                 <title style="color: white;">Melde dich an, um alle aktuellen Entwicklungen rund um Havenpoint nicht zu verpassen!</title>
+              
+              	<form method="post" action="process.php">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
 
             </div>
 
